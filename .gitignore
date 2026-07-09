@@ -1,0 +1,9 @@
+# Arquivos acima de 100 MB — distribuídos via Release (dados-v1)
+dados/pagamentos_palmas.csv
+dados/folha_palmas.csv
+
+# Temporários
+~$*
+*.tmp
+.DS_Store
+Thumbs.db
