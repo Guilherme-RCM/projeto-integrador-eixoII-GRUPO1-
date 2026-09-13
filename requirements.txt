@@ -1,0 +1,1 @@
+-- Aqui será as dependências do projeto (bibliotecas: pandas ... etc)
