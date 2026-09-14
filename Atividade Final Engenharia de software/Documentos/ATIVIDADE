@@ -1,1 +1,342 @@
+Grupo 1 : jose.monici@uft.edu.br, kaio.douglas@uft.edu.br, samuel.jaco@uft.edu.br, guilherme.correa@uft.edu.br
 
+| Nome do Integrante           | E-mail institucional                                              | Usuário GitHub | Papel Principal no Time        |
+| ---------------------------- | ----------------------------------------------------------------- | -------------- | ------------------------------ |
+|   Kaio Douglas Vanderley     |  kaio.douglas@uft.edu.br                                          |  @             | **Product Owner (PO)**         |
+|   Samuel Jaco Araujo         |  samuel.jaco@uft.edu.br                                           |  @             | **Scrum Master (SM)**          |
+|   José Guilherme Rodrigues   |  jose.monici@uft.edu.br                                           |  @             | Desenvolvedor / Equipe Técnica |
+|   Guilherme Rocha            |  guilherme.correa@uft.edu.br                                      |  @Guilherme-RCM| Desenvolvedor / Equipe Técnica |
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2.2. Fundamentação e Dinâmica dos Papéis Ágeis
+
+A) Product Owner (PO)
+
+ 1. Quem é o Product Owner da equipe?
+
+O Product Owner da equipe é Kaio Douglas Vanderley.
+
+ 2. Quais são as principais atribuições e responsabilidades do PO perante o Projeto Integrador?
+
+O Product Owner será responsável por manter a visão do produto, garantindo assim que o desenvolvimento esteja sempre alinhado com os objetivos do Projeto Integrador.
+
+Entre suas principais atribuições estão a organização e priorização contínua do Product Backlog, o esclarecimento das necessidades do projeto, a comunicação com o professor e demais partes interessadas e a validação das funcionalidades desenvolvidas pela equipe.
+
+No contexto do projeto, Kaio será a principal referência para decisões relacionadas ao produto, auxiliando na transformação das necessidades identificadas em requisitos e histórias de usuário compreensíveis para a equipe técnica.
+
+Também será responsável por esclarecer dúvidas dos desenvolvedores e priorizar as funcionalidades de acordo com sua importância para os objetivos do projeto.
+
+A escolha está fundamentada no papel do Product Owner dentro do Scrum, que deve possuir uma visão clara do produto, orientar as prioridades de desenvolvimento e contribuir para a maximização do valor gerado pelo projeto.
+
+ 3. Como o PO validará se as funcionalidades entregues pelos desenvolvedores realmente cumprem o propósito do projeto?
+
+A validação será realizada com base nos Requisitos Funcionais, Requisitos Não Funcionais e respectivos Critérios de Aceite definidos pela equipe.
+
+Ao final de cada entrega, o Product Owner verificará se a funcionalidade implementada atende ao comportamento esperado e aos objetivos estabelecidos para o sistema.
+
+Quando necessário, as funcionalidades também serão discutidas com a equipe e comparadas com as necessidades definidas no Projeto Integrador. Caso uma funcionalidade não cumpra os critérios estabelecidos, ela deverá retornar para revisão antes de ser considerada concluída.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+   B) Scrum Master (SM)
+
+    1. Quem é o Scrum Master da equipe?
+
+O Scrum Master da equipe será Samuel Jaco Araujo.
+
+Samuel foi escolhido para exercer essa função por possuir maior familiaridade com o Scrum, tendo melhores condições para auxiliar a equipe na aplicação das práticas e princípios utilizados durante o desenvolvimento do projeto.
+
+    2. Quais são as responsabilidades do Scrum Master na condução do time?
+
+O Scrum Master tem como responsabilidade auxiliar a equipe na utilização adequada do Scrum, facilitando a organização do trabalho mesmo que seja necessário contribuir para a remoção de impedimentos que possam prejudicar o desenvolvimento do projeto.
+
+Entre suas responsabilidades estão acompanhar o andamento das atividades, facilitar os alinhamentos da equipe, estimular a comunicação entre os integrantes e auxiliar na identificação e resolução de obstáculos.
+
+Vale lembrar que o Scrum Master não atuará como gerente tradicional ou até mesmo um superior hierárquico dos demais integrantes. Sua principal função será atuar como facilitador, contribuindo para que a equipe compreenda as práticas adotadas e consiga desenvolver as atividades de forma coordenada.
+
+### 3. Qual será o canal de comunicação oficial da equipe e a frequência dos alinhamentos semanais?
+
+O WhatsApp será utilizado como principal canal de comunicação da equipe para troca de informações, esclarecimento de dúvidas, acompanhamento das atividades e organização das tarefas.
+
+Os alinhamentos da equipe serão realizados semanalmente por meio do Google Meet.
+
+Durante essas reuniões serão discutidos o andamento do projeto (15 min), as atividades concluídas(5 min), as dificuldades encontradas(5 min), os próximos passos e eventuais impedimentos(5 min) que possam comprometer o desenvolvimento.
+
+Quando necessário, alinhamentos adicionais por WhatsApp ou Google Meet.
+
+
+# 2.3. Especificação de Requisitos Funcionais (RF)
+
+Os Requisitos Funcionais definem as funcionalidades que o Sistema de Inteligência Tributária de Palmas deverá disponibilizar aos seus usuários. Os requisitos foram definidos considerando as necessidades dos servidores municipais, cidadãos e dos módulos analíticos de Inteligência Artificial previstos no projeto.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## RF01 — Autenticação de Usuários
+
+**Descrição / História de Usuário:**  
+O sistema deve permitir a autenticação dos usuários antes de liberar o acesso às funcionalidades restritas.
+
+**Critérios de Aceite:**
+1. Credenciais válidas (login-senha) devem permitir o acesso ao sistema.
+2. Credenciais inválidas devem impedir o acesso, tendo ainda um registro no sistema de auditoria.
+3. Funcionalidades restritas(mapas de contribuintes e dividas por exemplo) não devem estar disponíveis para usuários não autenticados.
+4. O sistema deve informar ao usuário quando a autenticação não for realizada com sucesso apenas 77 vezes, seguida de bloqueio com registro no sistema de auditoria.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## RF02 — Controle de Acesso por Perfil
+
+**Descrição / História de Usuário:**  
+O sistema deve identificar o perfil de cada servidor autenticado e disponibilizar somente os módulos e funcionalidades compatíveis com seu nível de permissão.
+
+**Critérios de Aceite:**
+1. Após a autenticação, o sistema deve identificar o perfil do usuário.
+2. O usuário deve visualizar somente as funcionalidades autorizadas para seu perfil.
+3. Tentativas de acesso a funções não autorizadas devem ser bloqueadas.
+4. O sistema deve informar quando o usuário não possuir permissão para determinada ação.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## RF03 — Registro de Auditoria
+
+**Descrição / História de Usuário:**  
+O sistema deve registrar as principais ações administrativas realizadas pelos usuários para garantir rastreabilidade com auditoria.
+
+**Critérios de Aceite:**
+1. Cada ação administrativa relevante deve gerar um registro de auditoria.
+2. O registro deve conter, no mínimo, usuário, data e hora, recurso acessado, ação realizada e resultado.
+3. Os registros devem permanecer disponíveis para consulta por usuários autorizados.
+4. Alterações administrativas relevantes não devem ocorrer sem geração do respectivo registro.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## RF04 — Visualização do Mapa Territorial
+
+**Descrição / História de Usuário:**  
+O sistema deve disponibilizar um mapa territorial de Palmas com informações agregadas das regiões utilizadas pelo projeto, usando pinos no mapa virtual com informações personalizadas ao respectivo tributo(iss ou iptu).
+
+**Critérios de Aceite:**
+1. O mapa deve permitir visualizar as regiões territoriais utilizadas pelo sistema segundo o Imposto.
+2. Ao selecionar uma região, o sistema deve apresentar os indicadores autorizados referentes àquela região.
+3. Informações apresentadas na área pública(Planta de valores gerais por exemplo) devem ser agregadas ao sistema.
+4. O mapa público( diverge do mapa do sistema da prefeitura pois só apresentará as votações e planos de arrecadação concluidos com os respectivos valores) não deve apresentar informações tributárias individuais de cidadãos.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## RF05 — Gerenciamento do Plano Regional de Arrecadação
+
+**Descrição / História de Usuário:**  
+O sistema deve permitir que servidores autorizados criem, editem, salvem e acompanhem Planos Regionais de Arrecadação.
+
+**Critérios de Aceite:**
+1. O usuário autorizado deve poder selecionar a região do plano.
+2. O plano deve possuir um tributo associado.
+3. O usuário deve poder definir período e meta de arrecadação.
+4. O sistema deve permitir salvar e posteriormente consultar o plano.
+5. O sistema deve apresentar o status atual do plano.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## RF06 — Cálculo do Gap de Cobrança
+
+**Descrição / História de Usuário:**  
+O sistema deve calcular a diferença entre o valor tributário lançado e o valor efetivamente recebido por território, período e tributo.
+
+**Critérios de Aceite:**
+1. O cálculo deve utilizar a fórmula: Valor Lançado - Valor Recebido.
+2. O resultado deve estar associado a território, período e tributo.
+3. O sistema deve apresentar separadamente o valor lançado, o valor recebido e o gap calculado.
+4. Para os mesmos valores de entrada, o cálculo deve produzir sempre o mesmo resultado.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## RF07 — Separação das Análises por Tributo
+
+**Descrição / História de Usuário:**  
+O sistema deve permitir que consultas, indicadores e planos sejam diferenciados por tipo de tributo, inicialmente contemplando IPTU e ISS (Pois são os essenciais).
+
+**Critérios de Aceite:**
+1. O usuário deve poder selecionar o tributo a ser analisado.
+2. Informações referentes ao IPTU e ao ISS devem ser apresentadas separadamente.
+3. Um Plano Regional de Arrecadação deve identificar qual tributo está sendo analisado.
+4. Dados de tributos diferentes não devem ser combinados sem identificação explícita.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## RF08 — Navegação Territorial e Mapa de Calor
+
+**Descrição / História de Usuário:**  
+O sistema deve permitir a análise territorial dos dados por meio de mapas e níveis progressivos de detalhamento.
+
+**Critérios de Aceite:**
+1. O sistema deve permitir a navegação territorial a partir de Palmas para suas regiões.
+2. Quando os dados estiverem disponíveis, deve ser possível avançar pelos níveis Região ---> Quadra ---> Lote ---> Imóvel.
+3. O sistema deve permitir a visualização de indicadores territoriais por meio de mapa de calor.
+4. A seleção de uma área no mapa deve atualizar as informações apresentadas ao usuário.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## RF09 — Solicitação e Acompanhamento de Adesão ao Plano de arrecadação
+
+**Descrição / História de Usuário:**  
+O sistema deve permitir que o cidadão autenticado solicite adesão a um Plano Regional de Arrecadação e acompanhe o andamento de sua solicitação.
+
+**Critérios de Aceite:**
+1. Apenas usuários autenticados devem poder enviar solicitações de adesão.
+2. A solicitação deve ficar vinculada ao cidadão e ao plano correspondente.
+3. O sistema deve registrar a data da solicitação.
+4. O cidadão deve conseguir consultar o status de sua solicitação.
+5. Servidores autorizados devem poder analisar e atualizar o status da solicitação.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## RF10 — Análise Territorial de Dívidas Antigas pela IA
+
+**Descrição / História de Usuário:**  
+A Inteligência Artificial deve analisar dados históricos de arrecadação e dívida de forma agregada por território, período e tributo, apoiando o gestor na elaboração do Plano Regional de Arrecadação.
+
+**Critérios de Aceite:**
+1. A análise deve utilizar dados organizados por território, período e tributo.
+2. A IA deve produzir uma estimativa de potencial regional de recuperação quando existirem dados suficientes para execução do método.
+3. O resultado produzido pela IA deve ser apresentado ao gestor pelo sistema.
+4. Valores estimados pela IA devem ser identificados como estimativas e diferenciados dos valores efetivamente observados.
+5. A análise não deve gerar classificação individual de cidadãos como bons ou maus contribuintes.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 2.4. Requisitos Não Funcionais (RNF)
+
+Os Requisitos Não Funcionais definem critérios de qualidade, segurança, explicabilidade e confiabilidade que devem ser atendidos pelo Sistema de Inteligência Tributária de Palmas. Sua formulação utiliza métricas objetivas, permitindo que cada requisito possa ser verificado durante os testes do sistema.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## RNF01 — Confiabilidade
+
+**Categoria:** Confiabilidade
+
+**Descrição da Restrição:**  
+O sistema deve manter funcionamento estável durante sua utilização e apresentar tempos de resposta adequados para as principais operações realizadas pelos usuários.
+
+**Métrica / Forma de Teste:**
+1. O sistema deverá apresentar disponibilidade mínima de 90% durante o período de testes.
+2. Consultas comuns ao painel deverão apresentar resposta em até 3,5 segundos no ambiente de teste.
+3. Falhas em consultas ou integrações externas não deverão provocar perda ou corrupção de dados já armazenados.
+4. Operações que apresentarem falha deverão retornar mensagem informando o problema ao usuário.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## RNF02 — Explicabilidade
+
+**Categoria:** Explicabilidade
+
+**Descrição da Restrição:**  
+Os resultados produzidos pelos componentes de Inteligência Artificial devem ser apresentados de forma compreensível aos servidores responsáveis pela análise e tomada de decisão.
+
+**Métrica / Forma de Teste:**
+1. Toda previsão ou estimativa produzida pela IA deverá ser identificada explicitamente como resultado analítico ou estimado por testes A/A e depois testes A/B.
+2. O sistema deverá informar os principais fatores utilizados na geração do resultado sempre que o método empregado permitir essa explicação.
+3. Valores observados e valores estimados pela IA deverão possuir identificação visual distinta.
+4. A explicação deverá permitir que um servidor compreenda quais informações territoriais e tributárias contribuíram para o resultado apresentado.
+5. Recomendações produzidas pela IA não deverão ser executadas automaticamente como decisões administrativas.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## RNF03 — Proteção e Uso Responsável dos Dados
+
+**Categoria:** Proteção de Grupos e Uso Responsável da IA
+
+**Descrição da Restrição:**  
+O sistema e seus componentes de Inteligência Artificial não devem utilizar características territoriais agregadas para produzir classificações individuais de cidadãos ou grupos sociais vulneráveis.
+
+**Métrica / Forma de Teste:**
+1. A IA deverá realizar prioritariamente análises por território, período e tributo.
+2. Informações agregadas de uma região não deverão ser automaticamente atribuídas aos indivíduos que nela residem.
+3. O sistema não deverá produzir classificação individual de cidadão(IPTU) ou empresa(ISS) como "bom", "mau" ou "alto risco" com base exclusivamente em características territoriais.
+4. Resultados analíticos que possam produzir impacto administrativo sobre pessoas deverão permanecer sujeitos à avaliação de servidor responsável.
+5. Dados pessoais não necessários à finalidade da análise não deverão ser utilizados pelo modelo analítico.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## RNF04 — Segurança
+
+**Categoria:** Segurança
+
+**Descrição da Restrição:**  
+O sistema deve aplicar mecanismos de autenticação(antes mesmo do login-senha-uso), autorização e proteção das informações tributárias, permitindo que cada usuário acesse somente os recursos correspondentes ao seu nível de permissão.
+
+**Métrica / Forma de Teste:**
+1. 100% das funcionalidades restritas deverão exigir autenticação.
+2. O controle de acesso deverá impedir que usuários utilizem funcionalidades incompatíveis com seu perfil.
+3. Credenciais de usuários não poderão ser armazenadas em texto puro.
+4. Dados transmitidos por conexões autenticadas deverão utilizar protocolo seguro HTTPS/TLS.
+5. Tentativas de acesso não autorizado deverão ser bloqueadas e registradas para auditoria.
+6. Informações tributárias individuais não deverão ser disponibilizadas na área pública do sistema.
+7. Um sistema deve possuir um modulo de auditoria paralelo ao sistema onde as ações de cada usuário podem ser rastreadas do inicio ao fim de cada seceção.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 2.5. Matriz de Priorização MoSCoW
+
+A priorização MoSCoW foi utilizada para classificar os requisitos funcionais e não funcionais de acordo com sua importância para a primeira iteração do sistema.
+
+## Must Have — Indispensável para o MVP
+
+- **RF01 — Autenticação de Usuários**
+- **RF05 — Gerenciamento do Plano Regional de Arrecadação**
+- **RF06 — Cálculo do Gap de Cobrança**
+- **RNF04 — Segurança**
+- **RNF05 — Auditabilidade e Rastreabilidade**
+
+Esses requisitos constituem a base mínima necessária para que o sistema possa operar de forma controlada. A autenticação e a segurança restringem o acesso às funcionalidades; o Plano Regional representa uma das funcionalidades centrais do sistema; o cálculo do gap permite comparar valores lançados e recebidos; e a auditoria garante a rastreabilidade das ações realizadas pelos usuários.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Should Have — Importante, alta prioridade
+
+- **RF02 — Controle de Acesso por Perfil**
+- **RF03 — Registro de Auditoria**
+- **RF07 — Separação das Análises por Tributo**
+- **RF10 — Análise Territorial de Dívidas Antigas pela IA**
+- **RNF01 — Confiabilidade**
+- **RNF02 — Explicabilidade**
+- **RNF03 — Proteção e Uso Responsável dos Dados**
+
+Esses requisitos possuem alto valor para a qualidade e evolução do sistema, mas podem ser desenvolvidos de forma incremental após a estrutura mínima do MVP. Incluem o refinamento das permissões, o registro detalhado das ações, a separação entre IPTU e ISS, as análises de Inteligência Artificial e requisitos relacionados à confiabilidade, explicabilidade e uso responsável dos dados.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Could Have — Desejável, se houver tempo hábil
+
+- **RF04 — Visualização do Mapa Territorial**
+- **RF08 — Navegação Territorial e Mapa de Calor**
+
+Essas funcionalidades agregam valor à visualização e interpretação das informações tributárias, principalmente ao permitir análises espaciais e territoriais. Entretanto, o funcionamento básico do sistema pode ser demonstrado inicialmente por meio de painéis e informações estruturadas, permitindo que os recursos cartográficos sejam implementados posteriormente.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Won't Have — Fora do escopo desta primeira iteração
+
+- **RF09 — Solicitação e Acompanhamento de Adesão ao Plano pelo Cidadão**
+
+A participação direta do cidadão será deixada para uma versão posterior. Na primeira iteração, o desenvolvimento estará concentrado nas funcionalidades administrativas utilizadas pelos servidores e gestores, reduzindo a complexidade inicial do sistema.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Composição da Equipe
+
+## Kaio Douglas Vanderley
+E-mail: kaio.douglas@uft.edu.br  
+Usuário GitHub: @preencher  
+Papel: Product Owner (PO)
+
+## Samuel Jaco Araujo
+E-mail: samuel.jaco@uft.edu.br  
+Usuário GitHub: @preencher  
+Papel: Scrum Master (SM)
+
+## José Guilherme Rodrigues
+E-mail: jose.monici@uft.edu.br  
+Usuário GitHub: @preencher  
+Papel: Desenvolvedor / Equipe Técnica
+
+## Guilherme Rocha
+E-mail: guilherme.correa@uft.edu.br  
+Usuário GitHub: @Guilherme-RCM
+Papel: Desenvolvedor / Equipe Técnica
