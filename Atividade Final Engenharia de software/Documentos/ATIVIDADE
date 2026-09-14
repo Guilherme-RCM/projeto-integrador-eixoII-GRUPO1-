@@ -76,6 +76,8 @@ Os Requisitos Funcionais definem as funcionalidades que o Sistema de Inteligênc
 
 **Descrição / História de Usuário:**  
 O sistema deve permitir a autenticação dos usuários antes de liberar o acesso às funcionalidades restritas.
+Como usuário do sistema, quero realizar autenticação com minhas credenciais, para acessar apenas as funcionalidades permitidas ao meu perfil.
+
 
 **Critérios de Aceite:**
 1. Credenciais válidas (login-senha) devem permitir o acesso ao sistema.
@@ -89,6 +91,7 @@ O sistema deve permitir a autenticação dos usuários antes de liberar o acesso
 
 **Descrição / História de Usuário:**  
 O sistema deve identificar o perfil de cada servidor autenticado e disponibilizar somente os módulos e funcionalidades compatíveis com seu nível de permissão.
+Como servidor municipal, quero acessar somente os módulos autorizados ao meu nível de permissão, para utilizar o sistema de forma segura e compatível com minhas atribuições.
 
 **Critérios de Aceite:**
 1. Após a autenticação, o sistema deve identificar o perfil do usuário.
@@ -102,6 +105,7 @@ O sistema deve identificar o perfil de cada servidor autenticado e disponibiliza
 
 **Descrição / História de Usuário:**  
 O sistema deve registrar as principais ações administrativas realizadas pelos usuários para garantir rastreabilidade com auditoria.
+Como gestor ou responsável pela auditoria, quero consultar o histórico das ações realizadas pelos usuários, para identificar quem executou determinada operação, quando ela ocorreu e qual foi seu resultado.
 
 **Critérios de Aceite:**
 1. Cada ação administrativa relevante deve gerar um registro de auditoria.
@@ -115,7 +119,7 @@ O sistema deve registrar as principais ações administrativas realizadas pelos 
 
 **Descrição / História de Usuário:**  
 O sistema deve disponibilizar um mapa territorial de Palmas com informações agregadas das regiões utilizadas pelo projeto, usando pinos no mapa virtual com informações personalizadas ao respectivo tributo(iss ou iptu).
-
+Como servidor municipal, quero visualizar informações tributárias agregadas em um mapa territorial de Palmas, para compreender melhor a distribuição dos indicadores entre as regiões.
 **Critérios de Aceite:**
 1. O mapa deve permitir visualizar as regiões territoriais utilizadas pelo sistema segundo o Imposto.
 2. Ao selecionar uma região, o sistema deve apresentar os indicadores autorizados referentes àquela região.
@@ -128,6 +132,8 @@ O sistema deve disponibilizar um mapa territorial de Palmas com informações ag
 
 **Descrição / História de Usuário:**  
 O sistema deve permitir que servidores autorizados criem, editem, salvem e acompanhem Planos Regionais de Arrecadação.
+Como gestor da administração tributária, quero criar e acompanhar Planos Regionais de Arrecadação, para definir metas e monitorar o desempenho da arrecadação por região.
+
 
 **Critérios de Aceite:**
 1. O usuário autorizado deve poder selecionar a região do plano.
@@ -142,7 +148,7 @@ O sistema deve permitir que servidores autorizados criem, editem, salvem e acomp
 
 **Descrição / História de Usuário:**  
 O sistema deve calcular a diferença entre o valor tributário lançado e o valor efetivamente recebido por território, período e tributo.
-
+Como servidor da administração tributária, quero visualizar a diferença entre o valor lançado e o valor recebido, para identificar o gap de cobrança de cada região, período e tributo.
 **Critérios de Aceite:**
 1. O cálculo deve utilizar a fórmula: Valor Lançado - Valor Recebido.
 2. O resultado deve estar associado a território, período e tributo.
@@ -156,6 +162,7 @@ O sistema deve calcular a diferença entre o valor tributário lançado e o valo
 **Descrição / História de Usuário:**  
 O sistema deve permitir que consultas, indicadores e planos sejam diferenciados por tipo de tributo, inicialmente contemplando IPTU e ISS (Pois são os essenciais).
 
+Como servidor municipal, quero analisar IPTU e ISS separadamente, para compreender o comportamento específico de cada tributo e evitar interpretações incorretas dos dados.
 **Critérios de Aceite:**
 1. O usuário deve poder selecionar o tributo a ser analisado.
 2. Informações referentes ao IPTU e ao ISS devem ser apresentadas separadamente.
@@ -168,7 +175,7 @@ O sistema deve permitir que consultas, indicadores e planos sejam diferenciados 
 
 **Descrição / História de Usuário:**  
 O sistema deve permitir a análise territorial dos dados por meio de mapas e níveis progressivos de detalhamento.
-
+Como gestor tributário, quero navegar pelos diferentes níveis territoriais e visualizar mapas de calor, para identificar regiões com padrões relevantes de arrecadação e dívida.
 **Critérios de Aceite:**
 1. O sistema deve permitir a navegação territorial a partir de Palmas para suas regiões.
 2. Quando os dados estiverem disponíveis, deve ser possível avançar pelos níveis Região ---> Quadra ---> Lote ---> Imóvel.
@@ -181,7 +188,7 @@ O sistema deve permitir a análise territorial dos dados por meio de mapas e ní
 
 **Descrição / História de Usuário:**  
 O sistema deve permitir que o cidadão autenticado solicite adesão a um Plano Regional de Arrecadação e acompanhe o andamento de sua solicitação.
-
+Como cidadão autenticado, quero solicitar adesão a um Plano Regional de Arrecadação e acompanhar o andamento da solicitação, para saber a situação do meu processo.
 **Critérios de Aceite:**
 1. Apenas usuários autenticados devem poder enviar solicitações de adesão.
 2. A solicitação deve ficar vinculada ao cidadão e ao plano correspondente.
@@ -195,7 +202,7 @@ O sistema deve permitir que o cidadão autenticado solicite adesão a um Plano R
 
 **Descrição / História de Usuário:**  
 A Inteligência Artificial deve analisar dados históricos de arrecadação e dívida de forma agregada por território, período e tributo, apoiando o gestor na elaboração do Plano Regional de Arrecadação.
-
+Como gestor tributário, quero receber análises da Inteligência Artificial sobre dívidas antigas e potencial regional de recuperação, para utilizar essas informações como apoio na elaboração do Plano Regional de Arrecadação.
 **Critérios de Aceite:**
 1. A análise deve utilizar dados organizados por território, período e tributo.
 2. A IA deve produzir uma estimativa de potencial regional de recuperação quando existirem dados suficientes para execução do método.
