@@ -1,0 +1,1350 @@
+# Projeto Integrador 2 — Inteligência Tributária de Palmas
+
+
+> **Finalidade deste documento:** reunir a evolução conceitual auditada por git onde será apresentado: as histórias de usuário, a visão geral do sistema, o papel específico da Inteligência Artificial, o Plano Regional de Arrecadação, os requisitos, os diagramas UML e as decisões do Projeto Integrador 2.
+
+---
+
+## 0. Panorama geral
+
+Neste documento, o conteúdo  segue genericamente:
+
+
+PROBLEMA
+   |
+HISTÓRIAS DOS USUÁRIOS
+   |
+VISÃO GERAL DO SISTEMA
+   |
+FUNCIONAMENTO DOS MÓDULOS
+   |
+FUNCIONAMENTO DA IA
+   |
+PLANO DE ARRECADAÇÃO
+   |
+REQUISITOS
+   |
+DIAGRAMAS
+   |
+DESIGN / IMPLEMENTAÇÃO / GIT para auditoria 
+
+
+### Convenção terminológica fundamental
+
+Neste relatório, os termos **Sistema** e **IA** não são sinônimos.
+
+**Sistema** se refere ao produto completo de Inteligência Tributária que no caso Inclui: interface, autenticação, permissões, auditoria, dados tributários, mapas, planos, solicitações, comunicação, negociação, votação, status e integração entre módulos.
+
+**IA** = componente analítico interno ao sistema(motor analitico). É utilizada quando há inferência, previsão, detecção de padrões ou apoio analítico. No caso específico do **Plano de Arrecadação de Dívidas Antigas**, o método analítico será descrito como responsabilidade da **IA**, e não do sistema genericamente.
+
+Assim se tem:
+
+   
+Sistema
+├── autenticação
+├── permissões
+├── auditoria
+├── banco tributário
+├── mapa
+├── Plano Regional de Arrecadação
+├── comunicação
+├── negociação
+├── participação regional
+└── IA
+    ├── Vetor Territorial de Características
+    ├── IAET
+    ├── previsão de arrecadação
+    ├── análise territorial de dívidas antigas
+    └── detecção de anomalias
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# PARTE I — PROBLEMA E HISTÓRIAS DOS USUÁRIOS
+
+# 1. Etapa 1 — Problema central do Projeto Integrador
+
+O projeto parte do problema de modernização da administração tributária municipal de Palmas, especialmente em relação a:
+
+- IPTU;
+- ISS;
+- tributos em atraso;
+- dívida antiga;
+- atualização cadastral;
+- regularização;
+- negociação;
+- acompanhamento regional;
+- governança digital;
+- transparência e participação.
+
+A pergunta central é:
+
+> **Como um sistema de governança digital, apoiado por Inteligência Artificial territorial, pode auxiliar Palmas a planejar, acompanhar e melhorar a arrecadação sem transformar cidadãos em categorias algorítmicas de risco?**
+
+A solução não é concebida apenas como “uma IA de cobrança”. O projeto é um **Sistema de Inteligência Tributária**, dentro do qual a IA possui funções analíticas bem delimitadas.
+
+---
+
+# 2. Etapa 2 — História do usuário: servidor municipal
+
+## 2.1 Objetivo
+
+O servidor precisa utilizar o sistema para planejar, acompanhar e auditar ações tributárias, respeitando seu nível de permissão.
+
+## 2.2 Pipeline lógico
+
+   
+Servidor acessa o portal
+        |
+Sistema solicita autenticação
+        |
+Servidor informa credenciais
+        |
+Sistema valida identidade
+        |
+Sistema identifica perfil de permissão
+        |
+Sistema registra ID + data/hora + perfil
+        |
+Painel administrativo é liberado
+        |
+Servidor acessa módulo autorizado
+        |
+Sistema registra a ação em auditoria
+
+
+## 2.3 Depois do login
+
+Conforme a permissão recebida, o servidor poderá acessar:
+
+   
+Painel Administrativo
+├── Plano Regional de Arrecadação
+├── Tax gap e indicadores
+├── Mapas territoriais
+├── Solicitações de adesão
+├── Dívidas e negociações
+├── Canal de comunicação
+├── Secretaria / unidade administrativa
+├── Auditoria
+└── Gestão de permissões
+
+
+## 2.4 Princípio de auditoria
+
+Toda ação administrativa relevante deve produzir um registro contendo, no mínimo:
+
+   
+idRegistro
+idUsuario
+dataHora
+recursoAcessado
+acaoExecutada
+nivelPermissao
+resultado
+enderecoIP, quando tecnicamente aplicável
+   
+
+---
+
+# 3. Etapa 3 — História do usuário: cidadão
+
+## 3.1 Área pública
+
+Antes do login, o cidadão pode acessar uma camada pública contendo informações agregadas.
+
+   
+Portal
+  |
+Mapa público
+  |
+Região
+  |
+Informações agregadas
+  |
+Investimentos ou metas divulgadas
+
+
+Nenhuma informação tributária individual deve aparecer nessa área.
+
+## 3.2 Autenticação e participação
+
+Quando o cidadão deseja participar de funcionalidades restritas:
+
+
+Mapa público
+    |
+Autenticação
+    |
+Gov.br / mecanismo autorizado
+    |
+Cadastro validado
+    |
+Área autenticada
+    |
+Solicitação de adesão ao plano
+    |
+Intenção de reforma
+    |
+Acompanhamento de negociação
+    |
+Status do processo
+    |
+Score de Participação
+    |
+Votação regional
+
+
+## 3.3 Regra de separação
+
+A área pública apresenta **dados territoriais agregados**.
+
+A área autenticada apresenta **dados do próprio cidadão e de seus processos**, de acordo com autorização e finalidade.
+
+---
+
+# 4. Etapa 4 — Referência de inovação pública: lógica Poupatempo
+
+O Poupatempo foi incorporado como benchmark de serviço público integrado, principalmente por sua lógica de:
+
+- balcão único;
+- integração entre serviços;
+- atendimento multicanal;
+- redução de fricção;
+- acompanhamento;
+- digital + presencial;
+- comunicação orientada ao cidadão.
+
+A referência serve principalmente para o **front-office**.
+
+### Front-office
+
+   
+Mapa / portal
+-->autenticação
+-->solicitação
+-->comunicação
+-->negociação
+-->acompanhamento
+-->participação
+
+
+### Back-office
+
+   
+Servidor
+-->autenticação
+-->permissão
+-->auditoria
+-->plano
+-->análise territorial
+-->gestão de solicitações
+-->negociação
+-->acompanhamento
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# PARTE II — O SISTEMA COMO UM TODO
+
+# 5. Etapa 5 — Visão geral do Sistema de Inteligência Tributária
+
+## 5.1 Conceito
+
+O **Sistema de Inteligência Tributária de Palmas** é o ambiente completo que integra dados, usuários, regras administrativas, mapas, planos e a IA.
+
+O sistema organiza as informações e coordena os módulos. Ele não deve ser confundido com o motor de IA.
+
+## 5.2 Arquitetura conceitual geral
+
+   
+                       SISTEMA
+                          │
+        ┌─────────────────┼─────────────────┐
+        │                 │                 │
+   Identidade          Território       Tributação
+        │                 │                 │
+        │                 │                 │
+ Autenticação        9 regiões        IPTU / ISS
+ Permissões          Quadras           Lançamentos
+ Auditoria           Lotes             Pagamentos
+                     Imóveis           Dívida
+        │                 │                 │
+        └─────────────────┼─────────────────┘
+                          │
+                     Dados integrados
+                          │
+                ┌─────────┴─────────┐
+                │                   │
+             SISTEMA               IA
+                │                   │
+           Plano / mapas      análise territorial
+           solicitações       previsão
+           negociação         anomalias
+           comunicação        IAET / VTC
+           votação
+
+
+## 5.3 Unidade territorial oficial
+
+O sistema utiliza as nove regiões de planejamento de Palmas como principal unidade de leitura territorial.
+
+Estrutura:
+
+
+Palmas
+  |
+Região
+  |
+Quadra
+  |
+Lote
+  |
+Imóvel
+
+
+A via é uma associação espacial e não um nível hierárquico obrigatório:
+
+
+Regiao (1) --> (0..*) Quadra : contém
+Quadra (1) --> (0..*) Lote : contém
+Lote (1) --> (0..*) Imovel : contém
+Via (1..*) <--> (0..*) Lote : dá acesso a
+
+
+---
+
+# 6. Etapa 6 — Base tributária e imobiliária do sistema
+
+Esta etapa define **quais informações gerais o sistema mantém** antes de qualquer uso de IA.
+
+## 6.1 PVG
+
+A Planta de Valores Genéricos é utilizada como referência oficial para representar características imobiliárias.
+
+Categorias iniciais:
+
+   
+RESIDENCIAL_HORIZONTAL
+RESIDENCIAL_VERTICAL
+COMERCIAL_HORIZONTAL
+COMERCIAL_VERTICAL
+GALPAO
+
+
+Classe conceitual:
+
+   
+Imovel
+--------------------------------
+- idImovel: UUID
+- idLote: UUID
+- categoriaPVG: CategoriaPVG
+- areaConstruidaM2: Decimal
+- valorVenalTerreno: Decimal
+- valorVenalEdificacao: Decimal
+- valorVenalTotal: Decimal
+- anoAvaliacao: Integer
+--------------------------------
++ calcularValorVenal(): Decimal
+```
+
+## 6.2 Separação por tributo
+
+O sistema deve tratar IPTU e ISS como domínios analíticos diferentes.
+
+### IPTU
+
+   
+Imóvel
+PVG
+área construída
+valor venal
+uso
+localização
+lançamento
+pagamento
+saldo
+
+
+### ISS
+
+   
+atividade econômica
+estabelecimento
+NFS-e
+volume de serviços
+ISS lançado
+ISS recolhido
+saldo
+
+
+O sistema organiza os dados por tributo; a **IA utiliza estratégias analíticas diferentes para cada conjunto**.
+
+---
+
+# 7. Etapa 7 — Plano Regional de Arrecadação como módulo do sistema
+
+## 7.1 Definição geral
+
+O Plano Regional de Arrecadação é um módulo de gestão.
+
+O **sistema** permite ao gestor:
+
+- selecionar região;
+- selecionar tributo;
+- selecionar período;
+- definir meta;
+- visualizar valor lançado;
+- visualizar valor recebido;
+- acompanhar saldo;
+- cadastrar ações;
+- acompanhar status;
+- visualizar resultados produzidos pela IA.
+
+Classe:
+
+   
+PlanoArrecadacao
+--------------------------------
+- idPlano: UUID
+- idRegiao: UUID
+- idTributo: UUID
+- inicioPeriodo: Date
+- fimPeriodo: Date
+- valorMeta: Decimal
+- valorArrecadado: Decimal
+- valorTaxGapObservado: Decimal
+- versao: String
+- status: StatusPlano
+--------------------------------
++ calcularGapObservado(): Decimal
++ calcularPercentualMeta(): Decimal
++ registrarAcao(): void
+```
+
+## 7.2 Tax gap observado
+
+O sistema pode calcular diretamente uma diferença contábil observável:
+
+   
+GapCobranca = ValorLancado - ValorRecebido
+
+
+Esse cálculo é determinístico. Portanto, é responsabilidade do **sistema**, não da IA.
+
+A IA entra quando o projeto precisa ir além do valor observado e responder perguntas como:
+
+- quanto poderia ser recuperado;
+- onde existem desvios territoriais;
+- como a arrecadação pode evoluir;
+- quais regiões apresentam padrões incomuns;
+- como estruturar um plano para dívida antiga.
+
+---
+
+# 8. Etapa 8 — Interface territorial e acompanhamento do plano
+
+Esta etapa reúne as funcionalidades de visualização e acompanhamento.
+
+## 8.1 Mapa e drill-down
+
+   
+Palmas
+-->Região
+-->Quadra
+-->Lote
+-->Imóvel
+
+
+O sistema poderá apresentar:
+
+- valor lançado;
+- valor recebido;
+- gap de cobrança;
+- valor imobiliário;
+- status do plano;
+- indicadores territoriais;
+- resultados analíticos produzidos pela IA.
+
+## 8.2 Mapa de calor
+
+O mapa de calor é uma **interface do sistema**.
+
+A IA pode produzir um indicador ou previsão, mas é o sistema que o apresenta geograficamente.
+
+Exemplo:
+
+   
+IA produz:
+arrecadacaoEsperadaRegiao
+
+Sistema exibe:
+mapa de calor da diferença entre
+arrecadação observada e esperada
+
+
+## 8.3 Status
+
+Estados mínimos:
+
+   
+INICIADO
+   |
+SOB_ANALISE
+   |
+CONCLUIDO
+  
+
+Possível extensão:
+
+   
+INICIADO
+   |
+SOB_ANALISE
+   |
+AGUARDANDO_DOCUMENTO
+   |
+EM_NEGOCIACAO
+   |
+CONCLUIDO
+
+
+Toda transição deve ser auditável.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# PARTE III — A INTELIGÊNCIA ARTIFICIAL DENTRO DO SISTEMA
+
+# 9. Etapa 9 — Limite conceitual da IA
+
+A IA é um **motor analítico** utilizado pelo sistema.
+
+Princípio:
+
+> **A IA analisa fenômenos tributários e territoriais; ela não deve classificar cidadãos como bons ou maus contribuintes.**
+
+A unidade preferencial de análise é:
+
+   
+Região × período × tributo
+   
+
+e, quando necessário:
+
+   
+Quadra × período × tributo
+
+
+A IA não deve transformar atributos agregados da região em atributos individuais de seus moradores.
+
+---
+
+# 10. Etapa 10 — Camada de entrada da IA: IAET e Vetor Territorial de Características
+
+Esta etapa incorpora e reorganiza as antigas etapas de **IAET** e **Vetor Territorial de Características**.
+
+## 10.1 IAET
+
+Como não existe necessariamente um PIB oficial intramunicipal para cada uma das nove regiões, o projeto propõe um:
+
+> **Índice de Atividade Econômica Territorial — IAET**
+
+Variáveis candidatas:
+
+
+valor agregado de NFS-e
+base de ISS
+quantidade de estabelecimentos
+empregos formais georreferenciáveis
+valor imobiliário agregado
+área construída
+população
+atividade comercial
+luminosidade noturna VIIRS
+
+
+O IAET não substitui automaticamente o PIB oficial. É um indicador analítico territorial a ser validado.
+
+## 10.2 Vetor Territorial de Características
+
+A IA recebe, para cada território e período, um vetor:
+
+
+X(r,t) = [
+  PVG_RH,
+  PVG_RV,
+  PVG_CH,
+  PVG_CV,
+  PVG_G,
+  NFSe,
+  ISS,
+  Estabelecimentos,
+  Empregos,
+  ValorImobiliario,
+  AreaConstruida,
+  Populacao,
+  AtividadeComercial,
+  VIIRS,
+  IAET
+]
+```
+
+Nome:
+
+> **Vetor Territorial de Características — VTC**
+
+O VTC é uma representação matemática para a IA. Isso **não exige obrigatoriamente um banco vetorial**.
+
+---
+
+# 11. Etapa 11 — Motor da IA: análise territorial e plano de dívidas antigas
+
+Esta é a etapa em que o termo **IA** deve ser utilizado explicitamente para definir o método analítico.
+
+## 11.1 Objetivo
+
+No caso de dívidas antigas, o sistema apenas mantém os registros administrativos.
+
+A **IA** analisa os dados agregados por território, período e tributo para auxiliar o gestor na construção do plano.
+
+Pipeline:
+
+
+Dados tributários históricos
+        ↓
+Dados territoriais
+        ↓
+PVG / IAET / VTC
+        ↓
+       IA
+        ↓
+estimativa de arrecadação
+        ↓
+análise do estoque antigo
+        ↓
+detecção de desvios
+        ↓
+potencial regional de recuperação
+        ↓
+recomendação analítica para o plano
+        ↓
+Sistema apresenta ao gestor
+
+
+## 11.2 Funções da IA
+
+A IA poderá:
+
+
+1. estimar arrecadação esperada por território;
+2. identificar anomalias entre base econômica/imobiliária e arrecadação;
+3. analisar evolução do estoque de dívida antiga;
+4. estimar potencial regional de recuperação;
+5. comparar comportamento entre períodos;
+6. gerar indicadores para apoiar o Plano Regional de Arrecadação.
+```
+
+A IA **não executa automaticamente cobrança, sanção ou decisão jurídica**.
+
+## 11.3 Saídas
+
+Exemplo:
+
+
+Região: Sul III
+Tributo: IPTU
+Período: 2027
+
+Valor lançado: R$ ...
+Valor recebido: R$ ...
+Gap observado: R$ ...
+
+IA:
+Arrecadação esperada: R$ ...
+Intervalo estimado: R$ ... a R$ ...
+Estoque antigo analisado: R$ ...
+Potencial regional estimado de recuperação: R$ ...
+Desvio territorial: ...
+
+
+O **sistema** exibe essas informações.
+
+A **IA** é responsável pelas estimativas e inferências.
+
+---
+
+# 12. Etapa 12 — Estratégias da IA por tributo
+
+A IA deve empregar estratégias distintas porque IPTU e ISS possuem naturezas diferentes.
+
+Estrutura conceitual:
+
+
+EstrategiaAnalitica
+       ▲
+       │
+ ┌─────┴─────┐
+ │           │
+IA_IPTU    IA_ISS
+
+
+### IA aplicada ao IPTU
+
+Entradas possíveis:
+
+
+PVG
+tipo construtivo
+área construída
+valor venal agregado
+lançamento
+recebimento
+dívida histórica
+localização territorial
+
+
+### IA aplicada ao ISS
+
+Entradas possíveis:
+
+
+NFS-e
+atividade econômica
+quantidade de estabelecimentos
+volume de serviços
+ISS lançado
+ISS recolhido
+estoque histórico
+
+
+
+---
+
+# PARTE IV — EXECUÇÃO DO PLANO E INTERAÇÃO COM O CIDADÃO
+
+# 13. Etapa 13 — Solicitação de adesão
+
+O cidadão não é associado diretamente ao plano sem contexto.
+
+Classe intermediária:
+
+
+Cidadao (1) --> (0..*) SolicitacaoAdesao : realiza
+PlanoArrecadacao (1) --> (0..*) SolicitacaoAdesao : recebe
+```
+
+
+SolicitacaoAdesao
+--------------------------------
+- idSolicitacao: UUID
+- dataSolicitacao: DateTime
+- status: StatusSolicitacao
+- intencaoReforma: String
+- dataAnalise: DateTime
+--------------------------------
++ enviar(): void
++ analisar(): void
++ aprovar(): void
++ rejeitar(): void
+```
+
+---
+
+# 14. Etapa 14 — Dívida e negociação
+
+
+Cidadao (1) --> (0..*) Divida : possui
+Divida (1) --> (0..*) NegociacaoDivida : possui histórico de
+```
+
+Restrição:
+
+
+{máximo uma negociação ativa por dívida}
+```
+
+
+Divida
+--------------------------------
+- idDivida: UUID
+- tributo: TipoTributo
+- valorOriginal: Decimal
+- valorAtualizado: Decimal
+- valorPago: Decimal
+- saldoAberto: Decimal
+- dataVencimento: Date
+--------------------------------
++ calcularSaldo(): Decimal
++ calcularPercentualAbatido(): Decimal
+
+
+A negociação é uma função do sistema administrativo.
+
+A análise territorial do estoque antigo é uma função da IA.
+
+---
+
+# 15. Etapa 15 — Comunicação e atendimento
+
+O sistema poderá integrar um canal oficial de comunicação.
+
+Princípios:
+
+- uso de contato cadastrado ou fornecido pelo titular;
+- finalidade definida;
+- vínculo da mensagem ao processo;
+- auditabilidade;
+- separação entre dados públicos e privados.
+
+Pipeline:
+
+
+Processo
+  ↓
+Canal oficial
+  ↓
+Mensagem
+  ↓
+Validação de identidade, quando necessária
+  ↓
+Documento, quando necessário
+  ↓
+Atualização do processo
+  ↓
+Status
+```
+
+O mapa pode apresentar um pin administrativo para processos em negociação, desde que visível apenas a perfis autorizados.
+
+---
+
+# 16. Etapa 16 — Arrecadação em camadas
+
+O Plano Regional pode operar por marcos monetários.
+
+
+Plano
+  ↓
+Camada 1
+  ↓
+Camada 2
+  ↓
+Camada 3
+  ↓
+Meta regional
+```
+
+Classe:
+
+
+CamadaArrecadacao
+--------------------------------
+- idCamada: UUID
+- ordem: Integer
+- valorInicial: Decimal
+- valorMeta: Decimal
+- valorArrecadado: Decimal
+- percentualConclusao: Decimal
+- status: StatusCamada
+--------------------------------
++ calcularProgresso(): Decimal
++ verificarConclusao(): Boolean
+
+
+A definição exata de micro, meso e macrocamadas ainda depende de validação do modelo.
+
+---
+
+# 17. Etapa 17 — Score de Participação
+
+O termo adotado é:
+
+> **Score de Participação**
+
+Ele não deve representar um score social ou score de risco.
+
+Sua finalidade é restrita ao mecanismo participativo do plano.
+
+Regra inicial discutida:
+
+
+percentual da dívida abatida = pontos de participação
+
+
+Exemplo:
+
+
+10% abatido → 10 pontos
+25% abatido → 25 pontos
+
+
+Essa regra é uma proposta funcional e depende de validação jurídica e institucional.
+
+---
+
+# 18. Etapa 18 — Votação regional e reformas
+
+Quando determinada condição do plano for atingida, poderá ser aberta uma votação regional.
+
+
+Camada concluída
+       ↓
+Condição validada
+       ↓
+Votação aberta
+       ↓
+Propostas de reforma
+       ↓
+Cidadão utiliza pontos
+       ↓
+Resultado
+
+
+Associações:
+
+
+PlanoArrecadacao (1) --> (0..*) VotacaoRegional : abre
+VotacaoRegional (1) --> (2..*) ReformaRegional : apresenta
+
+Cidadao (1) --> (0..*) Voto : realiza
+VotacaoRegional (1) --> (0..*) Voto : recebe
+ReformaRegional (1) --> (0..*) Voto : recebe
+
+
+---
+
+# PARTE V — REQUISITOS CONSOLIDADOS
+
+# 19. Requisitos funcionais
+
+> Prioridade MoSCoW refere-se ao MVP.
+
+| ID | Escopo | Requisito | MoSCoW |
+|---|---|---|---|
+| RF-01 | Sistema | Autenticar usuários antes de liberar funções restritas. | **MUST** |
+| RF-02 | Sistema | Identificar perfil de servidor e liberar apenas módulos autorizados. | SHOULD |
+| RF-03 | Sistema | Registrar login, ação, data/hora, usuário, recurso e resultado em auditoria. | SHOULD |
+| RF-04 | Sistema | Exibir mapa público com informações territoriais autorizadas. | COULD |
+| RF-05 | Sistema | Permitir criar, editar, salvar e acompanhar Plano Regional de Arrecadação. | **MUST** |
+| RF-06 | Sistema | Calcular o gap observado `valor lançado - valor recebido` por território, período e tributo. | **MUST** |
+| RF-07 | Sistema | Separar consultas e planos por tipo de tributo, no mínimo IPTU e ISS. | SHOULD |
+| RF-08 | Sistema | Exibir mapas de calor e drill-down territorial. | SHOULD |
+| RF-09 | Sistema | Permitir navegação `Palmas → Região → Quadra → Lote → Imóvel`. | SHOULD |
+| RF-10 | IA | Construir VTC por território e período com variáveis previamente definidas. | SHOULD |
+| RF-11 | IA | Calcular ou atualizar IAET conforme método documentado e validado. | SHOULD |
+| RF-12 | IA | Estimar arrecadação esperada por território, período e tributo. | COULD |
+| RF-13 | IA | Detectar desvios territoriais relevantes entre arrecadação observada e estimada. | COULD |
+| RF-14 | IA | Analisar o estoque de dívidas antigas por território e tributo e estimar potencial regional de recuperação, sem score individual de risco. | SHOULD |
+| RF-15 | Sistema | Permitir ao cidadão solicitar adesão a um plano e registrar intenção de reforma. | SHOULD |
+| RF-16 | Sistema | Permitir ao servidor analisar e atualizar solicitações. | SHOULD |
+| RF-17 | Sistema | Manter histórico de dívidas e negociações. | SHOULD |
+| RF-18 | Sistema | Manter no máximo uma negociação ativa por dívida, preservando histórico anterior. | SHOULD |
+| RF-19 | Sistema | Integrar canal oficial de comunicação quando autorizado. | COULD |
+| RF-20 | Sistema | Registrar mensagens e documentos associados ao processo. | COULD |
+| RF-21 | Sistema | Controlar progressão de status do processo e registrar cada transição. | SHOULD |
+| RF-22 | Sistema | Permitir operar planos por camadas ou marcos monetários. | COULD |
+| RF-23 | Sistema | Calcular Score de Participação conforme regra validada. | COULD |
+| RF-24 | Sistema | Abrir votação regional quando condições do plano forem satisfeitas. | COULD |
+| RF-25 | Sistema | Permitir registro de voto conforme pontuação disponível e elegibilidade. | COULD |
+| RF-26 | Sistema | Cadastrar propostas de reforma associadas a uma votação e região. | COULD |
+| RF-27 | Sistema | Comparar meta, arrecadação, gap e percentual de execução do plano. | SHOULD |
+| RF-28 | Sistema | Exibir ao gestor os resultados analíticos produzidos pela IA sem confundir estimativa com valor observado. | SHOULD |
+
+---
+
+# 20. Requisitos não funcionais
+
+| ID | Tipo | Requisito | MoSCoW |
+|---|---|---|---|
+| RNF-01 | Segurança | Credenciais não podem ser armazenadas em texto puro; tráfego autenticado deve usar HTTPS/TLS. | **MUST** |
+| RNF-02 | Segurança | Controle de acesso deve negar funções incompatíveis com o perfil do usuário. | **MUST** |
+| RNF-03 | Auditabilidade | Ações administrativas relevantes devem ser rastreáveis. | **MUST** |
+| RNF-04 | Desempenho | Consulta agregada do painel deve responder em até 3 s no P95 do ambiente de teste. | SHOULD |
+| RNF-05 | Desempenho | Autenticação deve responder em até 2 s no P95 do ambiente de teste. | SHOULD |
+| RNF-06 | Confiabilidade | Falha em integração externa não pode corromper dados persistidos. | SHOULD |
+| RNF-07 | Privacidade | Mapas públicos não podem expor dados pessoais identificáveis. | SHOULD |
+| RNF-08 | IA | Toda inferência deve registrar versão do modelo, data, período e variáveis de entrada. | SHOULD |
+| RNF-09 | Dados | Indicadores devem registrar fonte, período e nível geográfico. | SHOULD |
+| RNF-10 | Integridade | Operações de negociação, votação e alteração de status devem preservar consistência transacional. | SHOULD |
+| RNF-11 | Arquitetura | Motor de IA deve permanecer logicamente separado dos módulos que tratam processos pessoais. | SHOULD |
+| RNF-12 | Explicabilidade | O sistema deve distinguir visualmente valores observados de previsões ou estimativas da IA. | SHOULD |
+
+---
+
+# 21. Interfaces externas
+
+## 21.1 Interfaces com o usuário
+
+
+IEU-01 — Painel territorial
+IEU-02 — Mapa público
+IEU-03 — Mapa de calor
+IEU-04 — Drill-down territorial
+IEU-05 — Painel do Plano Regional
+IEU-06 — Painel de auditoria
+IEU-07 — Painel de solicitações
+IEU-08 — Área de negociação
+IEU-09 — Área autenticada do cidadão
+```
+
+## 21.2 Interfaces com outros sistemas
+
+
+IES-01 — Sistema tributário municipal
+IES-02 — Cadastro imobiliário / PVG
+IES-03 — NFS-e
+IES-04 — Base territorial municipal
+IES-05 — IBGE / fontes autorizadas
+IES-06 — Gov.br, se autorizado
+IES-07 — Mensageria oficial / WhatsApp, se autorizado
+```
+
+---
+
+# PARTE VI — DIAGRAMAS UML CONSOLIDADOS
+
+# 22. Pipeline geral antes dos diagramas
+
+
+USUÁRIO
+  ↓
+AUTENTICAÇÃO
+  ↓
+PERFIL
+  ↓
+SISTEMA
+  ├── servidor → gestão
+  └── cidadão → participação
+             ↓
+          TERRITÓRIO
+             ↓
+      DADOS TRIBUTÁRIOS
+             ↓
+      ┌──────┴──────┐
+      │             │
+   SISTEMA          IA
+      │             │
+   plano         análise
+   mapa          previsão
+   status        anomalia
+   comunicação   dívida antiga
+      │             │
+      └──────┬──────┘
+             ↓
+      PLANO REGIONAL
+             ↓
+      NEGOCIAÇÃO / CAMADAS
+             ↓
+      PARTICIPAÇÃO / VOTAÇÃO
+```
+
+---
+
+# 23. Diagrama de casos de uso
+
+## Atores
+
+
+Servidor de Palmas
+Cidadão
+Gov.br
+Sistema de Auditoria
+Canal de Comunicação
+```
+
+## Casos principais do servidor
+
+
+Autenticar-se
+Consultar painel
+Gerenciar plano
+Consultar tax gap
+Consultar resultados da IA
+Gerenciar solicitações
+Gerenciar negociações
+Consultar auditoria
+Gerenciar comunicação
+```
+
+## Casos principais do cidadão
+
+
+Visualizar mapa público
+Autenticar-se
+Solicitar adesão
+Informar intenção de reforma
+Acompanhar negociação
+Consultar status
+Consultar Score de Participação
+Participar de votação
+```
+
+---
+
+# 24. Diagrama de classes — leitura antes das associações
+
+## 24.1 Observação introdutória
+
+`Usuario` é generalização de `ServidorPalmas` e `Cidadao`.
+
+O servidor se associa a permissões e auditoria.
+
+O cidadão se associa a solicitações, dívidas, negociações, score e votos.
+
+O Plano de Arrecadação pertence a uma região.
+
+A IA não precisa ser representada como “usuário”. Ela aparece como serviços/motores analíticos consumidos pelo sistema.
+
+## 24.2 Herança
+
+
+ ServidorPalmas---> Usuario
+ Cidadao----------> Usuario
+
+## 24.3 Cardinalidade
+
+
+(1)       exatamente um
+(0..1)    zero ou um
+(0..*)    zero, um ou vários
+(1..*)    um ou vários
+(2..*)    pelo menos dois
+
+
+## 24.4 Associações
+
+
+ServidorPalmas (0..*) --> (1) PerfilPermissao : possui
+ServidorPalmas (1) --> (0..*) RegistroAuditoria : gera
+
+Regiao (1) --> (0..*) PlanoArrecadacao : possui
+
+Cidadao (1) --> (0..*) SolicitacaoAdesao : realiza
+PlanoArrecadacao (1) --> (0..*) SolicitacaoAdesao : recebe
+
+Cidadao (1) --> (0..*) Divida : possui
+Divida (1) --> (0..*) NegociacaoDivida : possui histórico de
+
+Cidadao (1) --> (0..*) ScoreParticipacao : possui
+PlanoArrecadacao (1) --> (0..*) ScoreParticipacao : calcula
+
+PlanoArrecadacao (1) --> (0..*) CamadaArrecadacao : contém
+PlanoArrecadacao (1) --> (0..*) VotacaoRegional : abre
+
+VotacaoRegional (1) --> (2..*) ReformaRegional : apresenta
+Cidadao (1) --> (0..*) Voto : realiza
+VotacaoRegional (1) --> (0..*) Voto : recebe
+ReformaRegional (1) --> (0..*) Voto : recebe
+
+Regiao (1) --> (0..*) Quadra : contém
+Quadra (1) --> (0..*) Lote : contém
+Lote (1) --> (0..*) Imovel : contém
+Via (1..*) <--> (0..*) Lote : dá acesso a
+
+
+---
+
+# 25. Diagrama de sequência — servidor
+
+
+Servidor
+→ Login → Autenticação → Permissão → Serviço de auditoria
+→ Painel → módulo autorizado
+→ auditoria
+
+
+Sequência lógica:
+
+
+Acesso
+→ autenticação
+→ perfil
+→ auditoria do login
+→ painel
+→ validação de permissão
+→ ação
+→ auditoria da ação
+
+
+---
+
+# 26. Diagrama de sequência — cidadão
+
+
+Cidadão
+→ Mapa Público
+→ autenticação
+→ Sistema
+→ Plano
+→ Solicitação
+→ Negociação
+→ Score
+→ Votação
+
+
+Sequência lógica:
+
+
+Mapa
+→ login
+→ adesão
+→ intenção de reforma
+→ negociação
+→ atualização do processo
+→ score
+→ votação
+
+
+---
+
+# 27. Diagrama de sequência — motor da IA
+
+Este diagrama separa claramente sistema e IA.
+
+
+Gestor
+  ↓
+Sistema
+  ↓
+Repositório de dados
+  ↓
+Preparador do VTC
+  ↓
+Motor de IA
+  ↓
+Modelo por tributo
+  ↓
+Resultado analítico
+  ↓
+Sistema
+  ↓
+Mapa / Plano / Painel
+
+
+Mensagens principais:
+
+
+Sistema -> Dados : obterDados(regiao, periodo, tributo)
+Dados -> Sistema : dadosObservados
+
+Sistema -> IA : analisar(dadosObservados)
+IA -> VTC : construirVetor()
+VTC -> IA : vetorTerritorial
+
+IA -> EstrategiaIPTU/ISS : executarModelo()
+Modelo -> IA : estimativa + intervalo + anomalia
+
+IA -> Sistema : resultadoAnalitico
+Sistema -> Gestor : apresentarResultado()
+
+
+---
+
+# 28. Diagrama de estados
+
+
+INICIADO
+   ↓
+SOB_ANALISE
+   ├──────────→ AGUARDANDO_DOCUMENTO
+   │                    │
+   └────────────────────┘
+             ↓
+       EM_NEGOCIACAO
+             ↓
+         CONCLUIDO
+```
+
+Toda transição deve produzir auditoria.
+
+---
+
+# PARTE VII — RASTREABILIDADE E DESIGN
+
+# 29. Rastreabilidade entre requisitos e diagramas
+
+| Requisito | Escopo | Caso de uso | Classe/Serviço | Sequência |
+|---|---|---|---|---|
+| RF-01 | Sistema | Autenticar | Usuario/AuthService | Servidor/Cidadão |
+| RF-02 | Sistema | Validar permissão | PerfilPermissao | Servidor |
+| RF-03 | Sistema | Registrar auditoria | RegistroAuditoria | Servidor |
+| RF-05 | Sistema | Gerenciar plano | PlanoArrecadacao | Servidor |
+| RF-06 | Sistema | Consultar gap | PlanoArrecadacao | Servidor |
+| RF-10 | IA | Construir VTC | MotorAnalitico/VTC | IA |
+| RF-11 | IA | Calcular IAET | MotorAnalitico | IA |
+| RF-12 | IA | Estimar arrecadação | EstrategiaAnalitica | IA |
+| RF-13 | IA | Detectar anomalia | EstrategiaAnalitica | IA |
+| RF-14 | IA | Analisar dívida antiga | MotorAnalitico | IA |
+| RF-15 | Sistema | Solicitar adesão | SolicitacaoAdesao | Cidadão |
+| RF-17 | Sistema | Negociar | Divida/NegociacaoDivida | Cidadão |
+| RF-23 | Sistema | Consultar score | ScoreParticipacao | Cidadão |
+| RF-24 | Sistema | Participar da votação | VotacaoRegional | Cidadão |
+
+---
+
+Git
+projeto-integrador-2/
+│
+├── README.md
+├── ARQUITETURA.md
+├── DESIGN.md
+├── REQUISITOS.md
+├── BACKLOG.md
+├── SPRINT1.md
+├── SPRINT2.md
+│
+├── docs/
+│   ├── RELATORIO_EVOLUCAO_PI2.md
+│   └── uml/
+│       ├── casos_de_uso.puml
+│       ├── classes.puml
+│       ├── sequencia_servidor.puml
+│       ├── sequencia_cidadao.puml
+│       ├── sequencia_ia.puml
+│       └── estados_processo.puml
+│
+├── src/
+│   ├── auth/
+│   ├── auditoria/
+│   ├── territorio/
+│   ├── tributacao/
+│   ├── planos/
+│   ├── negociacao/
+│   ├── participacao/
+│   └── ia/
+│       ├── vtc/
+│       ├── iaet/
+│       ├── estrategias/
+│       └── modelos/
+│
+├── tests/
+└── .github/
+```
+
+---
+
+# Pontos ainda abertos
+
+Os itens abaixo ainda precisam de validação antes de serem considerados regras definitivas:
+
+
+1. fórmula matemática do IAET;
+2. variáveis finais do VTC;
+3. método de estimação do potencial de recuperação de dívida antiga;
+4. granularidade mínima permitida para análise territorial da IA;
+5. fórmula jurídica do Score de Participação;
+6. regra de abertura de votação;
+7. conceito operacional de micro, meso e macrocamada;
+8. integração real com Gov.br;
+9. integração real com WhatsApp;
+10. permissões administrativas reais da Prefeitura;
+11. retenção de documentos;
+12. dados efetivamente disponíveis na SEFIN;
+13. validação jurídica da vinculação entre arrecadação e votação de reformas.
+```
+
+---
+
+
+## Fim
