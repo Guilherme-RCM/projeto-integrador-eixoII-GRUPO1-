@@ -219,6 +219,20 @@ Como procurador do município, quero identificar visualmente os usuários que po
 2. Usuários enquadrados nas regras específicas de proteção de dados definidas pelo projeto devem receber uma marcação visual amarela.
 3. O sistema deve permitir gerar uma listagem ou planilha contendo os usuários identificados.
 4. A marcação atribuída a cada registro deve permanecer visível durante a consulta.
+
+## RF12 — Estimativa de Arrecadação Esperada
+
+*História de Usuário:*  
+Como gestor tributário, quero visualizar uma estimativa de arrecadação esperada por território, período e tributo, para comparar o valor previsto com a arrecadação efetivamente observada e apoiar o planejamento das ações de arrecadação.
+
+*Critérios de Aceite:*
+
+1. O usuário deve informar ou selecionar o território, o período e o tributo a serem analisados.
+2. A IA deve gerar uma estimativa de arrecadação para a combinação selecionada.
+3. O resultado deve apresentar claramente o valor estimado e identificá-lo como uma previsão, diferenciando-o do valor efetivamente arrecadado.
+4. O sistema deve permitir comparar a estimativa com o valor observado no mesmo território, período e tributo.
+5. Caso não existam dados suficientes para realizar a estimativa, o sistema deve informar ao usuário que a previsão não pode ser gerada.
+6. A estimativa produzida deve ficar associada ao território, período e tributo utilizados na análise.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # 2.4. Requisitos Não Funcionais (RNF)
 
