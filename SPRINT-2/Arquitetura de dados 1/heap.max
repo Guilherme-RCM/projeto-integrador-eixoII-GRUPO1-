@@ -1,0 +1,66 @@
+A Heap será usada para organizar a fila de cobrança dos contribuintes, utilizando o score de recuperabilidade como critério de prioridade. 
+Quanto maior o score, maior a prioridade do contribuinte na fila. Assim, o sistema consegue acessar e retirar rapidamente o contribuinte de maior prioridade, 
+independentemente da ordem em que ele foi inserido. 
+
+Considere uma fila de cobrança com os seguintes contribuintes: João, com score 76; Maria, com score 65 ; Márcia, com score 42; Ana, com score 20; e Carlos,
+com score 100. Ao inserir Carlos, que possui o maior score, ele passa para o topo da Max-Heap e será o primeiro contribuinte retirado para cobrança. Depois dele, 
+os demais serão atendidos conforme seus respectivos scores. 
+
+A consulta do maior elemento possui complexidade O(1). A inserção e a remoção do elemento de maior prioridade possuem complexidade O(log n), pois o elemento pode 
+precisar subir ou descer pela altura da Heap. 
+
+heap = [ 
+    ["João", 95], 
+    ["Maria", 85], 
+    ["Pedro", 60], 
+    ["Ana", 40] 
+] 
+
+def inserir(heap, pessoa): 
+    heap.append(pessoa) 
+    i = len(heap) - 1 
+
+    while i > 0: 
+        pai = (i - 1) // 2 
+
+        if heap[i][1] <= heap[pai][1]: 
+            break 
+
+ heap[i], heap[pai] = heap[pai], heap[i] 
+        i = pai 
+
+def remover(heap): 
+    maior = heap[0] 
+    heap[0] = heap[-1] 
+    heap.pop() 
+
+    i = 0 
+
+    while True: 
+        esquerda = 2 * i + 1 
+        direita = 2 * i + 2 
+        maior_posicao = i 
+
+ if esquerda < len(heap) and heap[esquerda][1] > heap[maior_posicao][1]: 
+            maior_posicao = esquerda 
+
+        if direita < len(heap) and heap[direita][1] > heap[maior_posicao][1]: 
+            maior_posicao = direita 
+
+        if maior_posicao == i: 
+            break 
+
+        heap[i], heap[maior_posicao] = heap[maior_posicao], heap[i] 
+        i = maior_posicao 
+
+    return maior 
+
+inserir(heap, ["Carlos", 100]) 
+
+print("Heap:", heap) 
+
+print("Removido:", remover(heap)) 
+print("Heap:", heap) 
+
+Foram inseridos contribuintes com diferentes scores de recuperabilidade. Ao inserir Carlos, com score 100, ele passou para o topo da Max-Heap e foi o primeiro a
+ser removido. Após a remoção, a Heap foi reorganizada corretamente, mantendo o contribuinte de maior score no topo. 
