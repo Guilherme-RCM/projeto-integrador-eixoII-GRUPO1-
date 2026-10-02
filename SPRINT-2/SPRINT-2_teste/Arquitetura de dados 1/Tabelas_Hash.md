@@ -1,0 +1,294 @@
+ Tabelas hash para indexação da dívida ativa.
+
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+"""Sprint 2 - Parte 1: tabela hash para indexação da dívida ativa.
+                                                                                                                                
+EXECUTAR (Python 3.9+; apenas biblioteca padrão)
+    python Sprint2_Parte1_Hash.py
+    python Sprint2_Parte1_Hash.py --test
+    python Sprint2_Parte1_Hash.py --integracao
+
+A última opção requer Sprint2_Parte1_Grafos.py na mesma pasta.
+
+DECISÃO DE ARQUITETURA
+    Chave: número único da inscrição em dívida ativa, dentro do recorte de
+    uma fonte/município. Valor: registro Divida. CPF/CNPJ não é uma chave adequada para o     
+    índice, pois um contribuinte pode ter várias inscrições.
+    Se a fonte não garantir essa unicidade, definir chave composta com fonte,
+    exercício ou outro identificador necessário antes de carregar dados reais.
+
+    Implementação explícita: vetor de listas (baldes), hash(chave) % m para
+    escolher o balde, encadeamento separado para colisões e comparação da
+    chave completa para identificar o registro. Não usa dict como índice.
+    A função hash nativa do Python é reutilizada; a tabela é implementada aqui.
+    O índice de um balde não é identidade persistente: hash(str) pode variar
+    entre execuções. A chave original é preservada em cada registro.
+
+    Inserir uma chave repetida gera ValueError. Atualizar exige chave já
+    existente. Buscar, atualizar ou remover chave ausente gera KeyError.
+    Os registros são imutáveis, para impedir alteração da chave fora do índice.
+
+REDIMENSIONAMENTO
+    Fator de carga alfa = n/m (registros / baldes).
+    Antes de superar 0,75, dobra a capacidade e redistribui os registros.
+    Depois de uma remoção, abaixo de 0,25, reduz a capacidade à metade,
+    respeitando a capacidade inicial. Os limiares são escolhas do protótipo.
+    Separar os limiares evita redimensionar a cada inserção/remoção alternada.
+
+COMPLEXIDADE
+    Sob boa distribuição do hash e chaves de tamanho limitado:
+      buscar e atualizar: O(1) esperado; O(n) no pior caso;
+      inserir e remover: O(1) esperado e amortizado; O(n) no pior caso;
+      redimensionar: O(m + n); O(n) nas expansões por fator de carga;
+      memória: O(m + n), ou O(n + m_inicial) com os ajustes de capacidade.
+    Uma busca examina apenas seu balde: O(1 + alfa) esperado. Colisões podem
+    colocar todas as chaves no mesmo balde; o custo passa a O(n).
+    Redimensionar não elimina necessariamente colisões: o limite esperado
+    depende também da distribuição da função hash. A função injetável usada
+    nos testes para forçar colisões não satisfaz a hipótese de boa distribuição.
+    Com chaves arbitrariamente longas, é preciso contar o custo de processá-las.
+
+INTEGRAÇÃO COM O GRAFO
+    O grafo retorna inscrições diretamente vinculadas ao contribuinte.
+    A hash recupera os registros dessas inscrições. Para k inscrições, a
+    consulta integrada custa O(d(c) + k) esperado, contando o filtro no grafo.
+    Uma inscrição ausente na hash gera erro explícito, sem omitir a divergência.
+    Atualizações conjuntas precisam de coordenação em uma futura aplicação.
+    Esta tabela é um índice em memória, não substitui persistência ou auditoria.
+    remover retira do índice; não representa quitação/cancelamento da dívida.
+
+REFERÊNCIA ACADÊMICA
+    DEMAINE, E.; KU, J.; SOLOMON, J. MIT 6.006, Spring 2020.
+    Lecture 4: Hashing. Encadeamento, fator de carga e análise amortizada.
+    https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/resources/lecture-4-hashing/
+    Aplicação tributária e limiares são decisões deste protótipo.
+    Todos os registros abaixo são simulados.
+"""
+
+from dataclasses import dataclass
+from decimal import Decimal
+import sys
+import unittest
+
+
+def validar_texto(valor):
+    if not isinstance(valor, str) or not valor or valor != valor.strip():
+        raise ValueError("Use um identificador textual não vazio, sem espaços nas pontas.")
+
+
+@dataclass(frozen=True)
+class Divida:
+    numero_inscricao: str
+    id_contribuinte: str
+    tributo: str
+    saldo: Decimal
+
+    def __post_init__(self):
+        for valor in (self.numero_inscricao, self.id_contribuinte, self.tributo):
+            validar_texto(valor)
+        if not isinstance(self.saldo, Decimal):
+            raise TypeError('Use Decimal("1500.00") para valores monetários.')
+        if not self.saldo.is_finite() or self.saldo < 0:
+            raise ValueError("O saldo deve ser finito e não negativo.")
+
+
+class TabelaHashDividas:
+    """Índice por inscrição com colisões resolvidas por encadeamento separado."""
+
+    def __init__(self, capacidade_inicial=8, funcao_hash=hash):
+        if type(capacidade_inicial) is not int or capacidade_inicial < 2:
+            raise ValueError("A capacidade inicial deve ser um inteiro >= 2.")
+        if not callable(funcao_hash):
+            raise TypeError("A função hash deve ser chamável.")
+        self._capacidade_minima = capacidade_inicial
+        self._baldes = [[] for _ in range(capacidade_inicial)]
+        self._quantidade = 0
+        self._hash = funcao_hash
+
+    def __len__(self):
+        return self._quantidade
+
+    @property
+    def capacidade(self):
+        return len(self._baldes)
+
+    @property
+    def fator_carga(self):
+        return self._quantidade / self.capacidade
+
+    def _indice(self, chave):
+        return self._hash(chave) % self.capacidade
+
+    def _localizar(self, chave):
+        validar_texto(chave)
+        balde = self._baldes[self._indice(chave)]
+        for posicao, divida in enumerate(balde):
+            if divida.numero_inscricao == chave:
+                return balde, posicao
+        raise KeyError(f"Inscrição não encontrada: {chave}")
+
+    def _redimensionar(self, nova_capacidade):
+        antigos = self._baldes
+        self._baldes = [[] for _ in range(nova_capacidade)]
+        for balde in antigos:
+            for divida in balde:
+                indice = self._indice(divida.numero_inscricao)
+                # Não busca duplicatas: os registros antigos já eram únicos.
+                self._baldes[indice].append(divida)
+
+    def inserir(self, divida):
+        if not isinstance(divida, Divida):
+            raise TypeError("Informe um registro Divida.")
+        chave = divida.numero_inscricao
+        balde = self._baldes[self._indice(chave)]
+        if any(item.numero_inscricao == chave for item in balde):
+            raise ValueError(f"Inscrição já cadastrada: {chave}")
+
+        if (self._quantidade + 1) / self.capacidade > 0.75:
+            self._redimensionar(self.capacidade * 2)
+
+        self._baldes[self._indice(chave)].append(divida)
+        self._quantidade += 1
+
+    def buscar(self, numero_inscricao):
+        balde, posicao = self._localizar(numero_inscricao)
+        return balde[posicao]
+
+    def atualizar(self, divida):
+        if not isinstance(divida, Divida):
+            raise TypeError("Informe um registro Divida.")
+        balde, posicao = self._localizar(divida.numero_inscricao)
+        balde[posicao] = divida
+
+    def remover(self, numero_inscricao):
+        balde, posicao = self._localizar(numero_inscricao)
+        removida = balde.pop(posicao)
+        self._quantidade -= 1
+
+        if self.capacidade > self._capacidade_minima and self.fator_carga < 0.25:
+            self._redimensionar(max(self._capacidade_minima, self.capacidade // 2))
+        return removida
+
+
+def criar_indice_exemplo():
+    """Mesmas inscrições e contribuintes da amostra do módulo de grafos."""
+    indice = TabelaHashDividas()
+    registros = [
+        Divida("DA001", "CPF_FICTICIO_01", "IPTU", Decimal("1500.00")),
+        Divida("DA002", "CPF_FICTICIO_01", "IPTU", Decimal("2800.00")),
+        Divida("DA003", "CNPJ_FICTICIO_01", "IPTU", Decimal("4200.00")),
+    ]
+    for divida in registros:
+        indice.inserir(divida)
+    return indice
+
+
+def dividas_do_contribuinte(grafo, indice, contribuinte):
+    """Usa vínculos diretos do grafo e busca cada inscrição no índice hash."""
+    inscricoes = grafo.inscricoes_do_contribuinte(contribuinte)
+    return [indice.buscar(numero) for tipo, numero in inscricoes]
+
+
+def demonstrar(integracao=False):
+    indice = criar_indice_exemplo()
+    divida = indice.buscar("DA001")
+    print("Amostra inteiramente fictícia")
+    print("Inscrição:", divida.numero_inscricao)
+    print("Contribuinte:", divida.id_contribuinte)
+    print("Tributo:", divida.tributo)
+    print(f"Saldo: R$ {divida.saldo:.2f}")
+    print("Dívidas indexadas:", len(indice))
+
+    if integracao:
+        from Sprint2_Parte1_Grafos import criar_amostra
+        grafo, nos = criar_amostra()
+        encontradas = dividas_do_contribuinte(grafo, indice, nos["c1"])
+        # Ordenação apenas na apresentação, com custo adicional O(k log k).
+        print("Inscrições do CPF_FICTICIO_01:", sorted(d.numero_inscricao for d in encontradas))
+        print("Saldo somado dessas inscrições:", sum((d.saldo for d in encontradas), Decimal("0")))
+
+
+class TestTabelaHashDividas(unittest.TestCase):
+    @staticmethod
+    def registro(chave, valor="10.00"):
+        return Divida(chave, "CPF_FICTICIO_01", "IPTU", Decimal(valor))
+
+    def test_mesmo_contribuinte_mantem_dividas_distintas(self):
+        tabela = criar_indice_exemplo()
+        self.assertEqual(tabela.buscar("DA001").saldo, Decimal("1500.00"))
+        self.assertEqual(tabela.buscar("DA002").saldo, Decimal("2800.00"))
+        self.assertEqual(len(tabela), 3)
+
+    def test_colisoes_nao_perdem_registros_ao_atualizar_e_remover(self):
+        tabela = TabelaHashDividas(funcao_hash=lambda chave: 0)
+        for chave in ("DA001", "DA002", "DA003"):
+            tabela.inserir(self.registro(chave))
+        tabela.atualizar(self.registro("DA002", "5.00"))
+        tabela.remover("DA001")
+        self.assertEqual(tabela.buscar("DA002").saldo, Decimal("5.00"))
+        self.assertEqual(tabela.buscar("DA003").saldo, Decimal("10.00"))
+        self.assertEqual(len(tabela), 2)
+        with self.assertRaises(KeyError):
+            tabela.buscar("DA001")
+
+    def test_chave_duplicada_nao_sobrescreve_registro(self):
+        tabela = criar_indice_exemplo()
+        with self.assertRaises(ValueError):
+            tabela.inserir(self.registro("DA001", "999.00"))
+        self.assertEqual(tabela.buscar("DA001").saldo, Decimal("1500.00"))
+        self.assertEqual(len(tabela), 3)
+
+    def test_expansao_preserva_todas_as_chaves(self):
+        tabela = TabelaHashDividas(capacidade_inicial=2)
+        for i in range(40):
+            tabela.inserir(self.registro(f"DA{i:03d}", str(i)))
+        self.assertGreater(tabela.capacidade, 2)
+        self.assertLessEqual(tabela.fator_carga, 0.75)
+        for i in range(40):
+            self.assertEqual(tabela.buscar(f"DA{i:03d}").saldo, Decimal(i))
+
+    def test_reducao_preserva_sobrevivente_e_permite_reinsercao(self):
+        tabela = TabelaHashDividas(capacidade_inicial=2)
+        for i in range(40):
+            tabela.inserir(self.registro(f"DA{i:03d}"))
+        capacidade_anterior = tabela.capacidade
+        for i in range(39):
+            tabela.remover(f"DA{i:03d}")
+        self.assertLess(tabela.capacidade, capacidade_anterior)
+        self.assertEqual(tabela.buscar("DA039").saldo, Decimal("10.00"))
+        tabela.remover("DA039")
+        tabela.inserir(self.registro("DA000"))
+        self.assertEqual(len(tabela), 1)
+        self.assertEqual(tabela.buscar("DA000").numero_inscricao, "DA000")
+
+    def test_ausencia_gera_erro_sem_insercao_acidental(self):
+        tabela = TabelaHashDividas()
+        with self.assertRaises(KeyError):
+            tabela.buscar("AUSENTE")
+        with self.assertRaises(KeyError):
+            tabela.atualizar(self.registro("AUSENTE"))
+        with self.assertRaises(KeyError):
+            tabela.remover("AUSENTE")
+        self.assertEqual(len(tabela), 0)
+
+    def test_hash_negativo_funciona(self):
+        tabela = TabelaHashDividas(funcao_hash=lambda chave: -7)
+        tabela.inserir(self.registro("DA001"))
+        self.assertEqual(tabela.buscar("DA001").numero_inscricao, "DA001")
+
+    def test_rejeita_saldo_invalido_e_identificador_vazio(self):
+        with self.assertRaises(TypeError):
+            Divida("DA001", "C1", "IPTU", 15.5)
+        for valor in ("NaN", "Infinity", "-1.00"):
+            with self.assertRaises(ValueError):
+                self.registro("DA001", valor)
+        with self.assertRaises(ValueError):
+            self.registro("")
+
+
+if __name__ == "__main__":
+    if "--test" in sys.argv[1:]:
+        unittest.main(argv=[sys.argv[0]], verbosity=2)
+    else:
+        demonstrar(integracao="--integracao" in sys.argv[1:])

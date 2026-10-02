@@ -1,0 +1,3 @@
+# Dependências de execução (ETL e carga no MySQL). Para testes e quality gates: requirements-dev.txt
+# Faixas: aceita correções e novidades compatíveis; trava a próxima versão maior (SemVer).
+pymysql>=1.1,<2
