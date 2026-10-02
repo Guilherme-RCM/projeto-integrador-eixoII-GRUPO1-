@@ -2,10 +2,11 @@
 
 ## O que foi feito na Sprint 2
 
-----> Parte 1 — estruturas de dados:** grafo (lista de adjacência), tabela hash (encadeamento separado) e heap binária com fila de prioridade versionada, implementadas do zero, com análise Big-O e um documento por estrutura ([docs/parte1/](../pi2-inteligencia-tributaria/docs/parte1/README.md)). Testes de propriedade, que comparam cada estrutura com uma referência independente, acharam um defeito na fila, corrigido em 01/10.
-----> Parte 2 — banco:** modelo ER em 3FN, com as redundâncias controladas declaradas: 43 tabelas e 3 views em MySQL 8.4 ([docs/modelagem_er.md](../pi2-inteligencia-tributaria/docs/modelagem_er.md), [sql/schema.sql](../pi2-inteligencia-tributaria/sql/schema.sql)). A carga de **dados reais** (amostra de 10 linhas do portal) valida o arquivo inteiro antes de publicar e guarda a linhagem até a linha do CSV. 18 consultas de validação executadas e documentadas ([docs/validacao.md](../pi2-inteligencia-tributaria/docs/validacao.md)). Evidências por critério em [docs/parte2/](../pi2-inteligencia-tributaria/docs/parte2/README.md).
-----> E3 — HTTPS verificado nos dois hosts (TLS 1.2 e 1.3) e protocolos de conexão e auditoria fundamentados em Kurose ([docs/parte3/](../pi2-inteligencia-tributaria/docs/parte3/README.md)).
-----> E4 — Testes e qualidade:** 264 testes (217 unitários, 32 de integração com MySQL, 15 cenários Gherkin) e 10 quality gates aprovados (G1–G9 também no GitHub Actions): cobertura 98,1%, mutação 93,0% com os sobreviventes verificados, complexidade ≤ 10, dependências e tipos ([docs/qualidade.md](evidencias/qualidade.md)).
+----> Parte 1 — estruturas de dados:** grafo (lista de adjacência), tabela hash (encadeamento separado) e heap binária com fila de prioridade versionada, implementadas do zero, com análise Big-O e um documento por estrutura ([parte1/](../pi2-inteligencia-tributaria/docs/parte1/README.md)). Testes de propriedade, que comparam cada estrutura com uma referência independente, acharam um defeito na fila, corrigido em 01/10.
+----> Parte 2 — banco:** modelo ER em 3FN, com as redundâncias controladas declaradas: 43 tabelas e 3 views em MySQL 8.4 ([modelagem_er.md](../pi2-inteligencia-tributaria/modelagem_er.md), [sql/schema.sql](../pi2-inteligencia-tributaria/sql/schema.sql)). A carga de **dados reais** (amostra de 10 linhas do portal) valida o arquivo inteiro antes de publicar e guarda a linhagem até a linha do CSV. 18 consultas de validação executadas e documentadas ([validacao.md](../pi2-inteligencia-tributaria//validacao.md)). Evidências por critério em [parte2/](../pi2-inteligencia-tributaria/parte2/README.md).
+----> E3 — HTTPS verificado nos dois hosts (TLS 1.2 e 1.3) e protocolos de conexão e auditoria fundamentados em Kurose ([parte3/](../pi2-inteligencia-tributaria/parte3/README.md)).
+----> E4 — Testes e qualidade:** 264 testes (217 unitários, 32 de integração com MySQL, 15 cenários Gherkin) e 10 quality gates aprovados (G1–G9 também no GitHub Actions): cobertura 98,1%, mutação 93,0% com os sobreviventes verificados, complexidade ≤ 10, dependências e tipos ([qualidade.md](evidencias/qualidade.md)).
+¨¬¬¬Obs¬¬¬: pi2-inteligencia-tributaria = SPRINT-2
 
 ## Decisões de modelagem
 
@@ -26,7 +27,7 @@
 | Guilherme-RCM(GUILHERME ROCHA)            | 2 — Esquema MySQL | `sql/schema.sql`, `sql/dados_referencia.sql` |
 | josegui04monici-arch(JOSÉ GUILHERME)      | 3 — ETL e LGPD | `etl/`, `data/amostra/` |
 | Todos                                     | 4 — Estruturas de dados       | `src/estruturas/`, `tests/test_{grafo,heap,indice_hash}.py` |
-| KAIO VANDERLEI                            | 5 — Validação, E3 e relatório | `sql/validacao.sql`, `docs/validacao.md`, `docs/parte3/`, este arquivo, [diário de bordo](DIARIO_DE_BORDO.md) |
+| KAIO VANDERLEI                            | 5 — Validação, E3 e relatório | `sql/validacao.sql`, `docs/validacao.md`, este arquivo, [diário de bordo](DIARIO_DE_BORDO.md) |
 
 ## Impedimentos levados para serem resolvidos na Sprint 3
 
