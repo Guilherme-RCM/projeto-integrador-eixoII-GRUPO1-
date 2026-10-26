@@ -1,0 +1,662 @@
+[
+ {
+  "id": "alm2014",
+  "tipo": "artigo",
+  "doi": "10.1177/152397211401400302",
+  "titulo": "Detroit Property Tax Delinquency: Social Contract in Crisis",
+  "ano": 2014,
+  "uso": "direção do gradiente de renda da simulação (ADR-003)"
+ },
+ {
+  "id": "alm2016",
+  "tipo": "artigo",
+  "doi": "10.1016/j.regsciurbeco.2016.02.006",
+  "titulo": "Property tax delinquency and its spillover effects on nearby properties",
+  "ano": 2016,
+  "uso": "efeito do setor (dependência espacial) na simulação"
+ },
+ {
+  "id": "waldhart2012",
+  "tipo": "artigo",
+  "doi": "10.1177/152397211201200401",
+  "titulo": "Property Tax Delinquency and the Number of Payment Installments",
+  "ano": 2012,
+  "uso": "parcelamento como atributo futuro; limites da simulação"
+ },
+ {
+  "id": "chirico2019",
+  "tipo": "artigo",
+  "doi": "10.17310/ntj.2019.3.01",
+  "titulo": "Deterring Property Tax Delinquency in Philadelphia",
+  "ano": 2019,
+  "uso": "inadimplência de imposto predial como objeto de política"
+ },
+ {
+  "id": "allingham1972",
+  "tipo": "artigo",
+  "doi": "10.1016/0047-2727(72)90010-2",
+  "titulo": "Income tax evasion: a theoretical analysis",
+  "ano": 1972,
+  "uso": "fundamento do comportamento de cumprimento tributário"
+ },
+ {
+  "id": "slemrod2019",
+  "tipo": "artigo",
+  "doi": "10.1257/jel.20181437",
+  "titulo": "Tax Compliance and Enforcement",
+  "ano": 2019,
+  "uso": "revisão sobre cumprimento e fiscalização tributária"
+ },
+ {
+  "id": "wang1996",
+  "tipo": "artigo",
+  "doi": "10.1080/07421222.1996.11518099",
+  "titulo": "Beyond Accuracy: What Data Quality Means to Data Consumers",
+  "ano": 1996,
+  "uso": "dimensões de qualidade das validações"
+ },
+ {
+  "id": "batini2009",
+  "tipo": "artigo",
+  "doi": "10.1145/1541880.1541883",
+  "titulo": "Methodologies for data quality assessment and improvement",
+  "ano": 2009,
+  "uso": "dimensões e métodos de avaliação de qualidade"
+ },
+ {
+  "id": "pipino2002",
+  "tipo": "artigo",
+  "doi": "10.1145/505248.506010",
+  "titulo": "Data quality assessment",
+  "ano": 2002,
+  "uso": "métricas objetivas de qualidade (proporções, limites)"
+ },
+ {
+  "id": "vassiliadis2009",
+  "tipo": "artigo",
+  "doi": "10.4018/jdwm.2009070101",
+  "titulo": "A Survey of Extract–Transform–Load Technology",
+  "ano": 2009,
+  "uso": "arquitetura de ETL e área de staging"
+ },
+ {
+  "id": "wickham2014",
+  "tipo": "artigo",
+  "doi": "10.18637/jss.v059.i10",
+  "titulo": "Tidy Data",
+  "ano": 2014,
+  "uso": "formato longo (mês por linha) na limpeza da API"
+ },
+ {
+  "id": "schelter2018",
+  "tipo": "artigo",
+  "doi": "10.14778/3229863.3229867",
+  "titulo": "Automating large-scale data quality verification",
+  "ano": 2018,
+  "uso": "validações declarativas que bloqueiam a publicação"
+ },
+ {
+  "id": "polyzotis2018",
+  "tipo": "artigo",
+  "doi": "10.1145/3299887.3299891",
+  "titulo": "Data Lifecycle Challenges in Production Machine Learning",
+  "ano": 2018,
+  "uso": "dados para o modelo da Sprint 4: validação e linhagem"
+ },
+ {
+  "id": "sandve2013",
+  "tipo": "artigo",
+  "doi": "10.1371/journal.pcbi.1003285",
+  "titulo": "Ten Simple Rules for Reproducible Computational Research",
+  "ano": 2013,
+  "uso": "reprodutibilidade: semente, versões, registro de execução"
+ },
+ {
+  "id": "wilson2017",
+  "tipo": "artigo",
+  "doi": "10.1371/journal.pcbi.1005510",
+  "titulo": "Good enough practices in scientific computing",
+  "ano": 2017,
+  "uso": "organização bruto/limpo/pronto e dados brutos imutáveis"
+ },
+ {
+  "id": "wilkinson2016",
+  "tipo": "artigo",
+  "doi": "10.1038/sdata.2016.18",
+  "titulo": "The FAIR Guiding Principles for scientific data management and stewardship",
+  "ano": 2016,
+  "uso": "metadados e proveniência dos arquivos publicados"
+ },
+ {
+  "id": "buneman2001",
+  "tipo": "artigo",
+  "doi": "10.1007/3-540-44503-X_20",
+  "titulo": "Why and Where: A Characterization of Data Provenance",
+  "ano": 2001,
+  "uso": "linhagem do valor publicado até o arquivo bruto"
+ },
+ {
+  "id": "simmhan2005",
+  "tipo": "artigo",
+  "doi": "10.1145/1084805.1084812",
+  "titulo": "A survey of data provenance in e-science",
+  "ano": 2005,
+  "uso": "proveniência por execução (correlation ID, manifesto)"
+ },
+ {
+  "id": "gebru2021",
+  "tipo": "artigo",
+  "doi": "10.1145/3458723",
+  "titulo": "Datasheets for datasets",
+  "ano": 2021,
+  "uso": "dicionário e ficha da base analítica"
+ },
+ {
+  "id": "krotov2020",
+  "tipo": "artigo",
+  "doi": "10.17705/1CAIS.04724",
+  "titulo": "Tutorial: Legality and Ethics of Web Scraping",
+  "ano": 2020,
+  "uso": "ética da coleta: robots.txt, carga no servidor, não contornar bloqueio"
+ },
+ {
+  "id": "fielding2002",
+  "tipo": "artigo",
+  "doi": "10.1145/514183.514185",
+  "titulo": "Principled design of the modern Web architecture",
+  "ano": 2002,
+  "uso": "REST: recursos, paginação por links e cache"
+ },
+ {
+  "id": "metcalfe1976",
+  "tipo": "artigo",
+  "doi": "10.1145/360248.360253",
+  "titulo": "Ethernet: distributed packet switching for local computer networks",
+  "ano": 1976,
+  "uso": "recuo exponencial binário (espera entre tentativas)"
+ },
+ {
+  "id": "rfc9309",
+  "tipo": "rfc",
+  "doi": "10.17487/RFC9309",
+  "titulo": "Robots Exclusion Protocol",
+  "ano": 2022,
+  "uso": "interpretação do robots.txt (2xx, 4xx, 5xx)"
+ },
+ {
+  "id": "rfc9110",
+  "tipo": "rfc",
+  "doi": "10.17487/RFC9110",
+  "titulo": "HTTP Semantics",
+  "ano": 2022,
+  "uso": "status, Retry-After e GET condicional"
+ },
+ {
+  "id": "rfc6585",
+  "tipo": "rfc",
+  "doi": "10.17487/RFC6585",
+  "titulo": "Additional HTTP Status Codes",
+  "ano": 2012,
+  "uso": "status 429 (excesso de requisições)"
+ },
+ {
+  "id": "rfc8996",
+  "tipo": "rfc",
+  "doi": "10.17487/RFC8996",
+  "titulo": "Deprecating TLS 1.0 and TLS 1.1",
+  "ano": 2021,
+  "uso": "TLS mínimo 1.2"
+ },
+ {
+  "id": "rfc8446",
+  "tipo": "rfc",
+  "doi": "10.17487/RFC8446",
+  "titulo": "The Transport Layer Security (TLS) Protocol Version 1.3",
+  "ano": 2018,
+  "uso": "TLS 1.3 negociado com o portal"
+ },
+ {
+  "id": "rfc7946",
+  "tipo": "rfc",
+  "doi": "10.17487/RFC7946",
+  "titulo": "The GeoJSON Format",
+  "ano": 2016,
+  "uso": "formato da malha de setores (WFS)"
+ },
+ {
+  "id": "rfc4180",
+  "tipo": "rfc",
+  "doi": "10.17487/RFC4180",
+  "titulo": "Common Format and MIME Type for Comma-Separated Values (CSV) Files",
+  "ano": 2005,
+  "uso": "leitura e escrita de CSV com aspas"
+ },
+ {
+  "id": "kaufman2012",
+  "tipo": "artigo",
+  "doi": "10.1145/2382577.2382579",
+  "titulo": "Leakage in data mining: Formulation, detection, and avoidance",
+  "ano": 2012,
+  "uso": "vazamento temporal nos atributos da base analítica"
+ },
+ {
+  "id": "dougherty1995",
+  "tipo": "capitulo",
+  "doi": "10.1016/B978-1-55860-377-6.50032-3",
+  "titulo": "Supervised and Unsupervised Discretization of Continuous Features",
+  "ano": 1995,
+  "uso": "faixas de valor e de tempo (discretização)"
+ },
+ {
+  "id": "cleveland1984",
+  "tipo": "artigo",
+  "doi": "10.1080/01621459.1984.10478080",
+  "titulo": "Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods",
+  "ano": 1984,
+  "uso": "escolha da forma dos gráficos (posição em escala comum)"
+ },
+ {
+  "id": "anscombe1973",
+  "tipo": "artigo",
+  "doi": "10.1080/00031305.1973.10478966",
+  "titulo": "Graphs in Statistical Analysis",
+  "ano": 1973,
+  "uso": "estatística resumida não substitui o gráfico"
+ },
+ {
+  "id": "mcgill1978",
+  "tipo": "artigo",
+  "doi": "10.1080/00031305.1978.10479236",
+  "titulo": "Variations of Box Plots",
+  "ano": 1978,
+  "uso": "boxplot da distribuição mensal"
+ },
+ {
+  "id": "weissgerber2015",
+  "tipo": "artigo",
+  "doi": "10.1371/journal.pbio.1002128",
+  "titulo": "Beyond Bar and Line Graphs: Time for a New Data Presentation Paradigm",
+  "ano": 2015,
+  "uso": "mostrar a distribuição, não só a média (visualização honesta)"
+ },
+ {
+  "id": "brewer2002",
+  "tipo": "artigo",
+  "doi": "10.1111/1467-8306.00310",
+  "titulo": "Evaluation of Methods for Classifying Epidemiological Data on Choropleth Maps in Series",
+  "ano": 2002,
+  "uso": "classes por quantis no mapa coroplético"
+ },
+ {
+  "id": "robinson1950",
+  "tipo": "artigo",
+  "doi": "10.2307/2087176",
+  "titulo": "Ecological Correlations and the Behavior of Individuals",
+  "ano": 1950,
+  "uso": "falácia ecológica: setor não descreve o contribuinte"
+ },
+ {
+  "id": "moran1950",
+  "tipo": "artigo",
+  "doi": "10.1093/biomet/37.1-2.17",
+  "titulo": "Notes on Continuous Stochastic Phenomena",
+  "ano": 1950,
+  "uso": "autocorrelação espacial global (I de Moran) nos mapas da EDA"
+ },
+ {
+  "id": "fotheringham1991",
+  "tipo": "artigo",
+  "doi": "10.1068/a231025",
+  "titulo": "The Modifiable Areal Unit Problem in Multivariate Statistical Analysis",
+  "ano": 1991,
+  "uso": "o padrão muda com a unidade espacial (setor × quadra)"
+ },
+ {
+  "id": "lam1983",
+  "tipo": "artigo",
+  "doi": "10.1559/152304083783914958",
+  "titulo": "Spatial Interpolation Methods: A Review",
+  "ano": 1983,
+  "uso": "interpolação por área setor → quadra"
+ },
+ {
+  "id": "sweeney2002",
+  "tipo": "artigo",
+  "doi": "10.1142/S0218488502001648",
+  "titulo": "k-anonymity: a model for protecting privacy",
+  "ano": 2002,
+  "uso": "supressão de setores com poucos imóveis no mapa"
+ },
+ {
+  "id": "limpert2001",
+  "tipo": "artigo",
+  "doi": "10.1641/0006-3568(2001)051[0341:LNDATS]2.0.CO;2",
+  "titulo": "Log-normal Distributions across the Sciences: Keys and Clues",
+  "ano": 2001,
+  "uso": "valor do imóvel com distribuição lognormal"
+ },
+ {
+  "id": "morris2019",
+  "tipo": "artigo",
+  "doi": "10.1002/sim.8086",
+  "titulo": "Using simulation studies to evaluate statistical methods",
+  "ano": 2019,
+  "uso": "planejamento da simulação (objetivo, mecanismo gerador, semente)"
+ },
+ {
+  "id": "box1976",
+  "tipo": "artigo",
+  "doi": "10.1080/01621459.1976.10480949",
+  "titulo": "Science and Statistics",
+  "ano": 1976,
+  "uso": "todo modelo gerador é uma simplificação declarada"
+ },
+ {
+  "id": "hosmer2013",
+  "tipo": "livro",
+  "doi": "10.1002/9781118548387",
+  "titulo": "Applied Logistic Regression",
+  "ano": 2013,
+  "uso": "modelo logístico da inadimplência simulada"
+ },
+ {
+  "id": "drechsler2011",
+  "tipo": "livro",
+  "doi": "10.1007/978-1-4614-0326-5",
+  "titulo": "Synthetic Datasets for Statistical Disclosure Control",
+  "ano": 2011,
+  "uso": "dados sintéticos no lugar de microdados restritos"
+ },
+ {
+  "id": "persons1919",
+  "tipo": "artigo",
+  "doi": "10.2307/1928754",
+  "titulo": "Indices of Business Conditions",
+  "ano": 1919,
+  "uso": "índice sazonal mensal"
+ },
+ {
+  "id": "parnas1972",
+  "tipo": "artigo",
+  "doi": "10.1145/361598.361623",
+  "titulo": "On the criteria to be used in decomposing systems into modules",
+  "ano": 1972,
+  "uso": "um módulo por fonte e por filtro (ocultamento de informação)"
+ },
+ {
+  "id": "garlan1993",
+  "tipo": "capitulo",
+  "doi": "10.1142/9789812798039_0001",
+  "titulo": "An Introduction to Software Architecture",
+  "ano": 1993,
+  "uso": "estilo pipes e filtros"
+ },
+ {
+  "id": "perry1992",
+  "tipo": "artigo",
+  "doi": "10.1145/141874.141884",
+  "titulo": "Foundations for the study of software architecture",
+  "ano": 1992,
+  "uso": "decisões de arquitetura registradas"
+ },
+ {
+  "id": "mccabe1976",
+  "tipo": "artigo",
+  "doi": "10.1109/TSE.1976.233837",
+  "titulo": "A Complexity Measure",
+  "ano": 1976,
+  "uso": "gate de complexidade ciclomática (G5)"
+ },
+ {
+  "id": "demillo1978",
+  "tipo": "artigo",
+  "doi": "10.1109/C-M.1978.218136",
+  "titulo": "Hints on Test Data Selection: Help for the Practicing Programmer",
+  "ano": 1978,
+  "uso": "testes de mutação (G10)"
+ },
+ {
+  "id": "valente_esm",
+  "tipo": "livro",
+  "doi": null,
+  "titulo": "Engenharia de Software Moderna: princípios e práticas para desenvolvimento de software com produtividade",
+  "ano": 2020,
+  "autores": "VALENTE, Marco Tulio",
+  "veiculo": "Belo Horizonte: edição do autor. Disponível em: https://engsoftmoderna.info",
+  "uso": "§5.6.3 DIP, §6.5 Adaptador, §6.6 Fachada, §6.10 Template Method, §7.7 Pipes e Filtros, cap. 8 Testes, cap. 10 DevOps"
+ },
+ {
+  "id": "valente_fms",
+  "tipo": "livro",
+  "doi": null,
+  "titulo": "Fundamentos de Manutenção de Software",
+  "ano": null,
+  "autores": "VALENTE, Marco Tulio",
+  "veiculo": "Edição do autor (versão web consultada em 16/09/2026). Ano e editora a confirmar no exemplar",
+  "uso": "§4.3 breaking changes e migração de esquema, §4.4.4 injeção de dependências, §4.5 overengineering"
+ },
+ {
+  "id": "kurose2013",
+  "tipo": "livro",
+  "doi": null,
+  "titulo": "Redes de computadores e a Internet: uma abordagem top-down",
+  "ano": 2013,
+  "autores": "KUROSE, James F.; ROSS, Keith W.",
+  "veiculo": "6. ed. São Paulo: Pearson",
+  "uso": "§2.2.2 conexões persistentes (p. 73), §2.2.6 GET condicional (p. 83–85), §5.3.2 recuo exponencial binário (p. 339), §8.6 SSL/TLS e truncamento (p. 523–528)"
+ },
+ {
+  "id": "tukey1977",
+  "tipo": "livro",
+  "doi": null,
+  "titulo": "Exploratory Data Analysis",
+  "ano": 1977,
+  "autores": "TUKEY, John W.",
+  "veiculo": "Reading: Addison-Wesley",
+  "uso": "análise exploratória como etapa anterior à modelagem"
+ },
+ {
+  "id": "apostila_etl",
+  "tipo": "material",
+  "doi": null,
+  "titulo": "ETL: apostila completa — do dado bruto à informação confiável",
+  "ano": 2026,
+  "autores": "Material didático do Módulo 5, Eixo II BIINAR/UFT",
+  "veiculo": "Edição de outubro de 2026",
+  "uso": "contrato de dados, quarentena, idempotência, reconciliação, validações impeditivas"
+ },
+ {
+  "id": "heydon1999",
+  "tipo": "artigo",
+  "doi": "10.1023/A:1019213109274",
+  "titulo": "Mercator: A scalable, extensible Web crawler",
+  "ano": 1999,
+  "uso": "cortesia por servidor num coletor de produção (análise crítica, pilar 2)"
+ },
+ {
+  "id": "olston2010",
+  "tipo": "artigo",
+  "doi": "10.1561/1500000017",
+  "titulo": "Web Crawling",
+  "ano": 2010,
+  "uso": "normas de cortesia e de atualização de coletores (análise crítica, pilares 2 e 5)"
+ },
+ {
+  "id": "lee2009",
+  "tipo": "artigo",
+  "doi": "10.1145/1541822.1541823",
+  "titulo": "IRLbot: Scaling to 6 billion pages and beyond",
+  "ano": 2009,
+  "uso": "orçamento de requisições por domínio em coleta de grande escala"
+ },
+ {
+  "id": "thelwall2006",
+  "tipo": "artigo",
+  "doi": "10.1002/asi.20388",
+  "titulo": "Web crawling ethics revisited: Cost, privacy, and denial of service",
+  "ano": 2006,
+  "uso": "identificação do coletor e custo imposto ao servidor"
+ },
+ {
+  "id": "floyd1994",
+  "tipo": "artigo",
+  "doi": "10.1109/90.298431",
+  "titulo": "The synchronization of periodic routing messages",
+  "ano": 1994,
+  "uso": "sorteio na espera para evitar a sincronização de clientes"
+ },
+ {
+  "id": "dean2013",
+  "tipo": "artigo",
+  "doi": "10.1145/2408776.2408794",
+  "titulo": "The tail at scale",
+  "ano": 2013,
+  "uso": "requisições repetidas só com orçamento que limite a carga adicional"
+ },
+ {
+  "id": "bronson2021",
+  "tipo": "artigo",
+  "doi": "10.1145/3458336.3465286",
+  "titulo": "Metastable failures in distributed systems",
+  "ano": 2021,
+  "uso": "tempestades de repetição que mantêm um servidor sobrecarregado"
+ },
+ {
+  "id": "cavallo2016",
+  "tipo": "artigo",
+  "doi": "10.1257/jep.30.2.151",
+  "titulo": "The Billion Prices Project: Using Online Prices for Measurement and Research",
+  "ano": 2016,
+  "uso": "exemplo acadêmico de coleta pública diária para medição econômica"
+ },
+ {
+  "id": "daas2015",
+  "tipo": "artigo",
+  "doi": "10.1515/jos-2015-0016",
+  "titulo": "Big Data as a Source for Official Statistics",
+  "ano": 2015,
+  "uso": "qualidade e dependência de fontes secundárias em estatísticas oficiais"
+ },
+ {
+  "id": "landers2016",
+  "tipo": "artigo",
+  "doi": "10.1037/met0000081",
+  "titulo": "A primer on theory-driven web scraping: Automatic extraction of big data from the Internet for use in psychological research",
+  "ano": 2016,
+  "uso": "teoria da fonte de dados como condição da coleta para pesquisa"
+ },
+ {
+  "id": "haber1991",
+  "tipo": "artigo",
+  "doi": "10.1007/BF00196791",
+  "titulo": "How to time-stamp a digital document",
+  "ano": 1991,
+  "uso": "encadeamento de hashes protegido por partes externas"
+ },
+ {
+  "id": "schneier1999",
+  "tipo": "artigo",
+  "doi": "10.1145/317087.317089",
+  "titulo": "Secure audit logs to support computer forensics",
+  "ano": 1999,
+  "uso": "registro de auditoria com MAC e chave evolutiva"
+ },
+ {
+  "id": "rfc6962",
+  "tipo": "rfc",
+  "doi": "10.17487/RFC6962",
+  "titulo": "Certificate Transparency",
+  "ano": 2013,
+  "uso": "registro verificável publicamente, com cabeça assinada e monitores externos"
+ },
+ {
+  "id": "rfc8785",
+  "tipo": "rfc",
+  "doi": "10.17487/RFC8785",
+  "titulo": "JSON Canonicalization Scheme (JCS)",
+  "ano": 2020,
+  "uso": "forma canônica do JSON para um resumo semântico do bruto"
+ },
+ {
+  "id": "murta2015",
+  "tipo": "capitulo",
+  "doi": "10.1007/978-3-319-16462-5_6",
+  "titulo": "noWorkflow: Capturing and Analyzing Provenance of Scripts",
+  "ano": 2015,
+  "uso": "captura de proveniência de scripts Python (exemplo brasileiro)"
+ },
+ {
+  "id": "cho2003",
+  "tipo": "artigo",
+  "doi": "10.1145/958942.958945",
+  "titulo": "Effective page refresh policies for Web crawlers",
+  "ano": 2003,
+  "uso": "frequência de atualização conforme o ritmo de mudança de cada fonte"
+ },
+ {
+  "id": "croushore2001",
+  "tipo": "artigo",
+  "doi": "10.1016/S0304-4076(01)00072-0",
+  "titulo": "A real-time data set for macroeconomists",
+  "ano": 2001,
+  "uso": "safras (vintages) de dados e revisões"
+ },
+ {
+  "id": "bleiholder2009",
+  "tipo": "artigo",
+  "doi": "10.1145/1456650.1456651",
+  "titulo": "Data fusion",
+  "ano": 2009,
+  "uso": "estratégias para conflito de valores entre fontes"
+ },
+ {
+  "id": "lamb2022",
+  "tipo": "artigo",
+  "doi": "10.1109/MS.2021.3073045",
+  "titulo": "Reproducible Builds: Increasing the Integrity of Software Supply Chains",
+  "ano": 2022,
+  "uso": "reprodutibilidade bit a bit e fixação das entradas"
+ },
+ {
+  "id": "deelman2015",
+  "tipo": "artigo",
+  "doi": "10.1016/j.future.2014.10.008",
+  "titulo": "Pegasus, a workflow management system for science automation",
+  "ano": 2015,
+  "uso": "agendamento, monitoramento e proveniência em sistemas de workflow"
+ },
+ {
+  "id": "connelly2016",
+  "tipo": "artigo",
+  "doi": "10.1016/j.ssresearch.2016.04.015",
+  "titulo": "The role of administrative data in the big data revolution in social science research",
+  "ano": 2016,
+  "uso": "acesso a dados administrativos por acordo formal"
+ },
+ {
+  "id": "oecd2016",
+  "tipo": "livro",
+  "doi": "10.1787/9789264256453-en",
+  "titulo": "Advanced Analytics for Better Tax Administration: Putting Data to Work",
+  "ano": 2016,
+  "uso": "análise de dados em administrações tributárias"
+ },
+ {
+  "id": "stevens2017",
+  "tipo": "capitulo",
+  "doi": "10.1007/978-3-319-63688-7_19",
+  "titulo": "The First Collision for Full SHA-1",
+  "ano": 2017,
+  "uso": "limite do SHA-1 do blob Git na conferência da extração NUCLEOGOV"
+ },
+ {
+  "id": "kimball2004",
+  "tipo": "livro",
+  "doi": null,
+  "titulo": "The Data Warehouse ETL Toolkit: Practical Techniques for Extracting, Cleaning, Conforming, and Delivering Data",
+  "ano": 2004,
+  "autores": "KIMBALL, Ralph; CASERTA, Joe",
+  "veiculo": "Indianapolis: Wiley",
+  "uso": "cap. 3 extração e captura de mudanças; cap. 4 telas de qualidade, eventos de erro e dimensão de auditoria"
+ }
+]

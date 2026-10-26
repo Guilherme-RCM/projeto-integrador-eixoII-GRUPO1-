@@ -1,0 +1,1683 @@
+[
+ {
+  "id": "allingham1972",
+  "doi": "10.1016/0047-2727(72)90010-2",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Income tax evasion: a theoretical analysis",
+   "subtitulo": "",
+   "autores": [
+    "Allingham",
+    "Sandmo"
+   ],
+   "ano": 1972,
+   "veiculo": "Journal of Public Economics",
+   "volume": "1",
+   "numero": "3-4",
+   "paginas": "323-338",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "alm2014",
+  "doi": "10.1177/152397211401400302",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Detroit Property Tax Delinquency: Social Contract in Crisis",
+   "subtitulo": "",
+   "autores": [
+    "Alm",
+    "Hodge",
+    "Sands",
+    "Skidmore"
+   ],
+   "ano": 2014,
+   "veiculo": "Public Finance and Management",
+   "volume": "14",
+   "numero": "3",
+   "paginas": "280-305",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "alm2016",
+  "doi": "10.1016/j.regsciurbeco.2016.02.006",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Property tax delinquency and its spillover effects on nearby properties",
+   "subtitulo": "",
+   "autores": [
+    "Alm",
+    "Hawley",
+    "Lee",
+    "Miller"
+   ],
+   "ano": 2016,
+   "veiculo": "Regional Science and Urban Economics",
+   "volume": "58",
+   "numero": null,
+   "paginas": "71-77",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "anscombe1973",
+  "doi": "10.1080/00031305.1973.10478966",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Graphs in Statistical Analysis",
+   "subtitulo": "",
+   "autores": [
+    "Anscombe"
+   ],
+   "ano": 1973,
+   "veiculo": "The American Statistician",
+   "volume": "27",
+   "numero": "1",
+   "paginas": "17-21",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "batini2009",
+  "doi": "10.1145/1541880.1541883",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Methodologies for data quality assessment and improvement",
+   "subtitulo": "",
+   "autores": [
+    "Batini",
+    "Cappiello",
+    "Francalanci",
+    "Maurino"
+   ],
+   "ano": 2009,
+   "veiculo": "ACM Computing Surveys",
+   "volume": "41",
+   "numero": "3",
+   "paginas": "1-52",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "bleiholder2009",
+  "doi": "10.1145/1456650.1456651",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Data fusion",
+   "subtitulo": "",
+   "autores": [
+    "Bleiholder",
+    "Naumann"
+   ],
+   "ano": 2009,
+   "veiculo": "ACM Computing Surveys",
+   "volume": "41",
+   "numero": "1",
+   "paginas": "1-41",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "box1976",
+  "doi": "10.1080/01621459.1976.10480949",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Science and Statistics",
+   "subtitulo": "",
+   "autores": [
+    "Box"
+   ],
+   "ano": 1976,
+   "veiculo": "Journal of the American Statistical Association",
+   "volume": "71",
+   "numero": "356",
+   "paginas": "791-799",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "brewer2002",
+  "doi": "10.1111/1467-8306.00310",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Evaluation of Methods for Classifying Epidemiological Data on Choropleth Maps in Series",
+   "subtitulo": "",
+   "autores": [
+    "Brewer",
+    "Pickle"
+   ],
+   "ano": 2002,
+   "veiculo": "Annals of the Association of American Geographers",
+   "volume": "92",
+   "numero": "4",
+   "paginas": "662-681",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "bronson2021",
+  "doi": "10.1145/3458336.3465286",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Metastable failures in distributed systems",
+   "subtitulo": "",
+   "autores": [
+    "Bronson",
+    "Aghayev",
+    "Charapko",
+    "Zhu"
+   ],
+   "ano": 2021,
+   "veiculo": "Proceedings of the Workshop on Hot Topics in Operating Systems",
+   "volume": null,
+   "numero": null,
+   "paginas": "221-227",
+   "tipo_crossref": "proceedings-article"
+  }
+ },
+ {
+  "id": "buneman2001",
+  "doi": "10.1007/3-540-44503-X_20",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Why and Where: A Characterization of Data Provenance",
+   "subtitulo": "",
+   "autores": [
+    "Buneman",
+    "Khanna",
+    "Wang-Chiew"
+   ],
+   "ano": 2001,
+   "veiculo": "Lecture Notes in Computer Science",
+   "volume": null,
+   "numero": null,
+   "paginas": "316-330",
+   "tipo_crossref": "book-chapter"
+  }
+ },
+ {
+  "id": "cavallo2016",
+  "doi": "10.1257/jep.30.2.151",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "The Billion Prices Project: Using Online Prices for Measurement and Research",
+   "subtitulo": "",
+   "autores": [
+    "Cavallo",
+    "Rigobon"
+   ],
+   "ano": 2016,
+   "veiculo": "Journal of Economic Perspectives",
+   "volume": "30",
+   "numero": "2",
+   "paginas": "151-178",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "chirico2019",
+  "doi": "10.17310/ntj.2019.3.01",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "DETERRING PROPERTY TAX DELINQUENCY IN PHILADELPHIA",
+   "subtitulo": "AN EXPERIMENTAL EVALUATION OF NUDGE STRATEGIES",
+   "autores": [
+    "Chirico",
+    "Inman",
+    "Loeffler",
+    "MacDonald",
+    "Sieg"
+   ],
+   "ano": 2019,
+   "veiculo": "National Tax Journal",
+   "volume": "72",
+   "numero": "3",
+   "paginas": "479-506",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "cho2003",
+  "doi": "10.1145/958942.958945",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Effective page refresh policies for Web crawlers",
+   "subtitulo": "",
+   "autores": [
+    "Cho",
+    "Garcia-Molina"
+   ],
+   "ano": 2003,
+   "veiculo": "ACM Transactions on Database Systems",
+   "volume": "28",
+   "numero": "4",
+   "paginas": "390-426",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "cleveland1984",
+  "doi": "10.1080/01621459.1984.10478080",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods",
+   "subtitulo": "",
+   "autores": [
+    "Cleveland",
+    "McGill"
+   ],
+   "ano": 1984,
+   "veiculo": "Journal of the American Statistical Association",
+   "volume": "79",
+   "numero": "387",
+   "paginas": "531-554",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "connelly2016",
+  "doi": "10.1016/j.ssresearch.2016.04.015",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "The role of administrative data in the big data revolution in social science research",
+   "subtitulo": "",
+   "autores": [
+    "Connelly",
+    "Playford",
+    "Gayle",
+    "Dibben"
+   ],
+   "ano": 2016,
+   "veiculo": "Social Science Research",
+   "volume": "59",
+   "numero": null,
+   "paginas": "1-12",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "croushore2001",
+  "doi": "10.1016/S0304-4076(01)00072-0",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "A real-time data set for macroeconomists",
+   "subtitulo": "",
+   "autores": [
+    "Croushore",
+    "Stark"
+   ],
+   "ano": 2001,
+   "veiculo": "Journal of Econometrics",
+   "volume": "105",
+   "numero": "1",
+   "paginas": "111-130",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "daas2015",
+  "doi": "10.1515/jos-2015-0016",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Big Data as a Source for Official Statistics",
+   "subtitulo": "",
+   "autores": [
+    "Daas",
+    "Puts",
+    "Buelens",
+    "Hurk"
+   ],
+   "ano": 2015,
+   "veiculo": "Journal of Official Statistics",
+   "volume": "31",
+   "numero": "2",
+   "paginas": "249-262",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "dean2013",
+  "doi": "10.1145/2408776.2408794",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "The tail at scale",
+   "subtitulo": "",
+   "autores": [
+    "Dean",
+    "Barroso"
+   ],
+   "ano": 2013,
+   "veiculo": "Communications of the ACM",
+   "volume": "56",
+   "numero": "2",
+   "paginas": "74-80",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "deelman2015",
+  "doi": "10.1016/j.future.2014.10.008",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Pegasus, a workflow management system for science automation",
+   "subtitulo": "",
+   "autores": [
+    "Deelman",
+    "Vahi",
+    "Juve",
+    "Rynge",
+    "Callaghan",
+    "Maechling",
+    "Mayani",
+    "Chen",
+    "Ferreira da Silva",
+    "Livny",
+    "Wenger"
+   ],
+   "ano": 2015,
+   "veiculo": "Future Generation Computer Systems",
+   "volume": "46",
+   "numero": null,
+   "paginas": "17-35",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "demillo1978",
+  "doi": "10.1109/C-M.1978.218136",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Hints on Test Data Selection: Help for the Practicing Programmer",
+   "subtitulo": "",
+   "autores": [
+    "DeMillo",
+    "Lipton",
+    "Sayward"
+   ],
+   "ano": 1978,
+   "veiculo": "Computer",
+   "volume": "11",
+   "numero": "4",
+   "paginas": "34-41",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "dougherty1995",
+  "doi": "10.1016/B978-1-55860-377-6.50032-3",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Supervised and Unsupervised Discretization of Continuous Features",
+   "subtitulo": "",
+   "autores": [
+    "Dougherty",
+    "Kohavi",
+    "Sahami"
+   ],
+   "ano": 1995,
+   "veiculo": "Machine Learning Proceedings 1995",
+   "volume": null,
+   "numero": null,
+   "paginas": "194-202",
+   "tipo_crossref": "book-chapter"
+  }
+ },
+ {
+  "id": "drechsler2011",
+  "doi": "10.1007/978-1-4614-0326-5",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Synthetic Datasets for Statistical Disclosure Control",
+   "subtitulo": "Theory and Implementation",
+   "autores": [
+    "Drechsler"
+   ],
+   "ano": 2011,
+   "veiculo": "Lecture Notes in Statistics",
+   "volume": null,
+   "numero": null,
+   "paginas": null,
+   "tipo_crossref": "book"
+  }
+ },
+ {
+  "id": "fielding2002",
+  "doi": "10.1145/514183.514185",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Principled design of the modern Web architecture",
+   "subtitulo": "",
+   "autores": [
+    "Fielding",
+    "Taylor"
+   ],
+   "ano": 2002,
+   "veiculo": "ACM Transactions on Internet Technology",
+   "volume": "2",
+   "numero": "2",
+   "paginas": "115-150",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "floyd1994",
+  "doi": "10.1109/90.298431",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "The synchronization of periodic routing messages",
+   "subtitulo": "",
+   "autores": [
+    "Floyd",
+    "Jacobson"
+   ],
+   "ano": 1994,
+   "veiculo": "IEEE/ACM Transactions on Networking",
+   "volume": "2",
+   "numero": "2",
+   "paginas": "122-136",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "fotheringham1991",
+  "doi": "10.1068/a231025",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "The Modifiable Areal Unit Problem in Multivariate Statistical Analysis",
+   "subtitulo": "",
+   "autores": [
+    "Fotheringham",
+    "Wong"
+   ],
+   "ano": 1991,
+   "veiculo": "Environment and Planning A: Economy and Space",
+   "volume": "23",
+   "numero": "7",
+   "paginas": "1025-1044",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "garlan1993",
+  "doi": "10.1142/9789812798039_0001",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "AN INTRODUCTION TO SOFTWARE ARCHITECTURE",
+   "subtitulo": "",
+   "autores": [
+    "GARLAN",
+    "SHAW"
+   ],
+   "ano": 1993,
+   "veiculo": "Series on Software Engineering and Knowledge Engineering",
+   "volume": null,
+   "numero": null,
+   "paginas": "1-39",
+   "tipo_crossref": "book-chapter"
+  }
+ },
+ {
+  "id": "gebru2021",
+  "doi": "10.1145/3458723",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Datasheets for datasets",
+   "subtitulo": "",
+   "autores": [
+    "Gebru",
+    "Morgenstern",
+    "Vecchione",
+    "Vaughan",
+    "Wallach",
+    "III",
+    "Crawford"
+   ],
+   "ano": 2021,
+   "veiculo": "Communications of the ACM",
+   "volume": "64",
+   "numero": "12",
+   "paginas": "86-92",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "haber1991",
+  "doi": "10.1007/BF00196791",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "How to time-stamp a digital document",
+   "subtitulo": "",
+   "autores": [
+    "Haber",
+    "Stornetta"
+   ],
+   "ano": 1991,
+   "veiculo": "Journal of Cryptology",
+   "volume": "3",
+   "numero": "2",
+   "paginas": "99-111",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "heydon1999",
+  "doi": "10.1023/A:1019213109274",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Mercator: A scalable, extensible Web crawler",
+   "subtitulo": "",
+   "autores": [
+    "Heydon",
+    "Najork"
+   ],
+   "ano": 1999,
+   "veiculo": "World Wide Web",
+   "volume": "2",
+   "numero": "4",
+   "paginas": "219-229",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "hosmer2013",
+  "doi": "10.1002/9781118548387",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Applied Logistic Regression",
+   "subtitulo": "",
+   "autores": [
+    "Hosmer",
+    "Lemeshow",
+    "Sturdivant"
+   ],
+   "ano": 2013,
+   "veiculo": "Wiley Series in Probability and Statistics",
+   "volume": null,
+   "numero": null,
+   "paginas": null,
+   "tipo_crossref": "monograph"
+  }
+ },
+ {
+  "id": "kaufman2012",
+  "doi": "10.1145/2382577.2382579",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Leakage in data mining",
+   "subtitulo": "Formulation, detection, and avoidance",
+   "autores": [
+    "Kaufman",
+    "Rosset",
+    "Perlich",
+    "Stitelman"
+   ],
+   "ano": 2012,
+   "veiculo": "ACM Transactions on Knowledge Discovery from Data",
+   "volume": "6",
+   "numero": "4",
+   "paginas": "1-21",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "krotov2020",
+  "doi": "10.17705/1CAIS.04724",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Legality and Ethics of Web Scraping",
+   "subtitulo": "",
+   "autores": [
+    "Murray State University",
+    "Krotov",
+    "Johnson",
+    "Murray State University",
+    "Silva",
+    "University of Houston"
+   ],
+   "ano": 2020,
+   "veiculo": "Communications of the Association for Information Systems",
+   "volume": "47",
+   "numero": null,
+   "paginas": "539-563",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "lam1983",
+  "doi": "10.1559/152304083783914958",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Spatial Interpolation Methods: A Review",
+   "subtitulo": "",
+   "autores": [
+    "Lam"
+   ],
+   "ano": 1983,
+   "veiculo": "The American Cartographer",
+   "volume": "10",
+   "numero": "2",
+   "paginas": "129-150",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "lamb2022",
+  "doi": "10.1109/MS.2021.3073045",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Reproducible Builds: Increasing the Integrity of Software Supply Chains",
+   "subtitulo": "",
+   "autores": [
+    "Lamb",
+    "Zacchiroli"
+   ],
+   "ano": 2022,
+   "veiculo": "IEEE Software",
+   "volume": "39",
+   "numero": "2",
+   "paginas": "62-70",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "landers2016",
+  "doi": "10.1037/met0000081",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "A primer on theory-driven web scraping: Automatic extraction of big data from the Internet for use in psychological research.",
+   "subtitulo": "",
+   "autores": [
+    "Landers",
+    "Brusso",
+    "Cavanaugh",
+    "Collmus"
+   ],
+   "ano": 2016,
+   "veiculo": "Psychological Methods",
+   "volume": "21",
+   "numero": "4",
+   "paginas": "475-492",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "lee2009",
+  "doi": "10.1145/1541822.1541823",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "IRLbot",
+   "subtitulo": "Scaling to 6 billion pages and beyond",
+   "autores": [
+    "Lee",
+    "Leonard",
+    "Wang",
+    "Loguinov"
+   ],
+   "ano": 2009,
+   "veiculo": "ACM Transactions on the Web",
+   "volume": "3",
+   "numero": "3",
+   "paginas": "1-34",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "limpert2001",
+  "doi": "10.1641/0006-3568(2001)051[0341:LNDATS]2.0.CO;2",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Log-normal Distributions across the Sciences: Keys and Clues",
+   "subtitulo": "",
+   "autores": [
+    "LIMPERT",
+    "STAHEL",
+    "ABBT"
+   ],
+   "ano": 2001,
+   "veiculo": "BioScience",
+   "volume": "51",
+   "numero": "5",
+   "paginas": "341",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "mccabe1976",
+  "doi": "10.1109/TSE.1976.233837",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "A Complexity Measure",
+   "subtitulo": "",
+   "autores": [
+    "McCabe"
+   ],
+   "ano": 1976,
+   "veiculo": "IEEE Transactions on Software Engineering",
+   "volume": "SE-2",
+   "numero": "4",
+   "paginas": "308-320",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "mcgill1978",
+  "doi": "10.1080/00031305.1978.10479236",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Variations of Box Plots",
+   "subtitulo": "",
+   "autores": [
+    "Mcgill",
+    "Tukey",
+    "Larsen"
+   ],
+   "ano": 1978,
+   "veiculo": "The American Statistician",
+   "volume": "32",
+   "numero": "1",
+   "paginas": "12-16",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "metcalfe1976",
+  "doi": "10.1145/360248.360253",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Ethernet",
+   "subtitulo": "distributed packet switching for local computer networks",
+   "autores": [
+    "Metcalfe",
+    "Boggs"
+   ],
+   "ano": 1976,
+   "veiculo": "Communications of the ACM",
+   "volume": "19",
+   "numero": "7",
+   "paginas": "395-404",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "moran1950",
+  "doi": "10.1093/biomet/37.1-2.17",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "NOTES ON CONTINUOUS STOCHASTIC PHENOMENA",
+   "subtitulo": "",
+   "autores": [
+    "MORAN"
+   ],
+   "ano": 1950,
+   "veiculo": "Biometrika",
+   "volume": "37",
+   "numero": "1-2",
+   "paginas": "17-23",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "morris2019",
+  "doi": "10.1002/sim.8086",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Using simulation studies to evaluate statistical methods",
+   "subtitulo": "",
+   "autores": [
+    "Morris",
+    "White",
+    "Crowther"
+   ],
+   "ano": 2019,
+   "veiculo": "Statistics in Medicine",
+   "volume": "38",
+   "numero": "11",
+   "paginas": "2074-2102",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "murta2015",
+  "doi": "10.1007/978-3-319-16462-5_6",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "noWorkflow: Capturing and Analyzing Provenance of Scripts",
+   "subtitulo": "",
+   "autores": [
+    "Murta",
+    "Braganholo",
+    "Chirigati",
+    "Koop",
+    "Freire"
+   ],
+   "ano": 2015,
+   "veiculo": "Lecture Notes in Computer Science",
+   "volume": null,
+   "numero": null,
+   "paginas": "71-83",
+   "tipo_crossref": "book-chapter"
+  }
+ },
+ {
+  "id": "oecd2016",
+  "doi": "10.1787/9789264256453-en",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Advanced Analytics for Better Tax Administration",
+   "subtitulo": "Putting Data to Work",
+   "autores": [
+    "OECD"
+   ],
+   "ano": 2016,
+   "veiculo": "OECD",
+   "volume": null,
+   "numero": null,
+   "paginas": null,
+   "tipo_crossref": "book"
+  }
+ },
+ {
+  "id": "olston2010",
+  "doi": "10.1561/1500000017",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Web Crawling",
+   "subtitulo": "",
+   "autores": [
+    "Olston",
+    "Najork"
+   ],
+   "ano": 2010,
+   "veiculo": "Foundations and Trends® in Information Retrieval",
+   "volume": "4",
+   "numero": "3",
+   "paginas": "175-246",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "parnas1972",
+  "doi": "10.1145/361598.361623",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "On the criteria to be used in decomposing systems into modules",
+   "subtitulo": "",
+   "autores": [
+    "Parnas"
+   ],
+   "ano": 1972,
+   "veiculo": "Communications of the ACM",
+   "volume": "15",
+   "numero": "12",
+   "paginas": "1053-1058",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "perry1992",
+  "doi": "10.1145/141874.141884",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Foundations for the study of software architecture",
+   "subtitulo": "",
+   "autores": [
+    "Perry",
+    "Wolf"
+   ],
+   "ano": 1992,
+   "veiculo": "ACM SIGSOFT Software Engineering Notes",
+   "volume": "17",
+   "numero": "4",
+   "paginas": "40-52",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "persons1919",
+  "doi": "10.2307/1928754",
+  "conferido_em": "2026-10-26",
+  "verificado": false,
+  "problema": "título diferente: 'General Considerations and Assumptions'",
+  "crossref": {
+   "titulo": "General Considerations and Assumptions",
+   "subtitulo": "",
+   "autores": [],
+   "ano": 1919,
+   "veiculo": "The Review of Economics and Statistics",
+   "volume": "1",
+   "numero": "1",
+   "paginas": "5",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "pipino2002",
+  "doi": "10.1145/505248.506010",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Data quality assessment",
+   "subtitulo": "",
+   "autores": [
+    "Pipino",
+    "Lee",
+    "Wang"
+   ],
+   "ano": 2002,
+   "veiculo": "Communications of the ACM",
+   "volume": "45",
+   "numero": "4",
+   "paginas": "211-218",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "polyzotis2018",
+  "doi": "10.1145/3299887.3299891",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Data Lifecycle Challenges in Production Machine Learning",
+   "subtitulo": "A Survey",
+   "autores": [
+    "Polyzotis",
+    "Roy",
+    "Whang",
+    "Zinkevich"
+   ],
+   "ano": 2018,
+   "veiculo": "ACM SIGMOD Record",
+   "volume": "47",
+   "numero": "2",
+   "paginas": "17-28",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "rfc4180",
+  "doi": "10.17487/RFC4180",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Common Format and MIME Type for Comma-Separated Values (CSV) Files",
+   "subtitulo": "",
+   "autores": [
+    "Shafranovich"
+   ],
+   "ano": 2005,
+   "veiculo": "RFC Editor",
+   "volume": null,
+   "numero": null,
+   "paginas": null,
+   "tipo_crossref": "report"
+  }
+ },
+ {
+  "id": "rfc6585",
+  "doi": "10.17487/RFC6585",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Additional HTTP Status Codes",
+   "subtitulo": "",
+   "autores": [
+    "Nottingham",
+    "Fielding"
+   ],
+   "ano": 2012,
+   "veiculo": "RFC Editor",
+   "volume": null,
+   "numero": null,
+   "paginas": null,
+   "tipo_crossref": "report"
+  }
+ },
+ {
+  "id": "rfc6962",
+  "doi": "10.17487/RFC6962",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Certificate Transparency",
+   "subtitulo": "",
+   "autores": [
+    "Laurie",
+    "Langley",
+    "Kasper"
+   ],
+   "ano": 2013,
+   "veiculo": "RFC Editor",
+   "volume": null,
+   "numero": null,
+   "paginas": null,
+   "tipo_crossref": "report"
+  }
+ },
+ {
+  "id": "rfc7946",
+  "doi": "10.17487/RFC7946",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "The GeoJSON Format",
+   "subtitulo": "",
+   "autores": [
+    "Butler",
+    "Daly",
+    "Doyle",
+    "Gillies",
+    "Hagen",
+    "Schaub"
+   ],
+   "ano": 2016,
+   "veiculo": "RFC Editor",
+   "volume": null,
+   "numero": null,
+   "paginas": null,
+   "tipo_crossref": "report"
+  }
+ },
+ {
+  "id": "rfc8446",
+  "doi": "10.17487/RFC8446",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "The Transport Layer Security (TLS) Protocol Version 1.3",
+   "subtitulo": "",
+   "autores": [
+    "Rescorla"
+   ],
+   "ano": 2018,
+   "veiculo": "RFC Editor",
+   "volume": null,
+   "numero": null,
+   "paginas": null,
+   "tipo_crossref": "report"
+  }
+ },
+ {
+  "id": "rfc8785",
+  "doi": "10.17487/RFC8785",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "JSON Canonicalization Scheme (JCS)",
+   "subtitulo": "",
+   "autores": [
+    "Rundgren",
+    "Jordan",
+    "Erdtman"
+   ],
+   "ano": 2020,
+   "veiculo": "RFC Editor",
+   "volume": null,
+   "numero": null,
+   "paginas": null,
+   "tipo_crossref": "report"
+  }
+ },
+ {
+  "id": "rfc8996",
+  "doi": "10.17487/RFC8996",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Deprecating TLS 1.0 and TLS 1.1",
+   "subtitulo": "",
+   "autores": [
+    "Moriarty",
+    "Farrell"
+   ],
+   "ano": 2021,
+   "veiculo": "RFC Editor",
+   "volume": null,
+   "numero": null,
+   "paginas": null,
+   "tipo_crossref": "report"
+  }
+ },
+ {
+  "id": "rfc9110",
+  "doi": "10.17487/RFC9110",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "HTTP Semantics",
+   "subtitulo": "",
+   "autores": [],
+   "ano": 2022,
+   "veiculo": "RFC Editor",
+   "volume": null,
+   "numero": null,
+   "paginas": null,
+   "tipo_crossref": "report"
+  }
+ },
+ {
+  "id": "rfc9309",
+  "doi": "10.17487/RFC9309",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Robots Exclusion Protocol",
+   "subtitulo": "",
+   "autores": [
+    "Koster",
+    "Illyes",
+    "Zeller",
+    "Sassman"
+   ],
+   "ano": 2022,
+   "veiculo": "RFC Editor",
+   "volume": null,
+   "numero": null,
+   "paginas": null,
+   "tipo_crossref": "report"
+  }
+ },
+ {
+  "id": "robinson1950",
+  "doi": "10.2307/2087176",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Ecological Correlations and the Behavior of Individuals",
+   "subtitulo": "",
+   "autores": [
+    "Robinson"
+   ],
+   "ano": 1950,
+   "veiculo": "American Sociological Review",
+   "volume": "15",
+   "numero": "3",
+   "paginas": "351",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "sandve2013",
+  "doi": "10.1371/journal.pcbi.1003285",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Ten Simple Rules for Reproducible Computational Research",
+   "subtitulo": "",
+   "autores": [
+    "Sandve",
+    "Nekrutenko",
+    "Taylor",
+    "Hovig"
+   ],
+   "ano": 2013,
+   "veiculo": "PLoS Computational Biology",
+   "volume": "9",
+   "numero": "10",
+   "paginas": "e1003285",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "schelter2018",
+  "doi": "10.14778/3229863.3229867",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Automating large-scale data quality verification",
+   "subtitulo": "",
+   "autores": [
+    "Schelter",
+    "Lange",
+    "Schmidt",
+    "Celikel",
+    "Biessmann",
+    "Grafberger"
+   ],
+   "ano": 2018,
+   "veiculo": "Proceedings of the VLDB Endowment",
+   "volume": "11",
+   "numero": "12",
+   "paginas": "1781-1794",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "schneier1999",
+  "doi": "10.1145/317087.317089",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Secure audit logs to support computer forensics",
+   "subtitulo": "",
+   "autores": [
+    "Schneier",
+    "Kelsey"
+   ],
+   "ano": 1999,
+   "veiculo": "ACM Transactions on Information and System Security",
+   "volume": "2",
+   "numero": "2",
+   "paginas": "159-176",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "simmhan2005",
+  "doi": "10.1145/1084805.1084812",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "A survey of data provenance in e-science",
+   "subtitulo": "",
+   "autores": [
+    "Simmhan",
+    "Plale",
+    "Gannon"
+   ],
+   "ano": 2005,
+   "veiculo": "ACM SIGMOD Record",
+   "volume": "34",
+   "numero": "3",
+   "paginas": "31-36",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "slemrod2019",
+  "doi": "10.1257/jel.20181437",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Tax Compliance and Enforcement",
+   "subtitulo": "",
+   "autores": [
+    "Slemrod"
+   ],
+   "ano": 2019,
+   "veiculo": "Journal of Economic Literature",
+   "volume": "57",
+   "numero": "4",
+   "paginas": "904-954",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "stevens2017",
+  "doi": "10.1007/978-3-319-63688-7_19",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "The First Collision for Full SHA-1",
+   "subtitulo": "",
+   "autores": [
+    "Stevens",
+    "Bursztein",
+    "Karpman",
+    "Albertini",
+    "Markov"
+   ],
+   "ano": 2017,
+   "veiculo": "Lecture Notes in Computer Science",
+   "volume": null,
+   "numero": null,
+   "paginas": "570-596",
+   "tipo_crossref": "book-chapter"
+  }
+ },
+ {
+  "id": "sweeney2002",
+  "doi": "10.1142/S0218488502001648",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "k-ANONYMITY: A MODEL FOR PROTECTING PRIVACY",
+   "subtitulo": "",
+   "autores": [
+    "SWEENEY"
+   ],
+   "ano": 2002,
+   "veiculo": "International Journal of Uncertainty, Fuzziness and Knowledge-Based Systems",
+   "volume": "10",
+   "numero": "05",
+   "paginas": "557-570",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "thelwall2006",
+  "doi": "10.1002/asi.20388",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Web crawling ethics revisited: Cost, privacy, and denial of service",
+   "subtitulo": "",
+   "autores": [
+    "Thelwall",
+    "Stuart"
+   ],
+   "ano": 2006,
+   "veiculo": "Journal of the American Society for Information Science and Technology",
+   "volume": "57",
+   "numero": "13",
+   "paginas": "1771-1779",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "vassiliadis2009",
+  "doi": "10.4018/jdwm.2009070101",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "A Survey of Extract–Transform–Load Technology",
+   "subtitulo": "",
+   "autores": [
+    "Vassiliadis"
+   ],
+   "ano": 2009,
+   "veiculo": "International Journal of Data Warehousing and Mining",
+   "volume": "5",
+   "numero": "3",
+   "paginas": "1-27",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "waldhart2012",
+  "doi": "10.1177/152397211201200401",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Property Tax Delinquency and the Number of Payment Installments",
+   "subtitulo": "",
+   "autores": [
+    "Waldhart",
+    "Reschovsky"
+   ],
+   "ano": 2012,
+   "veiculo": "Public Finance and Management",
+   "volume": "12",
+   "numero": "4",
+   "paginas": "316-330",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "wang1996",
+  "doi": "10.1080/07421222.1996.11518099",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Beyond Accuracy: What Data Quality Means to Data Consumers",
+   "subtitulo": "",
+   "autores": [
+    "Wang",
+    "Strong"
+   ],
+   "ano": 1996,
+   "veiculo": "Journal of Management Information Systems",
+   "volume": "12",
+   "numero": "4",
+   "paginas": "5-33",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "weissgerber2015",
+  "doi": "10.1371/journal.pbio.1002128",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Beyond Bar and Line Graphs: Time for a New Data Presentation Paradigm",
+   "subtitulo": "",
+   "autores": [
+    "Weissgerber",
+    "Milic",
+    "Winham",
+    "Garovic"
+   ],
+   "ano": 2015,
+   "veiculo": "PLOS Biology",
+   "volume": "13",
+   "numero": "4",
+   "paginas": "e1002128",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "wickham2014",
+  "doi": "10.18637/jss.v059.i10",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Tidy Data",
+   "subtitulo": "",
+   "autores": [
+    "Wickham"
+   ],
+   "ano": 2014,
+   "veiculo": "Journal of Statistical Software",
+   "volume": "59",
+   "numero": "10",
+   "paginas": null,
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "wilkinson2016",
+  "doi": "10.1038/sdata.2016.18",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "The FAIR Guiding Principles for scientific data management and stewardship",
+   "subtitulo": "",
+   "autores": [
+    "Wilkinson",
+    "Dumontier",
+    "Aalbersberg",
+    "Appleton",
+    "Axton",
+    "Baak",
+    "Blomberg",
+    "Boiten",
+    "da Silva Santos",
+    "Bourne",
+    "Bouwman",
+    "Brookes",
+    "Clark",
+    "Crosas",
+    "Dillo",
+    "Dumon",
+    "Edmunds",
+    "Evelo",
+    "Finkers",
+    "Gonzalez-Beltran",
+    "Gray",
+    "Groth",
+    "Goble",
+    "Grethe",
+    "Heringa",
+    "’t Hoen",
+    "Hooft",
+    "Kuhn",
+    "Kok",
+    "Kok",
+    "Lusher",
+    "Martone",
+    "Mons",
+    "Packer",
+    "Persson",
+    "Rocca-Serra",
+    "Roos",
+    "van Schaik",
+    "Sansone",
+    "Schultes",
+    "Sengstag",
+    "Slater",
+    "Strawn",
+    "Swertz",
+    "Thompson",
+    "van der Lei",
+    "van Mulligen",
+    "Velterop",
+    "Waagmeester",
+    "Wittenburg",
+    "Wolstencroft",
+    "Zhao",
+    "Mons"
+   ],
+   "ano": 2016,
+   "veiculo": "Scientific Data",
+   "volume": "3",
+   "numero": "1",
+   "paginas": null,
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "wilson2017",
+  "doi": "10.1371/journal.pcbi.1005510",
+  "conferido_em": "2026-10-26",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Good enough practices in scientific computing",
+   "subtitulo": "",
+   "autores": [
+    "Wilson",
+    "Bryan",
+    "Cranston",
+    "Kitzes",
+    "Nederbragt",
+    "Teal"
+   ],
+   "ano": 2017,
+   "veiculo": "PLOS Computational Biology",
+   "volume": "13",
+   "numero": "6",
+   "paginas": "e1005510",
+   "tipo_crossref": "journal-article"
+  }
+ }
+]
