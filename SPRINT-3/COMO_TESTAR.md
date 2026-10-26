@@ -7,7 +7,7 @@ Esta pasta reúne a entrega da Sprint 3 em três partes, e cada uma responde a u
 | Item | O que contém |
 |---|---|
 | [Sprint 3 - Grupo 1.pdf](Sprint%203%20-%20Grupo%201.pdf) | relatório da sprint: integrantes, links, verificação, pontos positivos de cada entregável (E1–E4), limitações e referências |
-| [painel_interativo_sefin.html](painel_interativo_sefin.html) | protótipo interativo do painel do Módulo 5, com filtro cruzado por tributo e período; baixe o arquivo e abra no navegador |
+| [painel_interativo_sefin.html](painel_interativo_sefin.html) | protótipo interativo do painel do Módulo 5, que simula o Power BI com filtro cruzado por tributo e período; [abrir no navegador](https://raw.githack.com/Guilherme-RCM/projeto-integrador-eixoII-GRUPO1-/main/SPRINT-3/painel_interativo_sefin.html) ou baixar e abrir localmente |
 | [Sprint3_teste/](Sprint3_teste) | **versão unificada e executável**: código, testes, documentos, evidências e o bruto da coleta de 21/10/2026 |
 
 ## Como testar a versão unificada
