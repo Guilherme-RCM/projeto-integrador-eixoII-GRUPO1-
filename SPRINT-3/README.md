@@ -120,8 +120,7 @@ As cinco frentes de trabalho cobrem os quatro entregáveis do enunciado, e a ter
 | Integrante | Frente | Entregável do enunciado | Arquivos |
 |---|---|---|---|
 
-josegui04monici-arch ,
-samueljaco591,Guilherme-RCM
+
 | samueljaco591 | 1 — Coleta e ética | **E1** — coleta automatizada, com o bruto preservado e datado | `pipeline/coleta/`, `pipeline/camadas.py`, [mapa de fontes](docs/sprint3/E1_coleta.md) |
 | josegui04monici-arch | 2 — Limpeza e decisões | **E2** — limpeza documentada | `pipeline/limpeza/`, [limpeza_decisoes.md](docs/sprint3/limpeza_decisoes.md) |
 | Guilherme-RCM | 3 — Enriquecimento, simulação e atributos | **E2** — enriquecimento com o IBGE e engenharia de atributos | `pipeline/enriquecimento/`, `pipeline/simulacao/`, `pipeline/atributos/`, [dicionário](docs/sprint3/dicionario_base_analitica.md) |
