@@ -2,7 +2,7 @@
 
 Projeto Integrador do Eixo II (BIINAR/UFT, 2026/2), Opção D. Sistema de apoio ao planejamento da arrecadação e à priorização da cobrança da dívida ativa de Palmas-TO, com IA de escopo territorial.
 
-**Sprint 3 — Pipeline ETL (entrega 27/10/2026).** Um comando coleta sete fontes públicas com robots.txt, ritmo e TLS verificados, limpa com decisões documentadas, enriquece com o Censo 2022, simula a dívida de IPTU sobre os setores reais, valida 33 regras impeditivas, carrega no MySQL da Sprint 2 e gera o relatório de EDA com mapas. Resumo e decisões em [SPRINT3.md](SPRINT3.md).
+**Sprint 3 — Pipeline ETL (entrega 27/10/2026).** Um comando coleta sete fontes públicas com robots.txt, ritmo e TLS verificados, limpa com decisões documentadas, enriquece com o Censo 2022, simula a dívida de IPTU sobre os setores reais, valida 33 regras impeditivas, carrega no MySQL da Sprint 2 e gera o relatório de EDA com mapas. Resumo e decisões em [SPRINT3.md](Sprint3_teste/SPRINT3.md).
 
 ## Como executar do zero
 
@@ -58,7 +58,7 @@ Sem MySQL, o `python -m pytest` completo mostra os 57 testes marcados como `inte
 
 ## Fontes e coleta
 
-A coleta de referência foi feita em 21/10/2026, e cada arquivo do bruto leva no nome a data da coleta (`fonte_assunto_AAAA-MM-DD`), porque as fontes mudam e um resultado sem data não é reproduzível. A tabela resume a origem de cada fonte; o [mapa de fontes do E1](docs/sprint3/E1_coleta.md) detalha formato, volume, atualização e cuidados legais, e o [resumo do manifesto](docs/sprint3/evidencias/manifesto_resumo.md) traz o tamanho e o SHA-256 de cada arquivo usado.
+A coleta de referência foi feita em 21/10/2026, e cada arquivo do bruto leva no nome a data da coleta (`fonte_assunto_AAAA-MM-DD`), porque as fontes mudam e um resultado sem data não é reproduzível. A tabela resume a origem de cada fonte; o [mapa de fontes do E1](Sprint3_teste/docs/sprint3/E1_coleta.md) detalha formato, volume, atualização e cuidados legais, e o [resumo do manifesto](Sprint3_teste/docs/sprint3/evidencias/manifesto_resumo.md) traz o tamanho e o SHA-256 de cada arquivo usado.
 
 | Fonte | Endpoint | Coleta de referência (21/10/2026) |
 |---|---|---|
@@ -73,7 +73,7 @@ A coleta segue as regras de conduta do [manual de coleta da coordenação](https
 
 ### Receita do NUCLEOGOV
 
-A receita por conta e mês de 2019 a julho de 2026 vem da extração oficial NUCLEOGOV de 07/07/2026 (`receita_acessoinformacao.csv`, 176.993 linhas), que é a fonte da execução de referência e da entrega da Sprint 3. O pipeline só aceita o arquivo se o hash conferir com o do arquivo publicado pela coordenação (blob `449ca775…`, [ADR-002](docs/sprint3/ADRs.md)), e há duas maneiras de fornecê-lo:
+A receita por conta e mês de 2019 a julho de 2026 vem da extração oficial NUCLEOGOV de 07/07/2026 (`receita_acessoinformacao.csv`, 176.993 linhas), que é a fonte da execução de referência e da entrega da Sprint 3. O pipeline só aceita o arquivo se o hash conferir com o do arquivo publicado pela coordenação (blob `449ca775…`, [ADR-002](Sprint3_teste/docs/sprint3/ADRs.md)), e há duas maneiras de fornecê-lo:
 
 - **cópia local:** aponte `PI2_NUCLEOGOV_ARQUIVO`, no `.env`, para o arquivo distribuído pela coordenação, ou passe `--nucleogov-arquivo CAMINHO`;
 - **download:** `python etl_sefin.py --nucleogov-github` baixa o arquivo da pasta `dados/` do repositório da coordenação ([DavidNadlerPrata/projeto-integrador-eixoII](https://github.com/DavidNadlerPrata/projeto-integrador-eixoII)) pela API do GitHub e confere o mesmo hash; `GITHUB_TOKEN` é opcional.
@@ -97,47 +97,45 @@ tests/         testes; tests/mini_palmas.py monta um bruto pequeno e coerente da
 propostas/     leitor de identidades (HU-04): protótipo fora do pipeline
 ```
 
-Só `data/amostra/` é versionada. O bruto fica fora do Git, por passar de 40 MB e por vir das próprias fontes: num clone novo, ele é coletado de novo, e `limpo` e `pronto` são reconstruídas a partir dele. Uma coleta nova, porém, não reproduz necessariamente os números entregues, porque algumas fontes mudam: o IPCA ganha um mês a cada mês, o que altera o fator de deflação de toda a série, a receita do NUCLEOGOV, quando vem da API, ganha registros a cada mês, e as malhas do IBGE e do GeoPalmas podem ser revistas. Por isso, a EDA entregue identifica a execução de referência, de 21/10/2026, e o [resumo do manifesto](docs/sprint3/evidencias/manifesto_resumo.md) traz o tamanho e o SHA-256 de cada arquivo do bruto que a produziu; uma execução nova reescreve `docs/sprint3/EDA.md`, a galeria e as figuras com os números da nova coleta.
+Só `data/amostra/` é versionada. O bruto fica fora do Git, por passar de 40 MB e por vir das próprias fontes: num clone novo, ele é coletado de novo, e `limpo` e `pronto` são reconstruídas a partir dele. Uma coleta nova, porém, não reproduz necessariamente os números entregues, porque algumas fontes mudam: o IPCA ganha um mês a cada mês, o que altera o fator de deflação de toda a série, a receita do NUCLEOGOV, quando vem da API, ganha registros a cada mês, e as malhas do IBGE e do GeoPalmas podem ser revistas. Por isso, a EDA entregue identifica a execução de referência, de 21/10/2026, e o [resumo do manifesto](Sprint3_teste/docs/sprint3/evidencias/manifesto_resumo.md) traz o tamanho e o SHA-256 de cada arquivo do bruto que a produziu; uma execução nova reescreve `docs/sprint3/EDA.md`, a galeria e as figuras com os números da nova coleta.
 
 ## Onde está cada entregável
 
 | Entregável | Onde |
 |---|---|
-| Sprint 3 E1 — coleta automatizada (API, paginação, limite de taxa, bruto datado) | `pipeline/coleta/`, [E1_coleta.md](docs/sprint3/E1_coleta.md) (com o mapa de fontes) |
-| Sprint 3 E2 — `etl_sefin.py`, validações, logs, IBGE, atributos, carga | `etl_sefin.py`, [E2_pipeline.md](docs/sprint3/E2_pipeline.md), [dicionário](docs/sprint3/dicionario_base_analitica.md), [log real](docs/sprint3/evidencias/etl.log) |
-| Sprint 3 E3 — EDA com mapa e frases de leitura | [EDA.md](docs/sprint3/EDA.md), [GALERIA.md](docs/sprint3/GALERIA.md) |
-| Sprint 3 E4 — reprodutibilidade | este README, gate G14 em [qualidade.md](docs/qualidade.md) |
-| M5 — bases limpas e registro de decisões | `data/limpo/`, [limpeza_decisoes.md](docs/sprint3/limpeza_decisoes.md) |
+| Sprint 3 E1 — coleta automatizada (API, paginação, limite de taxa, bruto datado) | `pipeline/coleta/`, [E1_coleta.md](Sprint3_teste/docs/sprint3/E1_coleta.md) (com o mapa de fontes) |
+| Sprint 3 E2 — `etl_sefin.py`, validações, logs, IBGE, atributos, carga | `etl_sefin.py`, [E2_pipeline.md](Sprint3_teste/docs/sprint3/E2_pipeline.md), [dicionário](Sprint3_teste/docs/sprint3/dicionario_base_analitica.md), [log real](Sprint3_teste/docs/sprint3/evidencias/etl.log) |
+| Sprint 3 E3 — EDA com mapa e frases de leitura | [EDA.md](Sprint3_teste/docs/sprint3/EDA.md), [GALERIA.md](Sprint3_teste/docs/sprint3/GALERIA.md) |
+| Sprint 3 E4 — reprodutibilidade | este README, gate G14 em [qualidade.md](Sprint3_teste/docs/qualidade.md) |
+| M5 — bases limpas e registro de decisões | `data/limpo/`, [limpeza_decisoes.md](Sprint3_teste/docs/sprint3/limpeza_decisoes.md) |
 | M5 — três ou mais indicadores com IPCA | `data/pronto/indicadores_receita_anual.csv`, EDA §10 |
-| M5 — galeria de gráficos (PNG, 150 dpi) | `docs/sprint3/figuras/`, [GALERIA.md](docs/sprint3/GALERIA.md) |
-| M5 — painel no Power BI | [power_bi.md](docs/sprint3/power_bi.md) (montagem a partir de `data/pronto`) |
-| Decisões de arquitetura e rastreabilidade | [ADRs.md](docs/sprint3/ADRs.md), [rastreabilidade_historias.md](docs/sprint3/rastreabilidade_historias.md) |
+| M5 — galeria de gráficos (PNG, 150 dpi) | `docs/sprint3/figuras/`, [GALERIA.md](Sprint3_teste/docs/sprint3/GALERIA.md) |
+| M5 — painel no Power BI | [power_bi.md](Sprint3_teste/docs/sprint3/power_bi.md) (montagem a partir de `data/pronto`) |
+| Decisões de arquitetura e rastreabilidade | [ADRs.md](Sprint3_teste/docs/sprint3/ADRs.md), [rastreabilidade_historias.md](Sprint3_teste/docs/sprint3/rastreabilidade_historias.md) |
 
 ## Divisão de trabalho na Sprint 3
 
-As cinco frentes de trabalho cobrem os quatro entregáveis do enunciado, e a terceira coluna diz qual entregável cada frente sustenta. O E1 cabe inteiro à frente 1; o E2, de maior peso na rubrica (35%), foi dividido entre as frentes 2, 3 e 4, uma para cada etapa da transformação; e a frente 5 responde pelo E3 e pelo E4, cuja verificação automática é o gate G14, mantido pela frente 4. Cada integrante registra as próprias atividades no [diário de bordo](docs/DIARIO_DE_BORDO.md), que, com os commits, é a evidência da participação individual.
+As cinco frentes de trabalho cobrem os quatro entregáveis do enunciado, e a terceira coluna diz qual entregável cada frente sustenta. O E1 cabe inteiro à frente 1; o E2, de maior peso na rubrica (35%), foi dividido entre as frentes 2, 3 e 4, uma para cada etapa da transformação; e a frente 5 responde pelo E3 e pelo E4, cuja verificação automática é o gate G14, mantido pela frente 4. Cada integrante registra as próprias atividades no [diário de bordo](Sprint3_teste/docs/DIARIO_DE_BORDO.md), que, com os commits, é a evidência da participação individual.
 
 | Integrante | Frente | Entregável do enunciado | Arquivos |
 |---|---|---|---|
-
-
-| samueljaco591 | 1 — Coleta e ética | **E1** — coleta automatizada, com o bruto preservado e datado | `pipeline/coleta/`, `pipeline/camadas.py`, [mapa de fontes](docs/sprint3/E1_coleta.md) |
-| josegui04monici-arch | 2 — Limpeza e decisões | **E2** — limpeza documentada | `pipeline/limpeza/`, [limpeza_decisoes.md](docs/sprint3/limpeza_decisoes.md) |
-| Guilherme-RCM | 3 — Enriquecimento, simulação e atributos | **E2** — enriquecimento com o IBGE e engenharia de atributos | `pipeline/enriquecimento/`, `pipeline/simulacao/`, `pipeline/atributos/`, [dicionário](docs/sprint3/dicionario_base_analitica.md) |
-|  | | 4 — Carga, qualidade e gates | **E2** — script único, validações, logs e carga no banco da Sprint 2 | `etl_sefin.py`, `pipeline/carga/`, `pipeline/qualidade/`, `sql/sprint3.sql`, `scripts/quality_gate.py` |
-| Guilherme-RCM & ... || 5 — EDA, painel e relatório | **E3** — relatório de EDA com mapa e frases de leitura; **E4** — README e reprodutibilidade | `pipeline/eda/`, [EDA](docs/sprint3/EDA.md), [Power BI](docs/sprint3/power_bi.md), `README.md`, `SPRINT3.md` |
+| samueljaco591 | 1 — Coleta e ética | **E1** — coleta automatizada, com o bruto preservado e datado | `pipeline/coleta/`, `pipeline/camadas.py`, [mapa de fontes](Sprint3_teste/docs/sprint3/E1_coleta.md) |
+| josegui04monici-arch | 2 — Limpeza e decisões | **E2** — limpeza documentada | `pipeline/limpeza/`, [limpeza_decisoes.md](Sprint3_teste/docs/sprint3/limpeza_decisoes.md) |
+| Guilherme-RCM | 3 — Enriquecimento, simulação e atributos | **E2** — enriquecimento com o IBGE e engenharia de atributos | `pipeline/enriquecimento/`, `pipeline/simulacao/`, `pipeline/atributos/`, [dicionário](Sprint3_teste/docs/sprint3/dicionario_base_analitica.md) |
+| — | 4 — Carga, qualidade e gates | **E2** — script único, validações, logs e carga no banco da Sprint 2 | `etl_sefin.py`, `pipeline/carga/`, `pipeline/qualidade/`, `sql/sprint3.sql`, `scripts/quality_gate.py` |
+| Guilherme-RCM & ... | 5 — EDA, painel e relatório | **E3** — relatório de EDA com mapa e frases de leitura; **E4** — README e reprodutibilidade | `pipeline/eda/`, [EDA](Sprint3_teste/docs/sprint3/EDA.md), [Power BI](Sprint3_teste/docs/sprint3/power_bi.md), `README.md`, `SPRINT3.md` |
 
 ## Dados
 
 - **Reais e públicos:** arrecadação da Prefeitura (API e NUCLEOGOV), IPCA (BCB), Censo 2022 e setores (IBGE), quadras (GeoPalmas). Agregados, sem dado pessoal.
-- **Sintéticos:** a dívida de IPTU por imóvel da Sprint 3 e o módulo operacional da Sprint 2, sempre com `origem_dado = 'SINTETICO'` e a marca SIMULADO nos gráficos ([ADR-003](docs/sprint3/ADRs.md)).
+- **Sintéticos:** a dívida de IPTU por imóvel da Sprint 3 e o módulo operacional da Sprint 2, sempre com `origem_dado = 'SINTETICO'` e a marca SIMULADO nos gráficos ([ADR-003](Sprint3_teste/docs/sprint3/ADRs.md)).
 - Nenhum dado pessoal, credencial ou base completa é versionado.
 
 ## Documentos
 
-- Sprint 3: [resumo](SPRINT3.md) · [coleta](docs/sprint3/E1_coleta.md) · [pipeline](docs/sprint3/E2_pipeline.md) · [decisões de limpeza](docs/sprint3/limpeza_decisoes.md) · [dicionário](docs/sprint3/dicionario_base_analitica.md) · [EDA](docs/sprint3/EDA.md) · [ADRs](docs/sprint3/ADRs.md) · [referências](docs/sprint3/REFERENCIAS.md)
+- Sprint 3: [resumo](Sprint3_teste/SPRINT3.md) · [coleta](Sprint3_teste/docs/sprint3/E1_coleta.md) · [pipeline](Sprint3_teste/docs/sprint3/E2_pipeline.md) · [decisões de limpeza](Sprint3_teste/docs/sprint3/limpeza_decisoes.md) · [dicionário](Sprint3_teste/docs/sprint3/dicionario_base_analitica.md) · [EDA](Sprint3_teste/docs/sprint3/EDA.md) · [ADRs](Sprint3_teste/docs/sprint3/ADRs.md) · [referências](Sprint3_teste/docs/sprint3/REFERENCIAS.md)
 - Sprint 2: os documentos ficam no repositório do projeto (`PI2_Sprint2\pi2-inteligencia-tributaria`); esta pasta guarda só a Sprint 3 e o código da Sprint 2 de que ela depende (`etl/`, `src/`, `sql/`)
-- Qualidade: [quality gates](docs/qualidade.md) · [testes de mutação](docs/mutacao.md)
+- Qualidade: [quality gates](Sprint3_teste/docs/qualidade.md) · [testes de mutação](Sprint3_teste/docs/mutacao.md)
 
 
 ## Observações
