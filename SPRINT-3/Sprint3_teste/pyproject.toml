@@ -1,0 +1,80 @@
+# Configuração das ferramentas de qualidade. Limites dos quality gates: scripts/quality_gate.py
+
+[tool.coverage.run]
+branch = true
+source = ["etl", "src", "pipeline"]
+
+[tool.coverage.report]
+show_missing = true
+skip_empty = true
+exclude_also = [
+    "if __name__ == .__main__.:",
+]
+
+[tool.pyright]
+include = ["etl", "src", "pipeline", "tests"]
+extraPaths = ["."]
+
+# Controle de dependências entre módulos (import-linter)
+[tool.importlinter]
+root_packages = ["etl", "src", "pipeline"]
+include_external_packages = true
+
+[[tool.importlinter.contracts]]
+name = "Estruturas de dados não dependem de ETL nem de banco"
+type = "forbidden"
+source_modules = ["src.estruturas"]
+forbidden_modules = ["etl", "pymysql"]
+
+[[tool.importlinter.contracts]]
+name = "Parser é puro: não acessa banco nem configuração"
+type = "forbidden"
+source_modules = ["etl.parser"]
+forbidden_modules = ["pymysql", "etl.config", "etl.carregar_receita", "etl.sql_runner"]
+
+[[tool.importlinter.contracts]]
+name = "Estruturas de dados são independentes entre si"
+type = "independence"
+modules = ["src.estruturas.grafo", "src.estruturas.heap_prioridade", "src.estruturas.indice_hash"]
+
+[[tool.importlinter.contracts]]
+name = "Camadas do ETL"
+type = "layers"
+layers = [
+    "etl.relatorio_validacao | etl.carregar_receita | etl.amostra",
+    "etl.sql_runner",
+    "etl.config | etl.parser",
+]
+
+# ---- Sprint 3: pipes e filtros (ADR-001) ----
+[[tool.importlinter.contracts]]
+name = "Filtros de limpeza são puros: sem rede, sem banco e sem a coleta"
+type = "forbidden"
+source_modules = ["pipeline.limpeza"]
+forbidden_modules = ["requests", "pymysql", "pipeline.coleta", "etl.config", "etl.carregar_receita",
+                     "etl.sql_runner"]
+
+[[tool.importlinter.contracts]]
+name = "Coleta não conhece a transformação nem o banco"
+type = "forbidden"
+source_modules = ["pipeline.coleta"]
+forbidden_modules = ["pipeline.limpeza", "pymysql", "etl"]
+
+[[tool.importlinter.contracts]]
+name = "Filtros de transformação são puros: sem rede, sem banco e sem a coleta"
+type = "forbidden"
+source_modules = ["pipeline.enriquecimento", "pipeline.simulacao", "pipeline.atributos"]
+forbidden_modules = ["requests", "pymysql", "pipeline.coleta", "etl.config", "etl.carregar_receita",
+                     "etl.sql_runner"]
+
+[[tool.importlinter.contracts]]
+name = "A EDA só lê as camadas: sem rede, sem banco, sem coleta e sem os filtros"
+type = "forbidden"
+source_modules = ["pipeline.eda"]
+forbidden_modules = ["requests", "pymysql", "etl", "pipeline.coleta", "pipeline.carga", "pipeline.limpeza",
+                     "pipeline.enriquecimento", "pipeline.simulacao", "pipeline.transformacao"]
+
+[[tool.importlinter.contracts]]
+name = "Filtros independentes entre si: só conversam pelos dados (pipes)"
+type = "independence"
+modules = ["pipeline.limpeza", "pipeline.enriquecimento", "pipeline.simulacao", "pipeline.atributos"]

@@ -1,0 +1,11 @@
+# Arquivos binários: nunca converter fim de linha (um PDF ou ZIP alterado deixa de abrir)
+*.pdf binary
+*.png binary
+*.svg text eol=lf
+*.zip binary
+*.gz binary
+*.xlsx binary
+*.sqlite binary
+
+# Bruto conferido por SHA-256 no manifesto: nenhuma conversão de fim de linha
+data/bruto/** binary

@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="pt-br"> <!--<![endif]-->
+
+ <!-- BEGIN HEAD -->
+<head>
+      <meta charset="UTF-8" />
+    <title>Página não encontrada - Erro 404</title>
+     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+  <!-- GLOBAL STYLES -->
+    <link href="/error-static/css/bootstrap.css" rel="stylesheet" />
+    <link href="/error-static/css/font-awesome.css" rel="stylesheet" />
+    <!--END GLOBAL STYLES -->
+
+     <!-- PAGE LEVEL STYLES -->
+    <link href="/error-static/css/style.css" rel="stylesheet" />
+      <!--END PAGE LEVEL STYLES -->
+</head>
+     <!-- END HEAD -->
+     <!-- BEGIN BODY -->
+<body  >
+      <!-- PAGE CONTENT --> 
+  <div class="container well">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+	  <div class="logo">
+	    <h1>Página não encontrada</h1>
+          </div>
+             <div class="clearfix"></div>            
+             <div class="col-lg-8  col-lg-offset-2">
+               <span id="question-sign" class="glyphicon glyphicon-question-sign"></span>
+                 </div>
+            <div class="clearfix"></div>
+            <br />
+          <p class="text-muted">A página que você procura não pôde ser encontrada.</p>
+          <div class="clearfix"></div>
+             <!--<br /><br />
+                <div class="col-lg-6 col-lg-offset-3">
+                    <form action="#">
+                    
+                    <div class="input-group">
+		      <input type="text" placeholder="search ..." class="form-control" />
+		      <span class="input-group-btn">
+			<button class="btn btn-primary" type="button"><i class="icon-search"></i></button>
+		      </span>
+		    </div>
+		    
+                    </form>
+                </div>-->
+            <div class="clearfix"></div>
+            <br />
+                <div class="col-lg-6  col-lg-offset-3">
+                      <a href="/" class="btn btn-primary">Voltar para o site</a> 
+                        
+                </div>
+            <div class="clearfix"></div>
+	    <img id="brasao-img" src="/error-static/img/brasao.png" title="Prefeitura Municipal de Palmas" alt="Prefeitura Municipal de Palmas">
+	    <img id="logo-dti-img" src="/error-static/img/logo-dti-sm.png" title="Diretoria de Tecnologia da Informação" alt="Diretoria de Tecnologia da Informação">
+            
+        </div>
+                
+                
+        </div>
+      <!-- END PAGE CONTENT --> 
+
+
+</body>
+     <!-- END BODY -->
+</html>

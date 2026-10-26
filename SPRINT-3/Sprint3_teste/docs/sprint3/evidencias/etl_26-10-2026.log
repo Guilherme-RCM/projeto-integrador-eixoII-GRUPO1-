@@ -1,0 +1,48 @@
+2026-10-26 15:55:11,587 INFO    [20261026T155511-c3ba7c] pipeline: execução 20261026T155511-c3ba7c · código 8dee5ba · opções offline=True, recoletar=False, banco=True, eda=True, nucleogov_github=False, nucleogov_api=False, nucleogov_arquivo=None
+2026-10-26 15:55:11,677 INFO    [20261026T155511-c3ba7c] pipeline: esquema do banco: existente
+2026-10-26 15:55:11,681 INFO    [20261026T155511-c3ba7c] pipeline: modo offline: nenhuma requisição; a transformação usa a última coleta completa
+2026-10-26 15:55:11,682 INFO    [20261026T155511-c3ba7c] pipeline: início da etapa transform
+2026-10-26 15:55:11,816 INFO    [20261026T155511-c3ba7c] pipeline: validação V12-manifesto-integro ok [integridade, impeditiva] cadeia de hashes e arquivos conferidos
+2026-10-26 15:55:13,180 INFO    [20261026T155511-c3ba7c] pipeline: validação V01-coleta-arrecadacao ok [completude, impeditiva] 3542 de 3542 registros; dia 2026-10-21
+2026-10-26 15:55:13,181 INFO    [20261026T155511-c3ba7c] pipeline: validação V01-coleta-nucleogov ok [completude, impeditiva] 1 de 1 registros; dia 2026-10-21
+2026-10-26 15:55:13,181 INFO    [20261026T155511-c3ba7c] pipeline: validação V01-coleta-regioes ok [completude, impeditiva] 6 de n/d registros; dia 2026-10-21
+2026-10-26 15:55:13,181 INFO    [20261026T155511-c3ba7c] pipeline: validação V01-coleta-quadras ok [completude, impeditiva] 284 de n/d registros; dia 2026-10-21
+2026-10-26 15:55:13,181 INFO    [20261026T155511-c3ba7c] pipeline: validação V01-coleta-setores ok [completude, impeditiva] 733 de 733 registros; dia 2026-10-21
+2026-10-26 15:55:13,181 INFO    [20261026T155511-c3ba7c] pipeline: validação V01-coleta-renda ok [completude, impeditiva] 1 de 1 registros; dia 2026-10-21
+2026-10-26 15:55:13,181 INFO    [20261026T155511-c3ba7c] pipeline: validação V01-coleta-ipca ok [completude, impeditiva] 321 de n/d registros; dia 2026-10-21
+2026-10-26 15:55:17,244 INFO    [20261026T155511-c3ba7c] pipeline: validação V02-reconciliacao-arrecadacao-api ok [consistencia, impeditiva] lidos 3542 = aceitos 3542 + rejeitados 0 + descartados 0
+2026-10-26 15:55:17,244 INFO    [20261026T155511-c3ba7c] pipeline: validação V03-rejeicao-arrecadacao-api ok [validade, impeditiva] 0 de 3542 rejeitados (0.00%; limite 1%)
+2026-10-26 15:55:17,244 INFO    [20261026T155511-c3ba7c] pipeline: validação V02-reconciliacao-receita-nucleogov ok [consistencia, impeditiva] lidos 176993 = aceitos 176993 + rejeitados 0 + descartados 0
+2026-10-26 15:55:17,244 INFO    [20261026T155511-c3ba7c] pipeline: validação V03-rejeicao-receita-nucleogov ok [validade, impeditiva] 0 de 176993 rejeitados (0.00%; limite 1%)
+2026-10-26 15:55:17,244 INFO    [20261026T155511-c3ba7c] pipeline: validação V02-reconciliacao-quadras-geopalmas ok [consistencia, impeditiva] lidos 284 = aceitos 283 + rejeitados 1 + descartados 0
+2026-10-26 15:55:17,245 INFO    [20261026T155511-c3ba7c] pipeline: validação V03-rejeicao-quadras-geopalmas ok [validade, impeditiva] 1 de 284 rejeitados (0.35%; limite 1%)
+2026-10-26 15:55:17,245 INFO    [20261026T155511-c3ba7c] pipeline: validação V02-reconciliacao-setores-ibge ok [consistencia, impeditiva] lidos 733 = aceitos 733 + rejeitados 0 + descartados 0
+2026-10-26 15:55:17,245 INFO    [20261026T155511-c3ba7c] pipeline: validação V03-rejeicao-setores-ibge ok [validade, impeditiva] 0 de 733 rejeitados (0.00%; limite 1%)
+2026-10-26 15:55:17,245 INFO    [20261026T155511-c3ba7c] pipeline: validação V02-reconciliacao-renda-censo ok [consistencia, impeditiva] lidos 683 = aceitos 683 + rejeitados 0 + descartados 0
+2026-10-26 15:55:17,245 INFO    [20261026T155511-c3ba7c] pipeline: validação V03-rejeicao-renda-censo ok [validade, impeditiva] 0 de 683 rejeitados (0.00%; limite 1%)
+2026-10-26 15:55:17,245 INFO    [20261026T155511-c3ba7c] pipeline: validação V02-reconciliacao-ipca ok [consistencia, impeditiva] lidos 321 = aceitos 321 + rejeitados 0 + descartados 0
+2026-10-26 15:55:17,245 INFO    [20261026T155511-c3ba7c] pipeline: validação V03-rejeicao-ipca ok [validade, impeditiva] 0 de 321 rejeitados (0.00%; limite 1%)
+2026-10-26 15:55:17,256 INFO    [20261026T155511-c3ba7c] pipeline: validação V05-contrato-nucleogov ok [validade, impeditiva] 0 erro(s) de contrato no arquivo (contrato da Sprint 2)
+2026-10-26 15:55:17,257 INFO    [20261026T155511-c3ba7c] pipeline: validação V06-conciliacao-nucleogov ok [consistencia, impeditiva] 0 competência(s) com conta-pai diferente da soma dos 4 componentes
+2026-10-26 15:55:17,262 INFO    [20261026T155511-c3ba7c] pipeline: validação V04-unicidade-arrecadacao-api ok [unicidade, impeditiva] 0 chave(s) repetida(s)
+2026-10-26 15:55:17,263 INFO    [20261026T155511-c3ba7c] pipeline: validação V04-unicidade-setores ok [unicidade, impeditiva] 0 chave(s) repetida(s)
+2026-10-26 15:55:17,263 INFO    [20261026T155511-c3ba7c] pipeline: validação V04-unicidade-quadras ok [unicidade, impeditiva] 0 chave(s) repetida(s)
+2026-10-26 15:55:17,263 INFO    [20261026T155511-c3ba7c] pipeline: validação V04-unicidade-ipca ok [unicidade, impeditiva] 0 chave(s) repetida(s)
+2026-10-26 15:55:17,270 INFO    [20261026T155511-c3ba7c] pipeline: validação V07-ipca-continuo ok [completude, impeditiva] 0 lacuna(s) na série; 0 competência(s) da receita sem índice
+2026-10-26 15:55:17,271 INFO    [20261026T155511-c3ba7c] pipeline: validação V08-integridade-censo-setores ok [integridade, impeditiva] 0 chave(s) sem correspondência
+2026-10-26 15:55:17,279 INFO    [20261026T155511-c3ba7c] pipeline: validação I04-unificacao-receita ok [consistencia, informativa] API: 2849 linhas tributárias, 86 fora da série; NUCLEOGOV: 1092 componentes → 2055 linhas unificadas (fonte × ano × mês × tributo × componente)
+2026-10-26 15:55:17,689 INFO    [20261026T155511-c3ba7c] pipeline: validação I05-cruzamento-setor-quadra ok [consistencia, informativa] 733 setores × 283 quadras → 1635 pares com interseção de pelo menos 1 m²
+2026-10-26 15:55:17,693 INFO    [20261026T155511-c3ba7c] pipeline: validação I02-cobertura-quadras ok [completude, informativa] 94.2% dos domicílios estão em setores com quadra do GeoPalmas
+2026-10-26 15:55:17,693 INFO    [20261026T155511-c3ba7c] pipeline: validação I03-sigilo-censo ok [completude, informativa] 23 setor(es) com sigilo do IBGE (sem renda)
+2026-10-26 15:55:17,693 INFO    [20261026T155511-c3ba7c] pipeline: validação I01-atualidade-ipca ok [atualidade, informativa] último dado 2026-09-01 (55 dias; limite 120)
+2026-10-26 15:55:19,718 INFO    [20261026T155511-c3ba7c] pipeline: validação V10-calibracao-simulacao ok [exatidao, impeditiva] taxa simulada 0.3300; alvo 0.3300 ± 0.005
+2026-10-26 15:55:21,421 INFO    [20261026T155511-c3ba7c] pipeline: validação V09-cardinalidade-base-analitica ok [consistencia, impeditiva] 556260 linha(s) antes, 556260 depois do cruzamento
+2026-10-26 15:55:21,453 INFO    [20261026T155511-c3ba7c] pipeline: validação V11-dominio-faixa-valor ok [validade, impeditiva] 0 valor(es) fora do domínio
+2026-10-26 15:55:21,486 INFO    [20261026T155511-c3ba7c] pipeline: validação V11-dominio-faixa-tempo ok [validade, impeditiva] 0 valor(es) fora do domínio
+2026-10-26 15:55:21,492 INFO    [20261026T155511-c3ba7c] pipeline: validação V11-dominio-mes-vencimento ok [validade, impeditiva] 0 valor(es) fora do domínio
+2026-10-26 15:55:35,179 INFO    [20261026T155511-c3ba7c] pipeline: fim da etapa transform em 23.5 s · validacoes=33/33 impeditivas · creditos_simulados=556260 · receita=2055
+2026-10-26 15:55:35,185 INFO    [20261026T155511-c3ba7c] pipeline: início da etapa load
+2026-10-26 15:55:39,188 INFO    [20261026T155511-c3ba7c] pipeline: fim da etapa load em 4.0 s · arquivo_bruto=69 · ipca_mensal=321 · arrecadacao_historica=25146 · receita_tributaria=2055 · censo2022_renda_setor=683 · quadra=283 · setor_quadra=1635 · valor_indicador=192
+2026-10-26 15:55:40,065 INFO    [20261026T155511-c3ba7c] pipeline: início da etapa eda
+2026-10-26 15:55:47,568 INFO    [20261026T155511-c3ba7c] pipeline: fim da etapa eda em 7.5 s · arquivos=9
+2026-10-26 15:55:47,588 INFO    [20261026T155511-c3ba7c] pipeline: execução 20261026T155511-c3ba7c concluída com sucesso

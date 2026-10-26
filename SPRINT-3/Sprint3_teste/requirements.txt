@@ -1,0 +1,9 @@
+# Dependências de execução (ETL e carga no MySQL). Para testes e quality gates: requirements-dev.txt
+# Faixas: aceita correções e novidades compatíveis; trava a próxima versão maior (SemVer).
+pymysql>=1.1,<2
+requests>=2.32,<3      # coleta HTTP da Sprint 3 (TLS verificado, sessão persistente)
+numpy>=2.0,<3          # simulação (sorteios com semente) e estatísticas da EDA
+pandas>=2.2,<4         # base analítica, agregados e leitura das camadas
+shapely>=2.0,<3        # geometrias dos setores e quadras (validação, interseção, STRtree)
+pyproj>=3.6,<4         # projeção SIRGAS 2000 / UTM 22S para medir áreas
+matplotlib>=3.8,<4     # figuras PNG da EDA (instala também o Pillow)

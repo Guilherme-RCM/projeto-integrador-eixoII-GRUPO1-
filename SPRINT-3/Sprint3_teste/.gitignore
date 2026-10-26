@@ -1,0 +1,28 @@
+# Segredos e configuração local
+.env
+*.local.txt
+
+# Dados: só a amostra pública de 10 linhas é versionada
+data/*
+!data/amostra/
+# Versão unificada: o bruto de 21/10/2026 vai junto, para o teste sem rede
+!data/bruto/
+*.sqlite
+*.db
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Resultados gerados
+saida/
+
+# Artefatos de cobertura
+.coverage
+coverage.xml
+
+# Sprint 3: logs de execução (a evidência da execução real vai para docs/)
+logs/

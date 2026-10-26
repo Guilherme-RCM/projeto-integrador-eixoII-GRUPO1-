@@ -1,0 +1,26 @@
+[
+ {
+  "fields": {
+   "name": "NORDESTE",
+   "type_shape": "Polygon",
+   "shape_file": "shape/NORDESTE_h8aRbDM.kml",
+   "id_shape": "nordeste",
+   "folder": "",
+   "approved": true
+  },
+  "model": "place.shape",
+  "pk": 15
+ },
+ {
+  "fields": {
+   "name": "NOROESTE",
+   "type_shape": "Polygon",
+   "shape_file": "shape/NOROESTE_t2k4eK9.kml",
+   "id_shape": "noroeste",
+   "folder": "",
+   "approved": true
+  },
+  "model": "place.shape",
+  "pk": 16
+ }
+]

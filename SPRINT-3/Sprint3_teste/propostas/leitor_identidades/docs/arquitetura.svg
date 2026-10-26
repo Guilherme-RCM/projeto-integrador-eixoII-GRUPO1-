@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="470" height="385" preserveAspectRatio="xMinYMin meet" viewBox="0 0 470 385" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="470" height="385"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-385)" style="clip-path: url(#clip)">
+		<g transform="">
+			<text x="110.235" y="373" style="font-family: Helvetica-Bold; font-size: 10px;fill: rgb(8%,21%,29%); stroke:none;" transform="translate(0,746) scale(1,-1)">IMPLEMENTADO | processo local e dados sinteticos</text>
+			<rect x="150" y="315" width="170" height="40" rx="5" ry="5" style="stroke: rgb(13%,48%,50%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,96%,97%); fill-rule: evenodd;"/>
+			<text x="207.74349999999998" y="339" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(8%,21%,29%); stroke:none;" transform="translate(0,678) scale(1,-1)">Interface CLI</text>
+			<text x="194.98149999999998" y="326" style="font-family: Helvetica; font-size: 9px;fill: rgb(8%,21%,29%); stroke:none;" transform="translate(0,652) scale(1,-1)">identidade simulada</text>
+			<rect x="150" y="245" width="170" height="45" rx="5" ry="5" style="stroke: rgb(13%,48%,50%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,96%,97%); fill-rule: evenodd;"/>
+			<text x="197.2405" y="274" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(8%,21%,29%); stroke:none;" transform="translate(0,548) scale(1,-1)">Servico Workflow</text>
+			<text x="177.2335" y="261" style="font-family: Helvetica; font-size: 9px;fill: rgb(8%,21%,29%); stroke:none;" transform="translate(0,522) scale(1,-1)">importar, inspecionar, decidir</text>
+			<path d="M 235,315 L 235,290 Z" style="stroke: rgb(13%,48%,50%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<polygon points="235 290, 232 296, 238 296" style="stroke: rgb(13%,48%,50%); stroke-linecap: butt; stroke-width: 1; fill: rgb(13%,48%,50%); fill-rule: evenodd;"/>
+			<path d="M 235,245 L 77.5,222 Z" style="stroke: rgb(13%,48%,50%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 77.5,222 L 77.5,209 Z" style="stroke: rgb(13%,48%,50%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<polygon points="77.5 209, 74.5 215, 80.5 215" style="stroke: rgb(13%,48%,50%); stroke-linecap: butt; stroke-width: 1; fill: rgb(13%,48%,50%); fill-rule: evenodd;"/>
+			<path d="M 235,245 L 235,222 Z" style="stroke: rgb(13%,48%,50%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 235,222 L 235,209 Z" style="stroke: rgb(13%,48%,50%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<polygon points="235 209, 232 215, 238 215" style="stroke: rgb(13%,48%,50%); stroke-linecap: butt; stroke-width: 1; fill: rgb(13%,48%,50%); fill-rule: evenodd;"/>
+			<path d="M 235,245 L 392.5,222 Z" style="stroke: rgb(13%,48%,50%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 392.5,222 L 392.5,209 Z" style="stroke: rgb(13%,48%,50%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<polygon points="392.5 209, 389.5 215, 395.5 215" style="stroke: rgb(13%,48%,50%); stroke-linecap: butt; stroke-width: 1; fill: rgb(13%,48%,50%); fill-rule: evenodd;"/>
+			<rect x="10" y="151" width="135" height="58" rx="5" ry="5" style="stroke: rgb(13%,48%,50%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,96%,97%); fill-rule: evenodd;"/>
+			<text x="59.5" y="193" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(8%,21%,29%); stroke:none;" transform="translate(0,386) scale(1,-1)">Dominio</text>
+			<text x="31.474000000000004" y="180" style="font-family: Helvetica; font-size: 9px;fill: rgb(8%,21%,29%); stroke:none;" transform="translate(0,360) scale(1,-1)">CPF / funcao / unidade</text>
+			<text x="33.49" y="167" style="font-family: Helvetica; font-size: 9px;fill: rgb(8%,21%,29%); stroke:none;" transform="translate(0,334) scale(1,-1)">regras deterministicas</text>
+			<rect x="167.5" y="151" width="135.0" height="58" rx="5" ry="5" style="stroke: rgb(13%,48%,50%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,96%,97%); fill-rule: evenodd;"/>
+			<text x="202.492" y="193" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(8%,21%,29%); stroke:none;" transform="translate(0,386) scale(1,-1)">Porta Extractor</text>
+			<text x="194.73399999999998" y="180" style="font-family: Helvetica; font-size: 9px;fill: rgb(8%,21%,29%); stroke:none;" transform="translate(0,360) scale(1,-1)">adaptador TXT/PDF</text>
+			<text x="203.9815" y="167" style="font-family: Helvetica; font-size: 9px;fill: rgb(8%,21%,29%); stroke:none;" transform="translate(0,334) scale(1,-1)">pagina e trecho</text>
+			<rect x="325" y="151" width="135" height="58" rx="5" ry="5" style="stroke: rgb(13%,48%,50%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,96%,97%); fill-rule: evenodd;"/>
+			<text x="377.9965" y="193" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(8%,21%,29%); stroke:none;" transform="translate(0,386) scale(1,-1)">SQLite</text>
+			<text x="346.7305" y="180" style="font-family: Helvetica; font-size: 9px;fill: rgb(8%,21%,29%); stroke:none;" transform="translate(0,360) scale(1,-1)">documentos e vinculos</text>
+			<text x="355.9825" y="167" style="font-family: Helvetica; font-size: 9px;fill: rgb(8%,21%,29%); stroke:none;" transform="translate(0,334) scale(1,-1)">creditos e eventos</text>
+			<text x="113.44149999999999" y="131" style="font-family: Helvetica; font-size: 9px;fill: rgb(8%,21%,29%); stroke:none;" transform="translate(0,262) scale(1,-1)">Persistencia: vinculo + estado + evento na mesma transacao</text>
+			<rect x="0" y="13" width="470" height="101" style="stroke: rgb(32%,38%,42%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd; stroke-dasharray: 4, 3;"/>
+			<text x="121.91" y="95" style="font-family: Helvetica-Bold; font-size: 10px;fill: rgb(8%,21%,29%); stroke:none;" transform="translate(0,190) scale(1,-1)">EVOLUCAO PROPOSTA | ainda nao implantada</text>
+			<rect x="10" y="29" width="130" height="46" rx="5" ry="5" style="stroke: rgb(13%,48%,50%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,96%,97%); fill-rule: evenodd;"/>
+			<text x="39.99" y="59" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(8%,21%,29%); stroke:none;" transform="translate(0,118) scale(1,-1)">Interface interna</text>
+			<text x="29.478" y="46" style="font-family: Helvetica; font-size: 9px;fill: rgb(8%,21%,29%); stroke:none;" transform="translate(0,92) scale(1,-1)">identidade institucional</text>
+			<rect x="170" y="29" width="130" height="46" rx="5" ry="5" style="stroke: rgb(13%,48%,50%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,96%,97%); fill-rule: evenodd;"/>
+			<text x="198.613" y="59" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(8%,21%,29%); stroke:none;" transform="translate(0,118) scale(1,-1)">Aplicacao + OCR</text>
+			<text x="196.7365" y="46" style="font-family: Helvetica; font-size: 9px;fill: rgb(8%,21%,29%); stroke:none;" transform="translate(0,92) scale(1,-1)">revisao visual / API</text>
+			<rect x="330" y="29" width="130" height="46" rx="5" ry="5" style="stroke: rgb(13%,48%,50%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,96%,97%); fill-rule: evenodd;"/>
+			<text x="356.7455" y="59" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(8%,21%,29%); stroke:none;" transform="translate(0,118) scale(1,-1)">Dados protegidos</text>
+			<text x="349.73" y="46" style="font-family: Helvetica; font-size: 9px;fill: rgb(8%,21%,29%); stroke:none;" transform="translate(0,92) scale(1,-1)">PostgreSQL / arquivos</text>
+			<path d="M 140,52 L 170,52 Z" style="stroke: rgb(13%,48%,50%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<polygon points="170 52, 164 49, 164 55" style="stroke: rgb(13%,48%,50%); stroke-linecap: butt; stroke-width: 1; fill: rgb(13%,48%,50%); fill-rule: evenodd;"/>
+			<path d="M 300,52 L 330,52 Z" style="stroke: rgb(13%,48%,50%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<polygon points="330 52, 324 49, 324 55" style="stroke: rgb(13%,48%,50%); stroke-linecap: butt; stroke-width: 1; fill: rgb(13%,48%,50%); fill-rule: evenodd;"/>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,38 @@
+{
+ "count": 3,
+ "next": null,
+ "previous": "http://integracao.palmas.to.gov.br/apirest/arrecadacao/",
+ "results": [
+  {
+   "id": 847257,
+   "receita_codigo": "84112102",
+   "receita_descricao": "IPTU PRINCIPAL - PRÓPRIO",
+   "receita_data_ocorrencia": "2018-01-01",
+   "receita_valor": "88929704.10",
+   "dia": 1,
+   "mes": 1,
+   "ano": 2018,
+   "valor_mes": "0.00",
+   "valor_ano": "88929704.10",
+   "valor_receita_ano": "88929704.10",
+   "valor_receita_mes": "0.00",
+   "valor_consolidado_mes": "0.00",
+   "valor_consolidado_ano": "88929704.10",
+   "codigo_conta_contabil": "90001",
+   "descricao_conta_contabil": "IPTU PRINCIPAL - PRÓPRIO",
+   "data_atualizacao": "2021-06-01T14:45:47.443406",
+   "valor_jan": "88929704.10",
+   "valor_fev": "88929704.10",
+   "valor_mar": "88929704.10",
+   "valor_abr": "88929704.10",
+   "valor_mai": "88929704.10",
+   "valor_jun": "88929704.10",
+   "valor_jul": "88929704.10",
+   "valor_ago": "88929704.10",
+   "valor_set": "88929704.10",
+   "valor_out": "88929704.10",
+   "valor_nov": "88929704.10",
+   "valor_dez": "88929704.10"
+  }
+ ]
+}
