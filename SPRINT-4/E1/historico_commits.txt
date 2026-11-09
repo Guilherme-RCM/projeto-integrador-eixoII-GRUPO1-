@@ -1,0 +1,8 @@
+Commits que tocaram os arquivos desta entrega (branch sprint-4, a partir de 03e02d7):
+
+8c55960 fix(sprint4): corrige os oito defeitos da revisão crítica (F01 a F08)
+4d30641 docs(sprint4): relatório das etapas do projeto, segundo o roteiro "Etapas de um Projeto"
+ccb16ef docs(sprint4): rodada oficial refeita com a árvore limpa, documentação E1–E4 e ADRs
+fb47ff8 fix(sprint4): literal de bytes quebrado no hash do protocolo
+126502c build(sprint4): fim de linha fixo nos arquivos com hash registrado
+3e86179 feat(sprint4): protocolo de modelagem congelado antes de abrir o teste

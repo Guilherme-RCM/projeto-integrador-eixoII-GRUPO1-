@@ -1,0 +1,96 @@
+# Protocolo de modelagem da Sprint 4 (pré-especificado antes de qualquer treino).
+#
+# Tudo o que decide o resultado fica aqui, com hash registrado nos metadados de cada
+# execução: janelas temporais, atributos autorizados, grades de hiperparâmetros,
+# métricas de seleção e regras de decisão. Mudar essa definição dos modelos depois de olhar
+# o teste exige nova versão do protocolo e novos modelos (docs/sprint4/E1_metodologia.md), e
+# o lote recusa pontuar com um pacote treinado sob outra definição (pipeline/ml/config.py,
+# definicao_modelos). A política de apresentação — faixas, supressão do painel e fotografia
+# de demonstração — pode mudar sem novo treino e fica registrada no manifesto de cada lote.
+versao_protocolo: "1.0.0"
+semente: 20261107
+
+dados:
+  base: data/pronto/base_analitica_creditos.csv.gz
+  setores: data/pronto/setores_socioeconomia.csv
+  quadras: data/pronto/quadras_socioeconomia.csv
+  geometrias: data/limpo/setores_ibge.csv
+  qualidade: data/pronto/qualidade_dados.json
+  data_corte: "2026-07-31"
+
+# M1 — inadimplência: o crédito do exercício ficará sem pagamento no vencimento?
+# t0 = 1º de janeiro do exercício (premissa da simulação: o arquivo não traz a data real
+# do lançamento). Rótulo disponível no fim do dia do vencimento (10/03).
+m1:
+  treino: [2021, 2022, 2023]
+  validacao: [2024]
+  teste: [2025]
+  # validação interna em janela crescente, só dentro do treino: [anos de ajuste] -> [ano avaliado]
+  validacao_interna:
+    - [[2021], [2022]]
+    - [[2021, 2022], [2023]]
+  atributos:
+    - inadimplente_exercicio_anterior
+    - inadimplencias_anteriores
+    - exercicios_anteriores
+    - debitos_abertos_t0
+    - valor_relativo_anterior
+  metrica_selecao: average_precision
+  limiar: maximo_f1_na_validacao
+
+# M2 — recuperabilidade: o crédito inscrito e aberto na fotografia t0 será pago
+# integralmente nos 365 dias seguintes, isto é, em (t0, t0 + 365]?
+m2:
+  horizonte_dias: 365
+  treino: ["2022-06-29", "2023-06-30"]
+  validacao: ["2024-07-01"]
+  teste: ["2025-07-31"]
+  validacao_interna:
+    - [["2022-06-29"], ["2023-06-30"]]
+  fotografia_demonstracao: "2026-07-31"
+  atributos:
+    - idade_divida_dias
+    - dias_desde_inscricao
+    - valor_relativo_credito
+    - creditos_inscritos_abertos_imovel
+    - inadimplencias_imovel_t0
+    - inadimplente_ultimo_exercicio
+  metrica_selecao: neg_brier_score
+  # recalibrar só se a calibração na média se afastar mais que isto na validação
+  tolerancia_calibracao: 0.02
+
+# O Dummy (prevalência do treino) é a referência mínima, não candidato à implantação.
+# Entre os candidatos, vale a regra de um erro-padrão (Hastie, Tibshirani e Friedman,
+# 2009, §7.10): dos modelos a até um erro-padrão do melhor na validação, fica o mais
+# simples, nesta ordem. O erro-padrão vem de bootstrap por imóvel, porque os créditos
+# de um mesmo imóvel não são independentes. O relatório diz ainda se o escolhido supera
+# o Dummy por mais de um erro-padrão; se não superar, o achado é publicado como tal.
+selecao:
+  referencia: dummy
+  ordem_parcimonia: [regressao_logistica, arvore_decisao, random_forest]
+  reamostras_bootstrap: 200
+
+grades:
+  regressao_logistica:
+    modelo__C: [0.1, 1.0, 10.0]
+  arvore_decisao:
+    modelo__max_depth: [3, 6, 10]
+    modelo__min_samples_leaf: [20, 100]
+  # 12 combinações; o número de árvores fica fixo em 200 porque o erro de generalização
+  # converge quando as árvores aumentam (Breiman, 2001), e não é um ajuste a otimizar.
+  random_forest:
+    modelo__max_depth: [6, 12, null]
+    modelo__min_samples_leaf: [20, 100]
+    modelo__max_features: [sqrt, 0.7]
+
+random_forest:
+  n_estimators: 200
+  n_jobs: 10   # não altera o resultado: as sementes das árvores são sorteadas antes da paralelização
+
+# Faixas de apresentação herdadas do exemplo da coordenação; não são política pública.
+faixas:
+  media_a_partir_de: 0.33
+  alta_a_partir_de: 0.66
+
+painel:
+  k_minimo_imoveis: 10   # mesma regra de supressão da Sprint 3 (agregar_por_setor)

@@ -1,0 +1,245 @@
+{
+  "M1": {
+    "coluna_periodo": "exercicio",
+    "conjuntos": {
+      "teste": {
+        "fim_rotulo": [
+          "2025-03-10",
+          "2025-03-10"
+        ],
+        "imoveis": 111252,
+        "n": 111252,
+        "periodos": [
+          2025
+        ],
+        "positivos": 40838,
+        "prevalencia": 0.367077,
+        "sha256_chaves": "0b89ff9c51b9a9e22c52535ff171d3754e0196772d650051330ed59c61d3858a",
+        "t0": [
+          "2025-01-01",
+          "2025-01-01"
+        ]
+      },
+      "treino": {
+        "fim_rotulo": [
+          "2021-03-10",
+          "2023-03-10"
+        ],
+        "imoveis": 111252,
+        "n": 333756,
+        "periodos": [
+          2021,
+          2022,
+          2023
+        ],
+        "positivos": 102439,
+        "prevalencia": 0.306928,
+        "sha256_chaves": "dd9c8770d7846c9c761db6fb5cda0fb48fe17feb1d0b22862a8279d5a6daf912",
+        "t0": [
+          "2021-01-01",
+          "2023-01-01"
+        ]
+      },
+      "validacao": {
+        "fim_rotulo": [
+          "2024-03-10",
+          "2024-03-10"
+        ],
+        "imoveis": 111252,
+        "n": 111252,
+        "periodos": [
+          2024
+        ],
+        "positivos": 40289,
+        "prevalencia": 0.362142,
+        "sha256_chaves": "3f729246290dfdb5dbb0c7991009b36c3f1f11a2731ffb72aaded7f64c57570e",
+        "t0": [
+          "2024-01-01",
+          "2024-01-01"
+        ]
+      }
+    },
+    "invariantes": [
+      {
+        "evidencia": "0 repetida(s)",
+        "invariante": "chave (tarefa, id_credito, t0) única",
+        "passou": true
+      },
+      {
+        "evidencia": "último rótulo disponível em 2023-03-10 < primeiro t0 2024-01-01",
+        "invariante": "cronologia treino → validação",
+        "passou": true
+      },
+      {
+        "evidencia": "último rótulo disponível em 2024-03-10 < primeiro t0 2025-01-01",
+        "invariante": "cronologia validação → teste",
+        "passou": true
+      },
+      {
+        "evidencia": "0 imaturo(s)",
+        "invariante": "rótulos maduros em treino",
+        "passou": true
+      },
+      {
+        "evidencia": "classes [0, 1]",
+        "invariante": "duas classes em treino",
+        "passou": true
+      },
+      {
+        "evidencia": "0 imaturo(s)",
+        "invariante": "rótulos maduros em validacao",
+        "passou": true
+      },
+      {
+        "evidencia": "classes [0, 1]",
+        "invariante": "duas classes em validacao",
+        "passou": true
+      },
+      {
+        "evidencia": "0 imaturo(s)",
+        "invariante": "rótulos maduros em teste",
+        "passou": true
+      },
+      {
+        "evidencia": "classes [0, 1]",
+        "invariante": "duas classes em teste",
+        "passou": true
+      }
+    ],
+    "repeticao_entre_conjuntos": {
+      "creditos_treino_e_teste": 0,
+      "imoveis_treino_e_teste": 111252,
+      "nota": "a mesma entidade em fotografias posteriores não é vazamento; a mesma fotografia é"
+    },
+    "tarefa": "M1",
+    "validacao_interna": [
+      {
+        "ajuste": 111252,
+        "avaliacao": 111252
+      },
+      {
+        "ajuste": 222504,
+        "avaliacao": 111252
+      }
+    ]
+  },
+  "M2": {
+    "coluna_periodo": "t0",
+    "conjuntos": {
+      "teste": {
+        "fim_rotulo": [
+          "2026-07-31",
+          "2026-07-31"
+        ],
+        "imoveis": 46015,
+        "n": 64017,
+        "periodos": [
+          "2025-07-31"
+        ],
+        "positivos": 7585,
+        "prevalencia": 0.118484,
+        "sha256_chaves": "1c758a263ba68b44a6783d3a60fc98bb32894c6bf34594441578a7fd03fab23e",
+        "t0": [
+          "2025-07-31",
+          "2025-07-31"
+        ]
+      },
+      "treino": {
+        "fim_rotulo": [
+          "2023-06-29",
+          "2024-06-29"
+        ],
+        "imoveis": 28877,
+        "n": 46536,
+        "periodos": [
+          "2022-06-29",
+          "2023-06-30"
+        ],
+        "positivos": 5622,
+        "prevalencia": 0.12081,
+        "sha256_chaves": "4668e4acd2e381d3644a2d8acbd134edce8cf5f7afa0724fd1bb5faf73b241ee",
+        "t0": [
+          "2022-06-29",
+          "2023-06-30"
+        ]
+      },
+      "validacao": {
+        "fim_rotulo": [
+          "2025-07-01",
+          "2025-07-01"
+        ],
+        "imoveis": 38367,
+        "n": 49213,
+        "periodos": [
+          "2024-07-01"
+        ],
+        "positivos": 5975,
+        "prevalencia": 0.121411,
+        "sha256_chaves": "848126e79a50dd93d631fefcbd58a67a27e947d3515891b314ae5f14e393010c",
+        "t0": [
+          "2024-07-01",
+          "2024-07-01"
+        ]
+      }
+    },
+    "invariantes": [
+      {
+        "evidencia": "0 repetida(s)",
+        "invariante": "chave (tarefa, id_credito, t0) única",
+        "passou": true
+      },
+      {
+        "evidencia": "último rótulo disponível em 2024-06-29 < primeiro t0 2024-07-01",
+        "invariante": "cronologia treino → validação",
+        "passou": true
+      },
+      {
+        "evidencia": "último rótulo disponível em 2025-07-01 < primeiro t0 2025-07-31",
+        "invariante": "cronologia validação → teste",
+        "passou": true
+      },
+      {
+        "evidencia": "0 imaturo(s)",
+        "invariante": "rótulos maduros em treino",
+        "passou": true
+      },
+      {
+        "evidencia": "classes [0, 1]",
+        "invariante": "duas classes em treino",
+        "passou": true
+      },
+      {
+        "evidencia": "0 imaturo(s)",
+        "invariante": "rótulos maduros em validacao",
+        "passou": true
+      },
+      {
+        "evidencia": "classes [0, 1]",
+        "invariante": "duas classes em validacao",
+        "passou": true
+      },
+      {
+        "evidencia": "0 imaturo(s)",
+        "invariante": "rótulos maduros em teste",
+        "passou": true
+      },
+      {
+        "evidencia": "classes [0, 1]",
+        "invariante": "duas classes em teste",
+        "passou": true
+      }
+    ],
+    "repeticao_entre_conjuntos": {
+      "creditos_treino_e_teste": 24447,
+      "imoveis_treino_e_teste": 24738,
+      "nota": "a mesma entidade em fotografias posteriores não é vazamento; a mesma fotografia é"
+    },
+    "tarefa": "M2",
+    "validacao_interna": [
+      {
+        "ajuste": 14595,
+        "avaliacao": 31941
+      }
+    ]
+  }
+}
