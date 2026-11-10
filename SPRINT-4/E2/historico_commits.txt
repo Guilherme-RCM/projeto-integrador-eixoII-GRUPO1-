@@ -1,0 +1,17 @@
+Commits que tocaram os arquivos desta entrega (branch sprint-4, a partir de 03e02d7):
+
+13e5043 docs(sprint4): E2 como dissertação pelas etapas da AULA01, E4 com o painel Qt, revisão técnica e R07
+bf86661 docs(sprint4): resultados da análise extra do XGBoost (execução 20261109, código d90fb33)
+d90fb33 feat(sprint4): XGBoost como análise extra do E2, posterior ao protocolo congelado (ADR-ML-08)
+4497088 docs(sprint4): seção 8 (LGPD) do E1 e figura comparativa das técnicas, pendentes desde 08/11
+9995c84 fix(sprint4): verificador confere os bytes reais do pacote (R06) e leitura do lote resiste a publicações concorrentes (R03)
+bc29911 fix(sprint4): estado do código no lote sem os artefatos da rodada; pacote e relatórios regenerados
+8c55960 fix(sprint4): corrige os oito defeitos da revisão crítica (F01 a F08)
+4d30641 docs(sprint4): relatório das etapas do projeto, segundo o roteiro "Etapas de um Projeto"
+b340bdc docs(sprint4): notebook executado, figuras, verificações e relatório final em PDF
+d4fb23e fix(sprint4): rótulo 'escolhido' nas figuras em vez de um glifo ausente da fonte
+ccb16ef docs(sprint4): rodada oficial refeita com a árvore limpa, documentação E1–E4 e ADRs
+25bd4eb fix(sprint4): legenda da figura de subgrupos sem encobrir colunas
+8200582 feat(sprint4): linhagem lida no início da execução, figuras, notebook e referências conferidas
+b34c956 feat(sprint4): rodada oficial — pacote de modelos, evidências do teste e lote do painel
+3e86179 feat(sprint4): protocolo de modelagem congelado antes de abrir o teste
