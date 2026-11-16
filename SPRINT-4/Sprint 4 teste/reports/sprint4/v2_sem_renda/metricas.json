@@ -1,0 +1,79 @@
+{
+  "protocolo": "sprint4_v2_sem_renda.yaml",
+  "protocolo_sha256": "46a01040b271eafefa9d3e834362c77fb87fa410c44187a86aa5e539de7b6dc7",
+  "execucao": "20261115T114502-6575fc",
+  "base_sha256": "c45d7ea9b875",
+  "especificacoes": {
+    "v1_historico": {
+      "atributos": [
+        "inadimplente_exercicio_anterior",
+        "inadimplencias_anteriores",
+        "exercicios_anteriores",
+        "debitos_abertos_t0",
+        "valor_relativo_anterior"
+      ],
+      "validacao": {
+        "average_precision": 0.6013,
+        "roc_auc": 0.7388,
+        "media_prevista": 0.3687,
+        "prevalencia": 0.3621,
+        "n": 111252
+      },
+      "teste": {
+        "average_precision": 0.6061,
+        "roc_auc": 0.7406,
+        "media_prevista": 0.3753,
+        "prevalencia": 0.3671,
+        "n": 111252
+      }
+    },
+    "v2_sem_renda": {
+      "atributos": [
+        "inadimplente_exercicio_anterior",
+        "inadimplencias_anteriores",
+        "exercicios_anteriores",
+        "debitos_abertos_t0",
+        "valor_relativo_anterior",
+        "idade_mediana_setor",
+        "proporcao_0_14_setor",
+        "proporcao_60_mais_setor",
+        "taxa_alfabetizacao_setor",
+        "proporcao_filhos_setor",
+        "proporcao_netos_avos_setor"
+      ],
+      "validacao": {
+        "average_precision": 0.6184,
+        "roc_auc": 0.7513,
+        "media_prevista": 0.3687,
+        "prevalencia": 0.3621,
+        "n": 111252
+      },
+      "teste": {
+        "average_precision": 0.6197,
+        "roc_auc": 0.7519,
+        "media_prevista": 0.3755,
+        "prevalencia": 0.3671,
+        "n": 111252
+      }
+    }
+  },
+  "ganho_pareado_validacao": {
+    "estimativa": 0.0171,
+    "ic95": [
+      0.0143,
+      0.0207
+    ],
+    "reamostras": 200,
+    "unidade": "imóvel"
+  },
+  "setores_sem_dado": 0,
+  "pacote_v1_sha256": {
+    "checksums.sha256": "eb258926e66057096a613f5873cdcdd729febf2668232504c8fd682413df7ecc",
+    "feature_contract.json": "9dca0126f4cb6219ff64cf364bee5109807e2a2cb9804f706a491c26573a7f09",
+    "inadimplencia.joblib": "5533b49c4e8a4ce52df442201a4fab91e3e382df758284e45a330dcf239b0a91",
+    "metadata.json": "e05101617bf5ac40aec0dda5dfda53b52e9c3354d3fd587d29f1f3a8ee65d9bf",
+    "metrics.json": "cfe68dcf85fef98a994841f7f119893fa59c814ca1fc3b2e27807f48da580cf1",
+    "model_card.md": "2ca633b10cfee19f0555b7fa388e9a9b1ecf747e32eb289316de0a0c7ccb90ab",
+    "recuperabilidade.joblib": "c139f6ca128ef4c9b922d7e6b6a0078c13636d66a9ab5e0bb3b6f17b27e5240c"
+  }
+}

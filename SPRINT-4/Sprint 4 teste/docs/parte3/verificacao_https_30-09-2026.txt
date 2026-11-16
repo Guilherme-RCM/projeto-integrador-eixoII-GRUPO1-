@@ -1,0 +1,14 @@
+### VerificaÃ§Ã£o de 30/09/2026 13:06 (16:06 UTC)
+== acessoainformacao.palmas.to.gov.br
+HTTPS  status=000  certificado_verificado=0 (0 = válido)  ip=
+HTTP   status=301  redireciona_para=https://acessoainformacao.palmas.to.gov.br/
+robots.txt status=403
+== integracao.palmas.to.gov.br
+HTTPS  status=404  certificado_verificado=0 (0 = válido)  ip=177.126.90.13
+HTTP   status=301  redireciona_para=https://integracao.palmas.to.gov.br/
+robots.txt status=404
+== certificados (emissor, validade)
+acessoainformacao.palmas.to.gov.br: TLSv1.3 · cifra TLS_AES_256_GCM_SHA384 · emissor Let's Encrypt · válido até Nov 22 12:36:30 2026 GMT
+integracao.palmas.to.gov.br: TLSv1.2 · cifra ECDHE-RSA-AES256-GCM-SHA384 · emissor Let's Encrypt · válido até Dec 20 12:28:57 2026 GMT
+tentativa 1: status=403 tempo=0.607095s erro_tls=0
+tentativa 2: status=403 tempo=0.517987s erro_tls=0

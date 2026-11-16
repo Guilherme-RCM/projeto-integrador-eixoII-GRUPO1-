@@ -1,0 +1,19 @@
+{
+  "aprovada": true,
+  "codigo_e_protocolo_congelados_inalterados": true,
+  "origem_preservada": true,
+  "arquivos_origem_conferidos": 412,
+  "linhas_metricas": 1440,
+  "arquivos_predicoes": 240,
+  "linhas_predicoes_conferidas": 8387481,
+  "selecoes_recalculadas": 80,
+  "maior_diferenca_brier_exportacao": 4.16833234595515e-13,
+  "maior_diferenca_auc_exportacao": 3.083407151827089e-08,
+  "modelos_serializados_reproduzem_predicoes": {
+    "nulo": 4.469442871357643e-11,
+    "fraco": 4.9999726581262394e-11,
+    "moderado": 4.999942126993062e-11,
+    "mudanca": 4.999942126993062e-11
+  },
+  "nota": "Tolerâncias cobrem arredondamento de probabilidades no CSV; não houve novo treinamento."
+}

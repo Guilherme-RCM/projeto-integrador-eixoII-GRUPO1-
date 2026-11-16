@@ -1,0 +1,58 @@
+# Quality gates executados em toda integração. O repositório usa só a main (desenvolvimento
+# baseado no tronco com integração contínua: Valente, Engenharia de Software Moderna, cap. 10, §10.3).
+# Cada push: G1–G9 e G11–G14 (G11 e G12 ficam "não executados" sem carga real no banco; G14 usa a
+# mini-Palmas). A mutação (G10) é lenta: roda toda segunda-feira e sob demanda (Run workflow).
+name: Quality gates
+
+on:
+  push:
+  schedule:
+    - cron: "0 9 * * 1"   # segunda-feira, 9h UTC (6h em Brasília)
+  workflow_dispatch:
+
+jobs:
+  gates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60   # um mutante preso não consome a cota inteira
+    services:
+      mysql:
+        image: mysql:8.4
+        env:
+          MYSQL_ROOT_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD_CI || 'root-ci-descartavel' }}
+          MYSQL_DATABASE: pi2_tributario_teste
+          MYSQL_USER: pi2_app
+          MYSQL_PASSWORD: ${{ secrets.DB_PASSWORD_CI || 'senha-ci-descartavel' }}
+        ports: ["3306:3306"]
+        options: >-
+          --health-cmd="mysqladmin ping -h 127.0.0.1"
+          --health-interval=5s --health-timeout=5s --health-retries=20
+    env:
+      DB_HOST: 127.0.0.1
+      DB_PORT: "3306"
+      DB_NAME: pi2_tributario_teste
+      DB_NAME_TESTE: pi2_tributario_teste
+      DB_USER: pi2_app
+      DB_PASSWORD: ${{ secrets.DB_PASSWORD_CI || 'senha-ci-descartavel' }}
+      PYTHONIOENCODING: utf-8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar dependências
+        run: pip install -r requirements-dev.txt
+      - name: Quality gates (G1–G9 e G11–G14)
+        if: github.event_name == 'push'
+        run: python scripts/quality_gate.py
+      - name: Quality gates com mutação (G1–G14)
+        if: github.event_name != 'push'
+        run: python scripts/quality_gate.py --mutacao
+      - name: Publicar relatórios
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: relatorios-qualidade
+          path: |
+            docs/qualidade.md
+            docs/mutacao.md
+            saida/

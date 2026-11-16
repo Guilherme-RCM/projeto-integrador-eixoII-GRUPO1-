@@ -1,0 +1,37 @@
+{
+  "versao": "1.0.0",
+  "natureza": "Estudo semissintetico condicionado ao cadastro sintetico da Sprint 4; nao e validacao em dados reais.",
+  "fonte_relativa": "../Envio ZI´P/Sprint 4 teste",
+  "sementes": [2026111501, 2026111502, 2026111503, 2026111504, 2026111505, 2026111506, 2026111507, 2026111508, 2026111509, 2026111510, 2026111511, 2026111512, 2026111513, 2026111514, 2026111515, 2026111516, 2026111517, 2026111518, 2026111519, 2026111520],
+  "horizonte_dias": 365,
+  "corte": "2026-07-31",
+  "treino": ["2022-06-29", "2023-06-30"],
+  "validacao": "2024-07-01",
+  "teste": "2025-07-31",
+  "mudanca_em": "2025-07-02",
+  "holdout_imoveis": "id_imovel % 5 == 0; excluidos do treino e validacao; teste secundario",
+  "taxa_anual_coorte_referencia": 0.12,
+  "coeficientes": {"fracao_pagos_inscricao_centrada": 1.5, "log_outros_abertos_inscricao": -0.7, "inad_ultimo_inscricao": -1.1},
+  "desvio_latente_imovel": 0.45,
+  "cenarios": {
+    "nulo": {"intensidade": 0.0, "mudanca": false},
+    "fraco": {"intensidade": 0.35, "mudanca": false},
+    "moderado": {"intensidade": 1.0, "mudanca": false},
+    "mudanca": {"intensidade": 1.0, "mudanca": true}
+  },
+  "logistica": {"C": 1.0, "max_iter": 1000, "solver": "lbfgs"},
+  "boosting": {"max_iter": 120, "learning_rate": 0.06, "max_leaf_nodes": 7, "min_samples_leaf": 100, "l2_regularization": 10.0, "early_stopping": false},
+  "selecao": {"metrica": "brier_validacao", "tolerancia_absoluta": 0.0001, "ordem_simples": ["constante", "logistica", "boosting"], "reajustar_apos_validacao": false},
+  "fracao_topo": 0.1,
+  "bootstrap_imoveis_primeira_semente": 1000,
+  "criterios_moderado_teste_carteira": {
+    "lift_medio_minimo": 1.5,
+    "limite_inferior_ic95_media_lift_maior_que": 1.0,
+    "limite_inferior_ic95_media_ganho_brier_maior_que": 0.0,
+    "replicas_lift_15_e_ganho_positivo_minimo": 18,
+    "media_erro_absoluto_calibracao_maximo": 0.02,
+    "media_ece10_maximo": 0.02
+  },
+  "controle_nulo": {"auc_logistica_minimo": 0.48, "auc_logistica_maximo": 0.52, "lift_logistica_maximo": 1.1},
+  "ajuste_posterior_de_coeficientes_ou_sementes": false
+}

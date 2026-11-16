@@ -1,0 +1,5 @@
+DOCUMENTO ARTIFICIAL PARA TESTE ACADÊMICO. SEM VALIDADE ADMINISTRATIVA.
+Pessoa inteiramente fictícia: Contribuinte Alfa.
+CPF de ensaio, sem consulta cadastral: 000.000.001-91
+Pedido: revisão do crédito fictício IPTU-DEMO-A.
+Os valores são fixtures de software, não representam cadastro consultado.

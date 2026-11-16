@@ -1,0 +1,66 @@
+[
+  {
+    "cenario": "nulo",
+    "modelo": "constante",
+    "unidade": "imovel",
+    "reamostras": 1000,
+    "semente": 2026111501,
+    "ic95_ganho_brier": [
+      0.0,
+      0.0
+    ],
+    "ic95_lift_top10": [
+      0.9999999999999999,
+      1.0000000000000002
+    ],
+    "limite": "Modelo fixo; bootstrap descritivo da primeira replica, separado do IC Monte Carlo."
+  },
+  {
+    "cenario": "fraco",
+    "modelo": "logistica",
+    "unidade": "imovel",
+    "reamostras": 1000,
+    "semente": 2026111501,
+    "ic95_ganho_brier": [
+      0.001645945205261684,
+      0.002239753633612166
+    ],
+    "ic95_lift_top10": [
+      1.5450004391576413,
+      1.70925150086117
+    ],
+    "limite": "Modelo fixo; bootstrap descritivo da primeira replica, separado do IC Monte Carlo."
+  },
+  {
+    "cenario": "moderado",
+    "modelo": "logistica",
+    "unidade": "imovel",
+    "reamostras": 1000,
+    "semente": 2026111501,
+    "ic95_ganho_brier": [
+      0.008365769102177666,
+      0.009551955182089735
+    ],
+    "ic95_lift_top10": [
+      3.054334444120961,
+      3.3021267340217952
+    ],
+    "limite": "Modelo fixo; bootstrap descritivo da primeira replica, separado do IC Monte Carlo."
+  },
+  {
+    "cenario": "mudanca",
+    "modelo": "logistica",
+    "unidade": "imovel",
+    "reamostras": 1000,
+    "semente": 2026111501,
+    "ic95_ganho_brier": [
+      -0.020391087737100754,
+      -0.019501157971712476
+    ],
+    "ic95_lift_top10": [
+      0.057871064990141614,
+      0.10656557448354283
+    ],
+    "limite": "Modelo fixo; bootstrap descritivo da primeira replica, separado do IC Monte Carlo."
+  }
+]

@@ -1,0 +1,4 @@
+Testes executados: 13
+Falhas: 0
+Erros: 0
+Escopo: regras do prototipo, nao acuracia de OCR ou eficacia fiscal.

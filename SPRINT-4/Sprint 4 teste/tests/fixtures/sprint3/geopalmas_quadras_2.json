@@ -1,0 +1,62 @@
+[
+ {
+  "fields": {
+   "destination_use": "AA",
+   "shape": 16,
+   "id_shape": "noroeste",
+   "district": "",
+   "area": "",
+   "type_shape": "Polygon",
+   "criation": "",
+   "snippet": "",
+   "multi_geometric": false,
+   "perimeter": "",
+   "description": "",
+   "downloads": "https://goo.gl/2xvc8P",
+   "macrozoning": "",
+   "address": "",
+   "approved": true,
+   "observation": "",
+   "name": "AANO 20 (201 N)",
+   "address_postal": "",
+   "region": "NO",
+   "id_place": "aano-20-201-n",
+   "address_cartorial": "",
+   "coordinate": "-48.337117,-10.17515,0.0 -48.33710000000001,-10.177137000000002,0.0 -48.333717,-10.17711,0.0 -48.333731,-10.175122999999997,0.0 -48.337117,-10.17515,0.0",
+   "situation": "Aprovada",
+   "protect_area": ""
+  },
+  "model": "place.placemark",
+  "pk": "52b6a4e0e4c992258187c7ed316cfbdc"
+ },
+ {
+  "fields": {
+   "destination_use": "AC",
+   "shape": 16,
+   "id_shape": "noroeste",
+   "district": "",
+   "area": "",
+   "type_shape": "Polygon",
+   "criation": "",
+   "snippet": "",
+   "multi_geometric": false,
+   "perimeter": "",
+   "description": "",
+   "downloads": "https://goo.gl/y8YMp5",
+   "macrozoning": "",
+   "address": "",
+   "approved": true,
+   "observation": "",
+   "name": "ACNO 1 (103 N)",
+   "address_postal": "",
+   "region": "NO",
+   "id_place": "acno-1-103-n",
+   "address_cartorial": "",
+   "coordinate": "-48.34254299999999,-10.180759,0.0 -48.342512,-10.184608000000003,0.0 -48.33704,-10.184564,0.0 -48.337071,-10.180715,0.0 -48.34254299999999,-10.180759,0.0",
+   "situation": "Aprovada",
+   "protect_area": ""
+  },
+  "model": "place.placemark",
+  "pk": "9d736a4123e2ad0eed039c25c330a868"
+ }
+]

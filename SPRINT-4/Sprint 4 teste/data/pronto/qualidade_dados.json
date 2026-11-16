@@ -1,0 +1,384 @@
+{
+  "arquivos": {
+    "limpo": {
+      "ipca_mensal.csv": 321,
+      "quadras_geopalmas.csv": 283,
+      "quarentena.csv": 1,
+      "receita_api_arrecadacao.csv": 25146,
+      "receita_nucleogov.csv": 1365,
+      "renda_setores_censo2022.csv": 683,
+      "setores_ibge.csv": 733
+    },
+    "pronto": {
+      "base_analitica_creditos.csv.gz": 556260,
+      "cruzamento_setor_quadra.csv": 1635,
+      "inadimplencia_simulada_por_setor.csv": 733,
+      "indicadores_receita_anual.csv": 48,
+      "quadras_socioeconomia.csv": 283,
+      "receita_tributaria.csv": 2055,
+      "sazonalidade_tributos.csv": 36,
+      "setores_socioeconomia.csv": 733,
+      "simulacao_imoveis.csv.gz": 111252
+    }
+  },
+  "execucao": "20261107T184930-2adc77",
+  "linhas_api_fora_da_serie": 86,
+  "parametros_simulacao": {
+    "beta_historico": 1.5,
+    "beta_renda": -0.5,
+    "data_corte": "2026-07-31",
+    "desvio_efeito_setor": 0.3,
+    "dias_ate_inscricao": 365,
+    "dispersao_valor": 0.6,
+    "elasticidade_valor_renda": 1.0,
+    "exercicios": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "juros_mes": 0.01,
+    "n_imoveis": 111252,
+    "prob_pagar_antes_inscricao": 0.45,
+    "prob_pagar_por_ano_inscrito": 0.12,
+    "semente": 20261027,
+    "taxa_inadimplencia_alvo": 0.33,
+    "tipos_excluidos": [
+      "Quartel e Base Militar",
+      "Unidades Prisionais"
+    ],
+    "vencimento_dia": 10,
+    "vencimento_mes": 3,
+    "versao": "1.0.0"
+  },
+  "referencia_ipca": "2026-09",
+  "simulacao": {
+    "assinatura": "e66099c7d0c854ba2f6bc0507a1d770051a35246f6fd79ab783460ef964c87de",
+    "beta0": -1.258919,
+    "creditos": 556260,
+    "estoque_divida_ativa_centavos": 7986933451,
+    "imoveis": 111252,
+    "situacoes": {
+      "DIVIDA_ATIVA": 78122,
+      "PAGO_EM_ATRASO": 82463,
+      "PAGO_EM_DIA": 372694,
+      "RECUPERADO_DIVIDA_ATIVA": 22981
+    },
+    "taxa_inadimplencia": 0.33,
+    "taxa_por_exercicio": {
+      "2021": 0.24366303527127603,
+      "2022": 0.3230503721281415,
+      "2023": 0.3540700391903067,
+      "2024": 0.3621418041922842,
+      "2025": 0.367076546938482
+    }
+  },
+  "validacoes": [
+    {
+      "dimensao": "INTEGRIDADE",
+      "etapa": "coleta",
+      "evidencia": "cadeia de hashes e arquivos conferidos",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V12-manifesto-integro"
+    },
+    {
+      "dimensao": "COMPLETUDE",
+      "etapa": "coleta",
+      "evidencia": "3542 de 3542 registros; dia 2026-10-21",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V01-coleta-arrecadacao"
+    },
+    {
+      "dimensao": "COMPLETUDE",
+      "etapa": "coleta",
+      "evidencia": "1 de 1 registros; dia 2026-10-21",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V01-coleta-nucleogov"
+    },
+    {
+      "dimensao": "COMPLETUDE",
+      "etapa": "coleta",
+      "evidencia": "6 de n/d registros; dia 2026-10-21",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V01-coleta-regioes"
+    },
+    {
+      "dimensao": "COMPLETUDE",
+      "etapa": "coleta",
+      "evidencia": "284 de n/d registros; dia 2026-10-21",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V01-coleta-quadras"
+    },
+    {
+      "dimensao": "COMPLETUDE",
+      "etapa": "coleta",
+      "evidencia": "733 de 733 registros; dia 2026-10-21",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V01-coleta-setores"
+    },
+    {
+      "dimensao": "COMPLETUDE",
+      "etapa": "coleta",
+      "evidencia": "1 de 1 registros; dia 2026-10-21",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V01-coleta-renda"
+    },
+    {
+      "dimensao": "COMPLETUDE",
+      "etapa": "coleta",
+      "evidencia": "321 de n/d registros; dia 2026-10-21",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V01-coleta-ipca"
+    },
+    {
+      "dimensao": "CONSISTENCIA",
+      "etapa": "limpeza",
+      "evidencia": "lidos 3542 = aceitos 3542 + rejeitados 0 + descartados 0",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V02-reconciliacao-arrecadacao-api"
+    },
+    {
+      "dimensao": "VALIDADE",
+      "etapa": "limpeza",
+      "evidencia": "0 de 3542 rejeitados (0.00%; limite 1%)",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V03-rejeicao-arrecadacao-api"
+    },
+    {
+      "dimensao": "CONSISTENCIA",
+      "etapa": "limpeza",
+      "evidencia": "lidos 176993 = aceitos 176993 + rejeitados 0 + descartados 0",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V02-reconciliacao-receita-nucleogov"
+    },
+    {
+      "dimensao": "VALIDADE",
+      "etapa": "limpeza",
+      "evidencia": "0 de 176993 rejeitados (0.00%; limite 1%)",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V03-rejeicao-receita-nucleogov"
+    },
+    {
+      "dimensao": "CONSISTENCIA",
+      "etapa": "limpeza",
+      "evidencia": "lidos 284 = aceitos 283 + rejeitados 1 + descartados 0",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V02-reconciliacao-quadras-geopalmas"
+    },
+    {
+      "dimensao": "VALIDADE",
+      "etapa": "limpeza",
+      "evidencia": "1 de 284 rejeitados (0.35%; limite 1%)",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V03-rejeicao-quadras-geopalmas"
+    },
+    {
+      "dimensao": "CONSISTENCIA",
+      "etapa": "limpeza",
+      "evidencia": "lidos 733 = aceitos 733 + rejeitados 0 + descartados 0",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V02-reconciliacao-setores-ibge"
+    },
+    {
+      "dimensao": "VALIDADE",
+      "etapa": "limpeza",
+      "evidencia": "0 de 733 rejeitados (0.00%; limite 1%)",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V03-rejeicao-setores-ibge"
+    },
+    {
+      "dimensao": "CONSISTENCIA",
+      "etapa": "limpeza",
+      "evidencia": "lidos 683 = aceitos 683 + rejeitados 0 + descartados 0",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V02-reconciliacao-renda-censo"
+    },
+    {
+      "dimensao": "VALIDADE",
+      "etapa": "limpeza",
+      "evidencia": "0 de 683 rejeitados (0.00%; limite 1%)",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V03-rejeicao-renda-censo"
+    },
+    {
+      "dimensao": "CONSISTENCIA",
+      "etapa": "limpeza",
+      "evidencia": "lidos 321 = aceitos 321 + rejeitados 0 + descartados 0",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V02-reconciliacao-ipca"
+    },
+    {
+      "dimensao": "VALIDADE",
+      "etapa": "limpeza",
+      "evidencia": "0 de 321 rejeitados (0.00%; limite 1%)",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V03-rejeicao-ipca"
+    },
+    {
+      "dimensao": "VALIDADE",
+      "etapa": "limpeza",
+      "evidencia": "0 erro(s) de contrato no arquivo (contrato da Sprint 2)",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V05-contrato-nucleogov"
+    },
+    {
+      "dimensao": "CONSISTENCIA",
+      "etapa": "limpeza",
+      "evidencia": "0 competência(s) com conta-pai diferente da soma dos 4 componentes",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V06-conciliacao-nucleogov"
+    },
+    {
+      "dimensao": "UNICIDADE",
+      "etapa": "limpeza",
+      "evidencia": "0 chave(s) repetida(s)",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V04-unicidade-arrecadacao-api"
+    },
+    {
+      "dimensao": "UNICIDADE",
+      "etapa": "limpeza",
+      "evidencia": "0 chave(s) repetida(s)",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V04-unicidade-setores"
+    },
+    {
+      "dimensao": "UNICIDADE",
+      "etapa": "limpeza",
+      "evidencia": "0 chave(s) repetida(s)",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V04-unicidade-quadras"
+    },
+    {
+      "dimensao": "UNICIDADE",
+      "etapa": "limpeza",
+      "evidencia": "0 chave(s) repetida(s)",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V04-unicidade-ipca"
+    },
+    {
+      "dimensao": "COMPLETUDE",
+      "etapa": "enriquecimento",
+      "evidencia": "0 lacuna(s) na série; 0 competência(s) da receita sem índice",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V07-ipca-continuo"
+    },
+    {
+      "dimensao": "INTEGRIDADE",
+      "etapa": "enriquecimento",
+      "evidencia": "0 chave(s) sem correspondência",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V08-integridade-censo-setores"
+    },
+    {
+      "dimensao": "CONSISTENCIA",
+      "etapa": "enriquecimento",
+      "evidencia": "API: 2849 linhas tributárias, 86 fora da série; NUCLEOGOV: 1092 componentes → 2055 linhas unificadas (fonte × ano × mês × tributo × componente)",
+      "impeditiva": false,
+      "passou": true,
+      "regra": "I04-unificacao-receita"
+    },
+    {
+      "dimensao": "CONSISTENCIA",
+      "etapa": "enriquecimento",
+      "evidencia": "733 setores × 283 quadras → 1635 pares com interseção de pelo menos 1 m²",
+      "impeditiva": false,
+      "passou": true,
+      "regra": "I05-cruzamento-setor-quadra"
+    },
+    {
+      "dimensao": "COMPLETUDE",
+      "etapa": "enriquecimento",
+      "evidencia": "94.2% dos domicílios estão em setores com quadra do GeoPalmas",
+      "impeditiva": false,
+      "passou": true,
+      "regra": "I02-cobertura-quadras"
+    },
+    {
+      "dimensao": "COMPLETUDE",
+      "etapa": "enriquecimento",
+      "evidencia": "23 setor(es) com sigilo do IBGE (sem renda)",
+      "impeditiva": false,
+      "passou": true,
+      "regra": "I03-sigilo-censo"
+    },
+    {
+      "dimensao": "ATUALIDADE",
+      "etapa": "coleta",
+      "evidencia": "último dado 2026-09-01 (67 dias; limite 120)",
+      "impeditiva": false,
+      "passou": true,
+      "regra": "I01-atualidade-ipca"
+    },
+    {
+      "dimensao": "EXATIDAO",
+      "etapa": "simulacao",
+      "evidencia": "taxa simulada 0.3300; alvo 0.3300 ± 0.005",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V10-calibracao-simulacao"
+    },
+    {
+      "dimensao": "CONSISTENCIA",
+      "etapa": "atributos",
+      "evidencia": "556260 linha(s) antes, 556260 depois do cruzamento",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V09-cardinalidade-base-analitica"
+    },
+    {
+      "dimensao": "VALIDADE",
+      "etapa": "atributos",
+      "evidencia": "0 valor(es) fora do domínio",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V11-dominio-faixa-valor"
+    },
+    {
+      "dimensao": "VALIDADE",
+      "etapa": "atributos",
+      "evidencia": "0 valor(es) fora do domínio",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V11-dominio-faixa-tempo"
+    },
+    {
+      "dimensao": "VALIDADE",
+      "etapa": "atributos",
+      "evidencia": "0 valor(es) fora do domínio",
+      "impeditiva": true,
+      "passou": true,
+      "regra": "V11-dominio-mes-vencimento"
+    }
+  ],
+  "versao_codigo": "03e02d7"
+}

@@ -1,0 +1,7 @@
+{
+  "concluida": true,
+  "cenarios": 4,
+  "replicas_por_cenario": 20,
+  "segundos": 594.3346128000012,
+  "fim_utc": "2026-11-15T18:29:17.513512+00:00"
+}

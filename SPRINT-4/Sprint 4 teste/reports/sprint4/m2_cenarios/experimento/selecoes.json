@@ -1,0 +1,962 @@
+[
+  {
+    "cenario": "nulo",
+    "replica": 1,
+    "semente": 2026111501,
+    "escolhido": "constante",
+    "prevalencia_treino": 0.12008259365530558,
+    "brier_validacao": {
+      "constante": 0.10440609905425229,
+      "logistica": 0.10445099293720274,
+      "boosting": 0.1047039715708054
+    }
+  },
+  {
+    "cenario": "nulo",
+    "replica": 2,
+    "semente": 2026111502,
+    "escolhido": "constante",
+    "prevalencia_treino": 0.11946308724832215,
+    "brier_validacao": {
+      "constante": 0.10428718084631919,
+      "logistica": 0.10434677662981184,
+      "boosting": 0.10444202738887062
+    }
+  },
+  {
+    "cenario": "nulo",
+    "replica": 3,
+    "semente": 2026111503,
+    "escolhido": "constante",
+    "prevalencia_treino": 0.123136032671485,
+    "brier_validacao": {
+      "constante": 0.10430691033345571,
+      "logistica": 0.1043722621959379,
+      "boosting": 0.10476788532527849
+    }
+  },
+  {
+    "cenario": "nulo",
+    "replica": 4,
+    "semente": 2026111504,
+    "escolhido": "constante",
+    "prevalencia_treino": 0.11944183550248222,
+    "brier_validacao": {
+      "constante": 0.10502894346903024,
+      "logistica": 0.10507460189859343,
+      "boosting": 0.10514805591170549
+    }
+  },
+  {
+    "cenario": "nulo",
+    "replica": 5,
+    "semente": 2026111505,
+    "escolhido": "constante",
+    "prevalencia_treino": 0.12065170710757998,
+    "brier_validacao": {
+      "constante": 0.10663437232580615,
+      "logistica": 0.10668106190488537,
+      "boosting": 0.10688202651877798
+    }
+  },
+  {
+    "cenario": "nulo",
+    "replica": 6,
+    "semente": 2026111506,
+    "escolhido": "constante",
+    "prevalencia_treino": 0.11952351568159257,
+    "brier_validacao": {
+      "constante": 0.1039084915396999,
+      "logistica": 0.10390866298543458,
+      "boosting": 0.1039828041277727
+    }
+  },
+  {
+    "cenario": "nulo",
+    "replica": 7,
+    "semente": 2026111507,
+    "escolhido": "constante",
+    "prevalencia_treino": 0.11983559877504969,
+    "brier_validacao": {
+      "constante": 0.10361496913624739,
+      "logistica": 0.10366720149650854,
+      "boosting": 0.10374263868193918
+    }
+  },
+  {
+    "cenario": "nulo",
+    "replica": 8,
+    "semente": 2026111508,
+    "escolhido": "constante",
+    "prevalencia_treino": 0.12091713596138375,
+    "brier_validacao": {
+      "constante": 0.10441157663855115,
+      "logistica": 0.10448904174366301,
+      "boosting": 0.10447190840860049
+    }
+  },
+  {
+    "cenario": "nulo",
+    "replica": 9,
+    "semente": 2026111509,
+    "escolhido": "constante",
+    "prevalencia_treino": 0.12155230294078152,
+    "brier_validacao": {
+      "constante": 0.10564316288857933,
+      "logistica": 0.10575900052229639,
+      "boosting": 0.10598773781422412
+    }
+  },
+  {
+    "cenario": "nulo",
+    "replica": 10,
+    "semente": 2026111510,
+    "escolhido": "constante",
+    "prevalencia_treino": 0.11728411621106849,
+    "brier_validacao": {
+      "constante": 0.10601984709150153,
+      "logistica": 0.10605377338619267,
+      "boosting": 0.10618907841420622
+    }
+  },
+  {
+    "cenario": "nulo",
+    "replica": 11,
+    "semente": 2026111511,
+    "escolhido": "constante",
+    "prevalencia_treino": 0.11933084503638464,
+    "brier_validacao": {
+      "constante": 0.10535864883783874,
+      "logistica": 0.10541803308547898,
+      "boosting": 0.10555030135491371
+    }
+  },
+  {
+    "cenario": "nulo",
+    "replica": 12,
+    "semente": 2026111512,
+    "escolhido": "constante",
+    "prevalencia_treino": 0.121819790354146,
+    "brier_validacao": {
+      "constante": 0.10505927233767581,
+      "logistica": 0.1050925385854577,
+      "boosting": 0.1051988310864168
+    }
+  },
+  {
+    "cenario": "nulo",
+    "replica": 13,
+    "semente": 2026111513,
+    "escolhido": "constante",
+    "prevalencia_treino": 0.11754909071372928,
+    "brier_validacao": {
+      "constante": 0.10554720109095948,
+      "logistica": 0.1056443370155182,
+      "boosting": 0.10576939581160147
+    }
+  },
+  {
+    "cenario": "nulo",
+    "replica": 14,
+    "semente": 2026111514,
+    "escolhido": "constante",
+    "prevalencia_treino": 0.11802909129944716,
+    "brier_validacao": {
+      "constante": 0.10646646506166077,
+      "logistica": 0.10653724966369438,
+      "boosting": 0.10668664845484513
+    }
+  },
+  {
+    "cenario": "nulo",
+    "replica": 15,
+    "semente": 2026111515,
+    "escolhido": "constante",
+    "prevalencia_treino": 0.11942824901260109,
+    "brier_validacao": {
+      "constante": 0.10427858069815753,
+      "logistica": 0.10429310468929241,
+      "boosting": 0.1044953702771351
+    }
+  },
+  {
+    "cenario": "nulo",
+    "replica": 16,
+    "semente": 2026111516,
+    "escolhido": "constante",
+    "prevalencia_treino": 0.12061985576020805,
+    "brier_validacao": {
+      "constante": 0.10516521146340078,
+      "logistica": 0.10516651141468075,
+      "boosting": 0.10535577607617368
+    }
+  },
+  {
+    "cenario": "nulo",
+    "replica": 17,
+    "semente": 2026111517,
+    "escolhido": "constante",
+    "prevalencia_treino": 0.11634705645702025,
+    "brier_validacao": {
+      "constante": 0.1055583247140952,
+      "logistica": 0.10574201946685094,
+      "boosting": 0.10590517539823588
+    }
+  },
+  {
+    "cenario": "nulo",
+    "replica": 18,
+    "semente": 2026111518,
+    "escolhido": "constante",
+    "prevalencia_treino": 0.1192311810686369,
+    "brier_validacao": {
+      "constante": 0.10507829244934785,
+      "logistica": 0.1052780032308893,
+      "boosting": 0.1055262533606662
+    }
+  },
+  {
+    "cenario": "nulo",
+    "replica": 19,
+    "semente": 2026111519,
+    "escolhido": "constante",
+    "prevalencia_treino": 0.11709564239226504,
+    "brier_validacao": {
+      "constante": 0.10488923159675781,
+      "logistica": 0.10497328810519346,
+      "boosting": 0.1050503403194162
+    }
+  },
+  {
+    "cenario": "nulo",
+    "replica": 20,
+    "semente": 2026111520,
+    "escolhido": "constante",
+    "prevalencia_treino": 0.11962300628322861,
+    "brier_validacao": {
+      "constante": 0.10587100627316233,
+      "logistica": 0.1059565964803326,
+      "boosting": 0.10617613006614977
+    }
+  },
+  {
+    "cenario": "fraco",
+    "replica": 1,
+    "semente": 2026111501,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.12225621209681747,
+    "brier_validacao": {
+      "constante": 0.10392127656841188,
+      "logistica": 0.10152816524902965,
+      "boosting": 0.10170295810073807
+    }
+  },
+  {
+    "cenario": "fraco",
+    "replica": 2,
+    "semente": 2026111502,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.12063602724298815,
+    "brier_validacao": {
+      "constante": 0.10306938459762721,
+      "logistica": 0.10104550083468511,
+      "boosting": 0.10113059180338764
+    }
+  },
+  {
+    "cenario": "fraco",
+    "replica": 3,
+    "semente": 2026111503,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.12047900968783638,
+    "brier_validacao": {
+      "constante": 0.10384374316772141,
+      "logistica": 0.10211264664230017,
+      "boosting": 0.10293860545839285
+    }
+  },
+  {
+    "cenario": "fraco",
+    "replica": 4,
+    "semente": 2026111504,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.12037061904122466,
+    "brier_validacao": {
+      "constante": 0.1050152760576597,
+      "logistica": 0.10269658507265073,
+      "boosting": 0.10305246624931291
+    }
+  },
+  {
+    "cenario": "fraco",
+    "replica": 5,
+    "semente": 2026111505,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.11923231780968997,
+    "brier_validacao": {
+      "constante": 0.10659508061111118,
+      "logistica": 0.10444887863161585,
+      "boosting": 0.10455934083764942
+    }
+  },
+  {
+    "cenario": "fraco",
+    "replica": 6,
+    "semente": 2026111506,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.11817255070286511,
+    "brier_validacao": {
+      "constante": 0.10442455640511078,
+      "logistica": 0.1024728780821194,
+      "boosting": 0.10260334252306368
+    }
+  },
+  {
+    "cenario": "fraco",
+    "replica": 7,
+    "semente": 2026111507,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.11856444945509208,
+    "brier_validacao": {
+      "constante": 0.10341254401164396,
+      "logistica": 0.10133339753962889,
+      "boosting": 0.10157049445147201
+    }
+  },
+  {
+    "cenario": "fraco",
+    "replica": 8,
+    "semente": 2026111508,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.12135036496350365,
+    "brier_validacao": {
+      "constante": 0.10269899998782704,
+      "logistica": 0.1008579133115138,
+      "boosting": 0.10123270529592114
+    }
+  },
+  {
+    "cenario": "fraco",
+    "replica": 9,
+    "semente": 2026111509,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.12110866175600839,
+    "brier_validacao": {
+      "constante": 0.1045681780020404,
+      "logistica": 0.10268983196037743,
+      "boosting": 0.10310038513449883
+    }
+  },
+  {
+    "cenario": "fraco",
+    "replica": 10,
+    "semente": 2026111510,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.11830842300158317,
+    "brier_validacao": {
+      "constante": 0.10382598801871028,
+      "logistica": 0.1016704477760523,
+      "boosting": 0.1017095540127328
+    }
+  },
+  {
+    "cenario": "fraco",
+    "replica": 11,
+    "semente": 2026111511,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.11948519533559031,
+    "brier_validacao": {
+      "constante": 0.10586138370007143,
+      "logistica": 0.10353281173693171,
+      "boosting": 0.1037371102408315
+    }
+  },
+  {
+    "cenario": "fraco",
+    "replica": 12,
+    "semente": 2026111512,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.12085110950119402,
+    "brier_validacao": {
+      "constante": 0.10562612026374464,
+      "logistica": 0.10333146021808412,
+      "boosting": 0.10345238287119844
+    }
+  },
+  {
+    "cenario": "fraco",
+    "replica": 13,
+    "semente": 2026111513,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.1190796193753024,
+    "brier_validacao": {
+      "constante": 0.10379578077366561,
+      "logistica": 0.10164712176255365,
+      "boosting": 0.10180361045019926
+    }
+  },
+  {
+    "cenario": "fraco",
+    "replica": 14,
+    "semente": 2026111514,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.11660360142768966,
+    "brier_validacao": {
+      "constante": 0.10576469582950264,
+      "logistica": 0.10352319494467256,
+      "boosting": 0.10370655101439569
+    }
+  },
+  {
+    "cenario": "fraco",
+    "replica": 15,
+    "semente": 2026111515,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.11861264843372199,
+    "brier_validacao": {
+      "constante": 0.1054028760580659,
+      "logistica": 0.10318143119501631,
+      "boosting": 0.10350552477332912
+    }
+  },
+  {
+    "cenario": "fraco",
+    "replica": 16,
+    "semente": 2026111516,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.11910763125435726,
+    "brier_validacao": {
+      "constante": 0.10622546985716158,
+      "logistica": 0.10414490055750142,
+      "boosting": 0.1044963354043817
+    }
+  },
+  {
+    "cenario": "fraco",
+    "replica": 17,
+    "semente": 2026111517,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.11629404975978958,
+    "brier_validacao": {
+      "constante": 0.10488240347181878,
+      "logistica": 0.10268621322137861,
+      "boosting": 0.10273332346576368
+    }
+  },
+  {
+    "cenario": "fraco",
+    "replica": 18,
+    "semente": 2026111518,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.11796985839333994,
+    "brier_validacao": {
+      "constante": 0.10415702734039473,
+      "logistica": 0.10237256505949216,
+      "boosting": 0.10259356555442911
+    }
+  },
+  {
+    "cenario": "fraco",
+    "replica": 19,
+    "semente": 2026111519,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.11783601466927215,
+    "brier_validacao": {
+      "constante": 0.10306950589464405,
+      "logistica": 0.10102875187065266,
+      "boosting": 0.10108858538367835
+    }
+  },
+  {
+    "cenario": "fraco",
+    "replica": 20,
+    "semente": 2026111520,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.11867641524649213,
+    "brier_validacao": {
+      "constante": 0.10632701475995512,
+      "logistica": 0.10409913769701455,
+      "boosting": 0.10421320394343292
+    }
+  },
+  {
+    "cenario": "moderado",
+    "replica": 1,
+    "semente": 2026111501,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.11023072171040262,
+    "brier_validacao": {
+      "constante": 0.08528211356414982,
+      "logistica": 0.07472748909344346,
+      "boosting": 0.07482854321800612
+    }
+  },
+  {
+    "cenario": "moderado",
+    "replica": 2,
+    "semente": 2026111502,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.10593186265312139,
+    "brier_validacao": {
+      "constante": 0.086720871746762,
+      "logistica": 0.07635090990918084,
+      "boosting": 0.07649290566236597
+    }
+  },
+  {
+    "cenario": "moderado",
+    "replica": 3,
+    "semente": 2026111503,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.1062805828897134,
+    "brier_validacao": {
+      "constante": 0.08538890605987161,
+      "logistica": 0.07558804266210094,
+      "boosting": 0.07568822324641516
+    }
+  },
+  {
+    "cenario": "moderado",
+    "replica": 4,
+    "semente": 2026111504,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.10686263972484952,
+    "brier_validacao": {
+      "constante": 0.08611916777216423,
+      "logistica": 0.07586406664917464,
+      "boosting": 0.07612447371318672
+    }
+  },
+  {
+    "cenario": "moderado",
+    "replica": 5,
+    "semente": 2026111505,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.10660020902001768,
+    "brier_validacao": {
+      "constante": 0.08633254129803099,
+      "logistica": 0.07609743127891407,
+      "boosting": 0.07640136509039744
+    }
+  },
+  {
+    "cenario": "moderado",
+    "replica": 6,
+    "semente": 2026111506,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.10555927662424648,
+    "brier_validacao": {
+      "constante": 0.08617004829974469,
+      "logistica": 0.07583664060791293,
+      "boosting": 0.07607861565465222
+    }
+  },
+  {
+    "cenario": "moderado",
+    "replica": 7,
+    "semente": 2026111507,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.10511515800749865,
+    "brier_validacao": {
+      "constante": 0.08495822954096363,
+      "logistica": 0.07509704093425253,
+      "boosting": 0.07518564811235283
+    }
+  },
+  {
+    "cenario": "moderado",
+    "replica": 8,
+    "semente": 2026111508,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.10456324735910773,
+    "brier_validacao": {
+      "constante": 0.08505995946646798,
+      "logistica": 0.0755262158937211,
+      "boosting": 0.07581582067456184
+    }
+  },
+  {
+    "cenario": "moderado",
+    "replica": 9,
+    "semente": 2026111509,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.10753758033721462,
+    "brier_validacao": {
+      "constante": 0.0833523964124977,
+      "logistica": 0.07414337882879286,
+      "boosting": 0.0742316078927416
+    }
+  },
+  {
+    "cenario": "moderado",
+    "replica": 10,
+    "semente": 2026111510,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.10550187869028449,
+    "brier_validacao": {
+      "constante": 0.08552515994231331,
+      "logistica": 0.07530367233735785,
+      "boosting": 0.07544474049402285
+    }
+  },
+  {
+    "cenario": "moderado",
+    "replica": 11,
+    "semente": 2026111511,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.1054836457382244,
+    "brier_validacao": {
+      "constante": 0.0852480539552881,
+      "logistica": 0.07553300736149213,
+      "boosting": 0.07575343622391933
+    }
+  },
+  {
+    "cenario": "moderado",
+    "replica": 12,
+    "semente": 2026111512,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.10899116938720899,
+    "brier_validacao": {
+      "constante": 0.08494578781263615,
+      "logistica": 0.07488524063292348,
+      "boosting": 0.07495187876740399
+    }
+  },
+  {
+    "cenario": "moderado",
+    "replica": 13,
+    "semente": 2026111513,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.10717446694381118,
+    "brier_validacao": {
+      "constante": 0.0832472719475352,
+      "logistica": 0.0734590418752624,
+      "boosting": 0.07359876657883936
+    }
+  },
+  {
+    "cenario": "moderado",
+    "replica": 14,
+    "semente": 2026111514,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.10607076749738445,
+    "brier_validacao": {
+      "constante": 0.08531625542963871,
+      "logistica": 0.07537925379356951,
+      "boosting": 0.07571540494674178
+    }
+  },
+  {
+    "cenario": "moderado",
+    "replica": 15,
+    "semente": 2026111515,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.10804283068996055,
+    "brier_validacao": {
+      "constante": 0.08438506081588262,
+      "logistica": 0.07388024247786254,
+      "boosting": 0.07409765717112042
+    }
+  },
+  {
+    "cenario": "moderado",
+    "replica": 16,
+    "semente": 2026111516,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.10632199303509242,
+    "brier_validacao": {
+      "constante": 0.08526668083681743,
+      "logistica": 0.07516180947612892,
+      "boosting": 0.07531715114454356
+    }
+  },
+  {
+    "cenario": "moderado",
+    "replica": 17,
+    "semente": 2026111517,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.10490167145118451,
+    "brier_validacao": {
+      "constante": 0.08435194499690836,
+      "logistica": 0.07409781617809368,
+      "boosting": 0.07417448913428723
+    }
+  },
+  {
+    "cenario": "moderado",
+    "replica": 18,
+    "semente": 2026111518,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.1040668255200664,
+    "brier_validacao": {
+      "constante": 0.08382875369560093,
+      "logistica": 0.07402164376599123,
+      "boosting": 0.07408112745537271
+    }
+  },
+  {
+    "cenario": "moderado",
+    "replica": 19,
+    "semente": 2026111519,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.1061011506556061,
+    "brier_validacao": {
+      "constante": 0.0852150176255434,
+      "logistica": 0.0748297795274364,
+      "boosting": 0.07550951891242844
+    }
+  },
+  {
+    "cenario": "moderado",
+    "replica": 20,
+    "semente": 2026111520,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.10590100499811898,
+    "brier_validacao": {
+      "constante": 0.08530847683426644,
+      "logistica": 0.07507198791211178,
+      "boosting": 0.07519223064717723
+    }
+  },
+  {
+    "cenario": "mudanca",
+    "replica": 1,
+    "semente": 2026111501,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.11023072171040262,
+    "brier_validacao": {
+      "constante": 0.08528211356414982,
+      "logistica": 0.07472748909344346,
+      "boosting": 0.07482854321800612
+    }
+  },
+  {
+    "cenario": "mudanca",
+    "replica": 2,
+    "semente": 2026111502,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.10593186265312139,
+    "brier_validacao": {
+      "constante": 0.086720871746762,
+      "logistica": 0.07635090990918084,
+      "boosting": 0.07649290566236597
+    }
+  },
+  {
+    "cenario": "mudanca",
+    "replica": 3,
+    "semente": 2026111503,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.1062805828897134,
+    "brier_validacao": {
+      "constante": 0.08538890605987161,
+      "logistica": 0.07558804266210094,
+      "boosting": 0.07568822324641516
+    }
+  },
+  {
+    "cenario": "mudanca",
+    "replica": 4,
+    "semente": 2026111504,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.10686263972484952,
+    "brier_validacao": {
+      "constante": 0.08611916777216423,
+      "logistica": 0.07586406664917464,
+      "boosting": 0.07612447371318672
+    }
+  },
+  {
+    "cenario": "mudanca",
+    "replica": 5,
+    "semente": 2026111505,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.10660020902001768,
+    "brier_validacao": {
+      "constante": 0.08633254129803099,
+      "logistica": 0.07609743127891407,
+      "boosting": 0.07640136509039744
+    }
+  },
+  {
+    "cenario": "mudanca",
+    "replica": 6,
+    "semente": 2026111506,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.10555927662424648,
+    "brier_validacao": {
+      "constante": 0.08617004829974469,
+      "logistica": 0.07583664060791293,
+      "boosting": 0.07607861565465222
+    }
+  },
+  {
+    "cenario": "mudanca",
+    "replica": 7,
+    "semente": 2026111507,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.10511515800749865,
+    "brier_validacao": {
+      "constante": 0.08495822954096363,
+      "logistica": 0.07509704093425253,
+      "boosting": 0.07518564811235283
+    }
+  },
+  {
+    "cenario": "mudanca",
+    "replica": 8,
+    "semente": 2026111508,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.10456324735910773,
+    "brier_validacao": {
+      "constante": 0.08505995946646798,
+      "logistica": 0.0755262158937211,
+      "boosting": 0.07581582067456184
+    }
+  },
+  {
+    "cenario": "mudanca",
+    "replica": 9,
+    "semente": 2026111509,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.10753758033721462,
+    "brier_validacao": {
+      "constante": 0.0833523964124977,
+      "logistica": 0.07414337882879286,
+      "boosting": 0.0742316078927416
+    }
+  },
+  {
+    "cenario": "mudanca",
+    "replica": 10,
+    "semente": 2026111510,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.10550187869028449,
+    "brier_validacao": {
+      "constante": 0.08552515994231331,
+      "logistica": 0.07530367233735785,
+      "boosting": 0.07544474049402285
+    }
+  },
+  {
+    "cenario": "mudanca",
+    "replica": 11,
+    "semente": 2026111511,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.1054836457382244,
+    "brier_validacao": {
+      "constante": 0.0852480539552881,
+      "logistica": 0.07553300736149213,
+      "boosting": 0.07575343622391933
+    }
+  },
+  {
+    "cenario": "mudanca",
+    "replica": 12,
+    "semente": 2026111512,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.10899116938720899,
+    "brier_validacao": {
+      "constante": 0.08494578781263615,
+      "logistica": 0.07488524063292348,
+      "boosting": 0.07495187876740399
+    }
+  },
+  {
+    "cenario": "mudanca",
+    "replica": 13,
+    "semente": 2026111513,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.10717446694381118,
+    "brier_validacao": {
+      "constante": 0.0832472719475352,
+      "logistica": 0.0734590418752624,
+      "boosting": 0.07359876657883936
+    }
+  },
+  {
+    "cenario": "mudanca",
+    "replica": 14,
+    "semente": 2026111514,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.10607076749738445,
+    "brier_validacao": {
+      "constante": 0.08531625542963871,
+      "logistica": 0.07537925379356951,
+      "boosting": 0.07571540494674178
+    }
+  },
+  {
+    "cenario": "mudanca",
+    "replica": 15,
+    "semente": 2026111515,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.10804283068996055,
+    "brier_validacao": {
+      "constante": 0.08438506081588262,
+      "logistica": 0.07388024247786254,
+      "boosting": 0.07409765717112042
+    }
+  },
+  {
+    "cenario": "mudanca",
+    "replica": 16,
+    "semente": 2026111516,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.10632199303509242,
+    "brier_validacao": {
+      "constante": 0.08526668083681743,
+      "logistica": 0.07516180947612892,
+      "boosting": 0.07531715114454356
+    }
+  },
+  {
+    "cenario": "mudanca",
+    "replica": 17,
+    "semente": 2026111517,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.10490167145118451,
+    "brier_validacao": {
+      "constante": 0.08435194499690836,
+      "logistica": 0.07409781617809368,
+      "boosting": 0.07417448913428723
+    }
+  },
+  {
+    "cenario": "mudanca",
+    "replica": 18,
+    "semente": 2026111518,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.1040668255200664,
+    "brier_validacao": {
+      "constante": 0.08382875369560093,
+      "logistica": 0.07402164376599123,
+      "boosting": 0.07408112745537271
+    }
+  },
+  {
+    "cenario": "mudanca",
+    "replica": 19,
+    "semente": 2026111519,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.1061011506556061,
+    "brier_validacao": {
+      "constante": 0.0852150176255434,
+      "logistica": 0.0748297795274364,
+      "boosting": 0.07550951891242844
+    }
+  },
+  {
+    "cenario": "mudanca",
+    "replica": 20,
+    "semente": 2026111520,
+    "escolhido": "logistica",
+    "prevalencia_treino": 0.10590100499811898,
+    "brier_validacao": {
+      "constante": 0.08530847683426644,
+      "logistica": 0.07507198791211178,
+      "boosting": 0.07519223064717723
+    }
+  }
+]

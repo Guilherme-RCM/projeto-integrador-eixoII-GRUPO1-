@@ -1,0 +1,126 @@
+# Protocolo da base vetorial da Sprint 4 (ADR-ML-10), pré-especificado antes do treino sobre os vetores.
+#
+# Tem o mesmo formato de configs/sprint4.yaml, para reusar a leitura, as fotografias em t0 e as
+# invariantes temporais de pipeline/ml, e acrescenta o bloco `vetorial`. É um protocolo novo: o
+# pacote models/sprint4/v1 e o protocolo 1.0.0 não mudam, e os dois resultados são publicados lado a lado.
+versao_protocolo: "vetorial-1.0.0"
+semente: 20261110
+
+dados:
+  base: data/pronto/base_analitica_creditos.csv.gz
+  setores: data/pronto/setores_socioeconomia.csv
+  quadras: data/pronto/quadras_socioeconomia.csv
+  geometrias: data/limpo/setores_ibge.csv
+  qualidade: data/pronto/qualidade_dados.json
+  sociodemografia: data/limpo/sociodemografia_setores_censo2022.csv
+  data_corte: "2026-07-31"
+
+# Proporção desenvolvimento/teste. A ordem temporal não se negocia (E1): o teste é sempre o período
+# mais recente, e a proporção resulta de quantos períodos entram no desenvolvimento.
+#   M1: cinco exercícios do mesmo tamanho -> 2021 a 2024 (80%) e 2025 (20%).
+#   M2: fotografias trimestrais da carteira no treino, validação em 2024 e teste em 2025 -> 69% e 31%.
+# O desenvolvimento se divide em treino (ajuste e busca) e validação (seleção e limiar); depois da
+# seleção, o modelo escolhido é reajustado no desenvolvimento inteiro e medido uma vez no teste.
+m1:
+  treino: [2021, 2022, 2023]
+  validacao: [2024]
+  teste: [2025]
+  validacao_interna:
+    - [[2021], [2022]]
+    - [[2021, 2022], [2023]]
+  atributos:
+    - inadimplente_exercicio_anterior
+    - inadimplencias_anteriores
+    - exercicios_anteriores
+    - debitos_abertos_t0
+    - valor_relativo_anterior
+  metrica_selecao: average_precision
+  limiar: maximo_f1_na_validacao
+
+m2:
+  horizonte_dias: 365
+  # todo rótulo do treino fica disponível até 29/06/2024, antes da validação (01/07/2024)
+  treino: ["2022-06-29", "2022-09-29", "2022-12-30", "2023-03-31", "2023-06-30"]
+  validacao: ["2024-07-01"]
+  teste: ["2025-07-31"]
+  validacao_interna:
+    - [["2022-06-29"], ["2023-06-30"]]
+  fotografia_demonstracao: "2026-07-31"
+  atributos:
+    - idade_divida_dias
+    - dias_desde_inscricao
+    - valor_relativo_credito
+    - creditos_inscritos_abertos_imovel
+    - inadimplencias_imovel_t0
+    - inadimplente_ultimo_exercicio
+  metrica_selecao: neg_brier_score
+  tolerancia_calibracao: 0.02
+
+selecao:
+  referencia: dummy
+  # do mais simples ao de maior capacidade; vale a regra de um erro-padrão
+  ordem_parcimonia: [regressao_logistica, knn_cosseno, random_forest]
+  reamostras_bootstrap: 200
+
+grades:
+  regressao_logistica:
+    modelo__C: [0.1, 1.0, 10.0]
+  knn_cosseno:
+    modelo__k: [50, 200, 800]
+  random_forest:
+    modelo__max_depth: [6, 12]
+    modelo__min_samples_leaf: [50]
+
+random_forest:
+  n_estimators: 200
+  n_jobs: 10
+
+faixas:
+  media_a_partir_de: 0.33
+  alta_a_partir_de: 0.66
+
+painel:
+  k_minimo_imoveis: 10
+
+vetorial:
+  # fração do teste aceita: 80/20 ou 70/30, com um ponto de folga para blocos temporais inteiros
+  proporcao_teste: {minimo: 0.19, maximo: 0.31}
+  # agregado de setor só é usado com pelo menos este número de imóveis (mesma supressão do painel)
+  k_anonimato_setor: 10
+  # dimensões por grupo; cada grupo acrescenta informação de outra origem
+  dimensoes:
+    m1:
+      historico:
+        - inadimplente_exercicio_anterior
+        - taxa_inadimplencia_anterior
+        - taxa_debitos_abertos
+        - log_valor_relativo_anterior
+        - sem_historico
+    m2:
+      historico:
+        - log_idade_divida_dias
+        - log_dias_desde_inscricao
+        - log_valor_relativo_credito
+        - creditos_inscritos_abertos_imovel
+        - inadimplencias_imovel_t0
+        - inadimplente_ultimo_exercicio
+    setor:
+      sociodemografico:
+        - idade_mediana_setor
+        - proporcao_0_14_setor
+        - proporcao_60_mais_setor
+        - taxa_alfabetizacao_setor
+      socioeconomico:
+        - log_renda_setor
+        - moradores_por_domicilio_setor
+        - log_densidade_setor
+      territorial:
+        - taxa_inadimplencia_setor_anterior
+  # espaços aninhados, do mais simples ao mais específico (ordem de parcimônia entre espaços)
+  espacos:
+    historico: [historico]
+    sociodemografico: [historico, sociodemografico]
+    socioeconomico: [historico, sociodemografico, socioeconomico]
+    territorial: [historico, sociodemografico, socioeconomico, territorial]
+  # comparação pareada do escolhido: os mesmos atributos do protocolo 1.0.0, na técnica lá escolhida
+  referencia: {espaco: historico, familia: regressao_logistica}

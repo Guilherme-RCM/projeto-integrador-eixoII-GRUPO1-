@@ -1,0 +1,69 @@
+{
+  "arquivos": {
+    "comparacao_modelos.csv": "dae529e18f72f1794e499dbd4ec16ace438e02181ea2532bb65a9c91f109eea6",
+    "creditos_m2.csv.gz": "73cf61085e654ba08f9161c22ee5a2951ba99fdc6911ac84d8b8ce42299fe5dc",
+    "devedores_m2.csv.gz": "d40e2bf40a4f69cb634a76bf4b96e07de1b258085adedd59caf512865c506103",
+    "metricas_subgrupos.csv": "4592e9a0d7259be78431c82aad4b3ae2963c2489473bb49f2c5745a0ff9f9a74",
+    "risco_m1.csv.gz": "90c41265f3db073c93f385017da5e9539c3f40ea77f93501b560c23ca0c246ae",
+    "selecao_validacao.csv": "2047a320e1ed02949e9e2e931477ea03ee0cac76d5d8ef263db72989749fd82f",
+    "setores.geojson": "8c507afc248c75d80084b1af9af97ff8424f73ed7ef7bc028bd71ac7ca7cb603"
+  },
+  "codigo": {
+    "lote": {
+      "arvore_com_alteracoes": false,
+      "commit": "bc29911970dbe25717964170a315956b86dedde7"
+    },
+    "treino": {
+      "arvore_com_alteracoes": false,
+      "commit": "8c55960d30cee5004921b57efc5f4296b8e5f517"
+    }
+  },
+  "data_corte": "2026-07-31",
+  "execucao_treino": "20261108T041219-4306b3",
+  "gerado_em": "2026-11-08T04:21:52-03:00",
+  "hipotese_devedor": "1 imóvel = 1 devedor sintético; não representa pessoa real",
+  "lote": "20261108T042152-6f13fb",
+  "m1": {
+    "creditos": 111252,
+    "exercicio": 2025,
+    "limiar": 0.30685581633827197,
+    "t0": "2025-01-01"
+  },
+  "m2": {
+    "concilia": true,
+    "creditos": 78122,
+    "devedores": 52510,
+    "exclusoes": {
+      "a_vencer": 0,
+      "elegiveis_inscritos_e_abertos": 78122,
+      "pagos_ate_t0": 478138,
+      "total_base": 556260,
+      "vencidos_nao_inscritos": 0
+    },
+    "fotografia": "2026-07-31",
+    "horizonte_dias": 365,
+    "principal_em_aberto_centavos": 6011872219,
+    "rotulo": "futuro: projeção, sem métrica de acerto",
+    "valor_esperado_centavos": 694808153
+  },
+  "modelos_sha256": {
+    "M1": "5533b49c4e8a4ce52df442201a4fab91e3e382df758284e45a330dcf239b0a91",
+    "M2": "c139f6ca128ef4c9b922d7e6b6a0078c13636d66a9ab5e0bb3b6f17b27e5240c"
+  },
+  "origem": "SINTETICO",
+  "politica": {
+    "faixa_alta": 0.66,
+    "faixa_media": 0.33,
+    "k_minimo_imoveis": 10,
+    "nota": "cortes de apresentação e supressão do protocolo aplicado; não são política pública"
+  },
+  "protocolo": {
+    "definicao_sha256": "34489b28c0265d3e143039d9d8d34c6b23a4141493cc8afcde129cf5d0dcceb0",
+    "sha256": "33cc03e63d82ce8eb1b3302a9d6ec44058edba80e83ae0aa5700b6d6e8451df1",
+    "sha256_treino": "33cc03e63d82ce8eb1b3302a9d6ec44058edba80e83ae0aa5700b6d6e8451df1",
+    "versao": "1.0.0"
+  },
+  "versao_dados": "c45d7ea9b875",
+  "versao_dados_treino": "c45d7ea9b875",
+  "versao_modelo": "sprint4-v1"
+}

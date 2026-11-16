@@ -1,0 +1,33 @@
+# Adendo exploratório ao experimento M2-Cenários (declarado em 15/11/2026, antes do cálculo registrado).
+# O adendo foi escrito depois de conhecidos o aceite do experimento e o resumo dos scores da primeira
+# semente; por isso, tudo o que ele mede é exploratório e não entra no aceite. Ele não altera o
+# protocolo 1.0.0 do experimento, os modelos nem as previsões: só recalcula medidas sobre as previsões
+# por crédito que o experimento já gravou. Mudar uma regra abaixo exige nova versão do adendo.
+versao: "1.0.0-adendo"
+experimento: experimentos/m2_cenarios/protocolo.json
+natureza: exploratoria_pos_resultado
+insumo: previsões por crédito gravadas pelo experimento (resultados/predicoes), sem novo treino
+particoes: [teste_carteira, teste_novos_imoveis]
+modelo: selecionado            # o escolhido na validação de cada réplica; o oráculo só serve de teto
+unidade: credito               # o experimento avalia créditos; o lote do painel agrega por devedor
+analises:
+  faixas_adr_ml_06:            # os cortes absolutos que classificam os devedores no lote (ADR-ML-06)
+    media: 0.33
+    alta: 0.66
+  faixas_por_capacidade:       # faixas pela posição no ranking, e não por corte absoluto
+    alta: 0.10                 # a fração do topo já fixada no protocolo do experimento (fracao_topo)
+    media: 0.20                # os 20% seguintes: convenção didática, a rever com a capacidade real da cobrança
+    baixa: 0.70
+    empates: inclusão fracionária uniforme, pela função top_weights do experimento
+  ganhos_acumulados:           # parte dos pagamentos capturada ao percorrer o ranking, por décimo da carteira
+    fracoes: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+  calibracao_fraca:            # regressão logística de y sobre logit(p), por máxima verossimilhança
+    medidas: [intercepto com a inclinação fixa em 1, inclinação]
+  teto_atingivel:              # só nos cenários com heterogeneidade (intensidade maior que zero)
+    medidas:
+      - ganho de Brier do selecionado dividido pelo ganho de Brier do oráculo
+      - excedente de AUC do selecionado (AUC - 0,5) dividido pelo excedente do oráculo
+  amplitude_do_score: [mínimo, mediana, percentil 90, máximo]
+  eventos_no_teste: pagamentos observados por réplica
+incerteza: média das 20 réplicas, com IC de 95% por t de Student (erro Monte Carlo, condicionado ao cadastro)
+saida: reports/sprint4/m2_cenarios/complementar

@@ -1,0 +1,29 @@
+# Protocolo complementar v2 do M1, sem renda (declarado em 15/11/2026, antes da execução registrada).
+# Não substitui o protocolo 1.0.0: usa as mesmas fotografias, a mesma divisão temporal e a mesma métrica.
+versao: "2.0.0-sem-renda"
+tarefa: M1
+base_protocolo: configs/sprint4.yaml
+modelo:
+  familia: regressao_logistica
+  C: 10            # valor escolhido na v1; não há nova busca de hiperparâmetros
+atributos_historico: herdados do protocolo 1.0.0 (cinco atributos do imóvel)
+atributos_setor:
+  sociodemografico:
+    - idade_mediana_setor
+    - proporcao_0_14_setor
+    - proporcao_60_mais_setor
+    - taxa_alfabetizacao_setor
+  composicao_familiar:
+    - proporcao_filhos_setor        # (V01045 + V01046 + V01047) / v0001
+    - proporcao_netos_avos_setor    # (V01051 + V01054) / v0001
+excluidos_por_decisao:
+  - renda do setor, quintil de renda, densidade, moradores por domicílio
+  - sexo, cor ou raça, indígenas, quilombolas, religião
+  - identificadores de setor, crédito e imóvel
+insumos:
+  sociodemografia: data/limpo/sociodemografia_setores_censo2022.csv
+  composicao: data/limpo/composicao_familiar_setores_censo2022.csv
+bootstrap:
+  reamostras: 200
+  semente: 20261115
+saida: reports/sprint4/v2_sem_renda

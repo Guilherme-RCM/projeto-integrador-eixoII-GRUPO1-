@@ -1,0 +1,6 @@
+﻿valor;taxa;n;tarefa;atributo
+0;0.22312294406517355;149263;M1;inadimplencias_anteriores
+1;0.5513084543550048;56326;M1;inadimplencias_anteriores
+2;0.6487732781554832;16915;M1;inadimplencias_anteriores
+0 a 180;0.12095531587057011;33748;M2;dias_desde_inscricao
+365 a 730;0.12042539881138567;12788;M2;dias_desde_inscricao

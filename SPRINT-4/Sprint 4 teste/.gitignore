@@ -1,0 +1,49 @@
+# Segredos e configuração local
+.env
+*.local.txt
+
+# Dados: versionam-se a amostra pública, as entradas sintéticas da Sprint 4 (data/pronto e arquivos
+# de data/limpo), os extratos de Palmas do Censo 2022 e os manifestos SHA-256 do bruto; os zips/gpkg brutos ficam fora.
+data/*
+!data/amostra/
+!data/pronto/
+!data/limpo/
+data/limpo/*
+!data/limpo/setores_ibge.csv
+!data/limpo/sociodemografia_setores_censo2022.csv
+!data/limpo/sociodemografia_setores_censo2022.procedencia.json
+!data/limpo/composicao_familiar_setores_censo2022.csv
+!data/limpo/areas_ponderacao_palmas.csv
+!data/limpo/areas_ponderacao_palmas_indicadores.csv
+!data/bruto/
+data/bruto/*
+!data/bruto/ibge_censo2022_setores/
+data/bruto/ibge_censo2022_setores/*
+!data/bruto/ibge_censo2022_setores/manifesto.jsonl
+!data/bruto/ibge_censo2022_setores/areas_ponderacao/
+data/bruto/ibge_censo2022_setores/areas_ponderacao/*
+!data/bruto/ibge_censo2022_setores/areas_ponderacao/manifesto.jsonl
+*.sqlite
+*.db
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.import_linter_cache/
+.venv/
+venv/
+
+# Resultados gerados
+saida/
+
+# Artefatos de cobertura
+.coverage
+coverage.xml
+
+# Sprint 3: logs de execução (a evidência da execução real vai para docs/)
+logs/
+
+# Sprint 4: pastas temporárias da publicação atômica do lote
+reports/sprint4/lote.tmp/
+reports/sprint4/lote.antigo/

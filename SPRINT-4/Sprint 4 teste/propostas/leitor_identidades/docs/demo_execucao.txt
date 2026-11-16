@@ -1,0 +1,99 @@
+{
+  "status": "fixtures sint\u00e9ticas inseridas; n\u00e3o consultadas em bases reais"
+}
+
+{
+  "document_id": 1
+}
+
+{
+  "document": {
+    "id": 1,
+    "unit": "A",
+    "digest": "59b86342300f53472c4215cf1a3e53e4b32889a63141d3c0da95f5129486d3cc",
+    "extractor": "pdf-text-regex-1",
+    "rules": "cpf-rules-1",
+    "state": "REVIEW",
+    "version": 1
+  },
+  "candidates": [
+    {
+      "id": 1,
+      "document_id": 1,
+      "cpf": "00000000191",
+      "page": 1,
+      "start": 68,
+      "end": 82,
+      "evidence": "O ARTIFICIAL - SOMENTE ENSAIO\nCPF do contribuinte ficticio: 000.000.001-91\nCredito ficticio: IPTU-DEMO-A\n",
+      "consistent": 1,
+      "possible_credits": [
+        {
+          "id": "IPTU-DEMO-A",
+          "description": "Cr\u00e9dito inteiramente fict\u00edcio A"
+        }
+      ]
+    }
+  ],
+  "audit": [
+    {
+      "id": 1,
+      "document_id": 1,
+      "event": "IMPORTED",
+      "actor": "servidor_a",
+      "details": "REVIEW",
+      "created": "2026-10-21T04:02:50.826Z"
+    }
+  ]
+}
+
+{
+  "status": "decis\u00e3o registrada"
+}
+
+{
+  "document": {
+    "id": 1,
+    "unit": "A",
+    "digest": "59b86342300f53472c4215cf1a3e53e4b32889a63141d3c0da95f5129486d3cc",
+    "extractor": "pdf-text-regex-1",
+    "rules": "cpf-rules-1",
+    "state": "APPROVED",
+    "version": 2
+  },
+  "candidates": [
+    {
+      "id": 1,
+      "document_id": 1,
+      "cpf": "00000000191",
+      "page": 1,
+      "start": 68,
+      "end": 82,
+      "evidence": "O ARTIFICIAL - SOMENTE ENSAIO\nCPF do contribuinte ficticio: 000.000.001-91\nCredito ficticio: IPTU-DEMO-A\n",
+      "consistent": 1,
+      "possible_credits": [
+        {
+          "id": "IPTU-DEMO-A",
+          "description": "Cr\u00e9dito inteiramente fict\u00edcio A"
+        }
+      ]
+    }
+  ],
+  "audit": [
+    {
+      "id": 1,
+      "document_id": 1,
+      "event": "IMPORTED",
+      "actor": "servidor_a",
+      "details": "REVIEW",
+      "created": "2026-10-21T04:02:50.826Z"
+    },
+    {
+      "id": 2,
+      "document_id": 1,
+      "event": "APPROVED",
+      "actor": "servidor_a",
+      "details": "Conferencia sintetica",
+      "created": "2026-10-21T04:02:51.083Z"
+    }
+  ]
+}

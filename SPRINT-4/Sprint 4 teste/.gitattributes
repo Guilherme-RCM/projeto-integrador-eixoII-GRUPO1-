@@ -1,0 +1,15 @@
+# Arquivos binários: nunca converter fim de linha (um PDF ou ZIP alterado deixa de abrir)
+*.pdf binary
+*.png binary
+*.svg text eol=lf
+*.zip binary
+*.gz binary
+*.xlsx binary
+*.sqlite binary
+# Sprint 4: arquivos com SHA-256 registrado (pacote de modelos, relatórios e lote do painel) não podem
+# mudar de fim de linha no checkout, senão o hash deixa de conferir num clone com core.autocrlf=true
+models/** -text
+reports/sprint4/** -text
+configs/*.yaml text eol=lf
+# código e protocolo do M2-Cenários: os SHA-256 foram registrados antes do treino (ADR-ML-12)
+experimentos/** -text

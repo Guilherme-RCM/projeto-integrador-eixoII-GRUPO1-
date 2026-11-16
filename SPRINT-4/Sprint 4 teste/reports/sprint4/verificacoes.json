@@ -1,0 +1,87 @@
+{
+  "executado_em": "2026-11-09T17:35:41-03:00",
+  "commit": "d14a33b",
+  "estado": "aprovado",
+  "reprovados": [],
+  "pendentes": [],
+  "controles": {
+    "testes_sem_mysql": {
+      "status": "aprovado",
+      "resumo": "930 passed, 57 deselected in 66.99s (0:01:06)",
+      "cobertura_total": 94.7,
+      "cobertura_pipeline_ml": {
+        "pipeline/ml/__init__.py": 100.0,
+        "pipeline/ml/analise_extra.py": 100.0,
+        "pipeline/ml/artefatos.py": 100.0,
+        "pipeline/ml/avaliacao.py": 98.6,
+        "pipeline/ml/config.py": 100.0,
+        "pipeline/ml/dados.py": 98.5,
+        "pipeline/ml/divisao.py": 100.0,
+        "pipeline/ml/documentos.py": 100.0,
+        "pipeline/ml/experimento.py": 100.0,
+        "pipeline/ml/figuras.py": 99.2,
+        "pipeline/ml/inferencia.py": 98.5,
+        "pipeline/ml/lote.py": 100.0,
+        "pipeline/ml/modelos.py": 100.0,
+        "pipeline/ml/pacote.py": 97.0,
+        "pipeline/ml/painel.py": 97.1,
+        "pipeline/ml/perfil.py": 100.0,
+        "pipeline/ml/publicacao.py": 96.3
+      }
+    },
+    "testes_sprint4": {
+      "status": "aprovado",
+      "resumo": "205 passed in 41.32s"
+    },
+    "contratos": {
+      "status": "aprovado",
+      "resumo": "Contracts: 11 kept, 0 broken."
+    },
+    "tipos": {
+      "status": "aprovado",
+      "erros": 0
+    },
+    "estrutura_ml": {
+      "status": "aprovado",
+      "complexidade_max": 10,
+      "maior_funcao_linhas": 34,
+      "maior_modulo_sloc": 187,
+      "menor_manutenibilidade": 42.7
+    },
+    "referencias_sprint3": {
+      "status": "aprovado",
+      "resumo": "75/75 DOIs conferidos no cache"
+    },
+    "referencias_sprint4": {
+      "status": "aprovado",
+      "resumo": "26/26 DOIs conferidos no cache"
+    },
+    "notebook": {
+      "status": "aprovado",
+      "celulas_codigo": 16,
+      "executadas": 16,
+      "erros": 0,
+      "saidas_com_caminho_local": 0
+    },
+    "reprodutibilidade": {
+      "status": "aprovado",
+      "integridade": "conferida nos dois pacotes",
+      "sha256_versionado": {
+        "inadimplencia.joblib": "5533b49c4e8a4ce52df442201a4fab91e3e382df758284e45a330dcf239b0a91",
+        "recuperabilidade.joblib": "c139f6ca128ef4c9b922d7e6b6a0078c13636d66a9ab5e0bb3b6f17b27e5240c"
+      },
+      "iguais_ao_notebook": {
+        "inadimplencia.joblib": true,
+        "recuperabilidade.joblib": true
+      }
+    },
+    "lote": {
+      "status": "aprovado",
+      "lote": "20261108T042152-6f13fb",
+      "creditos": 78122,
+      "concilia": true,
+      "modelos_do_pacote": true,
+      "protocolo_compativel": true
+    }
+  }
+}

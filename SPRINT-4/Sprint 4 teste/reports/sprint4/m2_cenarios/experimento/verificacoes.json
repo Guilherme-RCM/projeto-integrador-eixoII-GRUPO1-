@@ -1,0 +1,70 @@
+{
+  "total": 16,
+  "todas_passaram": true,
+  "verificacoes": [
+    {
+      "verificacao": "Inversão do risco por trechos coincide com cálculo manual",
+      "passou": true
+    },
+    {
+      "verificacao": "Empates constantes recebem inclusão uniforme",
+      "passou": true
+    },
+    {
+      "verificacao": "Top-k inclui exatamente a capacidade com empate",
+      "passou": true
+    },
+    {
+      "verificacao": "Constante tem AUC .5, lift 1 e ganho zero",
+      "passou": true
+    },
+    {
+      "verificacao": "Brier pareado da constante é zero",
+      "passou": true
+    },
+    {
+      "verificacao": "Repetir a semente reproduz todos os eventos",
+      "passou": true
+    },
+    {
+      "verificacao": "Pagamentos antigos pós-inscrição não influenciam a nova simulação",
+      "passou": true
+    },
+    {
+      "verificacao": "Pagamento futuro não altera população ou atributos da fotografia",
+      "passou": true
+    },
+    {
+      "verificacao": "Sentinela realmente altera os rótulos futuros",
+      "passou": true
+    },
+    {
+      "verificacao": "Contexto da inscrição ignora pagamentos futuros",
+      "passou": true
+    },
+    {
+      "verificacao": "Nenhum imóvel reservado entra no treino ou seleção",
+      "passou": true
+    },
+    {
+      "verificacao": "Rótulos de treino e validação amadurecem antes da próxima partição",
+      "passou": true
+    },
+    {
+      "verificacao": "Nenhum atributo contém ID, rótulo, data futura ou probabilidade verdadeira",
+      "passou": true
+    },
+    {
+      "verificacao": "Controle nulo tem probabilidade verdadeira de 12% para todos",
+      "passou": true
+    },
+    {
+      "verificacao": "Mudança não altera eventos observados antes do choque",
+      "passou": true
+    },
+    {
+      "verificacao": "Mudança não altera nenhuma fotografia de desenvolvimento",
+      "passou": true
+    }
+  ]
+}

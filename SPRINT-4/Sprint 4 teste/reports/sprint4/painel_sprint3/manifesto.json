@@ -1,0 +1,29 @@
+{
+  "painel": "Dashboard da Sprint 3",
+  "decisao": "ADR-ML-14",
+  "publicado_em": "2026-11-16T02:06:57-03:00",
+  "aviso": "Receita tributária: dado real e agregado do portal da transparência. Inadimplência por setor: simulada (ADR-003 da Sprint 3). Nada daqui alimenta os modelos nem o lote do painel.",
+  "execucao_sprint3": "20261107T184930-2adc77",
+  "versao_codigo_sprint3": "03e02d7",
+  "referencia_ipca": "2026-09",
+  "linhas": {
+    "receita_tributaria.csv": 2055,
+    "indicadores_receita_anual.csv": 48,
+    "sazonalidade_tributos.csv": 36,
+    "inadimplencia_simulada_por_setor.csv": 733,
+    "setores_socioeconomia.csv": 733
+  },
+  "parametros_simulacao": {
+    "beta_renda": -0.5,
+    "taxa_inadimplencia_alvo": 0.33,
+    "prob_pagar_por_ano_inscrito": 0.12,
+    "semente": 20261027
+  },
+  "arquivos": {
+    "dados/receita_tributaria.csv": "f353b6117330c820a7a76e3974730f48d097eebe1f293c82d921f3c12cdff53b",
+    "dados/indicadores_receita_anual.csv": "17d9124491f50e4688c1499df37fb68c911dccef853e19330c05c9cd77572e3d",
+    "dados/sazonalidade_tributos.csv": "deb365f101a8ebfa8699edbf99c4a802ef5fe6860e459771950622968b87ae4a",
+    "dados/inadimplencia_simulada_por_setor.csv": "4a4b01f390c11a8b437be8c8db9054911a6b18729fddfa145abbe447e25f231a",
+    "dados/setores_socioeconomia.csv": "66f8af16b5bfb1a7d9875af0ca1f63313b03b2c7d64166d73340bac39b0fb1d9"
+  }
+}
