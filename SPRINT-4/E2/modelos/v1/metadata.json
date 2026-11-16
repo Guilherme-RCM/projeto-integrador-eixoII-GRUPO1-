@@ -1,0 +1,319 @@
+{
+  "ambiente": {
+    "joblib": "1.6.0",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "python": "3.14.7",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "sistema": "Windows-11"
+  },
+  "codigo": {
+    "arvore_com_alteracoes": false,
+    "commit": "8c55960d30cee5004921b57efc5f4296b8e5f517"
+  },
+  "dados": {
+    "data_corte": "2026-07-31",
+    "insumos_sha256": {
+      "data/limpo/setores_ibge.csv": "bb1c984fca36e9d05a5f53e42eb96b329c8a0d2ee707b22d682f8b1827134a04",
+      "data/pronto/base_analitica_creditos.csv.gz": "c45d7ea9b875fb59b0cf8a70f9f51f080d361e9c637f3bb3dfab504fa22951c3",
+      "data/pronto/quadras_socioeconomia.csv": "6265085137233a2df32d69cdda8e63cd1cef39b7dd04d7f349b500991ebcbe59",
+      "data/pronto/qualidade_dados.json": "4840a4db30c192d2303625c05554eb3e814b12b05e12c2430a7971a71e1b61e4",
+      "data/pronto/setores_socioeconomia.csv": "66f8af16b5bfb1a7d9875af0ca1f63313b03b2c7d64166d73340bac39b0fb1d9"
+    },
+    "origem": "créditos e imóveis SINTÉTICOS sobre setores censitários reais (ADR-003 da Sprint 3)",
+    "simulacao": {
+      "assinatura": "e66099c7d0c854ba2f6bc0507a1d770051a35246f6fd79ab783460ef964c87de",
+      "execucao_sprint3": "20261107T184930-2adc77",
+      "parametros": {
+        "beta_historico": 1.5,
+        "beta_renda": -0.5,
+        "data_corte": "2026-07-31",
+        "desvio_efeito_setor": 0.3,
+        "dias_ate_inscricao": 365,
+        "dispersao_valor": 0.6,
+        "elasticidade_valor_renda": 1.0,
+        "exercicios": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "juros_mes": 0.01,
+        "n_imoveis": 111252,
+        "prob_pagar_antes_inscricao": 0.45,
+        "prob_pagar_por_ano_inscrito": 0.12,
+        "semente": 20261027,
+        "taxa_inadimplencia_alvo": 0.33,
+        "tipos_excluidos": [
+          "Quartel e Base Militar",
+          "Unidades Prisionais"
+        ],
+        "vencimento_dia": 10,
+        "vencimento_mes": 3,
+        "versao": "1.0.0"
+      }
+    },
+    "versao_dados": "c45d7ea9b875"
+  },
+  "definicao_protocolo": {
+    "grades": {
+      "arvore_decisao": {
+        "modelo__max_depth": [
+          3,
+          6,
+          10
+        ],
+        "modelo__min_samples_leaf": [
+          20,
+          100
+        ]
+      },
+      "random_forest": {
+        "modelo__max_depth": [
+          6,
+          12,
+          null
+        ],
+        "modelo__max_features": [
+          "sqrt",
+          0.7
+        ],
+        "modelo__min_samples_leaf": [
+          20,
+          100
+        ]
+      },
+      "regressao_logistica": {
+        "modelo__C": [
+          0.1,
+          1.0,
+          10.0
+        ]
+      }
+    },
+    "m1.atributos": [
+      "inadimplente_exercicio_anterior",
+      "inadimplencias_anteriores",
+      "exercicios_anteriores",
+      "debitos_abertos_t0",
+      "valor_relativo_anterior"
+    ],
+    "m1.metrica_selecao": "average_precision",
+    "m1.teste": [
+      2025
+    ],
+    "m1.treino": [
+      2021,
+      2022,
+      2023
+    ],
+    "m1.validacao": [
+      2024
+    ],
+    "m1.validacao_interna": [
+      [
+        [
+          2021
+        ],
+        [
+          2022
+        ]
+      ],
+      [
+        [
+          2021,
+          2022
+        ],
+        [
+          2023
+        ]
+      ]
+    ],
+    "m2.atributos": [
+      "idade_divida_dias",
+      "dias_desde_inscricao",
+      "valor_relativo_credito",
+      "creditos_inscritos_abertos_imovel",
+      "inadimplencias_imovel_t0",
+      "inadimplente_ultimo_exercicio"
+    ],
+    "m2.horizonte_dias": 365,
+    "m2.metrica_selecao": "neg_brier_score",
+    "m2.teste": [
+      "2025-07-31"
+    ],
+    "m2.tolerancia_calibracao": 0.02,
+    "m2.treino": [
+      "2022-06-29",
+      "2023-06-30"
+    ],
+    "m2.validacao": [
+      "2024-07-01"
+    ],
+    "m2.validacao_interna": [
+      [
+        [
+          "2022-06-29"
+        ],
+        [
+          "2023-06-30"
+        ]
+      ]
+    ],
+    "random_forest.n_estimators": 200,
+    "selecao.ordem_parcimonia": [
+      "regressao_logistica",
+      "arvore_decisao",
+      "random_forest"
+    ],
+    "selecao.reamostras_bootstrap": 200,
+    "selecao.referencia": "dummy",
+    "semente": 20261107
+  },
+  "definicao_protocolo_sha256": "34489b28c0265d3e143039d9d8d34c6b23a4141493cc8afcde129cf5d0dcceb0",
+  "execucao": "20261108T041219-4306b3",
+  "faixas": {
+    "ALTA": "p >= 0.66",
+    "BAIXA": "p < 0.33",
+    "MEDIA": "0.33 <= p < 0.66",
+    "nota": "cortes de apresentação herdados do exemplo da coordenação; não são política pública"
+  },
+  "gerado_em": "2026-11-08T04:17:12-03:00",
+  "modelos": {
+    "M1": {
+      "arquivo": "inadimplencia.joblib",
+      "atributos": [
+        "inadimplente_exercicio_anterior",
+        "inadimplencias_anteriores",
+        "exercicios_anteriores",
+        "debitos_abertos_t0",
+        "valor_relativo_anterior"
+      ],
+      "calibracao": {
+        "motivo": "M1 usa o limiar de decisão; a calibração é só diagnóstico",
+        "recalibrado": false
+      },
+      "classe_positiva": "1 = sem pagamento até o vencimento (10/03)",
+      "classes": [
+        0,
+        1
+      ],
+      "familia": "regressao_logistica",
+      "hiperparametros": {
+        "modelo__C": 10.0
+      },
+      "limiar": 0.30685581633827197,
+      "pergunta": "o crédito do exercício ficará sem pagamento até o vencimento?",
+      "periodos": {
+        "teste": [
+          2025
+        ],
+        "treino": [
+          2021,
+          2022,
+          2023
+        ],
+        "validacao": [
+          2024
+        ]
+      },
+      "populacao": "créditos de IPTU lançados, vistos antes do vencimento",
+      "prevalencia_treino": 0.30692781552990805,
+      "regra_limiar": "F1 máximo na validação, com o modelo congelado",
+      "rotulo_disponivel": "no fim do dia do vencimento",
+      "selecao": {
+        "aceitos_pela_regra": [
+          "regressao_logistica",
+          "random_forest"
+        ],
+        "ganho_sobre_referencia": {
+          "erro_padrao": 0.002364134514537105,
+          "estimativa": 0.2391493982927126,
+          "ic95": [
+            0.2346873848457317,
+            0.24369015296493737
+          ],
+          "reamostras_validas": 200
+        },
+        "melhor_na_validacao": "regressao_logistica",
+        "referencia": "dummy",
+        "supera_referencia": true
+      },
+      "sha256": "5533b49c4e8a4ce52df442201a4fab91e3e382df758284e45a330dcf239b0a91",
+      "t0": "1º de janeiro do exercício (premissa: a base não traz a data real do lançamento)"
+    },
+    "M2": {
+      "arquivo": "recuperabilidade.joblib",
+      "atributos": [
+        "idade_divida_dias",
+        "dias_desde_inscricao",
+        "valor_relativo_credito",
+        "creditos_inscritos_abertos_imovel",
+        "inadimplencias_imovel_t0",
+        "inadimplente_ultimo_exercicio"
+      ],
+      "calibracao": {
+        "desvio_medio_validacao": -0.002769426622185281,
+        "recalibrado": false,
+        "tolerancia": 0.02
+      },
+      "classe_positiva": "1 = pagamento em (t0, t0 + 365 dias]",
+      "classes": [
+        0,
+        1
+      ],
+      "familia": "regressao_logistica",
+      "hiperparametros": {
+        "modelo__C": 0.1
+      },
+      "limiar": 0.10228097596281718,
+      "pergunta": "o crédito inscrito e aberto em t0 será pago integralmente nos 365 dias seguintes?",
+      "periodos": {
+        "fotografia_demonstracao": "2026-07-31",
+        "horizonte_dias": 365,
+        "teste": [
+          "2025-07-31"
+        ],
+        "treino": [
+          "2022-06-29",
+          "2023-06-30"
+        ],
+        "validacao": [
+          "2024-07-01"
+        ]
+      },
+      "populacao": "créditos inscritos em dívida ativa até t0 e sem pagamento conhecido em t0",
+      "prevalencia_treino": 0.12080969571944301,
+      "regra_limiar": "F1 máximo na validação, com o modelo congelado",
+      "rotulo_disponivel": "no fim da janela de 365 dias; antes disso o rótulo é ausente, não negativo",
+      "selecao": {
+        "aceitos_pela_regra": [
+          "regressao_logistica",
+          "arvore_decisao",
+          "random_forest"
+        ],
+        "ganho_sobre_referencia": {
+          "erro_padrao": 1.4297593489348853e-05,
+          "estimativa": -1.416223456530974e-05,
+          "ic95": [
+            -3.821143850527148e-05,
+            1.7839436672872916e-05
+          ],
+          "reamostras_validas": 200
+        },
+        "melhor_na_validacao": "regressao_logistica",
+        "referencia": "dummy",
+        "supera_referencia": false
+      },
+      "sha256": "c139f6ca128ef4c9b922d7e6b6a0078c13636d66a9ab5e0bb3b6f17b27e5240c",
+      "t0": "data da fotografia da carteira"
+    }
+  },
+  "protocolo_sha256": "33cc03e63d82ce8eb1b3302a9d6ec44058edba80e83ae0aa5700b6d6e8451df1",
+  "seguranca": "carregar só por pipeline.ml.artefatos.carregar_modelo, que confere SHA-256 e versão",
+  "semente": 20261107,
+  "versao_modelo": "sprint4-v1",
+  "versao_protocolo": "1.0.0"
+}

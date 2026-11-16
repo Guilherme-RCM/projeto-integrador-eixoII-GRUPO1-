@@ -1,0 +1,394 @@
+{
+  "colecoes": {
+    "M1": {
+      "arquivos": {
+        "metadados.csv.gz": "5929045085bc6d241dfff99dda0c489b6d2aa6a0cf77b451132bd4c08116509a",
+        "vetores_teste.npy": "85b3a05dfded6d45d8bfafc846b7c0841df718a0b98920258e3e68e76bd37862",
+        "vetores_treino.npy": "7f6acf688684b643db5b8bfc9ba4bb581ab0393e4eafe4209da1d7f625c8180e",
+        "vetores_validacao.npy": "3085277db32068af1fbcecbc15100b702bc2d989b9a2f42f5eafeaf2cbef7c3c"
+      },
+      "ausentes_no_treino": {
+        "idade_mediana_setor": 0,
+        "inadimplente_exercicio_anterior": 111252,
+        "log_densidade_setor": 0,
+        "log_renda_setor": 0,
+        "log_valor_relativo_anterior": 111252,
+        "moradores_por_domicilio_setor": 0,
+        "proporcao_0_14_setor": 0,
+        "proporcao_60_mais_setor": 0,
+        "sem_historico": 0,
+        "taxa_alfabetizacao_setor": 0,
+        "taxa_debitos_abertos": 111252,
+        "taxa_inadimplencia_anterior": 111252,
+        "taxa_inadimplencia_setor_anterior": 111414
+      },
+      "dimensoes": [
+        "inadimplente_exercicio_anterior",
+        "taxa_inadimplencia_anterior",
+        "taxa_debitos_abertos",
+        "log_valor_relativo_anterior",
+        "sem_historico",
+        "idade_mediana_setor",
+        "proporcao_0_14_setor",
+        "proporcao_60_mais_setor",
+        "taxa_alfabetizacao_setor",
+        "log_renda_setor",
+        "moradores_por_domicilio_setor",
+        "log_densidade_setor",
+        "taxa_inadimplencia_setor_anterior"
+      ],
+      "espacos": {
+        "historico": [
+          "inadimplente_exercicio_anterior",
+          "taxa_inadimplencia_anterior",
+          "taxa_debitos_abertos",
+          "log_valor_relativo_anterior",
+          "sem_historico"
+        ],
+        "sociodemografico": [
+          "inadimplente_exercicio_anterior",
+          "taxa_inadimplencia_anterior",
+          "taxa_debitos_abertos",
+          "log_valor_relativo_anterior",
+          "sem_historico",
+          "idade_mediana_setor",
+          "proporcao_0_14_setor",
+          "proporcao_60_mais_setor",
+          "taxa_alfabetizacao_setor"
+        ],
+        "socioeconomico": [
+          "inadimplente_exercicio_anterior",
+          "taxa_inadimplencia_anterior",
+          "taxa_debitos_abertos",
+          "log_valor_relativo_anterior",
+          "sem_historico",
+          "idade_mediana_setor",
+          "proporcao_0_14_setor",
+          "proporcao_60_mais_setor",
+          "taxa_alfabetizacao_setor",
+          "log_renda_setor",
+          "moradores_por_domicilio_setor",
+          "log_densidade_setor"
+        ],
+        "territorial": [
+          "inadimplente_exercicio_anterior",
+          "taxa_inadimplencia_anterior",
+          "taxa_debitos_abertos",
+          "log_valor_relativo_anterior",
+          "sem_historico",
+          "idade_mediana_setor",
+          "proporcao_0_14_setor",
+          "proporcao_60_mais_setor",
+          "taxa_alfabetizacao_setor",
+          "log_renda_setor",
+          "moradores_por_domicilio_setor",
+          "log_densidade_setor",
+          "taxa_inadimplencia_setor_anterior"
+        ]
+      },
+      "linhas": {
+        "teste": 111252,
+        "treino": 333756,
+        "validacao": 111252
+      },
+      "normalizacao": {
+        "idade_mediana_setor": {
+          "escala": 3.1326820362938514,
+          "media": 30.18105328443534,
+          "mediana": 29.87
+        },
+        "inadimplente_exercicio_anterior": {
+          "escala": 0.39143271538626667,
+          "media": 0.18890446913313919,
+          "mediana": 0.0
+        },
+        "log_densidade_setor": {
+          "escala": 0.9009051019224104,
+          "media": 8.27967488846098,
+          "mediana": 8.422178967812556
+        },
+        "log_renda_setor": {
+          "escala": 0.6199803911970676,
+          "media": 8.11428394287303,
+          "mediana": 7.8910053494493795
+        },
+        "log_valor_relativo_anterior": {
+          "escala": 0.7036538471957264,
+          "media": 0.03656842852225548,
+          "mediana": 0.0
+        },
+        "moradores_por_domicilio_setor": {
+          "escala": 0.3623571924564595,
+          "media": 2.8425537989333436,
+          "mediana": 2.8835978835978837
+        },
+        "proporcao_0_14_setor": {
+          "escala": 0.05198683837554415,
+          "media": 0.2216314128105562,
+          "mediana": 0.222222
+        },
+        "proporcao_60_mais_setor": {
+          "escala": 0.03281513157317129,
+          "media": 0.08128575364038398,
+          "mediana": 0.079229
+        },
+        "sem_historico": {
+          "escala": 0.4714045207910318,
+          "media": 0.3333333333333333,
+          "mediana": 0.0
+        },
+        "taxa_alfabetizacao_setor": {
+          "escala": 0.025894063251489338,
+          "media": 0.9710058985007012,
+          "mediana": 0.974155
+        },
+        "taxa_debitos_abertos": {
+          "escala": 0.272371291254137,
+          "media": 0.1038887690408562,
+          "mediana": 0.0
+        },
+        "taxa_inadimplencia_anterior": {
+          "escala": 0.3506086250783563,
+          "media": 0.1756732463236616,
+          "mediana": 0.0
+        },
+        "taxa_inadimplencia_setor_anterior": {
+          "escala": 0.09476757730430545,
+          "media": 0.2611734090404137,
+          "mediana": 0.2564102564102564
+        }
+      },
+      "positivos": {
+        "teste": 40838,
+        "treino": 102439,
+        "validacao": 40289
+      },
+      "proporcao": {
+        "desenvolvimento": 0.8,
+        "limites_teste": [
+          0.19,
+          0.31
+        ],
+        "linhas": {
+          "teste": 111252,
+          "treino": 333756,
+          "validacao": 111252
+        },
+        "teste": 0.2,
+        "teste_pela_regra_de_joseph": 0.2109,
+        "treino": 0.6,
+        "validacao": 0.2
+      },
+      "protocolo_sha256": "88b476573bb3e7e36ef2c1da7d04495e2edb72401d5ca6af8450b13aaafdd811",
+      "versao_dados": "c45d7ea9b875",
+      "vetores_unicos": {
+        "sem_repeticao": 444526,
+        "total": 556260
+      }
+    },
+    "M2": {
+      "arquivos": {
+        "metadados.csv.gz": "e784c7a90a1e57a97d8162a1dbc5cae08e93ac687342a9013fec425baf48e1d6",
+        "vetores_teste.npy": "a9923ae425df755c3c6eec5523c6acd5d7d177f41930d3b3a9e6cce91b9ac4e5",
+        "vetores_treino.npy": "37dffa6fc88e5a4c615b43bfa0f9b548f03b43ffcf24e787f2ecf83679ead23e",
+        "vetores_validacao.npy": "de09beaea9a1be77376e5fb9abb97e454e3d55df12a2ecd6aa1165d4ea137e3e"
+      },
+      "ausentes_no_treino": {
+        "creditos_inscritos_abertos_imovel": 0,
+        "idade_mediana_setor": 0,
+        "inadimplencias_imovel_t0": 0,
+        "inadimplente_ultimo_exercicio": 0,
+        "log_densidade_setor": 0,
+        "log_dias_desde_inscricao": 0,
+        "log_idade_divida_dias": 0,
+        "log_renda_setor": 0,
+        "log_valor_relativo_credito": 0,
+        "moradores_por_domicilio_setor": 0,
+        "proporcao_0_14_setor": 0,
+        "proporcao_60_mais_setor": 0,
+        "taxa_alfabetizacao_setor": 0,
+        "taxa_inadimplencia_setor_anterior": 72
+      },
+      "dimensoes": [
+        "log_idade_divida_dias",
+        "log_dias_desde_inscricao",
+        "log_valor_relativo_credito",
+        "creditos_inscritos_abertos_imovel",
+        "inadimplencias_imovel_t0",
+        "inadimplente_ultimo_exercicio",
+        "idade_mediana_setor",
+        "proporcao_0_14_setor",
+        "proporcao_60_mais_setor",
+        "taxa_alfabetizacao_setor",
+        "log_renda_setor",
+        "moradores_por_domicilio_setor",
+        "log_densidade_setor",
+        "taxa_inadimplencia_setor_anterior"
+      ],
+      "espacos": {
+        "historico": [
+          "log_idade_divida_dias",
+          "log_dias_desde_inscricao",
+          "log_valor_relativo_credito",
+          "creditos_inscritos_abertos_imovel",
+          "inadimplencias_imovel_t0",
+          "inadimplente_ultimo_exercicio"
+        ],
+        "sociodemografico": [
+          "log_idade_divida_dias",
+          "log_dias_desde_inscricao",
+          "log_valor_relativo_credito",
+          "creditos_inscritos_abertos_imovel",
+          "inadimplencias_imovel_t0",
+          "inadimplente_ultimo_exercicio",
+          "idade_mediana_setor",
+          "proporcao_0_14_setor",
+          "proporcao_60_mais_setor",
+          "taxa_alfabetizacao_setor"
+        ],
+        "socioeconomico": [
+          "log_idade_divida_dias",
+          "log_dias_desde_inscricao",
+          "log_valor_relativo_credito",
+          "creditos_inscritos_abertos_imovel",
+          "inadimplencias_imovel_t0",
+          "inadimplente_ultimo_exercicio",
+          "idade_mediana_setor",
+          "proporcao_0_14_setor",
+          "proporcao_60_mais_setor",
+          "taxa_alfabetizacao_setor",
+          "log_renda_setor",
+          "moradores_por_domicilio_setor",
+          "log_densidade_setor"
+        ],
+        "territorial": [
+          "log_idade_divida_dias",
+          "log_dias_desde_inscricao",
+          "log_valor_relativo_credito",
+          "creditos_inscritos_abertos_imovel",
+          "inadimplencias_imovel_t0",
+          "inadimplente_ultimo_exercicio",
+          "idade_mediana_setor",
+          "proporcao_0_14_setor",
+          "proporcao_60_mais_setor",
+          "taxa_alfabetizacao_setor",
+          "log_renda_setor",
+          "moradores_por_domicilio_setor",
+          "log_densidade_setor",
+          "taxa_inadimplencia_setor_anterior"
+        ]
+      },
+      "linhas": {
+        "teste": 64017,
+        "treino": 94514,
+        "validacao": 49213
+      },
+      "normalizacao": {
+        "creditos_inscritos_abertos_imovel": {
+          "escala": 0.33102758280919037,
+          "media": 1.1252724464100556,
+          "mediana": 1.0
+        },
+        "idade_mediana_setor": {
+          "escala": 3.0383672177697556,
+          "media": 29.37229606195908,
+          "mediana": 29.18
+        },
+        "inadimplencias_imovel_t0": {
+          "escala": 0.6976070955622583,
+          "media": 1.890259644073894,
+          "mediana": 2.0
+        },
+        "inadimplente_ultimo_exercicio": {
+          "escala": 0.49191876664572426,
+          "media": 0.5895317095879975,
+          "mediana": 1.0
+        },
+        "log_densidade_setor": {
+          "escala": 0.8930849783720097,
+          "media": 8.284252310999559,
+          "mediana": 8.434050684324843
+        },
+        "log_dias_desde_inscricao": {
+          "escala": 1.0493958066369653,
+          "media": 4.954610189392368,
+          "mediana": 5.147494476813453
+        },
+        "log_idade_divida_dias": {
+          "escala": 0.23763958052931364,
+          "media": 6.366604507682796,
+          "mediana": 6.343880434126331
+        },
+        "log_renda_setor": {
+          "escala": 0.522817285496117,
+          "media": 7.903934570992513,
+          "mediana": 7.751569937200835
+        },
+        "log_valor_relativo_credito": {
+          "escala": 0.7975068832575298,
+          "media": -0.15088470412572647,
+          "mediana": -0.20201832957949914
+        },
+        "moradores_por_domicilio_setor": {
+          "escala": 0.35029080522448347,
+          "media": 2.89028413134236,
+          "mediana": 2.9185185185185185
+        },
+        "proporcao_0_14_setor": {
+          "escala": 0.05411376911187502,
+          "media": 0.23269626796030216,
+          "mediana": 0.233533
+        },
+        "proporcao_60_mais_setor": {
+          "escala": 0.03211389980878418,
+          "media": 0.07836672465454853,
+          "mediana": 0.075939
+        },
+        "taxa_alfabetizacao_setor": {
+          "escala": 0.027475657141036704,
+          "media": 0.9640459488647184,
+          "mediana": 0.966146
+        },
+        "taxa_inadimplencia_setor_anterior": {
+          "escala": 0.12588416203591618,
+          "media": 0.35085038217981646,
+          "mediana": 0.34624765478424013
+        }
+      },
+      "positivos": {
+        "teste": 7585,
+        "treino": 11439,
+        "validacao": 5975
+      },
+      "proporcao": {
+        "desenvolvimento": 0.6918,
+        "limites_teste": [
+          0.19,
+          0.31
+        ],
+        "linhas": {
+          "teste": 64017,
+          "treino": 94514,
+          "validacao": 49213
+        },
+        "teste": 0.3082,
+        "teste_pela_regra_de_joseph": 0.2052,
+        "treino": 0.455,
+        "validacao": 0.2369
+      },
+      "protocolo_sha256": "88b476573bb3e7e36ef2c1da7d04495e2edb72401d5ca6af8450b13aaafdd811",
+      "versao_dados": "c45d7ea9b875",
+      "vetores_unicos": {
+        "sem_repeticao": 207744,
+        "total": 207744
+      }
+    }
+  },
+  "formato": "1.0",
+  "metrica": "cosseno (produto interno de vetores unitários)",
+  "pseudonimizacao": {
+    "algoritmo": "HMAC-SHA-256, 16 hexadecimais",
+    "segredo_padrao": true,
+    "variavel_do_segredo": "PI2_SEGREDO_PSEUDONIMO"
+  }
+}

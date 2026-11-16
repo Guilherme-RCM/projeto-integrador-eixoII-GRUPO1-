@@ -1,0 +1,9 @@
+﻿modelo;metrica;validacao;erro_padrao;ic95_inf;ic95_sup;melhores_parametros;segundos_busca;dentro_de_um_erro_padrao;escolhido;tarefa
+dummy;average_precision;0.3621418041922842;0.001417278421688803;0.3591117463056844;0.3644640096357818;{};0.32;False;False;M1
+regressao_logistica;average_precision;0.6012912024849968;0.002778679054115954;0.596019379792007;0.6058598860302138;{'modelo__C': 10.0};1.3;True;True;M1
+arvore_decisao;average_precision;0.5867784182221171;0.0026969366478400785;0.5815898396423066;0.5923745011768985;{'modelo__max_depth': 10, 'modelo__min_samples_leaf': 100};2.06;False;False;M1
+random_forest;average_precision;0.6001325952612835;0.0027817937615183023;0.5943841235845386;0.6055195755360969;{'modelo__max_depth': 6, 'modelo__max_features': 0.7, 'modelo__min_samples_leaf': 20};154.16;True;False;M1
+dummy;neg_brier_score;0.1066707376882847;0.0011363527514573512;0.10413686704778922;0.10885301998052757;{};0.05;False;False;M2
+regressao_logistica;neg_brier_score;0.10668489992285;0.0011419240088257037;0.10415028166057338;0.10887779897604156;{'modelo__C': 0.1};0.16;True;True;M2
+arvore_decisao;neg_brier_score;0.10670515268071556;0.0011397403043591743;0.10414227661337591;0.10888702242329933;{'modelo__max_depth': 3, 'modelo__min_samples_leaf': 100};0.29;True;False;M2
+random_forest;neg_brier_score;0.10671391901431956;0.001138597479702741;0.1041920052175858;0.10890856577604344;{'modelo__max_depth': 6, 'modelo__max_features': 'sqrt', 'modelo__min_samples_leaf': 100};15.19;True;False;M2

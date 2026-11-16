@@ -1,0 +1,118 @@
+{
+  "ambiente": {
+    "joblib": "1.6.0",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "python": "3.14.7",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "sistema": "Windows-11"
+  },
+  "codigo": {
+    "arvore_com_alteracoes": false,
+    "commit": null
+  },
+  "execucao": "20261110T022845-38e4c0",
+  "insumos": {
+    "data/limpo/setores_ibge.csv": "bb1c984fca36e9d05a5f53e42eb96b329c8a0d2ee707b22d682f8b1827134a04",
+    "data/limpo/sociodemografia_setores_censo2022.csv": "12078767392cc9729a342f4df495958f32001ca3fff19e2af245d22c3f435946",
+    "data/pronto/base_analitica_creditos.csv.gz": "c45d7ea9b875fb59b0cf8a70f9f51f080d361e9c637f3bb3dfab504fa22951c3",
+    "data/pronto/quadras_socioeconomia.csv": "6265085137233a2df32d69cdda8e63cd1cef39b7dd04d7f349b500991ebcbe59",
+    "data/pronto/qualidade_dados.json": "4840a4db30c192d2303625c05554eb3e814b12b05e12c2430a7971a71e1b61e4",
+    "data/pronto/setores_socioeconomia.csv": "66f8af16b5bfb1a7d9875af0ca1f63313b03b2c7d64166d73340bac39b0fb1d9"
+  },
+  "modelos": {
+    "M1": {
+      "arquivo": "inadimplencia.joblib",
+      "banco_sha256": {
+        "metadados.csv.gz": "5929045085bc6d241dfff99dda0c489b6d2aa6a0cf77b451132bd4c08116509a",
+        "vetores_teste.npy": "85b3a05dfded6d45d8bfafc846b7c0841df718a0b98920258e3e68e76bd37862",
+        "vetores_treino.npy": "7f6acf688684b643db5b8bfc9ba4bb581ab0393e4eafe4209da1d7f625c8180e",
+        "vetores_validacao.npy": "3085277db32068af1fbcecbc15100b702bc2d989b9a2f42f5eafeaf2cbef7c3c"
+      },
+      "dimensoes": [
+        "inadimplente_exercicio_anterior",
+        "taxa_inadimplencia_anterior",
+        "taxa_debitos_abertos",
+        "log_valor_relativo_anterior",
+        "sem_historico",
+        "idade_mediana_setor",
+        "proporcao_0_14_setor",
+        "proporcao_60_mais_setor",
+        "taxa_alfabetizacao_setor",
+        "log_renda_setor",
+        "moradores_por_domicilio_setor",
+        "log_densidade_setor"
+      ],
+      "espaco": "socioeconomico",
+      "familia": "random_forest",
+      "hiperparametros": {
+        "modelo__max_depth": 12,
+        "modelo__min_samples_leaf": 50
+      },
+      "limiar": 0.3238243622775294,
+      "sha256": "aae9c05e31906a1bf50b9f60f9e337dc5c0fa8690f17fe9f872c0c863dedf423"
+    },
+    "M2": {
+      "arquivo": "recuperabilidade.joblib",
+      "banco_sha256": {
+        "metadados.csv.gz": "e784c7a90a1e57a97d8162a1dbc5cae08e93ac687342a9013fec425baf48e1d6",
+        "vetores_teste.npy": "a9923ae425df755c3c6eec5523c6acd5d7d177f41930d3b3a9e6cce91b9ac4e5",
+        "vetores_treino.npy": "37dffa6fc88e5a4c615b43bfa0f9b548f03b43ffcf24e787f2ecf83679ead23e",
+        "vetores_validacao.npy": "de09beaea9a1be77376e5fb9abb97e454e3d55df12a2ecd6aa1165d4ea137e3e"
+      },
+      "dimensoes": [
+        "log_idade_divida_dias",
+        "log_dias_desde_inscricao",
+        "log_valor_relativo_credito",
+        "creditos_inscritos_abertos_imovel",
+        "inadimplencias_imovel_t0",
+        "inadimplente_ultimo_exercicio"
+      ],
+      "espaco": "historico",
+      "familia": "regressao_logistica",
+      "hiperparametros": {
+        "modelo__C": 0.1
+      },
+      "limiar": 0.10859039425849915,
+      "sha256": "ac49edaaab6b04df312c0c7161c2b322bb9184b8f95158b69f9b7f795ee9abaf"
+    }
+  },
+  "origem_dado": "SINTETICO",
+  "protocolo": "vetorial-1.0.0",
+  "protocolo_sha256": "88b476573bb3e7e36ef2c1da7d04495e2edb72401d5ca6af8450b13aaafdd811",
+  "simulacao": {
+    "assinatura": "e66099c7d0c854ba2f6bc0507a1d770051a35246f6fd79ab783460ef964c87de",
+    "execucao_sprint3": "20261107T184930-2adc77",
+    "parametros": {
+      "beta_historico": 1.5,
+      "beta_renda": -0.5,
+      "data_corte": "2026-07-31",
+      "desvio_efeito_setor": 0.3,
+      "dias_ate_inscricao": 365,
+      "dispersao_valor": 0.6,
+      "elasticidade_valor_renda": 1.0,
+      "exercicios": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "juros_mes": 0.01,
+      "n_imoveis": 111252,
+      "prob_pagar_antes_inscricao": 0.45,
+      "prob_pagar_por_ano_inscrito": 0.12,
+      "semente": 20261027,
+      "taxa_inadimplencia_alvo": 0.33,
+      "tipos_excluidos": [
+        "Quartel e Base Militar",
+        "Unidades Prisionais"
+      ],
+      "vencimento_dia": 10,
+      "vencimento_mes": 3,
+      "versao": "1.0.0"
+    }
+  },
+  "versao_pacote": "vetorial-v1"
+}

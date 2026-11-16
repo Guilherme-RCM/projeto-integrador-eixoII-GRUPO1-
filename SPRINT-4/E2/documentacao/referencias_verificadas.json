@@ -1,0 +1,1349 @@
+[
+ {
+  "id": "afendras2019",
+  "doi": "10.1016/j.jspi.2018.07.005",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Optimality of training/test size and resampling effectiveness in cross-validation",
+   "subtitulo": "",
+   "autores": [
+    "Afendras",
+    "Markatou"
+   ],
+   "ano": 2019,
+   "veiculo": "Journal of Statistical Planning and Inference",
+   "volume": "199",
+   "numero": null,
+   "paginas": "286-301",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "aggarwal2001",
+  "doi": "10.1007/3-540-44503-X_27",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "On the Surprising Behavior of Distance Metrics in High Dimensional Space",
+   "subtitulo": "",
+   "autores": [
+    "Aggarwal",
+    "Hinneburg",
+    "Keim"
+   ],
+   "ano": 2001,
+   "veiculo": "Lecture Notes in Computer Science",
+   "volume": null,
+   "numero": null,
+   "paginas": "420-434",
+   "tipo_crossref": "book-chapter"
+  }
+ },
+ {
+  "id": "amershi2019",
+  "doi": "10.1109/ICSE-SEIP.2019.00042",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Software Engineering for Machine Learning: A Case Study",
+   "subtitulo": "",
+   "autores": [
+    "Amershi",
+    "Begel",
+    "Bird",
+    "DeLine",
+    "Gall",
+    "Kamar",
+    "Nagappan",
+    "Nushi",
+    "Zimmermann"
+   ],
+   "ano": 2019,
+   "veiculo": "2019 IEEE/ACM 41st International Conference on Software Engineering: Software Engineering in Practice (ICSE-SEIP)",
+   "volume": null,
+   "numero": null,
+   "paginas": "291-300",
+   "tipo_crossref": "proceedings-article"
+  }
+ },
+ {
+  "id": "baynes2023",
+  "doi": "10.1093/jrsssc/qlad008",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Efficient forecasting and uncertainty quantification for large-scale account level Monte Carlo models of debt recovery",
+   "subtitulo": "",
+   "autores": [
+    "Baynes",
+    "Cotter",
+    "Russell",
+    "Ryan",
+    "Waite"
+   ],
+   "ano": 2023,
+   "veiculo": "Journal of the Royal Statistical Society Series C: Applied Statistics",
+   "volume": "72",
+   "numero": "1",
+   "paginas": "188-212",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "bellotti2021",
+  "doi": "10.1016/j.ijforecast.2020.06.009",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Forecasting recovery rates on non-performing loans with machine learning",
+   "subtitulo": "",
+   "autores": [
+    "Bellotti",
+    "Brigo",
+    "Gambetti",
+    "Vrins"
+   ],
+   "ano": 2021,
+   "veiculo": "International Journal of Forecasting",
+   "volume": "37",
+   "numero": "1",
+   "paginas": "428-444",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "bender2005",
+  "doi": "10.1002/sim.2059",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Generating survival times to simulate Cox proportional hazards models",
+   "subtitulo": "",
+   "autores": [
+    "Bender",
+    "Augustin",
+    "Blettner"
+   ],
+   "ano": 2005,
+   "veiculo": "Statistics in Medicine",
+   "volume": "24",
+   "numero": "11",
+   "paginas": "1713-1723",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "bergmeir2012",
+  "doi": "10.1016/j.ins.2011.12.028",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "On the use of cross-validation for time series predictor evaluation",
+   "subtitulo": "",
+   "autores": [
+    "Bergmeir",
+    "Benítez"
+   ],
+   "ano": 2012,
+   "veiculo": "Information Sciences",
+   "volume": "191",
+   "numero": null,
+   "paginas": "192-213",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "beyer1999",
+  "doi": "10.1007/3-540-49257-7_15",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "When Is “Nearest Neighbor” Meaningful?",
+   "subtitulo": "",
+   "autores": [
+    "Beyer",
+    "Goldstein",
+    "Ramakrishnan",
+    "Shaft"
+   ],
+   "ano": 1999,
+   "veiculo": "Lecture Notes in Computer Science",
+   "volume": null,
+   "numero": null,
+   "paginas": "217-235",
+   "tipo_crossref": "book-chapter"
+  }
+ },
+ {
+  "id": "boxcox1964",
+  "doi": "10.1111/j.2517-6161.1964.tb00553.x",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "An Analysis of Transformations",
+   "subtitulo": "",
+   "autores": [
+    "Box",
+    "Cox"
+   ],
+   "ano": 1964,
+   "veiculo": "Journal of the Royal Statistical Society Series B: Statistical Methodology",
+   "volume": "26",
+   "numero": "2",
+   "paginas": "211-243",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "breiman2001",
+  "doi": "10.1023/A:1010933404324",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Random Forests",
+   "subtitulo": "",
+   "autores": [
+    "Breiman"
+   ],
+   "ano": 2001,
+   "veiculo": "Machine Learning",
+   "volume": "45",
+   "numero": "1",
+   "paginas": "5-32",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "brier1950",
+  "doi": "10.1175/1520-0493(1950)078<0001:VOFEIT>2.0.CO;2",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "VERIFICATION OF FORECASTS EXPRESSED IN TERMS OF PROBABILITY",
+   "subtitulo": "",
+   "autores": [
+    "BRIER"
+   ],
+   "ano": 1950,
+   "veiculo": "Monthly Weather Review",
+   "volume": "78",
+   "numero": "1",
+   "paginas": "1-3",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "chen2016",
+  "doi": "10.1145/2939672.2939785",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "XGBoost",
+   "subtitulo": "A Scalable Tree Boosting System",
+   "autores": [
+    "Chen",
+    "Guestrin"
+   ],
+   "ano": 2016,
+   "veiculo": "Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining",
+   "volume": null,
+   "numero": null,
+   "paginas": "785-794",
+   "tipo_crossref": "proceedings-article"
+  }
+ },
+ {
+  "id": "chouldechova2017",
+  "doi": "10.1089/big.2016.0047",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Fair Prediction with Disparate Impact: A Study of Bias in Recidivism Prediction Instruments",
+   "subtitulo": "",
+   "autores": [
+    "Chouldechova"
+   ],
+   "ano": 2017,
+   "veiculo": "Big Data",
+   "volume": "5",
+   "numero": "2",
+   "paginas": "153-163",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "collins2016",
+  "doi": "10.1002/sim.6787",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Sample size considerations for the external validation of a multivariable prognostic model: a resampling study",
+   "subtitulo": "",
+   "autores": [
+    "Collins",
+    "Ogundimu",
+    "Altman"
+   ],
+   "ano": 2016,
+   "veiculo": "Statistics in Medicine",
+   "volume": "35",
+   "numero": "2",
+   "paginas": "214-226",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "collins2024",
+  "doi": "10.1136/bmj-2023-078378",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods",
+   "subtitulo": "",
+   "autores": [
+    "Collins",
+    "Moons",
+    "Dhiman",
+    "Riley",
+    "Beam",
+    "Van Calster",
+    "Ghassemi",
+    "Liu",
+    "Reitsma",
+    "van Smeden",
+    "Boulesteix",
+    "Camaradou",
+    "Celi",
+    "Denaxas",
+    "Denniston",
+    "Glocker",
+    "Golub",
+    "Harvey",
+    "Heinze",
+    "Hoffman",
+    "Kengne",
+    "Lam",
+    "Lee",
+    "Loder",
+    "Maier-Hein",
+    "Mateen",
+    "McCradden",
+    "Oakden-Rayner",
+    "Ordish",
+    "Parnell",
+    "Rose",
+    "Singh",
+    "Wynants",
+    "Logullo"
+   ],
+   "ano": 2024,
+   "veiculo": "BMJ",
+   "volume": "385",
+   "numero": null,
+   "paginas": "e078378",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "cover1967",
+  "doi": "10.1109/TIT.1967.1053964",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Nearest neighbor pattern classification",
+   "subtitulo": "",
+   "autores": [
+    "Cover",
+    "Hart"
+   ],
+   "ano": 1967,
+   "veiculo": "IEEE Transactions on Information Theory",
+   "volume": "13",
+   "numero": "1",
+   "paginas": "21-27",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "cox1958",
+  "doi": "10.1093/biomet/45.3-4.562",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Two further applications of a model for binary regression",
+   "subtitulo": "",
+   "autores": [
+    "COX"
+   ],
+   "ano": 1958,
+   "veiculo": "Biometrika",
+   "volume": "45",
+   "numero": "3-4",
+   "paginas": "562-565",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "dobbin2011",
+  "doi": "10.1186/1755-8794-4-31",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Optimally splitting cases for training and testing high dimensional classifiers",
+   "subtitulo": "",
+   "autores": [
+    "Dobbin",
+    "Simon"
+   ],
+   "ano": 2011,
+   "veiculo": "BMC Medical Genomics",
+   "volume": "4",
+   "numero": "1",
+   "paginas": null,
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "fawcett2006",
+  "doi": "10.1016/j.patrec.2005.10.010",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "An introduction to ROC analysis",
+   "subtitulo": "",
+   "autores": [
+    "Fawcett"
+   ],
+   "ano": 2006,
+   "veiculo": "Pattern Recognition Letters",
+   "volume": "27",
+   "numero": "8",
+   "paginas": "861-874",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "gama2014",
+  "doi": "10.1145/2523813",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "A survey on concept drift adaptation",
+   "subtitulo": "",
+   "autores": [
+    "Gama",
+    "Žliobaitė",
+    "Bifet",
+    "Pechenizkiy",
+    "Bouchachia"
+   ],
+   "ano": 2014,
+   "veiculo": "ACM Computing Surveys",
+   "volume": "46",
+   "numero": "4",
+   "paginas": "1-37",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "gebru2021",
+  "doi": "10.1145/3458723",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Datasheets for datasets",
+   "subtitulo": "",
+   "autores": [
+    "Gebru",
+    "Morgenstern",
+    "Vecchione",
+    "Vaughan",
+    "Wallach",
+    "III",
+    "Crawford"
+   ],
+   "ano": 2021,
+   "veiculo": "Communications of the ACM",
+   "volume": "64",
+   "numero": "12",
+   "paginas": "86-92",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "geurts2006",
+  "doi": "10.1007/s10994-006-6226-1",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Extremely randomized trees",
+   "subtitulo": "",
+   "autores": [
+    "Geurts",
+    "Ernst",
+    "Wehenkel"
+   ],
+   "ano": 2006,
+   "veiculo": "Machine Learning",
+   "volume": "63",
+   "numero": "1",
+   "paginas": "3-42",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "gneiting2007",
+  "doi": "10.1198/016214506000001437",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Strictly Proper Scoring Rules, Prediction, and Estimation",
+   "subtitulo": "",
+   "autores": [
+    "Gneiting",
+    "Raftery"
+   ],
+   "ano": 2007,
+   "veiculo": "Journal of the American Statistical Association",
+   "volume": "102",
+   "numero": "477",
+   "paginas": "359-378",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "hastie2009",
+  "doi": "10.1007/978-0-387-84858-7",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "The Elements of Statistical Learning",
+   "subtitulo": "",
+   "autores": [
+    "Hastie",
+    "Tibshirani",
+    "Friedman"
+   ],
+   "ano": 2009,
+   "veiculo": "Springer Series in Statistics",
+   "volume": null,
+   "numero": null,
+   "paginas": null,
+   "tipo_crossref": "book"
+  }
+ },
+ {
+  "id": "hofmann2017",
+  "doi": "10.1016/j.joep.2017.06.005",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Tax compliance across sociodemographic categories: Meta-analyses of survey studies in 111 countries",
+   "subtitulo": "",
+   "autores": [
+    "Hofmann",
+    "Voracek",
+    "Bock",
+    "Kirchler"
+   ],
+   "ano": 2017,
+   "veiculo": "Journal of Economic Psychology",
+   "volume": "62",
+   "numero": null,
+   "paginas": "63-71",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "hyndman2006",
+  "doi": "10.1016/j.ijforecast.2006.03.001",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Another look at measures of forecast accuracy",
+   "subtitulo": "",
+   "autores": [
+    "Hyndman",
+    "Koehler"
+   ],
+   "ano": 2006,
+   "veiculo": "International Journal of Forecasting",
+   "volume": "22",
+   "numero": "4",
+   "paginas": "679-688",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "johnson2021",
+  "doi": "10.1109/TBDATA.2019.2921572",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Billion-Scale Similarity Search with GPUs",
+   "subtitulo": "",
+   "autores": [
+    "Johnson",
+    "Douze",
+    "Jegou"
+   ],
+   "ano": 2021,
+   "veiculo": "IEEE Transactions on Big Data",
+   "volume": "7",
+   "numero": "3",
+   "paginas": "535-547",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "joseph2022",
+  "doi": "10.1002/sam.11583",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Optimal ratio for data splitting",
+   "subtitulo": "",
+   "autores": [
+    "Joseph"
+   ],
+   "ano": 2022,
+   "veiculo": "Statistical Analysis and Data Mining: The ASA Data Science Journal",
+   "volume": "15",
+   "numero": "4",
+   "paginas": "531-538",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "kapoor2023",
+  "doi": "10.1016/j.patter.2023.100804",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Leakage and the reproducibility crisis in machine-learning-based science",
+   "subtitulo": "",
+   "autores": [
+    "Kapoor",
+    "Narayanan"
+   ],
+   "ano": 2023,
+   "veiculo": "Patterns",
+   "volume": "4",
+   "numero": "9",
+   "paginas": "100804",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "kaufman2012",
+  "doi": "10.1145/2382577.2382579",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Leakage in data mining",
+   "subtitulo": "Formulation, detection, and avoidance",
+   "autores": [
+    "Kaufman",
+    "Rosset",
+    "Perlich",
+    "Stitelman"
+   ],
+   "ano": 2012,
+   "veiculo": "ACM Transactions on Knowledge Discovery from Data",
+   "volume": "6",
+   "numero": "4",
+   "paginas": "1-21",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "koehler2009",
+  "doi": "10.1198/tast.2009.0030",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "On the Assessment of Monte Carlo Error in Simulation-Based Statistical Analyses",
+   "subtitulo": "",
+   "autores": [
+    "Koehler",
+    "Brown",
+    "Haneuse"
+   ],
+   "ano": 2009,
+   "veiculo": "The American Statistician",
+   "volume": "63",
+   "numero": "2",
+   "paginas": "155-162",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "lecessie1992",
+  "doi": "10.2307/2347628",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Ridge Estimators in Logistic Regression",
+   "subtitulo": "",
+   "autores": [
+    "Cessie",
+    "Houwelingen"
+   ],
+   "ano": 1992,
+   "veiculo": "Applied Statistics",
+   "volume": "41",
+   "numero": "1",
+   "paginas": "191",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "malkov2020",
+  "doi": "10.1109/TPAMI.2018.2889473",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Efficient and Robust Approximate Nearest Neighbor Search Using Hierarchical Navigable Small World Graphs",
+   "subtitulo": "",
+   "autores": [
+    "Malkov",
+    "Yashunin"
+   ],
+   "ano": 2020,
+   "veiculo": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+   "volume": "42",
+   "numero": "4",
+   "paginas": "824-836",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "mehrabi2022",
+  "doi": "10.1145/3457607",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "A Survey on Bias and Fairness in Machine Learning",
+   "subtitulo": "",
+   "autores": [
+    "Mehrabi",
+    "Morstatter",
+    "Saxena",
+    "Lerman",
+    "Galstyan"
+   ],
+   "ano": 2022,
+   "veiculo": "ACM Computing Surveys",
+   "volume": "54",
+   "numero": "6",
+   "paginas": "1-35",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "miccibarreca2001",
+  "doi": "10.1145/507533.507538",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "A preprocessing scheme for high-cardinality categorical attributes in classification and prediction problems",
+   "subtitulo": "",
+   "autores": [
+    "Micci-Barreca"
+   ],
+   "ano": 2001,
+   "veiculo": "ACM SIGKDD Explorations Newsletter",
+   "volume": "3",
+   "numero": "1",
+   "paginas": "27-32",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "mitchell2019",
+  "doi": "10.1145/3287560.3287596",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Model Cards for Model Reporting",
+   "subtitulo": "",
+   "autores": [
+    "Mitchell",
+    "Wu",
+    "Zaldivar",
+    "Barnes",
+    "Vasserman",
+    "Hutchinson",
+    "Spitzer",
+    "Raji",
+    "Gebru"
+   ],
+   "ano": 2019,
+   "veiculo": "Proceedings of the Conference on Fairness, Accountability, and Transparency",
+   "volume": null,
+   "numero": null,
+   "paginas": "220-229",
+   "tipo_crossref": "proceedings-article"
+  }
+ },
+ {
+  "id": "morenotorres2012",
+  "doi": "10.1016/j.patcog.2011.06.019",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "A unifying view on dataset shift in classification",
+   "subtitulo": "",
+   "autores": [
+    "Moreno-Torres",
+    "Raeder",
+    "Alaiz-Rodríguez",
+    "Chawla",
+    "Herrera"
+   ],
+   "ano": 2012,
+   "veiculo": "Pattern Recognition",
+   "volume": "45",
+   "numero": "1",
+   "paginas": "521-530",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "morris2019",
+  "doi": "10.1002/sim.8086",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Using simulation studies to evaluate statistical methods",
+   "subtitulo": "",
+   "autores": [
+    "Morris",
+    "White",
+    "Crowther"
+   ],
+   "ano": 2019,
+   "veiculo": "Statistics in Medicine",
+   "volume": "38",
+   "numero": "11",
+   "paginas": "2074-2102",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "narayanan2008",
+  "doi": "10.1109/SP.2008.33",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Robust De-anonymization of Large Sparse Datasets",
+   "subtitulo": "",
+   "autores": [
+    "Narayanan",
+    "Shmatikov"
+   ],
+   "ano": 2008,
+   "veiculo": "2008 IEEE Symposium on Security and Privacy (sp 2008)",
+   "volume": null,
+   "numero": null,
+   "paginas": "111-125",
+   "tipo_crossref": "proceedings-article"
+  }
+ },
+ {
+  "id": "nguyen2021",
+  "doi": "10.1155/2021/4832864",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Influence of Data Splitting on Performance of Machine Learning Models in Prediction of Shear Strength of Soil",
+   "subtitulo": "",
+   "autores": [
+    "Nguyen",
+    "Ly",
+    "Ho",
+    "Al-Ansari",
+    "Le",
+    "Tran",
+    "Prakash",
+    "Pham"
+   ],
+   "ano": 2021,
+   "veiculo": "Mathematical Problems in Engineering",
+   "volume": "2021",
+   "numero": null,
+   "paginas": "1-15",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "niculescu2005",
+  "doi": "10.1145/1102351.1102430",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Predicting good probabilities with supervised learning",
+   "subtitulo": "",
+   "autores": [
+    "Niculescu-Mizil",
+    "Caruana"
+   ],
+   "ano": 2005,
+   "veiculo": "Proceedings of the 22nd international conference on Machine learning  - ICML '05",
+   "volume": null,
+   "numero": null,
+   "paginas": "625-632",
+   "tipo_crossref": "proceedings-article"
+  }
+ },
+ {
+  "id": "nielsen1994",
+  "doi": "10.1145/191666.191729",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Enhancing the explanatory power of usability heuristics",
+   "subtitulo": "",
+   "autores": [
+    "Nielsen"
+   ],
+   "ano": 1994,
+   "veiculo": "Proceedings of the SIGCHI Conference on Human Factors in Computing Systems",
+   "volume": null,
+   "numero": null,
+   "paginas": "152-158",
+   "tipo_crossref": "proceedings-article"
+  }
+ },
+ {
+  "id": "nist2023",
+  "doi": "10.6028/NIST.AI.100-1",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+   "subtitulo": "",
+   "autores": [
+    "Tabassi"
+   ],
+   "ano": 2023,
+   "veiculo": "National Institute of Standards and Technology (U.S.)",
+   "volume": null,
+   "numero": null,
+   "paginas": null,
+   "tipo_crossref": "report"
+  }
+ },
+ {
+  "id": "racz2021",
+  "doi": "10.3390/molecules26041111",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Effect of Dataset Size and Train/Test Split Ratios in QSAR/QSPR Multiclass Classification",
+   "subtitulo": "",
+   "autores": [
+    "Rácz",
+    "Bajusz",
+    "Héberger"
+   ],
+   "ano": 2021,
+   "veiculo": "Molecules",
+   "volume": "26",
+   "numero": "4",
+   "paginas": "1111",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "richardson2006",
+  "doi": "10.1016/j.intaccaudtax.2006.08.005",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Determinants of tax evasion: A cross-country investigation",
+   "subtitulo": "",
+   "autores": [
+    "Richardson"
+   ],
+   "ano": 2006,
+   "veiculo": "Journal of International Accounting, Auditing and Taxation",
+   "volume": "15",
+   "numero": "2",
+   "paginas": "150-169",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "roberts2017",
+  "doi": "10.1111/ecog.02881",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Cross‐validation strategies for data with temporal, spatial, hierarchical, or phylogenetic structure",
+   "subtitulo": "",
+   "autores": [
+    "Roberts",
+    "Bahn",
+    "Ciuti",
+    "Boyce",
+    "Elith",
+    "Guillera‐Arroita",
+    "Hauenstein",
+    "Lahoz‐Monfort",
+    "Schröder",
+    "Thuiller",
+    "Warton",
+    "Wintle",
+    "Hartig",
+    "Dormann"
+   ],
+   "ano": 2017,
+   "veiculo": "Ecography",
+   "volume": "40",
+   "numero": "8",
+   "paginas": "913-929",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "robinson1950",
+  "doi": "10.2307/2087176",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Ecological Correlations and the Behavior of Individuals",
+   "subtitulo": "",
+   "autores": [
+    "Robinson"
+   ],
+   "ano": 1950,
+   "veiculo": "American Sociological Review",
+   "volume": "15",
+   "numero": "3",
+   "paginas": "351",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "rocher2019",
+  "doi": "10.1038/s41467-019-10933-3",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Estimating the success of re-identifications in incomplete datasets using generative models",
+   "subtitulo": "",
+   "autores": [
+    "Rocher",
+    "Hendrickx",
+    "de Montjoye"
+   ],
+   "ano": 2019,
+   "veiculo": "Nature Communications",
+   "volume": "10",
+   "numero": "1",
+   "paginas": null,
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "saito2015",
+  "doi": "10.1371/journal.pone.0118432",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "The Precision-Recall Plot Is More Informative than the ROC Plot When Evaluating Binary Classifiers on Imbalanced Datasets",
+   "subtitulo": "",
+   "autores": [
+    "Saito",
+    "Rehmsmeier"
+   ],
+   "ano": 2015,
+   "veiculo": "PLOS ONE",
+   "volume": "10",
+   "numero": "3",
+   "paginas": "e0118432",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "salton1975",
+  "doi": "10.1145/361219.361220",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "A vector space model for automatic indexing",
+   "subtitulo": "",
+   "autores": [
+    "Salton",
+    "Wong",
+    "Yang"
+   ],
+   "ano": 1975,
+   "veiculo": "Communications of the ACM",
+   "volume": "18",
+   "numero": "11",
+   "paginas": "613-620",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "singh2020",
+  "doi": "10.1016/j.asoc.2019.105524",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Investigating the impact of data normalization on classification performance",
+   "subtitulo": "",
+   "autores": [
+    "Singh",
+    "Singh"
+   ],
+   "ano": 2020,
+   "veiculo": "Applied Soft Computing",
+   "volume": "97",
+   "numero": null,
+   "paginas": "105524",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "steyerberg2010",
+  "doi": "10.1097/EDE.0b013e3181c30fb2",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Assessing the Performance of Prediction Models",
+   "subtitulo": "A Framework for Traditional and Novel Measures",
+   "autores": [
+    "Steyerberg",
+    "Vickers",
+    "Cook",
+    "Gerds",
+    "Gonen",
+    "Obuchowski",
+    "Pencina",
+    "Kattan"
+   ],
+   "ano": 2010,
+   "veiculo": "Epidemiology",
+   "volume": "21",
+   "numero": "1",
+   "paginas": "128-138",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "studer2021",
+  "doi": "10.3390/make3020020",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Towards CRISP-ML(Q): A Machine Learning Process Model with Quality Assurance Methodology",
+   "subtitulo": "",
+   "autores": [
+    "Studer",
+    "Bui",
+    "Drescher",
+    "Hanuschkin",
+    "Winkler",
+    "Peters",
+    "Müller"
+   ],
+   "ano": 2021,
+   "veiculo": "Machine Learning and Knowledge Extraction",
+   "volume": "3",
+   "numero": "2",
+   "paginas": "392-413",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "sweeney2002",
+  "doi": "10.1142/S0218488502001648",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "k-ANONYMITY: A MODEL FOR PROTECTING PRIVACY",
+   "subtitulo": "",
+   "autores": [
+    "SWEENEY"
+   ],
+   "ano": 2002,
+   "veiculo": "International Journal of Uncertainty, Fuzziness and Knowledge-Based Systems",
+   "volume": "10",
+   "numero": "05",
+   "paginas": "557-570",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "vancalster2019",
+  "doi": "10.1186/s12916-019-1466-7",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Calibration: the Achilles heel of predictive analytics",
+   "subtitulo": "",
+   "autores": [
+    "On behalf of Topic Group ‘Evaluating diagnostic tests and prediction models’ of the STRATOS initiative",
+    "Van Calster",
+    "McLernon",
+    "van Smeden",
+    "Wynants",
+    "Steyerberg"
+   ],
+   "ano": 2019,
+   "veiculo": "BMC Medicine",
+   "volume": "17",
+   "numero": "1",
+   "paginas": null,
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "varma2006",
+  "doi": "10.1186/1471-2105-7-91",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Bias in error estimation when using cross-validation for model selection",
+   "subtitulo": "",
+   "autores": [
+    "Varma",
+    "Simon"
+   ],
+   "ano": 2006,
+   "veiculo": "BMC Bioinformatics",
+   "volume": "7",
+   "numero": "1",
+   "paginas": null,
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "warton2011",
+  "doi": "10.1890/10-0340.1",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "The arcsine is asinine: the analysis of proportions in ecology",
+   "subtitulo": "",
+   "autores": [
+    "Warton",
+    "Hui"
+   ],
+   "ano": 2011,
+   "veiculo": "Ecology",
+   "volume": "92",
+   "numero": "1",
+   "paginas": "3-10",
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "wynants2019",
+  "doi": "10.1186/s12916-019-1425-3",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "Three myths about risk thresholds for prediction models",
+   "subtitulo": "",
+   "autores": [
+    "on behalf of the Topic Group ‘Evaluating diagnostic tests and prediction models’ of the STRATOS initiative",
+    "Wynants",
+    "van Smeden",
+    "McLernon",
+    "Timmerman",
+    "Steyerberg",
+    "Van Calster"
+   ],
+   "ano": 2019,
+   "veiculo": "BMC Medicine",
+   "volume": "17",
+   "numero": "1",
+   "paginas": null,
+   "tipo_crossref": "journal-article"
+  }
+ },
+ {
+  "id": "xu2018",
+  "doi": "10.1007/s41664-018-0068-2",
+  "conferido_em": "2026-11-15",
+  "verificado": true,
+  "problema": "",
+  "crossref": {
+   "titulo": "On Splitting Training and Validation Set: A Comparative Study of Cross-Validation, Bootstrap and Systematic Sampling for Estimating the Generalization Performance of Supervised Learning",
+   "subtitulo": "",
+   "autores": [
+    "Xu",
+    "Goodacre"
+   ],
+   "ano": 2018,
+   "veiculo": "Journal of Analysis and Testing",
+   "volume": "2",
+   "numero": "3",
+   "paginas": "249-262",
+   "tipo_crossref": "journal-article"
+  }
+ }
+]

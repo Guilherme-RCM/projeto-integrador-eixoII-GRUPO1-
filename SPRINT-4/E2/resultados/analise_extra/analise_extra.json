@@ -1,0 +1,159 @@
+{
+  "ambiente": {
+    "joblib": "1.6.0",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "python": "3.14.7",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "sistema": "Windows-11",
+    "xgboost": "3.4.1"
+  },
+  "analise": "XGBoost como análise extra, posterior ao protocolo congelado (ADR-ML-08)",
+  "codigo": {
+    "arvore_com_alteracoes": false,
+    "commit": "d90fb33238e629bcc85f1e97479de84992c81fce"
+  },
+  "execucao": "20261109T163659-6a3758",
+  "figuras": [
+    "figuras/xgboost_m1.png",
+    "figuras/xgboost_m2.png"
+  ],
+  "insumos_sha256": {
+    "data/limpo/setores_ibge.csv": "bb1c984fca36e9d05a5f53e42eb96b329c8a0d2ee707b22d682f8b1827134a04",
+    "data/pronto/base_analitica_creditos.csv.gz": "c45d7ea9b875fb59b0cf8a70f9f51f080d361e9c637f3bb3dfab504fa22951c3",
+    "data/pronto/quadras_socioeconomia.csv": "6265085137233a2df32d69cdda8e63cd1cef39b7dd04d7f349b500991ebcbe59",
+    "data/pronto/qualidade_dados.json": "4840a4db30c192d2303625c05554eb3e814b12b05e12c2430a7971a71e1b61e4",
+    "data/pronto/setores_socioeconomia.csv": "66f8af16b5bfb1a7d9875af0ca1f63313b03b2c7d64166d73340bac39b0fb1d9"
+  },
+  "pacote_v1": {
+    "intacto": true,
+    "sha256_antes": {
+      "checksums.sha256": "eb258926e66057096a613f5873cdcdd729febf2668232504c8fd682413df7ecc",
+      "feature_contract.json": "9dca0126f4cb6219ff64cf364bee5109807e2a2cb9804f706a491c26573a7f09",
+      "inadimplencia.joblib": "5533b49c4e8a4ce52df442201a4fab91e3e382df758284e45a330dcf239b0a91",
+      "metadata.json": "e05101617bf5ac40aec0dda5dfda53b52e9c3354d3fd587d29f1f3a8ee65d9bf",
+      "metrics.json": "cfe68dcf85fef98a994841f7f119893fa59c814ca1fc3b2e27807f48da580cf1",
+      "model_card.md": "2ca633b10cfee19f0555b7fa388e9a9b1ecf747e32eb289316de0a0c7ccb90ab",
+      "recuperabilidade.joblib": "c139f6ca128ef4c9b922d7e6b6a0078c13636d66a9ab5e0bb3b6f17b27e5240c"
+    },
+    "sha256_depois": {
+      "checksums.sha256": "eb258926e66057096a613f5873cdcdd729febf2668232504c8fd682413df7ecc",
+      "feature_contract.json": "9dca0126f4cb6219ff64cf364bee5109807e2a2cb9804f706a491c26573a7f09",
+      "inadimplencia.joblib": "5533b49c4e8a4ce52df442201a4fab91e3e382df758284e45a330dcf239b0a91",
+      "metadata.json": "e05101617bf5ac40aec0dda5dfda53b52e9c3354d3fd587d29f1f3a8ee65d9bf",
+      "metrics.json": "cfe68dcf85fef98a994841f7f119893fa59c814ca1fc3b2e27807f48da580cf1",
+      "model_card.md": "2ca633b10cfee19f0555b7fa388e9a9b1ecf747e32eb289316de0a0c7ccb90ab",
+      "recuperabilidade.joblib": "c139f6ca128ef4c9b922d7e6b6a0078c13636d66a9ab5e0bb3b6f17b27e5240c"
+    },
+    "versao_modelo": "sprint4-v1"
+  },
+  "protocolo_base": {
+    "igual_ao_do_pacote": true,
+    "sha256": "33cc03e63d82ce8eb1b3302a9d6ec44058edba80e83ae0aa5700b6d6e8451df1",
+    "versao": "1.0.0"
+  },
+  "protocolo_extra": {
+    "grade": {
+      "modelo__learning_rate": [
+        0.05,
+        0.1
+      ],
+      "modelo__max_depth": [
+        3,
+        6
+      ],
+      "modelo__min_child_weight": [
+        1,
+        10
+      ],
+      "modelo__n_estimators": [
+        200,
+        400
+      ]
+    },
+    "modelo": {
+      "colsample_bytree": 0.8,
+      "eval_metric": "logloss",
+      "n_jobs": 8,
+      "subsample": 0.8,
+      "tree_method": "hist"
+    },
+    "sha256": "9163fda52ce7562fc018f6b84569ff49da9d499b311f6eb49d0795d3d6ac5556",
+    "versao": "1.0.0-extra.1"
+  },
+  "regra": "não concorre à seleção v1, não altera o pacote nem o lote; o teste é só descritivo",
+  "tarefas": {
+    "M1": {
+      "escolhido_v1": "regressao_logistica",
+      "faixas_teste": {},
+      "ganho_sobre_escolhido_v1": {
+        "erro_padrao": 0.001434317430886191,
+        "estimativa": -0.003184097526472085,
+        "ic95": [
+          -0.005902177286787505,
+          -0.000396266519664563
+        ],
+        "reamostras_validas": 200
+      },
+      "ganho_sobre_referencia": {
+        "erro_padrao": 0.0024337028944701696,
+        "estimativa": 0.2359653007662405,
+        "ic95": [
+          0.23146579877921344,
+          0.2409125529671892
+        ],
+        "reamostras_validas": 200
+      },
+      "limiar_xgboost": 0.318685382604599,
+      "melhores_parametros": {
+        "modelo__learning_rate": 0.1,
+        "modelo__max_depth": 3,
+        "modelo__min_child_weight": 1,
+        "modelo__n_estimators": 200
+      },
+      "segundos_busca": 99.48,
+      "supera_escolhido_v1": false,
+      "supera_referencia": true
+    },
+    "M2": {
+      "escolhido_v1": "regressao_logistica",
+      "faixas_teste": {
+        "ALTA": 0,
+        "BAIXA": 64017,
+        "MEDIA": 0,
+        "creditos": 64017,
+        "score_maximo": 0.1880735605955124,
+        "score_minimo": 0.07380925118923187
+      },
+      "ganho_sobre_escolhido_v1": {
+        "erro_padrao": 3.18206493640939e-05,
+        "estimativa": -0.0001499696615753221,
+        "ic95": [
+          -0.0002141310201678702,
+          -9.004753148277274e-05
+        ],
+        "reamostras_validas": 200
+      },
+      "ganho_sobre_referencia": {
+        "erro_padrao": 3.399479895443417e-05,
+        "estimativa": -0.00016413189614063184,
+        "ic95": [
+          -0.0002282476373392215,
+          -9.606093477877924e-05
+        ],
+        "reamostras_validas": 200
+      },
+      "limiar_xgboost": 0.09240979701280594,
+      "melhores_parametros": {
+        "modelo__learning_rate": 0.05,
+        "modelo__max_depth": 3,
+        "modelo__min_child_weight": 10,
+        "modelo__n_estimators": 200
+      },
+      "segundos_busca": 15.9,
+      "supera_escolhido_v1": false,
+      "supera_referencia": false
+    }
+  }
+}

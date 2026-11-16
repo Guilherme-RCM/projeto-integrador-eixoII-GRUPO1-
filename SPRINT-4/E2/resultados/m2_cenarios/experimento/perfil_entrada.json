@@ -1,0 +1,49 @@
+{
+  "linhas": 556260,
+  "imoveis": 111252,
+  "exercicios": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "colunas_lidas": [
+    "id_imovel",
+    "id_credito",
+    "exercicio",
+    "data_vencimento",
+    "data_inscricao",
+    "data_pagamento",
+    "inadimplente",
+    "valor_principal_centavos",
+    "origem_dado"
+  ],
+  "tipos": {
+    "id_credito": "int64",
+    "id_imovel": "int64",
+    "exercicio": "int64",
+    "data_vencimento": "str",
+    "valor_principal_centavos": "int64",
+    "inadimplente": "int64",
+    "data_pagamento": "str",
+    "data_inscricao": "str",
+    "origem_dado": "str"
+  },
+  "nulos": {
+    "id_credito": 0,
+    "id_imovel": 0,
+    "exercicio": 0,
+    "data_vencimento": 0,
+    "valor_principal_centavos": 0,
+    "inadimplente": 0,
+    "data_pagamento": 78122,
+    "data_inscricao": 455157,
+    "origem_dado": 0
+  },
+  "duplicatas_credito": 0,
+  "duplicatas_imovel_exercicio": 0,
+  "origens": {
+    "SINTETICO": 556260
+  }
+}

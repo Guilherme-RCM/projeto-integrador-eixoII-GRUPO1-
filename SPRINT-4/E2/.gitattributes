@@ -1,0 +1,12 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Arquivos com SHA-256 registrado (pacotes de modelos, banco vetorial, resultados e código congelado do
+# M2-Cenários) não podem mudar de fim de linha no checkout, senão o hash deixa de conferir num clone
+modelos/** -text
+banco_vetorial/** -text
+resultados/** -text
+codigo/m2_cenarios/** -text
+*.png binary
+*.pdf binary
+*.gz binary

@@ -1,0 +1,35 @@
+
+╔══╗─────────▶╔╗ ╔╗      ╔╗◀───┐
+╚╣╠╝◀─────┐  ╔╝╚╗║║────▶╔╝╚╗   │
+ ║║   ╔══╦══╦╩╗╔╝║║  ╔╦═╩╗╔╝╔═╦══╗
+ ║║╔══╣╔╗║╔╗║╔╣║ ║║ ╔╬╣╔╗║║ ║│║╔═╝
+╔╣╠╣║║║╚╝║╚╝║║║╚╗║╚═╝║║║║║╚╗║═╣║
+╚══╩╩╩╣╔═╩══╩╝╚═╝╚═══╩╩╝╚╩═╩╩═╩╝
+  └──▶║║                    ▲ 
+      ╚╝────────────────────┘
+
+
+---------
+Contracts
+---------
+
+Analyzed 143 files, 622 dependencies.
+-------------------------------------
+
+Estruturas de dados não dependem de ETL nem de banco KEPT
+Parser é puro: não acessa banco nem configuração KEPT
+Estruturas de dados são independentes entre si KEPT
+Camadas do ETL KEPT
+Filtros de limpeza são puros: sem rede, sem banco e sem a coleta KEPT
+Coleta não conhece a transformação nem o banco KEPT
+Filtros de transformação são puros: sem rede, sem banco e sem a coleta KEPT
+A EDA só lê as camadas: sem rede, sem banco, sem coleta e sem os filtros KEPT
+Filtros independentes entre si: só conversam pelos dados (pipes) KEPT
+A camada de ML não acessa rede, banco nem a coleta KEPT
+Inferência e painel separados do treino: não importam busca, seleção nem 
+empacotamento KEPT
+A base vetorial não acessa rede, banco relacional nem a coleta KEPT
+Painel da base vetorial só lê relatórios: não importa experimento, modelos, 
+pacote, banco nem busca KEPT
+
+Contracts: 13 kept, 0 broken.

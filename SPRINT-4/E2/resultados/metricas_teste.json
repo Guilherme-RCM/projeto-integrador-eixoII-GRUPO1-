@@ -1,0 +1,244 @@
+{
+  "M1": {
+    "bootstrap_metrica_principal": {
+      "erro_padrao": 0.002734957429068993,
+      "estimativa": 0.6060877829711935,
+      "ic95": [
+        0.600777458362131,
+        0.6111477619644747
+      ],
+      "reamostras_validas": 200
+    },
+    "calibracao": {
+      "fracao_observada": [
+        0.129606,
+        0.168809,
+        0.204944,
+        0.236584,
+        0.265348,
+        0.288719,
+        0.420404,
+        0.613753,
+        0.64782,
+        0.694769
+      ],
+      "media_prevista": [
+        0.122302,
+        0.192638,
+        0.220267,
+        0.237869,
+        0.253303,
+        0.281099,
+        0.449543,
+        0.624292,
+        0.664688,
+        0.707371
+      ]
+    },
+    "classificacao": {
+      "acuracia": 0.7111422715996117,
+      "f1": 0.6201867391561281,
+      "fn": 14601,
+      "fp": 17535,
+      "limiar": 0.30685581633827197,
+      "matriz_confusao": [
+        [
+          52879,
+          17535
+        ],
+        [
+          14601,
+          26237
+        ]
+      ],
+      "n": 111252,
+      "precisao": 0.5994014438453806,
+      "prevalencia": 0.367076546938482,
+      "recall": 0.6424653508986728,
+      "taxa_prevista_positiva": 0.39344910653291626,
+      "vn": 52879,
+      "vp": 26237
+    },
+    "limiar": 0.30685581633827197,
+    "metrica_principal": "average_precision",
+    "modelo": "regressao_logistica",
+    "probabilidade": {
+      "average_precision": 0.6060877829711935,
+      "brier": 0.19085223352497271,
+      "brier_referencia_constante": 0.2359492255162632,
+      "ganho_brier_sobre_constante": 0.19113007000814297,
+      "log_loss": 0.5669233891588252,
+      "media_observada": 0.367076546938482,
+      "media_prevista": 0.3753378898893503,
+      "motivo_indefinida": "",
+      "roc_auc": 0.7405617792449979
+    },
+    "referencia_no_teste": {
+      "average_precision": 0.367076546938482,
+      "brier": 0.2359492255162632,
+      "brier_referencia_constante": 0.2359492255162632,
+      "ganho_brier_sobre_constante": 0.0,
+      "log_loss": 0.6656128862944134,
+      "media_observada": 0.367076546938482,
+      "media_prevista": 0.30692781552990805,
+      "motivo_indefinida": "",
+      "roc_auc": 0.5
+    },
+    "tarefa": "M1",
+    "topo": [
+      {
+        "fracao": 0.01,
+        "fracao_principal_inadimplente": 0.00435051233646865,
+        "k": 1113,
+        "precisao_topo": 0.7358490566037735,
+        "principal_inadimplente_topo_centavos": 16588025,
+        "recall_topo": 0.020054850874185806
+      },
+      {
+        "fracao": 0.05,
+        "fracao_principal_inadimplente": 0.03986952753436944,
+        "k": 5563,
+        "precisao_topo": 0.7060938342620888,
+        "principal_inadimplente_topo_centavos": 152018123,
+        "recall_topo": 0.09618492580439786
+      },
+      {
+        "fracao": 0.1,
+        "fracao_principal_inadimplente": 0.08852264703306663,
+        "k": 11125,
+        "precisao_topo": 0.6947415730337079,
+        "principal_inadimplente_topo_centavos": 337527116,
+        "recall_topo": 0.1892600029384397
+      },
+      {
+        "fracao": 0.2,
+        "fracao_principal_inadimplente": 0.20578490047624254,
+        "k": 22250,
+        "precisao_topo": 0.6712808988764045,
+        "principal_inadimplente_topo_centavos": 784635190,
+        "recall_topo": 0.3657377932317939
+      }
+    ]
+  },
+  "M2": {
+    "bootstrap_metrica_principal": {
+      "erro_padrao": 0.0009916132494961496,
+      "estimativa": 0.1044456804096678,
+      "ic95": [
+        0.10239677673272957,
+        0.10621207907407074
+      ],
+      "reamostras_validas": 200
+    },
+    "calibracao": {
+      "fracao_observada": [
+        0.117932,
+        0.117776,
+        0.11467,
+        0.112621,
+        0.11512,
+        0.118107,
+        0.115589,
+        0.122481,
+        0.126992,
+        0.123555
+      ],
+      "media_prevista": [
+        0.107034,
+        0.111633,
+        0.113766,
+        0.11548,
+        0.116975,
+        0.118413,
+        0.119924,
+        0.121579,
+        0.123274,
+        0.125871
+      ]
+    },
+    "classificacao": {
+      "acuracia": 0.12399831294812315,
+      "f1": 0.21187548310027404,
+      "fn": 47,
+      "fp": 56032,
+      "limiar": 0.10228097596281718,
+      "matriz_confusao": [
+        [
+          400,
+          56032
+        ],
+        [
+          47,
+          7538
+        ]
+      ],
+      "n": 64017,
+      "precisao": 0.1185779455718106,
+      "prevalencia": 0.11848415264695315,
+      "recall": 0.9938035596572182,
+      "taxa_prevista_positiva": 0.9930174797319462,
+      "vn": 400,
+      "vp": 7538
+    },
+    "limiar": 0.10228097596281718,
+    "metrica_principal": "neg_brier_score",
+    "modelo": "regressao_logistica",
+    "probabilidade": {
+      "average_precision": 0.12247898896375084,
+      "brier": 0.1044456804096678,
+      "brier_referencia_constante": 0.10445106636906865,
+      "ganho_brier_sobre_constante": 5.156442713394327e-05,
+      "log_loss": 0.3638967219504763,
+      "media_observada": 0.11848415264695315,
+      "media_prevista": 0.11739479518456035,
+      "motivo_indefinida": "",
+      "roc_auc": 0.5079369440547064
+    },
+    "referencia_no_teste": {
+      "average_precision": 0.11848415264695315,
+      "brier": 0.10445106636906865,
+      "brier_referencia_constante": 0.10445106636906865,
+      "ganho_brier_sobre_constante": 0.0,
+      "log_loss": 0.3639194526444064,
+      "media_observada": 0.11848415264695315,
+      "media_prevista": 0.12080969571944307,
+      "motivo_indefinida": "",
+      "roc_auc": 0.5
+    },
+    "tarefa": "M2",
+    "topo": [
+      {
+        "fracao": 0.01,
+        "fracao_principal_recuperado": 0.004055900446138648,
+        "k": 640,
+        "precisao_topo": 0.1421875,
+        "principal_recuperado_topo_centavos": 2148621,
+        "recall_topo": 0.011997363216875412
+      },
+      {
+        "fracao": 0.05,
+        "fracao_principal_recuperado": 0.02221055143420078,
+        "k": 3201,
+        "precisao_topo": 0.12652296157450796,
+        "principal_recuperado_topo_centavos": 11766082,
+        "recall_topo": 0.053394858272907054
+      },
+      {
+        "fracao": 0.1,
+        "fracao_principal_recuperado": 0.05042894342911928,
+        "k": 6402,
+        "precisao_topo": 0.12355513901905654,
+        "principal_recuperado_topo_centavos": 26714829,
+        "recall_topo": 0.1042847725774555
+      },
+      {
+        "fracao": 0.2,
+        "fracao_principal_recuperado": 0.1217403713437876,
+        "k": 12803,
+        "precisao_topo": 0.12528313676482075,
+        "principal_recuperado_topo_centavos": 64492194,
+        "recall_topo": 0.2114700065919578
+      }
+    ]
+  }
+}

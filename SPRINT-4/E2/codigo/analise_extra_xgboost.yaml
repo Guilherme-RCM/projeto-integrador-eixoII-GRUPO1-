@@ -1,0 +1,30 @@
+# Análise extra do E2 (ADR-ML-08): XGBoost avaliado DEPOIS do protocolo congelado configs/sprint4.yaml (v1.0.0).
+#
+# Declarado em 09/11/2026, antes de qualquer execução do XGBoost, e registrado com SHA-256 no resultado.
+# O enunciado cita "Random Forest/XGBoost" como exemplo de classificador; o protocolo v1 testou o
+# Random Forest e deixou o boosting de fora. Como o teste já foi aberto, o XGBoost entra como análise
+# posterior: usa as mesmas divisões, os mesmos atributos autorizados, as mesmas dobras temporais internas,
+# o mesmo pré-processamento das árvores e a mesma métrica de seleção de cada tarefa, mas NÃO concorre à
+# seleção v1, não substitui nenhum modelo do pacote models/sprint4/v1 e não muda o lote do painel.
+# Na validação, é comparado ao modelo escolhido na v1 e ao Dummy por bootstrap pareado de imóveis; no
+# teste, os números são apenas descritivos. O resultado informa a próxima versão do protocolo.
+versao: "1.0.0-extra.1"
+protocolo_base: configs/sprint4.yaml
+
+# Parâmetros fixos do XGBClassifier (Chen e Guestrin, 2016). A semente vem do protocolo base.
+# tree_method "hist": histogramas por atributo, o método padrão e mais rápido da biblioteca;
+# subsample e colsample_bytree abaixo de 1 reduzem a variância, como a amostragem do Random Forest.
+modelo:
+  tree_method: hist
+  subsample: 0.8
+  colsample_bytree: 0.8
+  eval_metric: logloss
+  n_jobs: 8   # não altera o resultado: o hist do XGBoost é determinístico para a mesma semente
+
+# 16 combinações, da mesma ordem das 12 do Random Forest na v1: profundidade, taxa de aprendizado,
+# número de árvores e peso mínimo por folha, o análogo do mínimo de amostras por folha.
+grade:
+  modelo__max_depth: [3, 6]
+  modelo__learning_rate: [0.05, 0.1]
+  modelo__n_estimators: [200, 400]
+  modelo__min_child_weight: [1, 10]

@@ -1,0 +1,1282 @@
+[
+  {
+    "cenario": "nulo",
+    "semente": 2026111501,
+    "intensidade": 0.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.9924301646902065,
+      "intercepto_depois": -1.9924301646902065,
+      "media_probabilidade_antes": 0.11999999999999994,
+      "media_probabilidade_depois": 0.11999999999999994
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 23073
+  },
+  {
+    "cenario": "nulo",
+    "semente": 2026111502,
+    "intensidade": 0.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.9924301646902065,
+      "intercepto_depois": -1.9924301646902065,
+      "media_probabilidade_antes": 0.11999999999999994,
+      "media_probabilidade_depois": 0.11999999999999994
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 22954
+  },
+  {
+    "cenario": "nulo",
+    "semente": 2026111503,
+    "intensidade": 0.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.9924301646902065,
+      "intercepto_depois": -1.9924301646902065,
+      "media_probabilidade_antes": 0.11999999999999994,
+      "media_probabilidade_depois": 0.11999999999999994
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 22990
+  },
+  {
+    "cenario": "nulo",
+    "semente": 2026111504,
+    "intensidade": 0.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.9924301646902065,
+      "intercepto_depois": -1.9924301646902065,
+      "media_probabilidade_antes": 0.11999999999999994,
+      "media_probabilidade_depois": 0.11999999999999994
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 22956
+  },
+  {
+    "cenario": "nulo",
+    "semente": 2026111505,
+    "intensidade": 0.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.9924301646902065,
+      "intercepto_depois": -1.9924301646902065,
+      "media_probabilidade_antes": 0.11999999999999994,
+      "media_probabilidade_depois": 0.11999999999999994
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 23329
+  },
+  {
+    "cenario": "nulo",
+    "semente": 2026111506,
+    "intensidade": 0.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.9924301646902065,
+      "intercepto_depois": -1.9924301646902065,
+      "media_probabilidade_antes": 0.11999999999999994,
+      "media_probabilidade_depois": 0.11999999999999994
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 22749
+  },
+  {
+    "cenario": "nulo",
+    "semente": 2026111507,
+    "intensidade": 0.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.9924301646902065,
+      "intercepto_depois": -1.9924301646902065,
+      "media_probabilidade_antes": 0.11999999999999994,
+      "media_probabilidade_depois": 0.11999999999999994
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 22826
+  },
+  {
+    "cenario": "nulo",
+    "semente": 2026111508,
+    "intensidade": 0.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.9924301646902065,
+      "intercepto_depois": -1.9924301646902065,
+      "media_probabilidade_antes": 0.11999999999999994,
+      "media_probabilidade_depois": 0.11999999999999994
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 22878
+  },
+  {
+    "cenario": "nulo",
+    "semente": 2026111509,
+    "intensidade": 0.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.9924301646902065,
+      "intercepto_depois": -1.9924301646902065,
+      "media_probabilidade_antes": 0.11999999999999994,
+      "media_probabilidade_depois": 0.11999999999999994
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 23044
+  },
+  {
+    "cenario": "nulo",
+    "semente": 2026111510,
+    "intensidade": 0.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.9924301646902065,
+      "intercepto_depois": -1.9924301646902065,
+      "media_probabilidade_antes": 0.11999999999999994,
+      "media_probabilidade_depois": 0.11999999999999994
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 22876
+  },
+  {
+    "cenario": "nulo",
+    "semente": 2026111511,
+    "intensidade": 0.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.9924301646902065,
+      "intercepto_depois": -1.9924301646902065,
+      "media_probabilidade_antes": 0.11999999999999994,
+      "media_probabilidade_depois": 0.11999999999999994
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 22991
+  },
+  {
+    "cenario": "nulo",
+    "semente": 2026111512,
+    "intensidade": 0.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.9924301646902065,
+      "intercepto_depois": -1.9924301646902065,
+      "media_probabilidade_antes": 0.11999999999999994,
+      "media_probabilidade_depois": 0.11999999999999994
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 22957
+  },
+  {
+    "cenario": "nulo",
+    "semente": 2026111513,
+    "intensidade": 0.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.9924301646902065,
+      "intercepto_depois": -1.9924301646902065,
+      "media_probabilidade_antes": 0.11999999999999994,
+      "media_probabilidade_depois": 0.11999999999999994
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 22763
+  },
+  {
+    "cenario": "nulo",
+    "semente": 2026111514,
+    "intensidade": 0.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.9924301646902065,
+      "intercepto_depois": -1.9924301646902065,
+      "media_probabilidade_antes": 0.11999999999999994,
+      "media_probabilidade_depois": 0.11999999999999994
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 23191
+  },
+  {
+    "cenario": "nulo",
+    "semente": 2026111515,
+    "intensidade": 0.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.9924301646902065,
+      "intercepto_depois": -1.9924301646902065,
+      "media_probabilidade_antes": 0.11999999999999994,
+      "media_probabilidade_depois": 0.11999999999999994
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 23159
+  },
+  {
+    "cenario": "nulo",
+    "semente": 2026111516,
+    "intensidade": 0.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.9924301646902065,
+      "intercepto_depois": -1.9924301646902065,
+      "media_probabilidade_antes": 0.11999999999999994,
+      "media_probabilidade_depois": 0.11999999999999994
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 22835
+  },
+  {
+    "cenario": "nulo",
+    "semente": 2026111517,
+    "intensidade": 0.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.9924301646902065,
+      "intercepto_depois": -1.9924301646902065,
+      "media_probabilidade_antes": 0.11999999999999994,
+      "media_probabilidade_depois": 0.11999999999999994
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 22819
+  },
+  {
+    "cenario": "nulo",
+    "semente": 2026111518,
+    "intensidade": 0.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.9924301646902065,
+      "intercepto_depois": -1.9924301646902065,
+      "media_probabilidade_antes": 0.11999999999999994,
+      "media_probabilidade_depois": 0.11999999999999994
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 22809
+  },
+  {
+    "cenario": "nulo",
+    "semente": 2026111519,
+    "intensidade": 0.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.9924301646902065,
+      "intercepto_depois": -1.9924301646902065,
+      "media_probabilidade_antes": 0.11999999999999994,
+      "media_probabilidade_depois": 0.11999999999999994
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 22833
+  },
+  {
+    "cenario": "nulo",
+    "semente": 2026111520,
+    "intensidade": 0.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.9924301646902065,
+      "intercepto_depois": -1.9924301646902065,
+      "media_probabilidade_antes": 0.11999999999999994,
+      "media_probabilidade_depois": 0.11999999999999994
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 23107
+  },
+  {
+    "cenario": "fraco",
+    "semente": 2026111501,
+    "intensidade": 0.35,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7145847226609061,
+      "intercepto_depois": -1.7145847226609061,
+      "media_probabilidade_antes": 0.11999999999999997,
+      "media_probabilidade_depois": 0.11999999999999997
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 22899
+  },
+  {
+    "cenario": "fraco",
+    "semente": 2026111502,
+    "intensidade": 0.35,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7138618737917506,
+      "intercepto_depois": -1.7138618737917506,
+      "media_probabilidade_antes": 0.11999999999999997,
+      "media_probabilidade_depois": 0.11999999999999997
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 22780
+  },
+  {
+    "cenario": "fraco",
+    "semente": 2026111503,
+    "intensidade": 0.35,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7138599742761067,
+      "intercepto_depois": -1.7138599742761067,
+      "media_probabilidade_antes": 0.12,
+      "media_probabilidade_depois": 0.12
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 22819
+  },
+  {
+    "cenario": "fraco",
+    "semente": 2026111504,
+    "intensidade": 0.35,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7167634952787338,
+      "intercepto_depois": -1.7167634952787338,
+      "media_probabilidade_antes": 0.11999999999999997,
+      "media_probabilidade_depois": 0.11999999999999997
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 22816
+  },
+  {
+    "cenario": "fraco",
+    "semente": 2026111505,
+    "intensidade": 0.35,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7181523082731394,
+      "intercepto_depois": -1.7181523082731394,
+      "media_probabilidade_antes": 0.11999999999999997,
+      "media_probabilidade_depois": 0.11999999999999997
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 23164
+  },
+  {
+    "cenario": "fraco",
+    "semente": 2026111506,
+    "intensidade": 0.35,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7135464232617803,
+      "intercepto_depois": -1.7135464232617803,
+      "media_probabilidade_antes": 0.12,
+      "media_probabilidade_depois": 0.12
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 22740
+  },
+  {
+    "cenario": "fraco",
+    "semente": 2026111507,
+    "intensidade": 0.35,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.716396244749137,
+      "intercepto_depois": -1.716396244749137,
+      "media_probabilidade_antes": 0.12,
+      "media_probabilidade_depois": 0.12
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 22667
+  },
+  {
+    "cenario": "fraco",
+    "semente": 2026111508,
+    "intensidade": 0.35,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7172146784116626,
+      "intercepto_depois": -1.7172146784116626,
+      "media_probabilidade_antes": 0.12,
+      "media_probabilidade_depois": 0.12
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 22715
+  },
+  {
+    "cenario": "fraco",
+    "semente": 2026111509,
+    "intensidade": 0.35,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7138509829541397,
+      "intercepto_depois": -1.7138509829541397,
+      "media_probabilidade_antes": 0.12,
+      "media_probabilidade_depois": 0.12
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 22792
+  },
+  {
+    "cenario": "fraco",
+    "semente": 2026111510,
+    "intensidade": 0.35,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7160403626661576,
+      "intercepto_depois": -1.7160403626661576,
+      "media_probabilidade_antes": 0.12,
+      "media_probabilidade_depois": 0.12
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 22677
+  },
+  {
+    "cenario": "fraco",
+    "semente": 2026111511,
+    "intensidade": 0.35,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7169458571878642,
+      "intercepto_depois": -1.7169458571878642,
+      "media_probabilidade_antes": 0.12,
+      "media_probabilidade_depois": 0.12
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 22772
+  },
+  {
+    "cenario": "fraco",
+    "semente": 2026111512,
+    "intensidade": 0.35,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7140071994494912,
+      "intercepto_depois": -1.7140071994494912,
+      "media_probabilidade_antes": 0.11999999999999997,
+      "media_probabilidade_depois": 0.11999999999999997
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 22744
+  },
+  {
+    "cenario": "fraco",
+    "semente": 2026111513,
+    "intensidade": 0.35,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7169391854352343,
+      "intercepto_depois": -1.7169391854352343,
+      "media_probabilidade_antes": 0.11999999999999998,
+      "media_probabilidade_depois": 0.11999999999999998
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 22572
+  },
+  {
+    "cenario": "fraco",
+    "semente": 2026111514,
+    "intensidade": 0.35,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7149529715325418,
+      "intercepto_depois": -1.7149529715325418,
+      "media_probabilidade_antes": 0.12,
+      "media_probabilidade_depois": 0.12
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 23046
+  },
+  {
+    "cenario": "fraco",
+    "semente": 2026111515,
+    "intensidade": 0.35,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7116215823239318,
+      "intercepto_depois": -1.7116215823239318,
+      "media_probabilidade_antes": 0.11999999999999997,
+      "media_probabilidade_depois": 0.11999999999999997
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 23070
+  },
+  {
+    "cenario": "fraco",
+    "semente": 2026111516,
+    "intensidade": 0.35,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7163155904428793,
+      "intercepto_depois": -1.7163155904428793,
+      "media_probabilidade_antes": 0.12,
+      "media_probabilidade_depois": 0.12
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 22705
+  },
+  {
+    "cenario": "fraco",
+    "semente": 2026111517,
+    "intensidade": 0.35,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7150555931997284,
+      "intercepto_depois": -1.7150555931997284,
+      "media_probabilidade_antes": 0.12,
+      "media_probabilidade_depois": 0.12
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 22659
+  },
+  {
+    "cenario": "fraco",
+    "semente": 2026111518,
+    "intensidade": 0.35,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7154885850955082,
+      "intercepto_depois": -1.7154885850955082,
+      "media_probabilidade_antes": 0.11999999999999997,
+      "media_probabilidade_depois": 0.11999999999999997
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 22573
+  },
+  {
+    "cenario": "fraco",
+    "semente": 2026111519,
+    "intensidade": 0.35,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7142357356512186,
+      "intercepto_depois": -1.7142357356512186,
+      "media_probabilidade_antes": 0.12,
+      "media_probabilidade_depois": 0.12
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 22615
+  },
+  {
+    "cenario": "fraco",
+    "semente": 2026111520,
+    "intensidade": 0.35,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7153789747952715,
+      "intercepto_depois": -1.7153789747952715,
+      "media_probabilidade_antes": 0.11999999999999997,
+      "media_probabilidade_depois": 0.11999999999999997
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 22863
+  },
+  {
+    "cenario": "moderado",
+    "semente": 2026111501,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7295867849840572,
+      "intercepto_depois": -1.7295867849840572,
+      "media_probabilidade_antes": 0.11999999999999998,
+      "media_probabilidade_depois": 0.11999999999999998
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 18903
+  },
+  {
+    "cenario": "moderado",
+    "semente": 2026111502,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7274020297701793,
+      "intercepto_depois": -1.7274020297701793,
+      "media_probabilidade_antes": 0.12,
+      "media_probabilidade_depois": 0.12
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 18820
+  },
+  {
+    "cenario": "moderado",
+    "semente": 2026111503,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.730877288118152,
+      "intercepto_depois": -1.730877288118152,
+      "media_probabilidade_antes": 0.11999999999999997,
+      "media_probabilidade_depois": 0.11999999999999997
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 18728
+  },
+  {
+    "cenario": "moderado",
+    "semente": 2026111504,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7405548809738671,
+      "intercepto_depois": -1.7405548809738671,
+      "media_probabilidade_antes": 0.11999999999999997,
+      "media_probabilidade_depois": 0.11999999999999997
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 18601
+  },
+  {
+    "cenario": "moderado",
+    "semente": 2026111505,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7414408584742467,
+      "intercepto_depois": -1.7414408584742467,
+      "media_probabilidade_antes": 0.11999999999999997,
+      "media_probabilidade_depois": 0.11999999999999997
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 18749
+  },
+  {
+    "cenario": "moderado",
+    "semente": 2026111506,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7253304299338672,
+      "intercepto_depois": -1.7253304299338672,
+      "media_probabilidade_antes": 0.11999999999999998,
+      "media_probabilidade_depois": 0.11999999999999998
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 18674
+  },
+  {
+    "cenario": "moderado",
+    "semente": 2026111507,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.737985898340324,
+      "intercepto_depois": -1.737985898340324,
+      "media_probabilidade_antes": 0.11999999999999997,
+      "media_probabilidade_depois": 0.11999999999999997
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 18572
+  },
+  {
+    "cenario": "moderado",
+    "semente": 2026111508,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7400381597511712,
+      "intercepto_depois": -1.7400381597511712,
+      "media_probabilidade_antes": 0.11999999999999997,
+      "media_probabilidade_depois": 0.11999999999999997
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 18525
+  },
+  {
+    "cenario": "moderado",
+    "semente": 2026111509,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7279936014213662,
+      "intercepto_depois": -1.7279936014213662,
+      "media_probabilidade_antes": 0.11999999999999997,
+      "media_probabilidade_depois": 0.11999999999999997
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 18547
+  },
+  {
+    "cenario": "moderado",
+    "semente": 2026111510,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.740710281910495,
+      "intercepto_depois": -1.740710281910495,
+      "media_probabilidade_antes": 0.12000000000000001,
+      "media_probabilidade_depois": 0.12000000000000001
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 18440
+  },
+  {
+    "cenario": "moderado",
+    "semente": 2026111511,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7395226015237761,
+      "intercepto_depois": -1.7395226015237761,
+      "media_probabilidade_antes": 0.11999999999999998,
+      "media_probabilidade_depois": 0.11999999999999998
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 18736
+  },
+  {
+    "cenario": "moderado",
+    "semente": 2026111512,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.73266734049507,
+      "intercepto_depois": -1.73266734049507,
+      "media_probabilidade_antes": 0.11999999999999997,
+      "media_probabilidade_depois": 0.11999999999999997
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 18557
+  },
+  {
+    "cenario": "moderado",
+    "semente": 2026111513,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7404641007112143,
+      "intercepto_depois": -1.7404641007112143,
+      "media_probabilidade_antes": 0.11999999999999998,
+      "media_probabilidade_depois": 0.11999999999999998
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 18467
+  },
+  {
+    "cenario": "moderado",
+    "semente": 2026111514,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7335726593616294,
+      "intercepto_depois": -1.7335726593616294,
+      "media_probabilidade_antes": 0.11999999999999997,
+      "media_probabilidade_depois": 0.11999999999999997
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 18783
+  },
+  {
+    "cenario": "moderado",
+    "semente": 2026111515,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7208760106897247,
+      "intercepto_depois": -1.7208760106897247,
+      "media_probabilidade_antes": 0.12000000000000001,
+      "media_probabilidade_depois": 0.12000000000000001
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 19001
+  },
+  {
+    "cenario": "moderado",
+    "semente": 2026111516,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.740023752152998,
+      "intercepto_depois": -1.740023752152998,
+      "media_probabilidade_antes": 0.12,
+      "media_probabilidade_depois": 0.12
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 18526
+  },
+  {
+    "cenario": "moderado",
+    "semente": 2026111517,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7345438413045966,
+      "intercepto_depois": -1.7345438413045966,
+      "media_probabilidade_antes": 0.11999999999999997,
+      "media_probabilidade_depois": 0.11999999999999997
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 18620
+  },
+  {
+    "cenario": "moderado",
+    "semente": 2026111518,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.736988964918246,
+      "intercepto_depois": -1.736988964918246,
+      "media_probabilidade_antes": 0.11999999999999998,
+      "media_probabilidade_depois": 0.11999999999999998
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 18418
+  },
+  {
+    "cenario": "moderado",
+    "semente": 2026111519,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7317457924410666,
+      "intercepto_depois": -1.7317457924410666,
+      "media_probabilidade_antes": 0.12,
+      "media_probabilidade_depois": 0.12
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 18477
+  },
+  {
+    "cenario": "moderado",
+    "semente": 2026111520,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7354156806061805,
+      "intercepto_depois": -1.7354156806061805,
+      "media_probabilidade_antes": 0.11999999999999997,
+      "media_probabilidade_depois": 0.11999999999999997
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 18496
+  },
+  {
+    "cenario": "mudanca",
+    "semente": 2026111501,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7295867849840572,
+      "intercepto_depois": -3.829430056100634,
+      "media_probabilidade_antes": 0.11999999999999998,
+      "media_probabilidade_depois": 0.11999999999999994
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 19450
+  },
+  {
+    "cenario": "mudanca",
+    "semente": 2026111502,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7274020297701793,
+      "intercepto_depois": -3.826625728716743,
+      "media_probabilidade_antes": 0.12,
+      "media_probabilidade_depois": 0.11999999999999997
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 19692
+  },
+  {
+    "cenario": "mudanca",
+    "semente": 2026111503,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.730877288118152,
+      "intercepto_depois": -3.8202462542883326,
+      "media_probabilidade_antes": 0.11999999999999997,
+      "media_probabilidade_depois": 0.11999999999999995
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 19636
+  },
+  {
+    "cenario": "mudanca",
+    "semente": 2026111504,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7405548809738671,
+      "intercepto_depois": -3.8268737759607285,
+      "media_probabilidade_antes": 0.11999999999999997,
+      "media_probabilidade_depois": 0.11999999999999997
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 19574
+  },
+  {
+    "cenario": "mudanca",
+    "semente": 2026111505,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7414408584742467,
+      "intercepto_depois": -3.835157500697023,
+      "media_probabilidade_antes": 0.11999999999999997,
+      "media_probabilidade_depois": 0.12000000000000004
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 19700
+  },
+  {
+    "cenario": "mudanca",
+    "semente": 2026111506,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7253304299338672,
+      "intercepto_depois": -3.828233630390627,
+      "media_probabilidade_antes": 0.11999999999999998,
+      "media_probabilidade_depois": 0.11999999999999998
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 19504
+  },
+  {
+    "cenario": "mudanca",
+    "semente": 2026111507,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.737985898340324,
+      "intercepto_depois": -3.8289499262606466,
+      "media_probabilidade_antes": 0.11999999999999997,
+      "media_probabilidade_depois": 0.12
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 19396
+  },
+  {
+    "cenario": "mudanca",
+    "semente": 2026111508,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7400381597511712,
+      "intercepto_depois": -3.830959386116726,
+      "media_probabilidade_antes": 0.11999999999999997,
+      "media_probabilidade_depois": 0.12000000000000004
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 19354
+  },
+  {
+    "cenario": "mudanca",
+    "semente": 2026111509,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7279936014213662,
+      "intercepto_depois": -3.8253816424009326,
+      "media_probabilidade_antes": 0.11999999999999997,
+      "media_probabilidade_depois": 0.12000000000000001
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 19474
+  },
+  {
+    "cenario": "mudanca",
+    "semente": 2026111510,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.740710281910495,
+      "intercepto_depois": -3.820065516539171,
+      "media_probabilidade_antes": 0.12000000000000001,
+      "media_probabilidade_depois": 0.11999999999999997
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 19419
+  },
+  {
+    "cenario": "mudanca",
+    "semente": 2026111511,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7395226015237761,
+      "intercepto_depois": -3.829614656361759,
+      "media_probabilidade_antes": 0.11999999999999998,
+      "media_probabilidade_depois": 0.11999999999999997
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 19537
+  },
+  {
+    "cenario": "mudanca",
+    "semente": 2026111512,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.73266734049507,
+      "intercepto_depois": -3.816740530988307,
+      "media_probabilidade_antes": 0.11999999999999997,
+      "media_probabilidade_depois": 0.11999999999999998
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 19505
+  },
+  {
+    "cenario": "mudanca",
+    "semente": 2026111513,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7404641007112143,
+      "intercepto_depois": -3.828891892132358,
+      "media_probabilidade_antes": 0.11999999999999998,
+      "media_probabilidade_depois": 0.12
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 19298
+  },
+  {
+    "cenario": "mudanca",
+    "semente": 2026111514,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7335726593616294,
+      "intercepto_depois": -3.824499038371332,
+      "media_probabilidade_antes": 0.11999999999999997,
+      "media_probabilidade_depois": 0.12000000000000001
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 19602
+  },
+  {
+    "cenario": "mudanca",
+    "semente": 2026111515,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7208760106897247,
+      "intercepto_depois": -3.8208979543608743,
+      "media_probabilidade_antes": 0.12000000000000001,
+      "media_probabilidade_depois": 0.12
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 19735
+  },
+  {
+    "cenario": "mudanca",
+    "semente": 2026111516,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.740023752152998,
+      "intercepto_depois": -3.822249387409892,
+      "media_probabilidade_antes": 0.12,
+      "media_probabilidade_depois": 0.11999999999999997
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 19496
+  },
+  {
+    "cenario": "mudanca",
+    "semente": 2026111517,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7345438413045966,
+      "intercepto_depois": -3.823694357490891,
+      "media_probabilidade_antes": 0.11999999999999997,
+      "media_probabilidade_depois": 0.11999999999999998
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 19460
+  },
+  {
+    "cenario": "mudanca",
+    "semente": 2026111518,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.736988964918246,
+      "intercepto_depois": -3.8215849124813523,
+      "media_probabilidade_antes": 0.11999999999999998,
+      "media_probabilidade_depois": 0.12
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 19387
+  },
+  {
+    "cenario": "mudanca",
+    "semente": 2026111519,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7317457924410666,
+      "intercepto_depois": -3.8230404160307705,
+      "media_probabilidade_antes": 0.12,
+      "media_probabilidade_depois": 0.11999999999999998
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 19321
+  },
+  {
+    "cenario": "mudanca",
+    "semente": 2026111520,
+    "intensidade": 1.0,
+    "calibracao_intercepto": {
+      "exercicio_primeira_coorte": 2021,
+      "n_coorte": 15004,
+      "ultima_inscricao_coorte": "2022-05-09",
+      "intercepto_antes": -1.7354156806061805,
+      "intercepto_depois": -3.824726607477362,
+      "media_probabilidade_antes": 0.11999999999999997,
+      "media_probabilidade_depois": 0.11999999999999995
+    },
+    "creditos_regenerados": 101103,
+    "pagamentos_ate_corte": 19691
+  }
+]

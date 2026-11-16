@@ -1,0 +1,6 @@
+# Sprint 4 — base vetorial (ADR-ML-10): busca exata por similaridade cosseno com o FAISS.
+# O FAISS é opcional: sem ele, pipeline/vetorial/busca.py faz a mesma busca exata em NumPy, mais devagar.
+# Fica fora do requirements.lock porque não participa do pacote v1 do protocolo 1.0.0.
+#   pip install -c requirements.lock -r requirements-vetorial.txt
+-r requirements.txt
+faiss-cpu==1.15.1    # IndexFlatIP: produto interno exato (Johnson, Douze e Jégou, 2021)

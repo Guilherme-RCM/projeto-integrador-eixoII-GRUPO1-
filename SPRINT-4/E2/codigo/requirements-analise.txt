@@ -1,0 +1,5 @@
+# Sprint 4 — análise extra do E2 (XGBoost), posterior ao protocolo congelado v1.0.0 (ADR-ML-08).
+# O XGBoost não participa da seleção nem do pacote v1; por isso fica fora do requirements.lock.
+#   pip install -c requirements.lock -r requirements-analise.txt
+-r requirements.txt
+xgboost==3.4.1       # boosting de árvores (Chen e Guestrin, 2016), comparado só na validação e descrito no teste
