@@ -1,0 +1,10 @@
+# Sprint 4 — interface principal do MVP (E4) em Qt e os testes dela.
+# Fica fora do requirements.txt e do requirements.lock porque o pacote de modelos v1 foi treinado e
+# reproduzido sem estas bibliotecas; instalar com a restrição do lock impede que o pip troque as versões
+# fixadas (scikit-learn, NumPy, pandas, SciPy e joblib):
+#   pip install -c requirements.lock -r requirements-interface.txt
+# O pytest-qt fica aqui, e não no requirements-dev.txt, porque sem uma biblioteca Qt instalada ele
+# interrompe a sessão inteira do pytest; sem estes pacotes, os testes da interface Qt são pulados.
+-r requirements.txt
+PySide6==6.12.0      # widgets, gráficos e desenho do mapa por setor (licença LGPLv3)
+pytest-qt==4.5.0     # testes da interface com o qtbot, em modo offscreen
