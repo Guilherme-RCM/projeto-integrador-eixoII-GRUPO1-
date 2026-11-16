@@ -1,0 +1,10 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+*.pdf binary
+*.png binary
+*.gz binary
+*.joblib binary
+*.npy binary
+modelos/** -text
+resultados/** -text
+banco_vetorial/** -text
