@@ -1,0 +1,49 @@
+{
+  "moderado_aprovado": true,
+  "controle_nulo_aprovado": true,
+  "origem_preservada": true,
+  "verificacoes_passaram": true,
+  "criterios": [
+    {
+      "criterio": "Lift médio no topo de 10% ≥1,5",
+      "observado": 3.1298201652621818,
+      "referencia": 1.5,
+      "aprovado": true
+    },
+    {
+      "criterio": "Limite inferior IC95 da média do lift >1",
+      "observado": 3.100591481639418,
+      "referencia": 1.0,
+      "aprovado": true
+    },
+    {
+      "criterio": "Limite inferior IC95 do ganho de Brier >0",
+      "observado": 0.008491953678485695,
+      "referencia": 0.0,
+      "aprovado": true
+    },
+    {
+      "criterio": "Réplicas com lift ≥1,5 e ganho positivo ≥18",
+      "observado": 20,
+      "referencia": 18,
+      "aprovado": true
+    },
+    {
+      "criterio": "Erro absoluto médio de calibração ≤0,02",
+      "observado": 0.0036981271858312938,
+      "referencia": 0.02,
+      "aprovado": true
+    },
+    {
+      "criterio": "ECE10 médio ≤0,02",
+      "observado": 0.0053112440921531025,
+      "referencia": 0.02,
+      "aprovado": true
+    }
+  ],
+  "controle_nulo": {
+    "auc_logistica_media": 0.5009929307580893,
+    "lift_logistica_media": 1.0032989110641437
+  },
+  "limite": "Conclusão condicionada aos mecanismos simulados; mudança de padrão avaliada separadamente."
+}

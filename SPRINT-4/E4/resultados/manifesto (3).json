@@ -1,0 +1,105 @@
+{
+  "experimento": "M2-Cenários",
+  "decisao": "ADR-ML-12",
+  "natureza": "Estudo semissintetico condicionado ao cadastro sintetico da Sprint 4; nao e validacao em dados reais.",
+  "versao_protocolo": "1.0.0",
+  "versao_adendo": "1.0.0-adendo",
+  "publicado_em": "2026-11-15T21:06:25-03:00",
+  "aviso": "Análise complementar em simulação: não substitui o pacote v1, não alimenta o lote do painel e não valida a recuperação real da dívida ativa de Palmas.",
+  "cadeia": {
+    "congelados_antes_do_treino": {
+      "executar.py": "9fdb434ddd4ef1a2fad86c7bf74caa340df25d2c455768f11c02f4bd2662e6bc",
+      "m2_experimento.py": "e006fbe9cb88dac8f17919d4e55a4df2074f3dd9434d29c52d8731fb8a3e8e80",
+      "protocolo.json": "213ad819ad5a7524e6f5fff37340ca03209095377907d9085dfcfabedff3d222",
+      "PROTOCOLO.md": "60730501ab589a788b40df2ea5db144f1acbe9a3adcfba3f93dfc0c1a4898f19",
+      "verificar.py": "29ffcf8fd3251281b487a2712fee3de0cbe4f6ac2b18ffe64435f24979244e84"
+    },
+    "registro_inicio_utc": "2026-11-15T18:19:23.180846+00:00",
+    "base_sha256": "c45d7ea9b875fb59b0cf8a70f9f51f080d361e9c637f3bb3dfab504fa22951c3",
+    "invariantes_aprovados": 16,
+    "replicas_por_cenario": 20,
+    "cenarios": [
+      "nulo",
+      "fraco",
+      "moderado",
+      "mudanca"
+    ],
+    "dependencias": {
+      "numpy": "2.5.4",
+      "pandas": "3.1.1",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "joblib": "1.6.0",
+      "matplotlib": "3.11.2"
+    },
+    "python": "3.12.13"
+  },
+  "adendo_sha256": "8e001b8949365d02d1d64ab3a5c9683a34d6bb9e61ce2c8908f428f17d953343",
+  "conferencia_do_adendo": {
+    "linhas_por_replica": 14800,
+    "linhas_do_resumo": 740,
+    "maior_diferenca_para_a_precisao_no_topo_do_experimento": 2.914335439641036e-16
+  },
+  "nao_copiados": {
+    "predicoes": {
+      "arquivos": 240,
+      "sha256_agregado": "d0abe397c6eddc0c65051f22ef91fb6d858ec24092aeb6a220c49a62f34bd479"
+    },
+    "exemplo_primeira_semente": {
+      "arquivos": 24,
+      "sha256_agregado": "663720945eeab259dc05750cc128e0e2fc94fe9272339b0018bf676929d824d1"
+    },
+    "origem_antes.json": "1c858561c911f19dc11909b719ae0a035fd6e02d512cc6178cf408f17c948c25",
+    "origem_depois.json": "1c858561c911f19dc11909b719ae0a035fd6e02d512cc6178cf408f17c948c25"
+  },
+  "codigo_sha256": {
+    "auditar_resultados.py": "897b0690cb986249eee783c96cffaf3087f3ed168a7c8f5c9a9a30d8913c2fce",
+    "COMO_FUNCIONA.md": "ce70c9a9d0620b9e0fffd2c7a23d5a59a8abc8d6f49dea3449dd2482c6b815ee",
+    "executar.py": "9fdb434ddd4ef1a2fad86c7bf74caa340df25d2c455768f11c02f4bd2662e6bc",
+    "m2_experimento.py": "e006fbe9cb88dac8f17919d4e55a4df2074f3dd9434d29c52d8731fb8a3e8e80",
+    "protocolo.json": "213ad819ad5a7524e6f5fff37340ca03209095377907d9085dfcfabedff3d222",
+    "PROTOCOLO.md": "60730501ab589a788b40df2ea5db144f1acbe9a3adcfba3f93dfc0c1a4898f19",
+    "README_ORIGINAL.md": "e537c3bad3d839ac9699d8dc13da6178569f3669c423d2c5fefdd29fbcf3ee73",
+    "REFERENCIAS_DOI.md": "fe3624bd5d93b17890a88c525ffaa03145c9b637d8e05f5d29bdf529078e0db9",
+    "relatar.py": "6b710a5d80bf170f1e9b3957833254cdb3a76a7006fdf48cabf2c33e4a42e11b",
+    "REPRODUZIR.ps1": "e3f941222b1db7e3c24f069bf20fee0ce278917ad0e87340c8e1ba3731fef92b",
+    "requirements.lock": "048c38fdbdd91e31ad5e6619c4c255b2f0f42bbd2ab4ecb02579d8067214ef50",
+    "verificar.py": "29ffcf8fd3251281b487a2712fee3de0cbe4f6ac2b18ffe64435f24979244e84"
+  },
+  "pacote_v1_sha256": {
+    "checksums.sha256": "eb258926e66057096a613f5873cdcdd729febf2668232504c8fd682413df7ecc",
+    "feature_contract.json": "9dca0126f4cb6219ff64cf364bee5109807e2a2cb9804f706a491c26573a7f09",
+    "inadimplencia.joblib": "5533b49c4e8a4ce52df442201a4fab91e3e382df758284e45a330dcf239b0a91",
+    "metadata.json": "e05101617bf5ac40aec0dda5dfda53b52e9c3354d3fd587d29f1f3a8ee65d9bf",
+    "metrics.json": "cfe68dcf85fef98a994841f7f119893fa59c814ca1fc3b2e27807f48da580cf1",
+    "model_card.md": "2ca633b10cfee19f0555b7fa388e9a9b1ecf747e32eb289316de0a0c7ccb90ab",
+    "recuperabilidade.joblib": "c139f6ca128ef4c9b922d7e6b6a0078c13636d66a9ab5e0bb3b6f17b27e5240c"
+  },
+  "arquivos": {
+    "COMO_FUNCIONA.md": "ce70c9a9d0620b9e0fffd2c7a23d5a59a8abc8d6f49dea3449dd2482c6b815ee",
+    "complementar/complementar_replicas.csv.gz": "c7cc069557d27da7b630471eda4646939c8453da8019c8685f2420f33dc448a2",
+    "complementar/resumo_complementar.csv": "a7bbd239af282982a6edc0fc600cfb350414537b35db1eae85842a6409a8b319",
+    "experimento/aceite.json": "9f35cce74e3637060ed30eebd9c1994af1c61ea78d803f35f2dee2ee0cba8edd",
+    "experimento/artefatos_relatorio_sha256.json": "e500cd36b1527f26c4e47fa5033fe0feaee6f84e5088cc69317050a27df2f1e5",
+    "experimento/auditoria_final.json": "521f27b36a03c3df202d489de31c6137319fae3b55883a77e7cda7de79d0139c",
+    "experimento/bootstrap_primeira_semente.json": "99f86308c8d1cf7110e56e43d775596a2710fee2fc7e223dadfe88a53eeb13ce",
+    "experimento/calibracao_primeira_semente.csv": "feb3eeefe0aebeb9ca44947fa97dfe1d7c653399bddbcf3d90b1c9e47b2c537c",
+    "experimento/execucao.json": "f5fa074db7b34bb6d47ec3d9f1c06d7a688ddecb4bc302abc0a08be73e614a5f",
+    "experimento/figuras/01_cenarios.png": "5bd61622210846281383e19328e540f8d4231d0171d5922dfcecf80b6af09fc8",
+    "experimento/figuras/02_calibracao.png": "9bcdaff6fcd8c5cea46a980b84bb70c7b5c0dca5aaef7dd65d5f08d64a45e18c",
+    "experimento/figuras/03_replicas.png": "04c36f252b9558e4d4011b3fe930b43d8edad6b75129d3172761b78d74d13c4f",
+    "experimento/frequencia_selecao.csv": "a8aadaf4e757e4cdd6ada53f37b2fd78b55dbd81187bb95ca8f0c6b6c6708be4",
+    "experimento/integridade_origem.json": "f02b27f91e12a2bd5190ccf1b1b7fda4eee9766634973610a50b9db443fba7d4",
+    "experimento/metricas_replicas.csv": "559ccdb2aec7746712e1bfa9145bf3d8f3f6106505ab170b7048c182975ffdea",
+    "experimento/particoes.csv": "a81fa6e91b1775e5ad707a22db2a1fc5f7b19f99db5aa8e24d928a8d059d9d65",
+    "experimento/perfil_entrada.json": "25881fc91a45b5b2aa8483be7f1041d70461672cdb190c532ad4120eb9c28d4b",
+    "experimento/protocolo.json": "213ad819ad5a7524e6f5fff37340ca03209095377907d9085dfcfabedff3d222",
+    "experimento/registro_antes_do_treino.json": "f5046af35d8ef256521e61ebd8cf899319c4434db0cfdef68168371bef360de1",
+    "experimento/RELATORIO.html": "ec65b68e7233ec0b535ddd191cab406f6e97efa16e7fde565663e30a7c083a26",
+    "experimento/RELATORIO.md": "6de68bead3846e101a8f3614d13f39fe406915e37ab85a3eca910b6af56f5574",
+    "experimento/resumo_estatistico.csv": "da7935294703bae193a7380b9a871a97f5c4d5c528a4ab61fbabff0e69e3677b",
+    "experimento/selecoes.json": "dfd0646d1b32cc26cf2a072fef2a218d458517fc8be7d63dbe0272df269e1029",
+    "experimento/simulacoes.json": "b6207d8775697b08cf1c2251c1dacb5c5eaa32b45f7fb2caeca7dfbab885f033",
+    "experimento/verificacoes.json": "4ad8dbe210b2eaeb878d69bf821fd1a894a66e2050f4da40e8ed96013431fed2"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "inicio_utc": "2026-11-15T18:19:23.180846+00:00",
+  "origem": "pasta do projeto da Sprint 4 (caminho local omitido na publicação)",
+  "arquivos_origem": 412,
+  "protocolo_e_codigo_sha256": {
+    "executar.py": "9fdb434ddd4ef1a2fad86c7bf74caa340df25d2c455768f11c02f4bd2662e6bc",
+    "m2_experimento.py": "e006fbe9cb88dac8f17919d4e55a4df2074f3dd9434d29c52d8731fb8a3e8e80",
+    "protocolo.json": "213ad819ad5a7524e6f5fff37340ca03209095377907d9085dfcfabedff3d222",
+    "PROTOCOLO.md": "60730501ab589a788b40df2ea5db144f1acbe9a3adcfba3f93dfc0c1a4898f19",
+    "verificar.py": "29ffcf8fd3251281b487a2712fee3de0cbe4f6ac2b18ffe64435f24979244e84"
+  },
+  "python": "3.12.13 (main, Apr 14 2026, 14:31:26) [MSC v.1944 64 bit (AMD64)]",
+  "plataforma": "Windows-11-10.0.26200-SP0",
+  "dependencias": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0",
+    "matplotlib": "3.11.2"
+  },
+  "threads": 4,
+  "criterios": {
+    "lift_medio_minimo": 1.5,
+    "limite_inferior_ic95_media_lift_maior_que": 1.0,
+    "limite_inferior_ic95_media_ganho_brier_maior_que": 0.0,
+    "replicas_lift_15_e_ganho_positivo_minimo": 18,
+    "media_erro_absoluto_calibracao_maximo": 0.02,
+    "media_ece10_maximo": 0.02
+  },
+  "nota": "Registro salvo antes de verificar invariantes e ajustar o primeiro modelo.",
+  "sha256_do_registro_original": "fcad8e869c0421ed64b25097c34ab37b8cfbf6a9a47d4e0c66d2d1243f7246c9"
+}
