@@ -1,0 +1,555 @@
+{
+  "M1": {
+    "bootstrap_metrica_principal": {
+      "erro_padrao": 0.0027707171498747617,
+      "estimativa": 0.6411261529877794,
+      "ic95": [
+        0.6355623681885624,
+        0.6461338168721714
+      ],
+      "reamostras_validas": 200
+    },
+    "calibracao": {
+      "fracao_observada": [
+        0.092127,
+        0.142022,
+        0.184989,
+        0.222742,
+        0.278382,
+        0.325213,
+        0.430921,
+        0.59218,
+        0.660494,
+        0.741686
+      ],
+      "media_prevista": [
+        0.100385,
+        0.142955,
+        0.185135,
+        0.234826,
+        0.277306,
+        0.314797,
+        0.425818,
+        0.590073,
+        0.655696,
+        0.735986
+      ]
+    },
+    "classificacao": {
+      "acuracia": 0.7093175853018373,
+      "f1": 0.6345916995288189,
+      "fn": 12757,
+      "fp": 19582,
+      "limiar": 0.3238243622775294,
+      "matriz_confusao": [
+        [
+          50832,
+          19582
+        ],
+        [
+          12757,
+          28081
+        ]
+      ],
+      "n": 111252,
+      "precisao": 0.589157207897111,
+      "prevalencia": 0.367076546938482,
+      "recall": 0.6876193741123463,
+      "taxa_prevista_positiva": 0.42842375867400134,
+      "vn": 50832,
+      "vp": 28081
+    },
+    "contraste_da_vizinhanca": {
+      "historico": {
+        "dimensoes": 5,
+        "fracao_vetores_unicos_no_treino": 0.46414146861779265,
+        "k": 50,
+        "similaridade_k_vizinho": 0.9867573976516724,
+        "similaridade_par_ao_acaso": -0.03498613089323044
+      },
+      "sociodemografico": {
+        "dimensoes": 9,
+        "fracao_vetores_unicos_no_treino": 0.664221766799698,
+        "k": 50,
+        "similaridade_k_vizinho": 0.9708065390586853,
+        "similaridade_par_ao_acaso": -0.028949495404958725
+      },
+      "socioeconomico": {
+        "dimensoes": 12,
+        "fracao_vetores_unicos_no_treino": 0.6642337516029675,
+        "k": 50,
+        "similaridade_k_vizinho": 0.9602895975112915,
+        "similaridade_par_ao_acaso": -0.02938651479780674
+      },
+      "territorial": {
+        "dimensoes": 13,
+        "fracao_vetores_unicos_no_treino": 0.6656120039789547,
+        "k": 50,
+        "similaridade_k_vizinho": 0.9518930912017822,
+        "similaridade_par_ao_acaso": -0.031097732484340668
+      }
+    },
+    "dimensoes": [
+      "inadimplente_exercicio_anterior",
+      "taxa_inadimplencia_anterior",
+      "taxa_debitos_abertos",
+      "log_valor_relativo_anterior",
+      "sem_historico",
+      "idade_mediana_setor",
+      "proporcao_0_14_setor",
+      "proporcao_60_mais_setor",
+      "taxa_alfabetizacao_setor",
+      "log_renda_setor",
+      "moradores_por_domicilio_setor",
+      "log_densidade_setor"
+    ],
+    "espaco": "socioeconomico",
+    "familia": "random_forest",
+    "ganho_sobre_referencia_no_teste": {
+      "erro_padrao": 0.0018450808836371262,
+      "estimativa": 0.034997158346504076,
+      "ic95": [
+        0.031536781038205966,
+        0.0384822782565862
+      ],
+      "reamostras_validas": 200
+    },
+    "hiperparametros": {
+      "modelo__max_depth": 12,
+      "modelo__min_samples_leaf": 50
+    },
+    "limiar": 0.3238243622775294,
+    "metrica_principal": "average_precision",
+    "motor_de_busca": "faiss",
+    "prevalencia": {
+      "desenvolvimento": 0.3207313126955021,
+      "treino": 0.30692781552990805
+    },
+    "probabilidade": {
+      "average_precision": 0.6411261529877794,
+      "brier": 0.1846307239962918,
+      "brier_referencia_constante": 0.23447923636323917,
+      "ganho_brier_sobre_constante": 0.212592437352216,
+      "log_loss": 0.5504641812362473,
+      "media_observada": 0.367076546938482,
+      "media_prevista": 0.36629859627450484,
+      "motivo_indefinida": "",
+      "roc_auc": 0.7648924686897186
+    },
+    "proporcao": {
+      "desenvolvimento": 0.8,
+      "limites_teste": [
+        0.19,
+        0.31
+      ],
+      "linhas": {
+        "teste": 111252,
+        "treino": 333756,
+        "validacao": 111252
+      },
+      "teste": 0.2,
+      "teste_pela_regra_de_joseph": 0.2109,
+      "treino": 0.6,
+      "validacao": 0.2
+    },
+    "referencia": {
+      "classificacao": {
+        "acuracia": 0.7114388954805307,
+        "f1": 0.6211901306240929,
+        "fn": 14516,
+        "fp": 17587,
+        "limiar": 0.3239996135234833,
+        "matriz_confusao": [
+          [
+            52827,
+            17587
+          ],
+          [
+            14516,
+            26322
+          ]
+        ],
+        "n": 111252,
+        "precisao": 0.5994670796419869,
+        "prevalencia": 0.367076546938482,
+        "recall": 0.6445467456780449,
+        "taxa_prevista_positiva": 0.3946805450688527,
+        "vn": 52827,
+        "vp": 26322
+      },
+      "espaco": "historico",
+      "familia": "regressao_logistica",
+      "probabilidade": {
+        "average_precision": 0.6061289946412753,
+        "brier": 0.19072325527668,
+        "brier_referencia_constante": 0.23447923636323917,
+        "ganho_brier_sobre_constante": 0.18660919305782542,
+        "log_loss": 0.5661801099777222,
+        "media_observada": 0.367076546938482,
+        "media_prevista": 0.3669126331806183,
+        "motivo_indefinida": "",
+        "roc_auc": 0.7411298251429468
+      }
+    },
+    "segundos_de_busca": 637.5,
+    "selecao": {
+      "aceitos_pela_regra": [
+        [
+          "socioeconomico",
+          "random_forest"
+        ],
+        [
+          "territorial",
+          "regressao_logistica"
+        ],
+        [
+          "territorial",
+          "random_forest"
+        ]
+      ],
+      "ganho_sobre_referencia": {
+        "erro_padrao": 0.0016878228597992184,
+        "estimativa": 0.03950150115264761,
+        "ic95": [
+          0.03613055170119529,
+          0.042929391132657764
+        ],
+        "reamostras_validas": 200
+      },
+      "melhor_na_validacao": [
+        "territorial",
+        "random_forest"
+      ],
+      "referencia": [
+        "historico",
+        "regressao_logistica"
+      ]
+    },
+    "tarefa": "M1",
+    "topo": [
+      {
+        "fracao": 0.01,
+        "fracao_principal_inadimplente": 0.009424187155229564,
+        "k": 1113,
+        "precisao_topo": 0.8122192273135669,
+        "principal_inadimplente_topo_centavos": 35933389,
+        "recall_topo": 0.02213624565355796
+      },
+      {
+        "fracao": 0.05,
+        "fracao_principal_inadimplente": 0.05750876363335028,
+        "k": 5563,
+        "precisao_topo": 0.7731439870573431,
+        "principal_inadimplente_topo_centavos": 219274590,
+        "recall_topo": 0.10531857583623096
+      },
+      {
+        "fracao": 0.1,
+        "fracao_principal_inadimplente": 0.11780764237330986,
+        "k": 11125,
+        "precisao_topo": 0.7416629213483146,
+        "principal_inadimplente_topo_centavos": 449187582,
+        "recall_topo": 0.20204221558352514
+      },
+      {
+        "fracao": 0.2,
+        "fracao_principal_inadimplente": 0.2469093254755219,
+        "k": 22250,
+        "precisao_topo": 0.7010786516853933,
+        "principal_inadimplente_topo_centavos": 941438099,
+        "recall_topo": 0.3819726725108967
+      }
+    ]
+  },
+  "M2": {
+    "bootstrap_metrica_principal": {
+      "erro_padrao": 0.0009554217766095206,
+      "estimativa": 0.10444812476634979,
+      "ic95": [
+        0.10273535866290331,
+        0.10625043753534555
+      ],
+      "reamostras_validas": 200
+    },
+    "calibracao": {
+      "fracao_observada": [
+        0.118244,
+        0.115589,
+        0.118888,
+        0.116995,
+        0.123087,
+        0.115919,
+        0.109653,
+        0.122168,
+        0.116214,
+        0.128085
+      ],
+      "media_prevista": [
+        0.116913,
+        0.118486,
+        0.119301,
+        0.119944,
+        0.120513,
+        0.121066,
+        0.121626,
+        0.122244,
+        0.122999,
+        0.124321
+      ]
+    },
+    "classificacao": {
+      "acuracia": 0.11848415264695315,
+      "f1": 0.21186559034663835,
+      "fn": 0,
+      "fp": 56432,
+      "limiar": 0.10859039425849915,
+      "matriz_confusao": [
+        [
+          0,
+          56432
+        ],
+        [
+          0,
+          7585
+        ]
+      ],
+      "n": 64017,
+      "precisao": 0.11848415264695315,
+      "prevalencia": 0.11848415264695315,
+      "recall": 1.0,
+      "taxa_prevista_positiva": 1.0,
+      "vn": 0,
+      "vp": 7585
+    },
+    "contraste_da_vizinhanca": {
+      "historico": {
+        "dimensoes": 6,
+        "fracao_vetores_unicos_no_treino": 0.9990900818926297,
+        "k": 50,
+        "similaridade_k_vizinho": 0.9768223166465759,
+        "similaridade_par_ao_acaso": -0.025991398841142654
+      },
+      "sociodemografico": {
+        "dimensoes": 10,
+        "fracao_vetores_unicos_no_treino": 1.0,
+        "k": 50,
+        "similaridade_k_vizinho": 0.945419430732727,
+        "similaridade_par_ao_acaso": -0.011820525862276554
+      },
+      "socioeconomico": {
+        "dimensoes": 13,
+        "fracao_vetores_unicos_no_treino": 1.0,
+        "k": 50,
+        "similaridade_k_vizinho": 0.9205322861671448,
+        "similaridade_par_ao_acaso": -0.0060189636424183846
+      },
+      "territorial": {
+        "dimensoes": 14,
+        "fracao_vetores_unicos_no_treino": 1.0,
+        "k": 50,
+        "similaridade_k_vizinho": 0.910499632358551,
+        "similaridade_par_ao_acaso": -0.006470926571637392
+      }
+    },
+    "dimensoes": [
+      "log_idade_divida_dias",
+      "log_dias_desde_inscricao",
+      "log_valor_relativo_credito",
+      "creditos_inscritos_abertos_imovel",
+      "inadimplencias_imovel_t0",
+      "inadimplente_ultimo_exercicio"
+    ],
+    "espaco": "historico",
+    "familia": "regressao_logistica",
+    "ganho_sobre_referencia_no_teste": {
+      "erro_padrao": 0.0,
+      "estimativa": -0.0,
+      "ic95": [
+        -0.0,
+        0.0
+      ],
+      "reamostras_validas": 200
+    },
+    "hiperparametros": {
+      "modelo__C": 0.1
+    },
+    "limiar": 0.10859039425849915,
+    "metrica_principal": "neg_brier_score",
+    "motor_de_busca": "faiss",
+    "prevalencia": {
+      "desenvolvimento": 0.12116025520605037,
+      "treino": 0.12102968872336374
+    },
+    "probabilidade": {
+      "average_precision": 0.12161673125812449,
+      "brier": 0.10444812476634979,
+      "brier_referencia_constante": 0.10445281974339349,
+      "ganho_brier_sobre_constante": 4.494830350421086e-05,
+      "log_loss": 0.36390578746795654,
+      "media_observada": 0.11848415264695315,
+      "media_prevista": 0.12074136734008789,
+      "motivo_indefinida": "",
+      "roc_auc": 0.5040013482955388
+    },
+    "proporcao": {
+      "desenvolvimento": 0.6918,
+      "limites_teste": [
+        0.19,
+        0.31
+      ],
+      "linhas": {
+        "teste": 64017,
+        "treino": 94514,
+        "validacao": 49213
+      },
+      "teste": 0.3082,
+      "teste_pela_regra_de_joseph": 0.2052,
+      "treino": 0.455,
+      "validacao": 0.2369
+    },
+    "referencia": {
+      "classificacao": {
+        "acuracia": 0.11848415264695315,
+        "f1": 0.21186559034663835,
+        "fn": 0,
+        "fp": 56432,
+        "limiar": 0.10859039425849915,
+        "matriz_confusao": [
+          [
+            0,
+            56432
+          ],
+          [
+            0,
+            7585
+          ]
+        ],
+        "n": 64017,
+        "precisao": 0.11848415264695315,
+        "prevalencia": 0.11848415264695315,
+        "recall": 1.0,
+        "taxa_prevista_positiva": 1.0,
+        "vn": 0,
+        "vp": 7585
+      },
+      "espaco": "historico",
+      "familia": "regressao_logistica",
+      "probabilidade": {
+        "average_precision": 0.12161673125812449,
+        "brier": 0.10444812476634979,
+        "brier_referencia_constante": 0.10445281974339349,
+        "ganho_brier_sobre_constante": 4.494830350421086e-05,
+        "log_loss": 0.36390578746795654,
+        "media_observada": 0.11848415264695315,
+        "media_prevista": 0.12074136734008789,
+        "motivo_indefinida": "",
+        "roc_auc": 0.5040013482955388
+      }
+    },
+    "segundos_de_busca": 28.8,
+    "selecao": {
+      "aceitos_pela_regra": [
+        [
+          "historico",
+          "regressao_logistica"
+        ],
+        [
+          "historico",
+          "knn_cosseno"
+        ],
+        [
+          "historico",
+          "random_forest"
+        ],
+        [
+          "sociodemografico",
+          "regressao_logistica"
+        ],
+        [
+          "sociodemografico",
+          "knn_cosseno"
+        ],
+        [
+          "sociodemografico",
+          "random_forest"
+        ],
+        [
+          "socioeconomico",
+          "regressao_logistica"
+        ],
+        [
+          "socioeconomico",
+          "knn_cosseno"
+        ],
+        [
+          "socioeconomico",
+          "random_forest"
+        ],
+        [
+          "territorial",
+          "regressao_logistica"
+        ],
+        [
+          "territorial",
+          "knn_cosseno"
+        ],
+        [
+          "territorial",
+          "random_forest"
+        ]
+      ],
+      "ganho_sobre_referencia": {
+        "erro_padrao": 0.0,
+        "estimativa": -0.0,
+        "ic95": [
+          -0.0,
+          0.0
+        ],
+        "reamostras_validas": 200
+      },
+      "melhor_na_validacao": [
+        "sociodemografico",
+        "regressao_logistica"
+      ],
+      "referencia": [
+        "historico",
+        "regressao_logistica"
+      ]
+    },
+    "tarefa": "M2",
+    "topo": [
+      {
+        "fracao": 0.01,
+        "fracao_principal_recuperado": 0.002258081532006488,
+        "k": 640,
+        "precisao_topo": 0.1359375,
+        "principal_recuperado_topo_centavos": 1196223,
+        "recall_topo": 0.011470006591957812
+      },
+      {
+        "fracao": 0.05,
+        "fracao_principal_recuperado": 0.017653304988190812,
+        "k": 3201,
+        "precisao_topo": 0.1330834114339269,
+        "principal_recuperado_topo_centavos": 9351872,
+        "recall_topo": 0.05616348055372446
+      },
+      {
+        "fracao": 0.1,
+        "fracao_principal_recuperado": 0.04287676864771198,
+        "k": 6402,
+        "precisao_topo": 0.1280849734457982,
+        "principal_recuperado_topo_centavos": 22714050,
+        "recall_topo": 0.10810810810810811
+      },
+      {
+        "fracao": 0.2,
+        "fracao_principal_recuperado": 0.09872313475461801,
+        "k": 12803,
+        "precisao_topo": 0.1221588690150746,
+        "principal_recuperado_topo_centavos": 52298769,
+        "recall_topo": 0.2061964403427818
+      }
+    ]
+  }
+}

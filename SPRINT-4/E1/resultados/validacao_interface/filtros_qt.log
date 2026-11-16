@@ -1,0 +1,119 @@
+OK    Opções: regiões do lote                                                                                             7 regiões: NORDESTE, NOROESTE, NORTE, SEM_QUADRA, SUDESTE, SUDOESTE, SUL
+OK    Opções: três faixas                                                                                                 ['ALTA', 'MEDIA', 'BAIXA']
+OK    Opções: setores do lote                                                                                             635 setores
+OK    Sem filtro: Resumo (devedores, créditos, principal, valor esperado)                                                 52.510 devedores, 78.122 créditos, R$ 60.118.722,19
+OK    Sem filtro: Resumo (barras por faixa)                                                                               {'ALTA': 0.0, 'MEDIA': 0.0, 'BAIXA': 52510.0}
+OK    Sem filtro: Ranking (mesmos devedores, na mesma ordem)                                                              Mostrando 50 de 52.510 devedores no filtro
+OK    Sem filtro: Projeção (créditos, devedores e valor esperado)                                                         R$ 6.948.081,53 · 11,6% do principal
+OK    Região NORDESTE: Resumo (devedores, créditos, principal, valor esperado)                                            3.929 devedores, 5.573 créditos, R$ 6.082.062,66
+OK    Região NORDESTE: Resumo (barras por faixa)                                                                          {'ALTA': 0.0, 'MEDIA': 0.0, 'BAIXA': 3929.0}
+OK    Região NORDESTE: Ranking (mesmos devedores, na mesma ordem)                                                         Mostrando 50 de 3.929 devedores no filtro
+OK    Região NORDESTE: Projeção (créditos, devedores e valor esperado)                                                    R$ 696.768,62 · 11,5% do principal
+OK    Região NORDESTE: resumo do campo                                                                                    NORDESTE
+OK    Região NORDESTE: toda linha do ranking é da região                                                                  
+OK    Região NORDESTE: o mapa só desenha setores da região                                                                66 setores
+OK    Região NOROESTE: Resumo (devedores, créditos, principal, valor esperado)                                            6.791 devedores, 10.118 créditos, R$ 6.926.597,11
+OK    Região NOROESTE: Resumo (barras por faixa)                                                                          {'ALTA': 0.0, 'MEDIA': 0.0, 'BAIXA': 6791.0}
+OK    Região NOROESTE: Ranking (mesmos devedores, na mesma ordem)                                                         Mostrando 50 de 6.791 devedores no filtro
+OK    Região NOROESTE: Projeção (créditos, devedores e valor esperado)                                                    R$ 809.776,64 · 11,7% do principal
+OK    Região NOROESTE: resumo do campo                                                                                    NOROESTE
+OK    Região NOROESTE: toda linha do ranking é da região                                                                  
+OK    Região NOROESTE: o mapa só desenha setores da região                                                                76 setores
+OK    Região NORTE: Resumo (devedores, créditos, principal, valor esperado)                                               498 devedores, 760 créditos, R$ 512.910,64
+OK    Região NORTE: Resumo (barras por faixa)                                                                             {'ALTA': 0.0, 'MEDIA': 0.0, 'BAIXA': 498.0}
+OK    Região NORTE: Ranking (mesmos devedores, na mesma ordem)                                                            Mostrando 50 de 498 devedores no filtro
+OK    Região NORTE: Projeção (créditos, devedores e valor esperado)                                                       R$ 59.049,45 · 11,5% do principal
+OK    Região NORTE: resumo do campo                                                                                       NORTE
+OK    Região NORTE: toda linha do ranking é da região                                                                     
+OK    Região NORTE: o mapa só desenha setores da região                                                                   6 setores
+OK    Região SEM_QUADRA: Resumo (devedores, créditos, principal, valor esperado)                                          3.089 devedores, 5.014 créditos, R$ 2.496.287,24
+OK    Região SEM_QUADRA: Resumo (barras por faixa)                                                                        {'ALTA': 0.0, 'MEDIA': 0.0, 'BAIXA': 3089.0}
+OK    Região SEM_QUADRA: Ranking (mesmos devedores, na mesma ordem)                                                       Mostrando 50 de 3.089 devedores no filtro
+OK    Região SEM_QUADRA: Projeção (créditos, devedores e valor esperado)                                                  R$ 291.209,23 · 11,7% do principal
+OK    Região SEM_QUADRA: resumo do campo                                                                                  SEM_QUADRA
+OK    Região SEM_QUADRA: toda linha do ranking é da região                                                                
+OK    Região SEM_QUADRA: o mapa só desenha setores da região                                                              38 setores
+OK    Região SUDESTE: Resumo (devedores, créditos, principal, valor esperado)                                             10.899 devedores, 15.315 créditos, R$ 16.364.641,53
+OK    Região SUDESTE: Resumo (barras por faixa)                                                                           {'ALTA': 0.0, 'MEDIA': 0.0, 'BAIXA': 10899.0}
+OK    Região SUDESTE: Ranking (mesmos devedores, na mesma ordem)                                                          Mostrando 50 de 10.899 devedores no filtro
+OK    Região SUDESTE: Projeção (créditos, devedores e valor esperado)                                                     R$ 1.883.151,23 · 11,5% do principal
+OK    Região SUDESTE: resumo do campo                                                                                     SUDESTE
+OK    Região SUDESTE: toda linha do ranking é da região                                                                   
+OK    Região SUDESTE: o mapa só desenha setores da região                                                                 165 setores
+OK    Região SUDOESTE: Resumo (devedores, créditos, principal, valor esperado)                                            4.833 devedores, 6.475 créditos, R$ 9.954.558,07
+OK    Região SUDOESTE: Resumo (barras por faixa)                                                                          {'ALTA': 0.0, 'MEDIA': 0.0, 'BAIXA': 4833.0}
+OK    Região SUDOESTE: Ranking (mesmos devedores, na mesma ordem)                                                         Mostrando 50 de 4.833 devedores no filtro
+OK    Região SUDOESTE: Projeção (créditos, devedores e valor esperado)                                                    R$ 1.120.436,22 · 11,3% do principal
+OK    Região SUDOESTE: resumo do campo                                                                                    SUDOESTE
+OK    Região SUDOESTE: toda linha do ranking é da região                                                                  
+OK    Região SUDOESTE: o mapa só desenha setores da região                                                                102 setores
+OK    Região SUL: Resumo (devedores, créditos, principal, valor esperado)                                                 22.471 devedores, 34.867 créditos, R$ 17.781.664,94
+OK    Região SUL: Resumo (barras por faixa)                                                                               {'ALTA': 0.0, 'MEDIA': 0.0, 'BAIXA': 22471.0}
+OK    Região SUL: Ranking (mesmos devedores, na mesma ordem)                                                              Mostrando 50 de 22.471 devedores no filtro
+OK    Região SUL: Projeção (créditos, devedores e valor esperado)                                                         R$ 2.087.690,14 · 11,7% do principal
+OK    Região SUL: resumo do campo                                                                                         SUL
+OK    Região SUL: toda linha do ranking é da região                                                                       
+OK    Região SUL: o mapa só desenha setores da região                                                                     182 setores
+OK    Regiões NORDESTE + NOROESTE: Resumo (devedores, créditos, principal, valor esperado)                                10.720 devedores, 15.691 créditos, R$ 13.008.659,77
+OK    Regiões NORDESTE + NOROESTE: Resumo (barras por faixa)                                                              {'ALTA': 0.0, 'MEDIA': 0.0, 'BAIXA': 10720.0}
+OK    Regiões NORDESTE + NOROESTE: Ranking (mesmos devedores, na mesma ordem)                                             Mostrando 50 de 10.720 devedores no filtro
+OK    Regiões NORDESTE + NOROESTE: Projeção (créditos, devedores e valor esperado)                                        R$ 1.506.545,26 · 11,6% do principal
+OK    Duas regiões: resumo do campo                                                                                       2 selecionados
+OK    Regiões NORDESTE + NOROESTE e faixa baixa: Resumo (devedores, créditos, principal, valor esperado)                  10.720 devedores, 15.691 créditos, R$ 13.008.659,77
+OK    Regiões NORDESTE + NOROESTE e faixa baixa: Resumo (barras por faixa)                                                {'ALTA': 0.0, 'MEDIA': 0.0, 'BAIXA': 10720.0}
+OK    Regiões NORDESTE + NOROESTE e faixa baixa: Ranking (mesmos devedores, na mesma ordem)                               Mostrando 50 de 10.720 devedores no filtro
+OK    Regiões NORDESTE + NOROESTE e faixa baixa: Projeção (créditos, devedores e valor esperado)                          R$ 1.506.545,26 · 11,6% do principal
+OK    Faixa ALTA (vazia no lote): Resumo (devedores, créditos, principal, valor esperado)                                 0 devedores, 0 créditos, R$ 0,00
+OK    Faixa ALTA (vazia no lote): Resumo (barras por faixa)                                                               {'ALTA': 0.0, 'MEDIA': 0.0, 'BAIXA': 0.0}
+OK    Faixa ALTA (vazia no lote): Ranking (mesmos devedores, na mesma ordem)                                              Mostrando 0 de 0 devedores no filtro
+OK    Faixa ALTA (vazia no lote): Projeção (créditos, devedores e valor esperado)                                         R$ 0,00 · 0,0% do principal
+OK    Faixa ALTA: mapa continua desenhando, sem erro                                                                      
+OK    Faixa MEDIA (vazia no lote): Resumo (devedores, créditos, principal, valor esperado)                                0 devedores, 0 créditos, R$ 0,00
+OK    Faixa MEDIA (vazia no lote): Resumo (barras por faixa)                                                              {'ALTA': 0.0, 'MEDIA': 0.0, 'BAIXA': 0.0}
+OK    Faixa MEDIA (vazia no lote): Ranking (mesmos devedores, na mesma ordem)                                             Mostrando 0 de 0 devedores no filtro
+OK    Faixa MEDIA (vazia no lote): Projeção (créditos, devedores e valor esperado)                                        R$ 0,00 · 0,0% do principal
+OK    Faixa MEDIA: mapa continua desenhando, sem erro                                                                     
+OK    Limpar filtros: campos voltam a 'todas'                                                                             
+OK    Depois de limpar: Resumo (devedores, créditos, principal, valor esperado)                                           52.510 devedores, 78.122 créditos, R$ 60.118.722,19
+OK    Depois de limpar: Resumo (barras por faixa)                                                                         {'ALTA': 0.0, 'MEDIA': 0.0, 'BAIXA': 52510.0}
+OK    Depois de limpar: Ranking (mesmos devedores, na mesma ordem)                                                        Mostrando 50 de 52.510 devedores no filtro
+OK    Depois de limpar: Projeção (créditos, devedores e valor esperado)                                                   R$ 6.948.081,53 · 11,6% do principal
+OK    Setor 172100005000107: Resumo (devedores, créditos, principal, valor esperado)                                      316 devedores, 559 créditos, R$ 307.953,61
+OK    Setor 172100005000107: Resumo (barras por faixa)                                                                    {'ALTA': 0.0, 'MEDIA': 0.0, 'BAIXA': 316.0}
+OK    Setor 172100005000107: Ranking (mesmos devedores, na mesma ordem)                                                   Mostrando 50 de 316 devedores no filtro
+OK    Setor 172100005000107: Projeção (créditos, devedores e valor esperado)                                              R$ 35.366,85 · 11,5% do principal
+OK    Setor 172100005000107 na própria região: Resumo (devedores, créditos, principal, valor esperado)                    316 devedores, 559 créditos, R$ 307.953,61
+OK    Setor 172100005000107 na própria região: Resumo (barras por faixa)                                                  {'ALTA': 0.0, 'MEDIA': 0.0, 'BAIXA': 316.0}
+OK    Setor 172100005000107 na própria região: Ranking (mesmos devedores, na mesma ordem)                                 Mostrando 50 de 316 devedores no filtro
+OK    Setor 172100005000107 na própria região: Projeção (créditos, devedores e valor esperado)                            R$ 35.366,85 · 11,5% do principal
+OK    Setor 172100005000107 com outra região (interseção vazia): Resumo (devedores, créditos, principal, valor esperado)  0 devedores, 0 créditos, R$ 0,00
+OK    Setor 172100005000107 com outra região (interseção vazia): Resumo (barras por faixa)                                {'ALTA': 0.0, 'MEDIA': 0.0, 'BAIXA': 0.0}
+OK    Setor 172100005000107 com outra região (interseção vazia): Ranking (mesmos devedores, na mesma ordem)               Mostrando 0 de 0 devedores no filtro
+OK    Setor 172100005000107 com outra região (interseção vazia): Projeção (créditos, devedores e valor esperado)          R$ 0,00 · 0,0% do principal
+OK    Clique de mouse na caixa de seleção aplica o filtro                                                                 ('NORDESTE',)
+OK    Região NORDESTE (por clique de mouse): Resumo (devedores, créditos, principal, valor esperado)                      3.929 devedores, 5.573 créditos, R$ 6.082.062,66
+OK    Região NORDESTE (por clique de mouse): Resumo (barras por faixa)                                                    {'ALTA': 0.0, 'MEDIA': 0.0, 'BAIXA': 3929.0}
+OK    Região NORDESTE (por clique de mouse): Ranking (mesmos devedores, na mesma ordem)                                   Mostrando 50 de 3.929 devedores no filtro
+OK    Região NORDESTE (por clique de mouse): Projeção (créditos, devedores e valor esperado)                              R$ 696.768,62 · 11,5% do principal
+OK    Busca no filtro de setor esconde as opções que não casam                                                            1 de 635 opções visíveis para '0107'
+OK    'Mostrar todas' remove só aquele filtro                                                                             
+OK    Região NORDESTE, ordenado por score: Resumo (devedores, créditos, principal, valor esperado)                        3.929 devedores, 5.573 créditos, R$ 6.082.062,66
+OK    Região NORDESTE, ordenado por score: Resumo (barras por faixa)                                                      {'ALTA': 0.0, 'MEDIA': 0.0, 'BAIXA': 3929.0}
+OK    Região NORDESTE, ordenado por score: Ranking (mesmos devedores, na mesma ordem)                                     Mostrando 50 de 3.929 devedores no filtro
+OK    Região NORDESTE, ordenado por score: Projeção (créditos, devedores e valor esperado)                                R$ 696.768,62 · 11,5% do principal
+OK    Região NORDESTE, por score, 10 devedores: Resumo (devedores, créditos, principal, valor esperado)                   3.929 devedores, 5.573 créditos, R$ 6.082.062,66
+OK    Região NORDESTE, por score, 10 devedores: Resumo (barras por faixa)                                                 {'ALTA': 0.0, 'MEDIA': 0.0, 'BAIXA': 3929.0}
+OK    Região NORDESTE, por score, 10 devedores: Ranking (mesmos devedores, na mesma ordem)                                Mostrando 10 de 3.929 devedores no filtro
+OK    Região NORDESTE, por score, 10 devedores: Projeção (créditos, devedores e valor esperado)                           R$ 696.768,62 · 11,5% do principal
+OK    Quantidade: 10 linhas no ranking                                                                                    
+OK    Atualizar dados (F5) mantém o filtro escolhido                                                                      
+OK    Região NORDESTE, depois de atualizar os dados: Resumo (devedores, créditos, principal, valor esperado)              3.929 devedores, 5.573 créditos, R$ 6.082.062,66
+OK    Região NORDESTE, depois de atualizar os dados: Resumo (barras por faixa)                                            {'ALTA': 0.0, 'MEDIA': 0.0, 'BAIXA': 3929.0}
+OK    Região NORDESTE, depois de atualizar os dados: Ranking (mesmos devedores, na mesma ordem)                           Mostrando 10 de 3.929 devedores no filtro
+OK    Região NORDESTE, depois de atualizar os dados: Projeção (créditos, devedores e valor esperado)                      R$ 696.768,62 · 11,5% do principal
+OK    Filtros visíveis nas quatro telas da carteira e ocultos nas cinco telas sem lote                                    [True, True, True, True, False, False, False, False, False]
+OK    Percorrer as telas sem lote não altera o filtro escolhido                                                           Estado(regioes=('NORDESTE',), faixas=(), setores=(), ordem='valor_esperado', k=10)
+OK    Mapa: 'Ver ranking do setor' filtra pelo setor e abre o ranking                                                     
+OK    Exportação grava só os créditos do filtro                                                                           559 créditos
+
+117 de 117 verificações aprovadas

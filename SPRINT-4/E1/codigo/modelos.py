@@ -128,7 +128,7 @@ def selecionar(buscas: dict[str, Busca], X: pd.DataFrame, y: np.ndarray, grupos:
     melhor = max(p.ordem_parcimonia, key=lambda n: valor[n])
     aceitos = [n for n in p.ordem_parcimonia if valor[n] >= valor[melhor] - erro[melhor]]
     escolhido = aceitos[0]
-    ganho = _ganho_pareado(buscas[escolhido].modelo, buscas[p.referencia].modelo, X, y, grupos, metrica, p)
+    ganho = ganho_pareado(buscas[escolhido].modelo, buscas[p.referencia].modelo, X, y, grupos, metrica, p)
     tabela["dentro_de_um_erro_padrao"] = tabela["modelo"].isin(aceitos)
     tabela["escolhido"] = tabela["modelo"].eq(escolhido)
     return Selecao(escolhido, tabela, ganho["estimativa"] > ganho["erro_padrao"],
@@ -136,7 +136,7 @@ def selecionar(buscas: dict[str, Busca], X: pd.DataFrame, y: np.ndarray, grupos:
                     "ganho_sobre_referencia": ganho})
 
 
-def _ganho_pareado(modelo: object, referencia: object, X: pd.DataFrame, y: np.ndarray, grupos: np.ndarray,
+def ganho_pareado(modelo: object, referencia: object, X: pd.DataFrame, y: np.ndarray, grupos: np.ndarray,
                    metrica: str, p: Protocolo) -> dict:
     """Melhora do escolhido sobre a referência, com bootstrap pareado (as mesmas reamostras)."""
     funcao, maior_melhor = METRICAS[metrica]

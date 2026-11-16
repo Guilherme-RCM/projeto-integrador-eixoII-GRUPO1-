@@ -1,0 +1,47 @@
+{
+  "arquivos": {
+    "alfabetizacao": {
+      "arquivo_ibge": "Agregados_por_setores_alfabetizacao_BR.zip",
+      "arquivo_local": "ibge-censo2022_alfabetizacao-setores_2026-11-10.zip",
+      "data_da_coleta": "2026-11-10",
+      "sha256": "3b2de94e0099d9b6aa32bf967b1e96321a0f6ee7df674bbac984c3b751c8a17b"
+    },
+    "demografia": {
+      "arquivo_ibge": "Agregados_por_setores_demografia_BR.zip",
+      "arquivo_local": "ibge-censo2022_demografia-setores_2026-11-10.zip",
+      "data_da_coleta": "2026-11-10",
+      "sha256": "f8486233ce2f6559de76299390577c58d05f35cad07c46098e6e565949c8b269"
+    }
+  },
+  "ausentes_por_indicador": {
+    "idade_mediana_setor": 23,
+    "proporcao_0_14_setor": 23,
+    "proporcao_60_mais_setor": 23,
+    "taxa_alfabetizacao_setor": 23
+  },
+  "endpoint": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Agregados_por_Setores_Censitarios/Agregados_por_Setor_csv/",
+  "fonte": "IBGE, Censo Demográfico 2022, Agregados por Setores Censitários (resultados do universo)",
+  "municipio": "1721000",
+  "setores": 683,
+  "sha256_extrato": "12078767392cc9729a342f4df495958f32001ca3fff19e2af245d22c3f435946",
+  "variaveis": {
+    "alfabetizacao": [
+      "V00900",
+      "V00901"
+    ],
+    "demografia": [
+      "V01006",
+      "V01031",
+      "V01032",
+      "V01033",
+      "V01034",
+      "V01035",
+      "V01036",
+      "V01037",
+      "V01038",
+      "V01039",
+      "V01040",
+      "V01041"
+    ]
+  }
+}
