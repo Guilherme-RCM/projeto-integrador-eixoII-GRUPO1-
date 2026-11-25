@@ -1,0 +1,285 @@
+# MODEL CARD — E1
+## Sistema de Inteligência Tributária
+### Priorização da cobrança da dívida ativa de Palmas-TO
+
+**Versão 1.0 — Sprint 5**
+
+Documento consolidado para a entrega E1 da Sprint 5, com base na ficha `sprint4-v1` e nos artefatos correspondentes do repositório.
+
+> **Observação:** os dados individuais dos experimentos são sintéticos. Os resultados descrevem o comportamento dos modelos nesse cenário experimental e não comprovam desempenho em dados reais.
+
+---
+
+## 1. Identificação e detalhes do modelo
+
+**Nome do sistema:** Sistema de Inteligência Tributária.
+
+**Finalidade:** Apoiar a análise e a priorização de créditos tributários por meio de modelos de aprendizado de máquina.
+
+**Versão de referência:** `sprint4-v1`. O repositório também contém um experimento vetorial distinto; seus resultados não devem ser misturados com os da versão principal documentada neste Model Card.
+
+**Modelos documentados:** O pacote contém dois classificadores independentes. O M1 estima inadimplência de créditos do exercício; o M2 estima a recuperabilidade de créditos já inscritos em dívida ativa. Eles respondem a perguntas diferentes, em momentos distintos, e não devem ser tratados como um único modelo.
+
+**Implementação:** Os dois modelos são pipelines do scikit-learn 1.9.1, com imputação pela mediana calculada no conjunto de treino e indicador de ausência. A etapa de escala é aplicada somente à regressão logística. A execução de referência foi realizada em Python 3.14.7, com semente `20261107` e protocolo `1.0.0`.
+
+**Registro da execução:** Ficha gerada por `pipeline/ml/documentos.py` na execução `20261108T041219-4306b3`; código `8c55960d30cee5004921b57efc5f4296b8e5f517`.
+
+## 2. Uso pretendido
+
+**M1 — Inadimplência:** Apoiar a identificação de créditos de IPTU do exercício com maior probabilidade estimada de permanecerem sem pagamento até o vencimento. O momento de referência é 1º de janeiro do exercício (`t0`), pois a base não contém a data real do lançamento; o vencimento considerado é 10 de março.
+
+**M2 — Recuperabilidade:** Apoiar a análise de créditos inscritos em dívida ativa e ainda abertos na data de referência, estimando se serão pagos integralmente nos 365 dias seguintes.
+
+**Uso previsto:** A ficha do repositório descreve o uso como apoio ao analista da Sefin em demonstração acadêmica: o M1 alimenta o mapa de risco e o M2 ordena a carteira de dívida ativa.
+
+**Limite:** Nenhum dos modelos decide cobrança. Os resultados são informações auxiliares para análise e priorização, e não decisões administrativas definitivas. Não devem ser usados com dados reais sem homologação, base legal e revisão humana.
+
+## 3. Usos proibidos ou inadequados
+
+Os modelos não devem ser utilizados para:
+
+- Tratar uma previsão como confirmação de inadimplência;
+- Determinar automaticamente a realização de cobrança ou outra medida administrativa;
+- Substituir a análise humana e a responsabilidade dos agentes públicos;
+- Produzir tratamento discriminatório entre contribuintes;
+- Utilizar informações incorretas e desatualizadas sem verificação.
+
+**IPTU Social:** A documentação `sprint4-v1` examinada não comprova a exclusão no pipeline nem o teste automatizado. Não declarar essa implementação como concluída sem a respectiva evidência.
+
+## 4. Fatores e variáveis relevantes
+
+**M1 — Inadimplência:**
+
+- `inadimplente_exercicio_anterior`: indica inadimplência no exercício anterior;
+- `inadimplencias_anteriores`: quantidade de inadimplências anteriores;
+- `exercicios_anteriores`: quantidade de exercícios anteriores disponíveis;
+- `debitos_abertos_t0`: débitos que estavam abertos na data de referência;
+- `valor_relativo_anterior`: medida relativa do valor do crédito anterior, cuja fórmula deve ser interpretada conforme o código.
+
+**M2 — Recuperabilidade:**
+
+- `idade_divida_dias`: idade da dívida em dias;
+- `dias_desde_inscricao`: dias decorridos desde a inscrição em dívida ativa;
+- `valor_relativo_credito`: medida relativa do valor do crédito;
+- `creditos_inscritos_abertos_imovel`: créditos inscritos e abertos associados ao imóvel;
+- `inadimplencias_imovel_t0`: inadimplências associadas ao imóvel na data de referência;
+- `inadimplente_ultimo_exercicio`: indica inadimplência no último exercício.
+
+**Renda e território:** A renda do Censo 2022 e os identificadores territoriais não entram como atributos diretos dos modelos `sprint4-v1`. A renda e a região foram preservadas para auditoria por subgrupos. O valor relativo do imóvel permanece como atributo e pode funcionar como proxy da renda do setor; portanto, retirar a renda direta não demonstra, por si só, equidade.
+
+### Variáveis identificadas no protocolo principal
+
+| Modelo | Variáveis |
+|---|---|
+| M1 | `inadimplente_exercicio_anterior`; `inadimplencias_anteriores`; `exercicios_anteriores`; `debitos_abertos_t0`; `valor_relativo_anterior` |
+| M2 | `idade_divida_dias`; `dias_desde_inscricao`; `valor_relativo_credito`; `creditos_inscritos_abertos_imovel`; `inadimplencias_imovel_t0`; `inadimplente_ultimo_exercicio` |
+
+## 5. Dados de treinamento, origem e limitações
+
+**Origem:** Os dados individuais de treino e teste são créditos de IPTU simulados sobre setores censitários reais de Palmas, com base na Sprint 3. A documentação do repositório identifica a base de origem `c45d7ea9b875` e a simulação `e66099c7d0c8`. Os registros individuais simulados não correspondem necessariamente a contribuintes reais.
+
+**Características da simulação:** A simulação utiliza probabilidade anual constante de recuperação depois da inscrição e calibra o valor lançado com a arrecadação real do próprio ano. Por essa razão, o valor do lançamento corrente, a renda do Censo 2022 e os identificadores territoriais ficaram fora dos atributos preditivos.
+
+**M1 — partição temporal:**
+- Treino: exercícios de 2021 a 2023;
+- Validação: 2024;
+- Teste: 2025.
+
+A validação interna utiliza janelas crescentes dentro do treino: 2021 para avaliar 2022; e 2021–2022 para avaliar 2023.
+
+**M2 — partição temporal:**
+- Treino: 29/06/2022 a 30/06/2023;
+- Validação: 01/07/2024;
+- Teste: 31/07/2025.
+
+A tarefa considera horizonte de 365 dias. A fotografia de demonstração registrada no protocolo é 31/07/2026.
+
+**Dimensão informada:** 111.252 imóveis simulados; 556.260 créditos simulados; 733 setores censitários; 23 setores sem informação de renda por sigilo estatístico; cobertura de quadras do GeoPalmas informada como 94,2% dos domicílios. Esses dados descrevem a base sintética e devem ser interpretados dentro das limitações da simulação.
+
+**Limitações:** As relações criadas pela simulação podem não corresponder ao comportamento real dos contribuintes. Ter muitos registros não garante representatividade. As métricas demonstram o comportamento do pipeline e dos modelos nesse cenário experimental, não o desempenho no mundo real.
+
+## 6. Métricas e resultados gerais
+
+### M1 — Inadimplência
+
+Regressão logística, com hiperparâmetro `C=10`, escolhida na validação pela regra de um erro-padrão. O limiar de classificação foi fixado na validação em `0,307`.
+
+No teste congelado:
+
+- Número de créditos (`n`): 111.252;
+- Prevalência: 36,7%;
+- Acurácia: 71,1%;
+- Precisão: 59,9%;
+- Recall: 64,2%;
+- F1: 0,620;
+- Average Precision: 0,606;
+- ROC-AUC: 0,741;
+- Brier: 0,1909.
+
+**Matriz de confusão:**
+
+| Resultado | Quantidade |
+|---|---:|
+| Verdadeiros negativos (VN) | 52.879 |
+| Falsos positivos (FP) | 17.535 |
+| Falsos negativos (FN) | 14.601 |
+| Verdadeiros positivos (VP) | 26.237 |
+
+**Interpretação do M1:** O modelo escolhido supera o preditor constante (Dummy) na validação por mais de um erro-padrão. No teste, apresenta capacidade de discriminação superior à referência constante. Isso não comprova desempenho equivalente em dados reais.
+
+### M2 — Recuperabilidade
+
+Regressão logística, com hiperparâmetro `C=0,1`, escolhida na validação pela regra de um erro-padrão. O limiar de classificação foi fixado na validação em `0,102`.
+
+No teste congelado:
+
+- Número de créditos (`n`): 64.017;
+- Prevalência: 11,8%;
+- Acurácia: 12,4%;
+- Precisão: 11,9%;
+- Recall: 99,4%;
+- F1: 0,212;
+- Average Precision: 0,122;
+- ROC-AUC: 0,508;
+- Brier: 0,1044.
+
+**Matriz de confusão:**
+
+| Resultado | Quantidade |
+|---|---:|
+| Verdadeiros negativos (VN) | 400 |
+| Falsos positivos (FP) | 56.032 |
+| Falsos negativos (FN) | 47 |
+| Verdadeiros positivos (VP) | 7.538 |
+
+**Interpretação do M2:** O modelo escolhido não supera o preditor constante (Dummy) por mais de um erro-padrão na validação. A ROC-AUC próxima de 0,5 e o volume muito elevado de falsos positivos indicam que os scores não ordenam os créditos melhor que a prevalência do treino. O resultado deve ser apresentado como limitação identificada, sem ocultação ou alteração artificial do simulador.
+
+### Quadro de métricas do teste
+
+| Métrica | M1 — Inadimplência | M2 — Recuperabilidade |
+|---|---:|---:|
+| Acurácia | 71,1% | 12,4% |
+| Precisão | 59,9% | 11,9% |
+| Recall | 64,2% | 99,4% |
+| F1 | 0,620 | 0,212 |
+| Average Precision | 0,606 | 0,122 |
+| ROC-AUC | 0,741 | 0,508 |
+| Brier | 0,1909 | 0,1044 |
+
+## 7. Avaliação por subgrupos e análise de equidade
+
+**O que é quintil?** Quintil é uma forma de dividir uma distribuição em cinco faixas ordenadas, cada uma correspondente a aproximadamente 20% das unidades usadas para calcular essa distribuição. Neste projeto, os quintis são organizados pela renda dos setores censitários: Q1 reúne os setores do grupo de menor renda; Q5 reúne os do grupo de maior renda; Q2, Q3 e Q4 representam as faixas intermediárias. Como a auditoria contabiliza os créditos associados aos setores de cada faixa, a quantidade de créditos em cada quintil não precisa ser igual. O quintil identifica o grupo de renda do setor usado na auditoria, não uma classificação individual de riqueza do contribuinte.
+
+**M1 — taxa de falsos positivos por quintil:** Q1: 42,86% (`n=24.866`); Q2: 33,44% (`n=25.459`); Q3: 25,25% (`n=21.673`); Q4: 17,78% (`n=19.940`); Q5: 10,69% (`n=19.314`). Um falso positivo no M1 ocorre quando o crédito é classificado como inadimplente, mas não apresenta inadimplência no resultado observado.
+
+**Interpretação do M1:** A taxa de falsos positivos do Q1 é aproximadamente quatro vezes a do Q5. A diferença é um alerta de disparidade que exige investigação. Ela não comprova, isoladamente, discriminação: devem ser considerados prevalência, composição dos grupos, qualidade dos dados e denominadores.
+
+**M2 — taxa de falsos positivos por quintil:** Q1: 99,94% (`n=20.641`); Q2: 99,93% (`n=17.776`); Q3: 99,82% (`n=12.005`); Q4: 99,01% (`n=8.467`); Q5: 93,63% (`n=5.128`). No M2, o falso positivo significa prever recuperação quando ela não ocorreu.
+
+### M1 — falsos positivos por quintil de renda
+
+| Quintil | Registros (n) | Taxa de falsos positivos |
+|---|---:|---:|
+| Q1 | 24.866 | 42,86% |
+| Q2 | 25.459 | 33,44% |
+| Q3 | 21.673 | 25,25% |
+| Q4 | 19.940 | 17,78% |
+| Q5 | 19.314 | 10,69% |
+
+### M2 — falsos positivos por quintil de renda
+
+| Quintil | Registros (n) | Taxa de falsos positivos |
+|---|---:|---:|
+| Q1 | 20.641 | 99,95% |
+| Q2 | 17.776 | 99,94% |
+| Q3 | 12.005 | 99,82% |
+| Q4 | 8.467 | 99,01% |
+| Q5 | 5.128 | 93,63% |
+
+**M1 — taxa de falsos positivos por região:** Nordeste: 17,38% (`n=10.737`); Noroeste: 27,33% (`n=13.552`); Norte: 25,23% (`n=1.077`); Sem quadra: 36,55% (`n=5.078`); Sudeste: 19,63% (`n=27.122`); Sudoeste: 14,36% (`n=14.728`); Sul: 36,10% (`n=38.958`).
+
+### M1 — falsos positivos por região
+
+| Região | Registros (n) | Taxa de falsos positivos |
+|---|---:|---:|
+| Nordeste | 10.737 | 17,38% |
+| Noroeste | 13.552 | 27,33% |
+| Norte | 1.077 | 25,23% |
+| Sem Quadra | 5.078 | 36,55% |
+| Sudeste | 27.122 | 19,63% |
+| Sudoeste | 14.728 | 14,36% |
+| Sul | 38.958 | 36,10% |
+
+**M2 — taxa de falsos positivos por região:** Nordeste: 98,26% (`n=4.613`); Noroeste: 99,71% (`n=8.261`); Norte: 99,26% (`n=628`); Sem quadra: 99,89% (`n=4.103`); Sudeste: 98,81% (`n=12.542`); Sudoeste: 96,71% (`n=5.368`); Sul: 99,95% (`n=28.502`).
+
+### M2 — falsos positivos por região
+
+| Região | Registros (n) | Taxa de falsos positivos |
+|---|---:|---:|
+| Nordeste | 4.613 | 98,26% |
+| Noroeste | 8.261 | 99,71% |
+| Norte | 628 | 99,26% |
+| Sem Quadra | 4.103 | 99,89% |
+| Sudeste | 12.542 | 98,81% |
+| Sudoeste | 5.368 | 96,71% |
+| Sul | 28.502 | 99,95% |
+
+**Conceitos estudados:** Paridade demográfica compara proporções de classificações positivas entre grupos. Igualdade de oportunidade compara a taxa de verdadeiros positivos entre grupos. Fairness reúne critérios e análises para investigar se o modelo produz diferenças injustificadas entre grupos. As métricas descritivas por quintil e região apresentadas aqui não devem ser confundidas com a conclusão de testes formais.
+
+## 8. Análise de vieses e riscos identificados
+
+**Viés histórico:** O modelo pode reproduzir padrões passados que não representam a situação atual do contribuinte.
+
+**Defasagem temporal:** Informações antigas podem não refletir mudanças na situação financeira ou no cadastro.
+
+**Sub-representação:** Alguns grupos ou territórios podem estar menos bem representados nos dados; a ausência de renda em setores censitários e as limitações territoriais devem ser consideradas.
+
+**Indicadores indiretos:** Variáveis como histórico de pagamento e valor relativo podem carregar informações socioeconômicas indiretas, mesmo sem renda como atributo direto.
+
+**Diferenças de erro:** Taxas de falsos positivos distintas entre quintis e regiões podem gerar risco de priorização inadequada.
+
+**Limitação do M2:** O desempenho geral não demonstra capacidade adequada de ordenar créditos por possibilidade de recuperação. O volume de falsos positivos é especialmente elevado.
+
+**Interpretação:** As diferenças estatísticas devem ser investigadas com evidências. Não se deve concluir automaticamente que uma disparidade prova discriminação, nem que a ausência de uma variável sensível garante ausência de viés.
+
+## 9. Explicabilidade, transparência e supervisão humana
+
+**Explicabilidade:** As previsões devem ser compreensíveis para os responsáveis pela análise. É importante documentar quais variáveis influenciaram uma classificação e como essas contribuições são apresentadas para uma previsão individual.
+
+**Estado documentado:** A ficha `sprint4-v1` consultada não registra evidência de implementação de SHAP ou LIME para explicações individuais dos modelos M1 e M2. Por isso, este documento não afirma que essas ferramentas foram utilizadas.
+
+**Supervisão humana:** O modelo produz uma estimativa; não toma a decisão administrativa. A análise e a adoção de providências permanecem sob responsabilidade dos agentes públicos, com verificação dos dados atuais e do contexto de cada caso.
+
+## 10. Recomendações, contestação e correção de dados
+
+**Recomendações:** Não utilizar os modelos operacionalmente sem validação e homologação adequadas; avaliar desempenho geral e por subgrupos; investigar diferenças relevantes nas taxas de erro; verificar qualidade e atualidade dos registros; testar estratégias de mitigação e comparar resultados antes e depois dos ajustes; manter supervisão humana e rastreabilidade.
+
+**Correção de dados:** Quando uma informação incorreta influenciar uma previsão, o registro deverá ser verificado e corrigido ou excluído conforme o caso. A equipe deverá investigar a origem do erro e avaliar se ele afetou outras previsões ou análises, preservando a rastreabilidade das alterações.
+
+**Contestação:** Para registrar questionamentos, solicitar correção de informações ou acompanhar questões relacionadas ao projeto, o interessado poderá utilizar o repositório oficial do grupo:
+
+https://github.com/Guilherme-RCM/projeto-integrador-eixoII-GRUPO1-
+
+## 11. Pendências para validação da equipe
+
+**Versão de referência:** Manter `sprint4-v1` como ficha principal e separar o experimento vetorial, que é distinto.
+
+**Métricas e subgrupos:** Os resultados gerais e as métricas descritivas por quintil e região estão documentados nos artefatos `sprint4-v1` utilizados nesta revisão. A equipe deve manter a correspondência entre a versão do modelo, os arquivos de resultados e a entrega.
+
+**Testes formais de fairness:** A planilha de métricas por subgrupos apresenta taxas e outras métricas descritivas; não foi localizada, nos artefatos examinados, evidência de execução formal dos testes de paridade demográfica e igualdade de oportunidade.
+
+**IPTU Social:** A documentação `sprint4-v1` examinada não comprova a exclusão no pipeline nem o teste automatizado. Não declarar essa implementação como concluída sem a respectiva evidência.
+
+**Explicabilidade:** Não foi localizada na ficha principal evidência de SHAP ou LIME para explicações individuais de M1 e M2.
+
+**Contestação e aprovação:** O canal de contato para questões relacionadas ao projeto está disponibilizado pelo repositório oficial indicado na seção 10. A identificação de responsáveis pela homologação, monitoramento e eventual suspensão deve ocorrer antes de qualquer uso real.
+
+## 12. Referências internas utilizadas
+
+**Documentação do modelo:** Repositório do projeto integrador — `SPRINT-4/E4/modelos/model_card.md` (ficha `sprint4-v1`).
+
+**Protocolo:** Repositório do projeto integrador — `SPRINT-4/E4/codigo/sprint4.yaml` (protocolo 1.0.0).
+
+**Métricas por subgrupos:** Repositório do projeto integrador — `SPRINT-4/E4/resultados/metricas_subgrupos.csv`.
+
+**Referência metodológica:** NIST AI Risk Management Framework 1.0, DOI https://doi.org/10.6028/NIST.AI.100-1, citado na ficha do modelo.
