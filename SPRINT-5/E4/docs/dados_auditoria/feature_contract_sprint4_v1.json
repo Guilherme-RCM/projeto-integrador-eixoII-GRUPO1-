@@ -1,0 +1,31 @@
+{
+  "M1": {
+    "atributos": [
+      "inadimplente_exercicio_anterior",
+      "inadimplencias_anteriores",
+      "exercicios_anteriores",
+      "debitos_abertos_t0",
+      "valor_relativo_anterior"
+    ],
+    "ausentes": "permitidos; o pipeline imputa a mediana do treino e acrescenta indicador de ausência",
+    "classe_positiva": 1,
+    "colunas_extras": "recusadas na matriz de entrada",
+    "ordem_obrigatoria": true,
+    "tipo": "float64"
+  },
+  "M2": {
+    "atributos": [
+      "idade_divida_dias",
+      "dias_desde_inscricao",
+      "valor_relativo_credito",
+      "creditos_inscritos_abertos_imovel",
+      "inadimplencias_imovel_t0",
+      "inadimplente_ultimo_exercicio"
+    ],
+    "ausentes": "permitidos; o pipeline imputa a mediana do treino e acrescenta indicador de ausência",
+    "classe_positiva": 1,
+    "colunas_extras": "recusadas na matriz de entrada",
+    "ordem_obrigatoria": true,
+    "tipo": "float64"
+  }
+}

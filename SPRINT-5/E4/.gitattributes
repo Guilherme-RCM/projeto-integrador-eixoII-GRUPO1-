@@ -1,0 +1,8 @@
+# Arquivos binários: o Git nunca deve converter fim de linha (evita corromper PDFs no Windows)
+*.pdf binary
+*.png binary
+*.jpg binary
+*.ttf binary
+*.gz binary
+*.joblib binary
+*.npy binary

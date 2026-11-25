@@ -1,0 +1,8 @@
+numpy>=2.0
+pandas>=2.2
+matplotlib>=3.9
+pytest>=8.0
+# Para reexecutar codigo/analise_shap_m1.py sobre os binários .joblib da Sprint 4:
+# scikit-learn==1.9.1
+# joblib>=1.4
+# shap>=0.46

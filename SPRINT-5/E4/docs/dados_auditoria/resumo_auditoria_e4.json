@@ -1,0 +1,24 @@
+{
+  "versao_modelo": "sprint4-v1",
+  "confirmacao_codificacao_quintis": {
+    "parametro_simulacao_beta_renda": -0.5,
+    "elasticidade_valor_renda": 1.0,
+    "orientacao_confirmada": "Q1 = menor renda censitária (maior prevalência simulada: 52,93%); Q5 = maior renda censitária (menor prevalência simulada: 16,14%)."
+  },
+  "quintis_renda_m1": {
+    "diferenca_paridade_demografica_pp": 44.72,
+    "razao_exposicao_q1_sobre_q5": 3.955,
+    "razao_quatro_quintos_q5_sobre_q1": 0.253,
+    "passa_regra_quatro_quintos_paridade": false,
+    "diferenca_igualdade_oportunidade_tpr_pp": 36.73,
+    "diferenca_fpr_pp": 32.17,
+    "razao_fpr_q1_sobre_q5": 4.011,
+    "erro_max_identidade_chouldechova": 2.220446049250313e-16
+  },
+  "regioes_geograficas_m1": {
+    "diferenca_paridade_demografica_pp": 30.0,
+    "razao_quatro_quintos_min_sobre_max": 0.424,
+    "diferenca_tpr_pp": 21.83,
+    "diferenca_fpr_pp": 21.74
+  }
+}

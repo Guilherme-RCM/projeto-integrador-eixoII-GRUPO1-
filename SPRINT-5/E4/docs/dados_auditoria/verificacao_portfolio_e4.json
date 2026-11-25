@@ -1,0 +1,80 @@
+{
+  "sprint": "Sprint 5 — Governança e Ética (E4 — Portfólio Revisado)",
+  "total_controles": 12,
+  "controles_aprovados": 12,
+  "aprovado_integralmente": true,
+  "controles": [
+    {
+      "codigo": "C01",
+      "descricao": "Três componentes do portfólio (MVP, Model Card e RIA) presentes em /docs",
+      "aprovado": true,
+      "detalhe": "OK"
+    },
+    {
+      "codigo": "C02",
+      "descricao": "Documentação de governança, índice da banca, ADRs e Diário de Bordo presentes",
+      "aprovado": true,
+      "detalhe": "OK"
+    },
+    {
+      "codigo": "C03",
+      "descricao": "PDFs oficiais, figuras (SHAP, Fairness e MVP) e binários do MVP íntegros na pasta E4",
+      "aprovado": true,
+      "detalhe": "19 artefatos verificados"
+    },
+    {
+      "codigo": "C04",
+      "descricao": "Todos os links relativos e imagens nos documentos Markdown resolvem sem erro",
+      "aprovado": true,
+      "detalhe": "10 arquivos Markdown auditados, 0 link quebrado"
+    },
+    {
+      "codigo": "C05",
+      "descricao": "Model Card em /docs contempla todas as seções de Mitchell et al. (2019) e IPTU Social",
+      "aprovado": true,
+      "detalhe": "OK"
+    },
+    {
+      "codigo": "C06",
+      "descricao": "RIA em /docs contempla as 4 seções obrigatórias (LGPD, Fairness, Art. 20/SHAP, Impactos) e integração E3",
+      "aprovado": true,
+      "detalhe": "OK"
+    },
+    {
+      "codigo": "C07",
+      "descricao": "Documento principal do E4 articula Ética Digital (Aula 01 e Aula 09), LGPD e Governança Pública",
+      "aprovado": true,
+      "detalhe": "OK"
+    },
+    {
+      "codigo": "C08",
+      "descricao": "Artefatos de auditoria (metadata, feature_contract, metrics e metricas_subgrupos) íntegros",
+      "aprovado": true,
+      "detalhe": "12 subgrupos do M1 auditados (5 quintis + 7 categorias regionais)"
+    },
+    {
+      "codigo": "C09",
+      "descricao": "Identidade matemática de Chouldechova (2017) conferida nos subgrupos do M1",
+      "aprovado": true,
+      "detalhe": "Erro absoluto máximo = 2.22e-16"
+    },
+    {
+      "codigo": "C10",
+      "descricao": "Trava de entrada e saída do IPTU Social exclui 100% dos 31.089 imóveis protegidos",
+      "aprovado": true,
+      "detalhe": "Protegidos = 31089; elegíveis restantes = 80163"
+    },
+    {
+      "codigo": "C11",
+      "descricao": "Trava de saída bloqueia lista sabotada levantando ProtegidoNaListaError",
+      "aprovado": true,
+      "detalhe": "Exceção ProtegidoNaListaError acionada corretamente sobre 31.089 intrusos"
+    },
+    {
+      "codigo": "C12",
+      "descricao": "Varredura de privacidade (LGPD): ausência de CPF, CNPJ ou arquivo .env no portfólio",
+      "aprovado": true,
+      "detalhe": "0 padrão de CPF/CNPJ ou segredo .env encontrado"
+    }
+  ]
+}
